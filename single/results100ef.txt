@@ -1,0 +1,55 @@
+nohup: ignoring input
+Preprocessing runs 100. Search runs 100. q-gram for EF and EFS 4.
+
+
+********** ../multiple/tests/genome/ecoli.txt **********
+
+
+Pattern length of 8:
+for 1 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=1 q=4 occ=202240 p=0.0214s(214/100) e=1.4576s(14576/100)
+alg=./efs T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=1 q=4 occ=202240 p=0.0224s(224/100) e=1.4065s(14065/100)
+for 2 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=2 q=4 occ=2108556 p=0.1060s(1060/100) e=2.2764s(22764/100)
+alg=./efs T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=2 q=4 occ=2108556 p=0.1051s(1051/100) e=2.1319s(21319/100)
+for 3 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=3 q=4 occ=13132371 p=0.5468s(5468/100) e=3.8927s(38927/100)
+alg=./efs T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=3 q=4 occ=13132371 p=0.5303s(5303/100) e=3.8919s(38919/100)
+
+
+Pattern length of 16:
+for 1 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=1 q=4 occ=45 p=0.0353s(353/100) e=0.6980s(6980/100)
+alg=./efs T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=1 q=4 occ=45 p=0.0424s(424/100) e=0.6713s(6713/100)
+for 2 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=2 q=4 occ=210 p=0.1710s(1710/100) e=1.0337s(10337/100)
+alg=./efs T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=2 q=4 occ=210 p=0.1687s(1687/100) e=0.9642s(9642/100)
+for 3 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=3 q=4 occ=2313 p=0.7973s(7973/100) e=1.7512s(17512/100)
+alg=./efs T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=3 q=4 occ=2313 p=0.7746s(7746/100) e=1.5606s(15606/100)
+
+
+Pattern length of 24:
+for 1 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=1 q=4 occ=22 p=0.0500s(500/100) e=0.4919s(4919/100)
+alg=./efs_long T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=1 q=4 occ=22 p=0.0582s(582/100) e=0.4810s(4810/100)
+for 2 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=2 q=4 occ=34 p=0.2332s(2332/100) e=0.7640s(7640/100)
+alg=./efs_long T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=2 q=4 occ=34 p=0.2316s(2316/100) e=0.7071s(7071/100)
+for 3 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=3 q=4 occ=52 p=1.0695s(10695/100) e=1.3757s(13757/100)
+alg=./efs_long T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=3 q=4 occ=52 p=1.0243s(10243/100) e=1.2390s(12390/100)
+
+
+Pattern length of 32:
+for 1 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=1 q=4 occ=14 p=0.0622s(622/100) e=0.3911s(3911/100)
+alg=./efs_long T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=1 q=4 occ=14 p=0.0706s(706/100) e=0.3825s(3825/100)
+for 2 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=2 q=4 occ=18 p=0.2920s(2920/100) e=0.6355s(6355/100)
+alg=./efs_long T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=2 q=4 occ=18 p=0.2894s(2894/100) e=0.5899s(5899/100)
+for 3 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=3 q=4 occ=30 p=1.3381s(13381/100) e=1.1929s(11929/100)
+alg=./efs_long T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=3 q=4 occ=30 p=1.2723s(12723/100) e=1.0786s(10786/100)
+
+test-ef.sh: 37: test-ef.sh: Syntax error: "done" unexpected

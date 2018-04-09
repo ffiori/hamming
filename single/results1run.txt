@@ -1,0 +1,8 @@
+Preprocessing runs 2. Search runs 2. q-gram for EF and EFS 4.
+
+
+********** ../multiple/tests/genome/ecoli.txt **********
+
+
+Pattern length of 8:
+for 1 mismatches:

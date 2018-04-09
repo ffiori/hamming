@@ -1,0 +1,15 @@
+
+Paper:
+
+@INPROCEEDINGS
+        { MulMan,
+          TITLE = "Approximate Multiple String Search",
+          AUTHOR = "R. Muth and U. Manber",
+          BOOKTITLE = "Proc. of {CPM'96}",
+          PAGES = "75--86",
+          YEAR = 1996,
+        }
+
+Code from Robert Muth and Udi Manber.
+
+to make: first make dep, then make

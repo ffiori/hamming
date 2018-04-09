@@ -1,0 +1,122 @@
+nohup: ignoring input
+Preprocessing runs 100. Search runs 100. q-gram for EF and EFS 4.
+
+
+********** ../multiple/tests/protein/hs.txt **********
+
+
+Pattern length of 8:
+for 1 mismatches:
+alg=./ans T=../multiple/tests/protein/hs.txt(3295751) np=100 m=8 k=1 occ=52 p=0.0000s(0/100) e=0.8869s(8869/100)
+alg=./ans2 T=../multiple/tests/protein/hs.txt(3295751) np=100 m=8 k=1 occ=52 p=0.0008s(8/100) e=0.6003s(6003/100)
+alg=./sa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=8 k=1 occ=52 p=0.0000s(0/100) e=1.1928s(11928/100)
+alg=./tusa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=8 k=1 occ=52 p=0.0000s(0/100) e=0.9283s(9283/100)
+alg=./twsa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=8 k=1 occ=52 p=0.0000s(0/100) e=0.5901s(5901/100)
+alg=./byp/byp-old/byp np=100   match=52         p=0.00000s e=0.87480s total=0.87480s
+alg=./byp/byps-dna/byps np=100   match=52         p=0.00930s e=1.24090s total=1.25020s
+
+for 2 mismatches:
+alg=./ans T=../multiple/tests/protein/hs.txt(3295751) np=100 m=8 k=2 occ=489 p=0.0000s(0/100) e=0.8869s(8869/100)
+alg=./ans2 T=../multiple/tests/protein/hs.txt(3295751) np=100 m=8 k=2 occ=489 p=0.0007s(7/100) e=0.6013s(6013/100)
+alg=./sa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=8 k=2 occ=489 p=0.0000s(0/100) e=1.1928s(11928/100)
+alg=./tusa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=8 k=2 occ=489 p=0.0001s(1/100) e=0.9285s(9285/100)
+alg=./twsa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=8 k=2 occ=489 p=0.0000s(0/100) e=0.8782s(8782/100)
+alg=./byp/byp-old/byp np=100   match=489        p=0.00010s e=1.72380s total=1.72390s
+Pattern length 2 out of range!
+
+for 3 mismatches:
+alg=./ans T=../multiple/tests/protein/hs.txt(3295751) np=100 m=8 k=3 occ=13099 p=0.0000s(0/100) e=0.8868s(8868/100)
+alg=./ans2 T=../multiple/tests/protein/hs.txt(3295751) np=100 m=8 k=3 occ=13099 p=0.0011s(11/100) e=0.6023s(6023/100)
+alg=./sa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=8 k=3 occ=13099 p=0.0000s(0/100) e=1.1931s(11931/100)
+alg=./tusa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=8 k=3 occ=13099 p=0.0000s(0/100) e=0.9282s(9282/100)
+alg=./twsa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=8 k=3 occ=13099 p=0.0000s(0/100) e=1.2031s(12031/100)
+alg=./byp/byp-old/byp np=100   match=13100      p=0.00010s e=2.34630s total=2.34640s
+Pattern length 2 out of range!
+
+
+Pattern length of 16:
+for 1 mismatches:
+alg=./ans T=../multiple/tests/protein/hs.txt(3295751) np=100 m=16 k=1 occ=20 p=0.0000s(0/100) e=0.8868s(8868/100)
+alg=./ans2 T=../multiple/tests/protein/hs.txt(3295751) np=100 m=16 k=1 occ=20 p=0.0084s(84/100) e=0.6043s(6043/100)
+alg=./sa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=16 k=1 occ=20 p=0.0000s(0/100) e=1.1930s(11930/100)
+alg=./tusa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=16 k=1 occ=20 p=0.0000s(0/100) e=0.9282s(9282/100)
+alg=./twsa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=16 k=1 occ=20 p=0.0001s(1/100) e=0.3209s(3209/100)
+alg=./byp/byp-old/byp np=100   match=20         p=0.00030s e=0.55420s total=0.55450s
+alg=./byp/byps-dna/byps np=100   match=20         p=0.01650s e=0.27300s total=0.28950s
+
+for 2 mismatches:
+alg=./ans T=../multiple/tests/protein/hs.txt(3295751) np=100 m=16 k=2 occ=29 p=0.0000s(0/100) e=0.8868s(8868/100)
+alg=./ans2 T=../multiple/tests/protein/hs.txt(3295751) np=100 m=16 k=2 occ=29 p=0.0087s(87/100) e=0.6039s(6039/100)
+alg=./sa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=16 k=2 occ=29 p=0.0000s(0/100) e=1.1928s(11928/100)
+alg=./tusa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=16 k=2 occ=29 p=0.0000s(0/100) e=0.9283s(9283/100)
+alg=./twsa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=16 k=2 occ=29 p=0.0000s(0/100) e=0.4419s(4419/100)
+alg=./byp/byp-old/byp np=100   match=29         p=0.00000s e=0.92800s total=0.92800s
+alg=./byp/byps-dna/byps np=100   match=29         p=0.01600s e=1.24740s total=1.26340s
+
+for 3 mismatches:
+alg=./ans T=../multiple/tests/protein/hs.txt(3295751) np=100 m=16 k=3 occ=51 p=0.0000s(0/100) e=0.8868s(8868/100)
+alg=./ans2 T=../multiple/tests/protein/hs.txt(3295751) np=100 m=16 k=3 occ=51 p=0.0092s(92/100) e=0.6037s(6037/100)
+alg=./sa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=16 k=3 occ=51 p=0.0000s(0/100) e=1.1928s(11928/100)
+alg=./tusa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=16 k=3 occ=51 p=0.0001s(1/100) e=0.9282s(9282/100)
+alg=./twsa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=16 k=3 occ=51 p=0.0000s(0/100) e=0.6024s(6024/100)
+alg=./byp/byp-old/byp np=100   match=51         p=0.00000s e=1.24830s total=1.24830s
+alg=./byp/byps-dna/byps np=100   match=51         p=0.01640s e=1.24300s total=1.25940s
+
+
+Pattern length of 24:
+for 1 mismatches:
+alg=./ansb T=../multiple/tests/protein/hs.txt(3295751) np=100 m=24 k=1 occ=15 p=0.0000s(0/100) e=0.9515s(9515/100)
+alg=./ans2b T=../multiple/tests/protein/hs.txt(3295751) np=100 m=24 k=1 occ=15 p=0.0076s(76/100) e=0.7373s(7373/100)
+alg=./sa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=24 k=1 occ=15 p=0.0000s(0/100) e=1.1930s(11930/100)
+alg=./tusa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=24 k=1 occ=15 p=0.0000s(0/100) e=0.9282s(9282/100)
+alg=./twsa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=24 k=1 occ=15 p=0.0000s(0/100) e=0.2309s(2309/100)
+alg=./byp/byp-old/byp np=100   match=15         p=0.00010s e=0.45220s total=0.45230s
+alg=./byp/byps-dna/byps np=100   match=15         p=0.01580s e=0.14020s total=0.15600s
+
+for 2 mismatches:
+alg=./ansb T=../multiple/tests/protein/hs.txt(3295751) np=100 m=24 k=2 occ=20 p=0.0000s(0/100) e=0.9514s(9514/100)
+alg=./ans2b T=../multiple/tests/protein/hs.txt(3295751) np=100 m=24 k=2 occ=20 p=0.0077s(77/100) e=0.7375s(7375/100)
+need m*B=72 > 64=W bits
+need m*L=72 > 64=W bits
+need m*L=72 > 64=W bits
+alg=./byp/byp-old/byp np=100   match=20         p=0.00010s e=0.73430s total=0.73440s
+alg=./byp/byps-dna/byps np=100   match=20         p=0.01610s e=0.27420s total=0.29030s
+
+for 3 mismatches:
+alg=./ansb T=../multiple/tests/protein/hs.txt(3295751) np=100 m=24 k=3 occ=25 p=0.0000s(0/100) e=0.9516s(9516/100)
+alg=./ans2b T=../multiple/tests/protein/hs.txt(3295751) np=100 m=24 k=3 occ=25 p=0.0082s(82/100) e=0.7387s(7387/100)
+need m*B=72 > 64=W bits
+need m*L=72 > 64=W bits
+need m*L=72 > 64=W bits
+alg=./byp/byp-old/byp np=100   match=25         p=0.00030s e=1.04160s total=1.04190s
+alg=./byp/byps-dna/byps np=100   match=25         p=0.01710s e=1.25040s total=1.26750s
+
+
+Pattern length of 32:
+for 1 mismatches:
+alg=./ansb T=../multiple/tests/protein/hs.txt(3295751) np=100 m=32 k=1 occ=9 p=0.0000s(0/100) e=0.9516s(9516/100)
+alg=./ans2b T=../multiple/tests/protein/hs.txt(3295751) np=100 m=32 k=1 occ=9 p=0.0082s(82/100) e=0.7367s(7367/100)
+alg=./sa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=32 k=1 occ=9 p=0.0001s(1/100) e=1.1925s(11925/100)
+alg=./tusa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=32 k=1 occ=9 p=0.0000s(0/100) e=0.9283s(9283/100)
+alg=./twsa T=../multiple/tests/protein/hs.txt(3295751) np=100 m=32 k=1 occ=9 p=0.0000s(0/100) e=0.1882s(1882/100)
+alg=./byp/byp-old/byp np=100   match=9          p=0.00060s e=0.40680s total=0.40740s
+alg=./byp/byps-dna/byps np=100   match=9          p=0.01240s e=0.14770s total=0.16010s
+
+for 2 mismatches:
+alg=./ansb T=../multiple/tests/protein/hs.txt(3295751) np=100 m=32 k=2 occ=14 p=0.0000s(0/100) e=0.9516s(9516/100)
+alg=./ans2b T=../multiple/tests/protein/hs.txt(3295751) np=100 m=32 k=2 occ=14 p=0.0078s(78/100) e=0.7374s(7374/100)
+need m*B=96 > 64=W bits
+need m*L=96 > 64=W bits
+need m*L=96 > 64=W bits
+alg=./byp/byp-old/byp np=100   match=14         p=0.00040s e=0.65930s total=0.65970s
+alg=./byp/byps-dna/byps np=100   match=14         p=0.01670s e=0.18560s total=0.20230s
+
+for 3 mismatches:
+alg=./ansb T=../multiple/tests/protein/hs.txt(3295751) np=100 m=32 k=3 occ=19 p=0.0000s(0/100) e=0.9515s(9515/100)
+alg=./ans2b T=../multiple/tests/protein/hs.txt(3295751) np=100 m=32 k=3 occ=19 p=0.0083s(83/100) e=0.7385s(7385/100)
+need m*B=96 > 64=W bits
+need m*L=96 > 64=W bits
+need m*L=96 > 64=W bits
+alg=./byp/byp-old/byp np=100   match=19         p=0.00050s e=0.91790s total=0.91840s
+alg=./byp/byps-dna/byps np=100   match=19         p=0.01730s e=0.27290s total=0.29020s
+

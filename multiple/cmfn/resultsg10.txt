@@ -1,0 +1,209 @@
+Preprocessing runs 1. Execution runs 10. Sets of 100 patterns.
+
+
+***** ./tests/protein/hs.txt *****
+
+
+Pattern length 16:
+
+ for sets of 10 patterns:
+   with 1 mismatches (subpattern lengths ):
+With groups of 1:
+alg=./cmfn               np=10    match=2          p=0.02400s e=0.00400s total=0.02800s
+With groups of 2:
+alg=./cmfn               np=10    match=2          p=0.02200s e=0.01200s total=0.03400s
+With groups of 3:
+alg=./cmfn               np=10    match=2          p=0.03300s e=0.01300s total=0.04600s
+With groups of 4:
+alg=./cmfn               np=10    match=2          p=0.02900s e=0.01900s total=0.04800s
+With groups of 5:
+alg=./cmfn               np=10    match=2          p=0.02700s e=0.02200s total=0.04900s
+With groups of 6:
+alg=./cmfn               np=10    match=2          p=0.03700s e=0.01600s total=0.05300s
+With groups of 7:
+alg=./cmfn               np=10    match=2          p=0.02300s e=0.03400s total=0.05700s
+With groups of 8:
+alg=./cmfn               np=10    match=2          p=0.03000s e=0.03600s total=0.06600s
+With groups of 9:
+alg=./cmfn               np=10    match=2          p=0.02700s e=0.04200s total=0.06900s
+With groups of 10:
+alg=./cmfn               np=10    match=2          p=0.02800s e=0.04400s total=0.07200s
+
+Pattern length 32:
+
+ for sets of 10 patterns:
+   with 1 mismatches (subpattern lengths ):
+With groups of 1:
+alg=./cmfn               np=10    match=0          p=0.03500s e=0.00200s total=0.03700s
+With groups of 2:
+alg=./cmfn               np=10    match=0          p=0.03300s e=0.00700s total=0.04000s
+With groups of 3:
+alg=./cmfn               np=10    match=0          p=0.03700s e=0.00700s total=0.04400s
+With groups of 4:
+alg=./cmfn               np=10    match=0          p=0.03700s e=0.00900s total=0.04600s
+With groups of 5:
+alg=./cmfn               np=10    match=0          p=0.03800s e=0.01200s total=0.05000s
+With groups of 6:
+alg=./cmfn               np=10    match=0          p=0.03300s e=0.01900s total=0.05200s
+With groups of 7:
+alg=./cmfn               np=10    match=0          p=0.03900s e=0.02300s total=0.06200s
+With groups of 8:
+alg=./cmfn               np=10    match=0          p=0.03600s e=0.02100s total=0.05700s
+With groups of 9:
+alg=./cmfn               np=10    match=0          p=0.04400s e=0.01900s total=0.06300s
+With groups of 10:
+alg=./cmfn               np=10    match=0          p=0.05200s e=0.01200s total=0.06400s
+
+Pattern length 48:
+
+ for sets of 10 patterns:
+   with 1 mismatches (subpattern lengths ):
+With groups of 1:
+alg=./cmfn               np=10    match=2          p=0.04700s e=0.00200s total=0.04900s
+With groups of 2:
+alg=./cmfn               np=10    match=2          p=0.04800s e=0.00300s total=0.05100s
+With groups of 3:
+alg=./cmfn               np=10    match=2          p=0.04900s e=0.00500s total=0.05400s
+With groups of 4:
+alg=./cmfn               np=10    match=2          p=0.05200s e=0.00400s total=0.05600s
+With groups of 5:
+alg=./cmfn               np=10    match=2          p=0.05000s e=0.01200s total=0.06200s
+With groups of 6:
+alg=./cmfn               np=10    match=2          p=0.05500s e=0.00500s total=0.06000s
+With groups of 7:
+alg=./cmfn               np=10    match=2          p=0.05200s e=0.01200s total=0.06400s
+With groups of 8:
+alg=./cmfn               np=10    match=2          p=0.05700s e=0.00900s total=0.06600s
+With groups of 9:
+alg=./cmfn               np=10    match=2          p=0.04700s e=0.02100s total=0.06800s
+With groups of 10:
+alg=./cmfn               np=10    match=2          p=0.05100s e=0.02500s total=0.07600s
+
+Pattern length 64:
+
+ for sets of 10 patterns:
+   with 1 mismatches (subpattern lengths ):
+With groups of 1:
+alg=./cmfn               np=10    match=1          p=0.05900s e=0.00200s total=0.06100s
+With groups of 2:
+alg=./cmfn               np=10    match=1          p=0.05800s e=0.00400s total=0.06200s
+With groups of 3:
+alg=./cmfn               np=10    match=1          p=0.05800s e=0.00700s total=0.06500s
+With groups of 4:
+alg=./cmfn               np=10    match=1          p=0.07100s e=0.00200s total=0.07300s
+With groups of 5:
+alg=./cmfn               np=10    match=1          p=0.06300s e=0.00800s total=0.07100s
+With groups of 6:
+alg=./cmfn               np=10    match=1          p=0.06400s e=0.00900s total=0.07300s
+With groups of 7:
+alg=./cmfn               np=10    match=1          p=0.06500s e=0.00800s total=0.07300s
+With groups of 8:
+alg=./cmfn               np=10    match=1          p=0.06600s e=0.01100s total=0.07700s
+With groups of 9:
+alg=./cmfn               np=10    match=1          p=0.06900s e=0.01000s total=0.07900s
+With groups of 10:
+alg=./cmfn               np=10    match=1          p=0.06700s e=0.01400s total=0.08100s
+
+
+***** ./tests/english/bible.txt *****
+
+
+Pattern length 16:
+
+ for sets of 10 patterns:
+   with 1 mismatches (subpattern lengths ):
+With groups of 1:
+alg=./cmfn               np=10    match=9          p=0.02100s e=0.01100s total=0.03200s
+With groups of 2:
+alg=./cmfn               np=10    match=9          p=0.01900s e=0.02000s total=0.03900s
+With groups of 3:
+alg=./cmfn               np=10    match=9          p=0.02400s e=0.02300s total=0.04700s
+With groups of 4:
+alg=./cmfn               np=10    match=9          p=0.02500s e=0.02700s total=0.05200s
+With groups of 5:
+alg=./cmfn               np=10    match=9          p=0.02000s e=0.03900s total=0.05900s
+With groups of 6:
+alg=./cmfn               np=10    match=9          p=0.02600s e=0.03700s total=0.06300s
+With groups of 7:
+alg=./cmfn               np=10    match=9          p=0.03200s e=0.03800s total=0.07000s
+With groups of 8:
+alg=./cmfn               np=10    match=9          p=0.02500s e=0.05100s total=0.07600s
+With groups of 9:
+alg=./cmfn               np=10    match=9          p=0.02700s e=0.05500s total=0.08200s
+With groups of 10:
+alg=./cmfn               np=10    match=9          p=0.03000s e=0.05900s total=0.08900s
+
+Pattern length 32:
+
+ for sets of 10 patterns:
+   with 1 mismatches (subpattern lengths ):
+With groups of 1:
+alg=./cmfn               np=10    match=0          p=0.03000s e=0.00900s total=0.03900s
+With groups of 2:
+alg=./cmfn               np=10    match=0          p=0.03700s e=0.00600s total=0.04300s
+With groups of 3:
+alg=./cmfn               np=10    match=0          p=0.04200s e=0.00600s total=0.04800s
+With groups of 4:
+alg=./cmfn               np=10    match=0          p=0.03700s e=0.01500s total=0.05200s
+With groups of 5:
+alg=./cmfn               np=10    match=0          p=0.03800s e=0.01800s total=0.05600s
+With groups of 6:
+alg=./cmfn               np=10    match=0          p=0.03800s e=0.01900s total=0.05700s
+With groups of 7:
+alg=./cmfn               np=10    match=0          p=0.04000s e=0.02200s total=0.06200s
+With groups of 8:
+alg=./cmfn               np=10    match=0          p=0.04200s e=0.02300s total=0.06500s
+With groups of 9:
+alg=./cmfn               np=10    match=0          p=0.04200s e=0.02700s total=0.06900s
+With groups of 10:
+alg=./cmfn               np=10    match=0          p=0.03900s e=0.03200s total=0.07100s
+
+Pattern length 48:
+
+ for sets of 10 patterns:
+   with 1 mismatches (subpattern lengths ):
+With groups of 1:
+alg=./cmfn               np=10    match=0          p=0.04700s e=0.00200s total=0.04900s
+With groups of 2:
+alg=./cmfn               np=10    match=0          p=0.04600s e=0.00700s total=0.05300s
+With groups of 3:
+alg=./cmfn               np=10    match=0          p=0.04700s e=0.01100s total=0.05800s
+With groups of 4:
+alg=./cmfn               np=10    match=0          p=0.04400s e=0.01600s total=0.06000s
+With groups of 5:
+alg=./cmfn               np=10    match=0          p=0.04300s e=0.02200s total=0.06500s
+With groups of 6:
+alg=./cmfn               np=10    match=0          p=0.04800s e=0.01800s total=0.06600s
+With groups of 7:
+alg=./cmfn               np=10    match=0          p=0.05500s e=0.01500s total=0.07000s
+With groups of 8:
+alg=./cmfn               np=10    match=0          p=0.05900s e=0.01300s total=0.07200s
+With groups of 9:
+alg=./cmfn               np=10    match=0          p=0.04900s e=0.02900s total=0.07800s
+With groups of 10:
+alg=./cmfn               np=10    match=0          p=0.05300s e=0.02400s total=0.07700s
+
+Pattern length 64:
+
+ for sets of 10 patterns:
+   with 1 mismatches (subpattern lengths ):
+With groups of 1:
+alg=./cmfn               np=10    match=0          p=0.05800s e=0.00300s total=0.06100s
+With groups of 2:
+alg=./cmfn               np=10    match=0          p=0.06000s e=0.00700s total=0.06700s
+With groups of 3:
+alg=./cmfn               np=10    match=0          p=0.06200s e=0.00700s total=0.06900s
+With groups of 4:
+alg=./cmfn               np=10    match=0          p=0.06100s e=0.01100s total=0.07200s
+With groups of 5:
+alg=./cmfn               np=10    match=0          p=0.06900s e=0.00900s total=0.07800s
+With groups of 6:
+alg=./cmfn               np=10    match=0          p=0.06200s e=0.01400s total=0.07600s
+With groups of 7:
+alg=./cmfn               np=10    match=0          p=0.06800s e=0.01500s total=0.08300s
+With groups of 8:
+alg=./cmfn               np=10    match=0          p=0.06300s e=0.01800s total=0.08100s
+With groups of 9:
+alg=./cmfn               np=10    match=0          p=0.06900s e=0.01700s total=0.08600s
+With groups of 10:
+alg=./cmfn               np=10    match=0          p=0.07100s e=0.02000s total=0.09100s

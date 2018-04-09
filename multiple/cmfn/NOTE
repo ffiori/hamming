@@ -1,0 +1,22 @@
+Compilation:
+	./mk1 dp.t
+
+Run (k=3):
+	./dp.t -k 3 text < pat
+
+or
+       echo abcdefgh | ./dp.t -k 3 text 
+
+
+Repeating of runs:
+parameters p (preprocessing) and e (execution).
+
+        ./dp.t -k 3 -e 99 -p 99 text < pat
+
+Output:
+	./dp.t -k 0 -e 20 text < pat
+	alg=dp.t np=5 match=12 p=0.0167s(1/1) e=0.0267s(32/20)
+                 |    |        |              |
+      count of pats   |        |            search time
+         count of matches     prepr. time
+

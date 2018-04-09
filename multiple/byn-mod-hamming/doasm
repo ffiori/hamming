@@ -1,0 +1,4 @@
+tar -cvf asm.tar README psearch
+gzip asm.tar
+chmod 644 asm.tar.gz
+cp asm.tar.gz /u/i/gnavarro/public_www/pubcode

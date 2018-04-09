@@ -1,0 +1,359 @@
+Preprocessing runs 1. Execution runs 1.
+
+
+***** ../tests/genome/ecoli.txt *****
+
+
+Pattern length 8:
+
+ for sets of 100 patterns:
+
+______With 1 mismatches (subpattern lengths 4):
+
+With groups of 1 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=202240     p=0.01000s e=2.19000s total=2.20000s
+
+With groups of 2 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=202240     p=0.01000s e=2.34000s total=2.35000s
+
+With groups of 3 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=202240     p=0.01000s e=2.42000s total=2.43000s
+
+With groups of 4 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=202240     p=0.02000s e=2.49000s total=2.51000s
+
+ for sets of 1000 patterns:
+
+______With 1 mismatches (subpattern lengths 4):
+
+With groups of 3 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=2080020    p=0.19000s e=26.26000s total=26.45000s
+
+With groups of 5 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=2080020    p=0.14000s e=22.45000s total=22.59000s
+
+With groups of 6 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=2080020    p=0.13000s e=21.99000s total=22.12000s
+
+With groups of 7 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=2080020    p=0.13000s e=22.72000s total=22.85000s
+
+With groups of 8 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=2080020    p=0.14000s e=22.88000s total=23.02000s
+
+With groups of 15 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=2080020    p=0.13000s e=23.28000s total=23.41000s
+
+With groups of 16 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=2080020    p=0.18000s e=24.44000s total=24.62000s
+
+Pattern length 16:
+
+ for sets of 100 patterns:
+
+______With 1 mismatches (subpattern lengths 8):
+
+With groups of 1 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=45         p=0.02000s e=0.31000s total=0.33000s
+
+With groups of 2 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=45         p=0.02000s e=0.29000s total=0.31000s
+
+With groups of 3 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=45         p=0.04000s e=0.25000s total=0.29000s
+
+With groups of 4 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=45         p=0.02000s e=0.29000s total=0.31000s
+
+______With 2 mismatches (subpattern lengths 5):
+
+With groups of 1 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=210        p=0.02000s e=1.95000s total=1.97000s
+
+With groups of 2 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=210        p=0.02000s e=1.97000s total=1.99000s
+
+With groups of 3 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=210        p=0.02000s e=1.98000s total=2.00000s
+
+With groups of 4 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=210        p=0.02000s e=2.23000s total=2.25000s
+
+______With 3 mismatches (subpattern lengths 4):
+
+With groups of 1 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=2313       p=0.02000s e=9.72000s total=9.74000s
+
+With groups of 2 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=2313       p=0.02000s e=9.99000s total=10.01000s
+
+With groups of 3 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=2313       p=0.03000s e=9.92000s total=9.95000s
+
+With groups of 4 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=2313       p=0.01000s e=9.80000s total=9.81000s
+
+ for sets of 1000 patterns:
+
+______With 1 mismatches (subpattern lengths 8):
+
+With groups of 3 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=525        p=0.28000s e=3.43000s total=3.71000s
+
+With groups of 5 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=525        p=0.25000s e=3.16000s total=3.41000s
+
+With groups of 6 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=525        p=0.23000s e=3.15000s total=3.38000s
+
+With groups of 7 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=525        p=0.24000s e=3.27000s total=3.51000s
+
+With groups of 8 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=525        p=0.25000s e=3.29000s total=3.54000s
+
+With groups of 15 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=525        p=0.27000s e=3.11000s total=3.38000s
+
+With groups of 16 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=525        p=0.28000s e=3.35000s total=3.63000s
+
+______With 2 mismatches (subpattern lengths 5):
+
+With groups of 3 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=2678       p=0.28000s e=24.49000s total=24.77000s
+
+With groups of 5 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=2678       p=0.24000s e=20.54000s total=20.78000s
+
+With groups of 6 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=2678       p=0.24000s e=20.21000s total=20.45000s
+
+With groups of 7 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=2678       p=0.24000s e=21.04000s total=21.28000s
+
+With groups of 8 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=2678       p=0.24000s e=21.12000s total=21.36000s
+
+With groups of 15 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=2678       p=0.22000s e=20.43000s total=20.65000s
+
+With groups of 16 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=2678       p=0.27000s e=21.58000s total=21.85000s
+
+______With 3 mismatches (subpattern lengths 4):
+
+With groups of 3 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=26104      p=0.30000s e=112.97000s total=113.27000s
+
+With groups of 5 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=26104      p=0.24000s e=94.94000s total=95.18000s
+
+With groups of 6 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=26104      p=0.24000s e=94.96000s total=95.20000s
+
+With groups of 7 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=26104      p=0.24000s e=99.47000s total=99.71000s
+
+With groups of 8 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=26104      p=0.25000s e=100.90000s total=101.15000s
+
+With groups of 15 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=26104      p=0.26000s e=101.49000s total=101.75000s
+
+With groups of 16 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=26104      p=0.29000s e=104.12000s total=104.41000s
+
+Pattern length 24:
+
+ for sets of 100 patterns:
+
+______With 1 mismatches (subpattern lengths 12):
+
+With groups of 1 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=22         p=0.03000s e=0.02000s total=0.05000s
+
+With groups of 2 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=22         p=0.02000s e=0.04000s total=0.06000s
+
+With groups of 3 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=22         p=0.03000s e=0.04000s total=0.07000s
+
+With groups of 4 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=22         p=0.04000s e=0.05000s total=0.09000s
+
+______With 2 mismatches (subpattern lengths 8):
+
+With groups of 1 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=34         p=0.03000s e=0.06000s total=0.09000s
+
+With groups of 2 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=34         p=0.04000s e=0.06000s total=0.10000s
+
+With groups of 3 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=34         p=0.03000s e=0.08000s total=0.11000s
+
+With groups of 4 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=34         p=0.03000s e=0.12000s total=0.15000s
+
+______With 3 mismatches (subpattern lengths 6):
+
+With groups of 1 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=52         p=0.03000s e=0.32000s total=0.35000s
+
+With groups of 2 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=52         p=0.03000s e=0.16000s total=0.19000s
+
+With groups of 3 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=52         p=0.04000s e=0.14000s total=0.18000s
+
+With groups of 4 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=100   match=52         p=0.04000s e=0.28000s total=0.32000s
+
+ for sets of 1000 patterns:
+
+______With 1 mismatches (subpattern lengths 12):
+
+With groups of 3 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=226        p=0.36000s e=0.21000s total=0.57000s
+
+With groups of 5 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=226        p=0.31000s e=0.17000s total=0.48000s
+
+With groups of 6 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=226        p=0.30000s e=0.18000s total=0.48000s
+
+With groups of 7 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=226        p=0.33000s e=0.20000s total=0.53000s
+
+With groups of 8 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=226        p=0.33000s e=0.23000s total=0.56000s
+
+With groups of 15 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=226        p=0.33000s e=0.24000s total=0.57000s
+
+With groups of 16 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=226        p=0.32000s e=0.32000s total=0.64000s
+
+______With 2 mismatches (subpattern lengths 8):
+
+With groups of 3 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=371        p=0.38000s e=1.81000s total=2.19000s
+
+With groups of 5 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=371        p=0.31000s e=0.94000s total=1.25000s
+
+With groups of 6 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=371        p=0.32000s e=0.75000s total=1.07000s
+
+With groups of 7 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=371        p=0.31000s e=0.72000s total=1.03000s
+
+With groups of 8 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=371        p=0.33000s e=0.68000s total=1.01000s
+
+With groups of 15 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=371        p=0.31000s e=0.70000s total=1.01000s
+
+With groups of 16 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=371        p=0.32000s e=0.78000s total=1.10000s
+
+______With 3 mismatches (subpattern lengths 6):
+
+With groups of 3 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=511        p=0.37000s e=7.77000s total=8.14000s
+
+With groups of 5 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=511        p=0.31000s e=5.61000s total=5.92000s
+
+With groups of 6 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=511        p=0.30000s e=5.12000s total=5.42000s
+
+With groups of 7 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=511        p=0.33000s e=4.89000s total=5.22000s
+
+With groups of 8 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=511        p=0.32000s e=4.39000s total=4.71000s
+
+With groups of 15 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=511        p=0.32000s e=2.00000s total=2.32000s
+
+With groups of 16 patterns:
+With groups of 0 chars:
+alg=./cmfn               np=1000  match=511        p=0.36000s e=2.47000s total=2.83000s

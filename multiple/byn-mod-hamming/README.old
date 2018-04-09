@@ -1,0 +1,30 @@
+
+     This code is authored by Ricardo Baeza-Yates and Gonzalo Navarro.
+     This code can be freely used and distributed for teaching and research
+     purposes, provided it is not modified and this notice is kept attached.
+     No part of this code can be used for direct or indirect commercial
+     advantage without written permission of the authors.
+
+
+the files in this archive are
+
+	README:	this very same file
+	lsearch: library implementing our heuristics
+	pubsearch.h: header to use the library (only a rudimentary
+			interface is provided, enough to teach
+			and research but not enough for commercial
+			use).
+	search: a more elaborate demonstration code
+
+
+to use "search",
+
+	search <pattern> <k> <file> <sigma> [options]
+
+        where <sigma> is the alphabet size. if the alphabet is not uniform,
+        use the inverse of the probability of two random characters
+        matching (e.g. sum(p_i^2) if they are independently generated).
+        sigma = 20 is normally ok for natural language.
+        (this parameter helps to determine the type of partition to use,
+         in the future the program will determine it by itself).
+

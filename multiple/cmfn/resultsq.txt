@@ -1,0 +1,17 @@
+Preprocessing runs 1. Execution runs 1. Sets of 100 patterns.
+
+
+***** ./tests/protein/hs.txt *****
+
+
+Pattern length 16:
+
+ for sets of 100 patterns:
+   with 6 mismatches (subpattern lengths ):
+With 1-grams:
+alg=./cmfn          np=100   match=179        p=0.32000s e=3.92000s total=4.24000s
+With 2-grams:
+alg=./cmfn          np=100   match=179        p=0.25000s e=4.18000s total=4.43000s
+With 3-grams:
+alg=./cmfn          np=100   match=179        p=0.28000s e=3.55000s total=3.83000s
+With 4-grams:

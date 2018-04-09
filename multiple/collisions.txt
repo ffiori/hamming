@@ -1,0 +1,481 @@
+nohup: ignoring input
+Guide:
+cmfn: Fredriksson-Navarro.
+udi/mm: Muth-Manber (only k=1).
+mepsm-nomod/mbyps: MBYPS (ours) using MEPSM with no modifications (original size of the fingerprints).
+mbyps: MBYPS (ours).
+byn-original/byn: Baeza-Yates and Navarro original code for edit distance (adapted to Hume-Sunday environment).
+byn-mod-hamming/byn: Baeza-Yates and Navarro (partition into exact matching) code adapted to Hamming distance.
+
+Preprocessing runs 1. Search runs 1. For 'cmfn' we make same number of preprocessing and searching runs.
+
+
+********** ./tests/genome/ecoli.txt **********
+
+
+Pattern length 8:
+
+ for sets of 10 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 0 chars, groups of 1 patts):
+Number of collisions: 26        alg=m-multi-nomod/mbyps  np=10    match=17265      p=0.00000s e=0.21000s total=0.21000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=17265      p=0.00000s e=0.02000s total=0.02000s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 0 chars, groups of 1 patts):
+Number of collisions: 384       alg=m-multi-nomod/mbyps  np=100   match=202240     p=0.00000s e=2.24000s total=2.24000s
+Number of collisions: 63        alg=perl-mm-multi/mbyps  np=100   match=202240     p=0.00000s e=0.23000s total=0.23000s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 0 chars, groups of 6 patts):
+Number of collisions: 3984      alg=m-multi-nomod/mbyps  np=1000  match=2080020    p=0.00000s e=31.36000s total=31.36000s
+Number of collisions: 1744      alg=perl-mm-multi/mbyps  np=1000  match=2080020    p=0.01000s e=2.28000s total=2.29000s
+
+Pattern length 16:
+
+ for sets of 10 patterns:
+
+   with 1 mismatches (subpattern lengths 8, groups of 0 chars, groups of 1 patts):
+Number of collisions: 14        alg=m-multi-nomod/mbyps  np=10    match=4          p=0.00000s e=0.03000s total=0.03000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=4          p=0.00000s e=0.01000s total=0.01000s
+
+   with 2 mismatches (subpattern lengths 5, groups of 0 chars, groups of 1 patts):
+Number of collisions: 54        alg=m-multi-nomod/mbyps  np=10    match=25         p=0.00000s e=0.43000s total=0.43000s
+Number of collisions: 1         alg=perl-mm-multi/mbyps  np=10    match=25         p=0.00000s e=0.02000s total=0.02000s
+
+   with 3 mismatches (subpattern lengths 4, groups of 0 chars, groups of 1 patts):
+Number of collisions: 64        alg=m-multi-nomod/mbyps  np=10    match=244        p=0.00000s e=0.52000s total=0.52000s
+Number of collisions: 2         alg=perl-mm-multi/mbyps  np=10    match=244        p=0.00000s e=0.06000s total=0.06000s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 8, groups of 0 chars, groups of 1 patts):
+Number of collisions: 556       alg=m-multi-nomod/mbyps  np=100   match=45         p=0.00000s e=0.22000s total=0.22000s
+Number of collisions: 1         alg=perl-mm-multi/mbyps  np=100   match=45         p=0.00000s e=0.02000s total=0.02000s
+
+   with 2 mismatches (subpattern lengths 5, groups of 0 chars, groups of 1 patts):
+Number of collisions: 684       alg=m-multi-nomod/mbyps  np=100   match=210        p=0.01000s e=4.97000s total=4.98000s
+Number of collisions: 80        alg=perl-mm-multi/mbyps  np=100   match=210        p=0.00000s e=0.18000s total=0.18000s
+
+   with 3 mismatches (subpattern lengths 4, groups of 0 chars, groups of 1 patts):
+Number of collisions: 784       alg=m-multi-nomod/mbyps  np=100   match=2313       p=0.00000s e=5.91000s total=5.91000s
+Number of collisions: 200       alg=perl-mm-multi/mbyps  np=100   match=2313       p=0.01000s e=0.52000s total=0.53000s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 8, groups of 0 chars, groups of 6 patts):
+Number of collisions: 7744      alg=m-multi-nomod/mbyps  np=1000  match=525        p=0.09000s e=2.71000s total=2.80000s
+Number of collisions: 58        alg=perl-mm-multi/mbyps  np=1000  match=525        p=0.09000s e=0.04000s total=0.13000s
+
+   with 2 mismatches (subpattern lengths 5, groups of 0 chars, groups of 6 patts):
+Number of collisions: 6984      alg=m-multi-nomod/mbyps  np=1000  match=2678       p=0.09000s e=63.29000s total=63.38000s
+Number of collisions: 3035      alg=perl-mm-multi/mbyps  np=1000  match=2678       p=0.09000s e=1.79000s total=1.88000s
+
+   with 3 mismatches (subpattern lengths 4, groups of 0 chars, groups of 6 patts):
+Number of collisions: 7984      alg=m-multi-nomod/mbyps  np=1000  match=26104      p=0.09000s e=78.26000s total=78.35000s
+Number of collisions: 3744      alg=perl-mm-multi/mbyps  np=1000  match=26104      p=0.09000s e=6.37000s total=6.46000s
+
+Pattern length 24:
+
+ for sets of 10 patterns:
+
+   with 1 mismatches (subpattern lengths 12, groups of 0 chars, groups of 1 patts):
+Number of collisions: 39        alg=m-multi-nomod/mbyps  np=10    match=1          p=0.00000s e=0.02000s total=0.02000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=1          p=0.00000s e=0.00000s total=0.00000s
+
+   with 2 mismatches (subpattern lengths 8, groups of 0 chars, groups of 1 patts):
+Number of collisions: 21        alg=m-multi-nomod/mbyps  np=10    match=2          p=0.00000s e=0.04000s total=0.04000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=2          p=0.00000s e=0.01000s total=0.01000s
+
+   with 3 mismatches (subpattern lengths 6, groups of 0 chars, groups of 1 patts):
+Number of collisions: 144       alg=m-multi-nomod/mbyps  np=10    match=4          p=0.00000s e=0.49000s total=0.49000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=4          p=0.00000s e=0.02000s total=0.02000s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 12, groups of 0 chars, groups of 1 patts):
+Number of collisions: 1346      alg=m-multi-nomod/mbyps  np=100   match=22         p=0.00000s e=0.21000s total=0.21000s
+Number of collisions: 22        alg=perl-mm-multi/mbyps  np=100   match=22         p=0.00000s e=0.01000s total=0.01000s
+
+   with 2 mismatches (subpattern lengths 8, groups of 0 chars, groups of 1 patts):
+Number of collisions: 948       alg=m-multi-nomod/mbyps  np=100   match=34         p=0.00000s e=0.38000s total=0.38000s
+Number of collisions: 2         alg=perl-mm-multi/mbyps  np=100   match=34         p=0.00000s e=0.02000s total=0.02000s
+
+   with 3 mismatches (subpattern lengths 6, groups of 0 chars, groups of 2 patts):
+Number of collisions: 1584      alg=m-multi-nomod/mbyps  np=100   match=52         p=0.01000s e=5.87000s total=5.88000s
+Number of collisions: 24        alg=perl-mm-multi/mbyps  np=100   match=52         p=0.00000s e=0.07000s total=0.07000s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 12, groups of 0 chars, groups of 6 patts):
+Number of collisions: 15744     alg=m-multi-nomod/mbyps  np=1000  match=225        p=0.06000s e=2.79000s total=2.85000s
+Number of collisions: 1409      alg=perl-mm-multi/mbyps  np=1000  match=226        p=0.06000s e=0.04000s total=0.10000s
+
+   with 2 mismatches (subpattern lengths 8, groups of 0 chars, groups of 15 patts):
+Number of collisions: 11744     alg=m-multi-nomod/mbyps  np=1000  match=371        p=0.07000s e=4.97000s total=5.04000s
+Number of collisions: 125       alg=perl-mm-multi/mbyps  np=1000  match=371        p=0.07000s e=0.07000s total=0.14000s
+
+   with 3 mismatches (subpattern lengths 6, groups of 0 chars, groups of 15 patts):
+Number of collisions: 15984     alg=m-multi-nomod/mbyps  np=1000  match=511        p=0.07000s e=75.21000s total=75.28000s
+Number of collisions: 1589      alg=perl-mm-multi/mbyps  np=1000  match=511        p=0.08000s e=0.68000s total=0.76000s
+
+Pattern length 32:
+
+ for sets of 10 patterns:
+
+   with 1 mismatches (subpattern lengths 16, groups of 0 chars, groups of 1 patts):
+Number of collisions: 0         alg=m-multi-nomod/mbyps  np=10    match=0          p=0.00000s e=0.00000s total=0.00000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=0          p=0.00000s e=0.00000s total=0.00000s
+
+   with 2 mismatches (subpattern lengths 10, groups of 0 chars, groups of 1 patts):
+Number of collisions: 31        alg=m-multi-nomod/mbyps  np=10    match=0          p=0.00000s e=0.05000s total=0.05000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=0          p=0.00000s e=0.00000s total=0.00000s
+
+   with 3 mismatches (subpattern lengths 8, groups of 0 chars, groups of 1 patts):
+Number of collisions: 49        alg=m-multi-nomod/mbyps  np=10    match=2          p=0.00000s e=0.06000s total=0.06000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=2          p=0.00000s e=0.01000s total=0.01000s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 16, groups of 0 chars, groups of 1 patts):
+Number of collisions: 30        alg=m-multi-nomod/mbyps  np=100   match=14         p=0.00000s e=0.01000s total=0.01000s
+Number of collisions: 36        alg=perl-mm-multi/mbyps  np=100   match=14         p=0.00000s e=0.01000s total=0.01000s
+
+   with 2 mismatches (subpattern lengths 10, groups of 0 chars, groups of 1 patts):
+Number of collisions: 1146      alg=m-multi-nomod/mbyps  np=100   match=18         p=0.00000s e=0.50000s total=0.50000s
+Number of collisions: 9         alg=perl-mm-multi/mbyps  np=100   match=18         p=0.00000s e=0.01000s total=0.01000s
+
+   with 3 mismatches (subpattern lengths 8, groups of 0 chars, groups of 2 patts):
+Number of collisions: 1345      alg=m-multi-nomod/mbyps  np=100   match=30         p=0.00000s e=0.57000s total=0.57000s
+Number of collisions: 3         alg=perl-mm-multi/mbyps  np=100   match=30         p=0.00000s e=0.02000s total=0.02000s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 16, groups of 0 chars, groups of 6 patts):
+Number of collisions: 3356      alg=m-multi-nomod/mbyps  np=1000  match=159        p=0.07000s e=0.03000s total=0.10000s
+Number of collisions: 4124      alg=perl-mm-multi/mbyps  np=1000  match=159        p=0.07000s e=0.03000s total=0.10000s
+
+   with 2 mismatches (subpattern lengths 10, groups of 0 chars, groups of 6 patts):
+Number of collisions: 13744     alg=m-multi-nomod/mbyps  np=1000  match=242        p=0.06000s e=6.28000s total=6.34000s
+Number of collisions: 1677      alg=perl-mm-multi/mbyps  np=1000  match=242        p=0.07000s e=0.07000s total=0.14000s
+
+   with 3 mismatches (subpattern lengths 8, groups of 0 chars, groups of 15 patts):
+Number of collisions: 15744     alg=m-multi-nomod/mbyps  np=1000  match=339        p=0.07000s e=7.59000s total=7.66000s
+Number of collisions: 222       alg=perl-mm-multi/mbyps  np=1000  match=339        p=0.08000s e=0.09000s total=0.17000s
+
+
+
+********** ./tests/english/bible.txt **********
+
+
+Pattern length 8:
+
+ for sets of 10 patterns (1 search runs):
+
+   with 1 mismatches (subpattern lengths 4, groups of 32 chars, groups of 1 patts):
+Number of collisions: 3         alg=m-multi-nomod/mbyps  np=10    match=1237       p=0.00000s e=0.03000s total=0.03000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=1237       p=0.00000s e=0.01000s total=0.01000s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 32 chars, groups of 3 patts):
+Number of collisions: 141       alg=m-multi-nomod/mbyps  np=100   match=21623      p=0.00000s e=0.25000s total=0.25000s
+Number of collisions: 7         alg=perl-mm-multi/mbyps  np=100   match=21623      p=0.00000s e=0.04000s total=0.04000s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 32 chars, groups of 15 patts):
+Number of collisions: 2810      alg=m-multi-nomod/mbyps  np=1000  match=222867     p=0.00000s e=2.98000s total=2.98000s
+Number of collisions: 213       alg=perl-mm-multi/mbyps  np=1000  match=222867     p=0.01000s e=0.27000s total=0.28000s
+
+Pattern length 16:
+
+ for sets of 10 patterns (1 search runs):
+
+   with 1 mismatches (subpattern lengths 8, groups of 32 chars, groups of 1 patts):
+Number of collisions: 0         alg=m-multi-nomod/mbyps  np=10    match=9          p=0.00000s e=0.00000s total=0.00000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=9          p=0.00000s e=0.00000s total=0.00000s
+
+   with 2 mismatches (subpattern lengths 5, groups of 32 chars, groups of 1 patts):
+Number of collisions: 16        alg=m-multi-nomod/mbyps  np=10    match=9          p=0.00000s e=0.06000s total=0.06000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=9          p=0.00000s e=0.01000s total=0.01000s
+
+   with 3 mismatches (subpattern lengths 4, groups of 32 chars, groups of 1 patts):
+Number of collisions: 11        alg=m-multi-nomod/mbyps  np=10    match=12         p=0.00000s e=0.06000s total=0.06000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=12         p=0.00000s e=0.01000s total=0.01000s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 8, groups of 32 chars, groups of 5 patts):
+Number of collisions: 51        alg=m-multi-nomod/mbyps  np=100   match=78         p=0.00000s e=0.04000s total=0.04000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=100   match=78         p=0.01000s e=0.01000s total=0.02000s
+
+   with 2 mismatches (subpattern lengths 5, groups of 32 chars, groups of 5 patts):
+Number of collisions: 379       alg=m-multi-nomod/mbyps  np=100   match=510        p=0.00000s e=0.55000s total=0.55000s
+Number of collisions: 12        alg=perl-mm-multi/mbyps  np=100   match=510        p=0.00000s e=0.05000s total=0.05000s
+
+   with 3 mismatches (subpattern lengths 4, groups of 32 chars, groups of 5 patts):
+Number of collisions: 380       alg=m-multi-nomod/mbyps  np=100   match=1161       p=0.00000s e=0.65000s total=0.65000s
+Number of collisions: 19        alg=perl-mm-multi/mbyps  np=100   match=1161       p=0.00000s e=0.08000s total=0.08000s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 8, groups of 32 chars, groups of 15 patts):
+Number of collisions: 1922      alg=m-multi-nomod/mbyps  np=1000  match=1854       p=0.09000s e=0.36000s total=0.45000s
+Number of collisions: 38        alg=perl-mm-multi/mbyps  np=1000  match=1854       p=0.09000s e=0.03000s total=0.12000s
+
+   with 2 mismatches (subpattern lengths 5, groups of 32 chars, groups of 23 patts):
+Number of collisions: 5628      alg=m-multi-nomod/mbyps  np=1000  match=4585       p=0.09000s e=6.59000s total=6.68000s
+Number of collisions: 403       alg=perl-mm-multi/mbyps  np=1000  match=4585       p=0.09000s e=0.31000s total=0.40000s
+
+   with 3 mismatches (subpattern lengths 4, groups of 32 chars, groups of 23 patts):
+Number of collisions: 6386      alg=m-multi-nomod/mbyps  np=1000  match=10224      p=0.09000s e=8.95000s total=9.04000s
+Number of collisions: 680       alg=perl-mm-multi/mbyps  np=1000  match=10224      p=0.08000s e=0.77000s total=0.85000s
+
+Pattern length 24:
+
+ for sets of 10 patterns (1 search runs):
+
+   with 1 mismatches (subpattern lengths 12, groups of 32 chars, groups of 1 patts):
+Number of collisions: 2         alg=m-multi-nomod/mbyps  np=10    match=2          p=0.00000s e=0.00000s total=0.00000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=2          p=0.00000s e=0.00000s total=0.00000s
+
+   with 2 mismatches (subpattern lengths 8, groups of 32 chars, groups of 1 patts):
+Number of collisions: 0         alg=m-multi-nomod/mbyps  np=10    match=3          p=0.00000s e=0.00000s total=0.00000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=3          p=0.00000s e=0.00000s total=0.00000s
+
+   with 3 mismatches (subpattern lengths 6, groups of 32 chars, groups of 1 patts):
+Number of collisions: 31        alg=m-multi-nomod/mbyps  np=10    match=3          p=0.00000s e=0.06000s total=0.06000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=3          p=0.00000s e=0.01000s total=0.01000s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 12, groups of 32 chars, groups of 5 patts):
+Number of collisions: 186       alg=m-multi-nomod/mbyps  np=100   match=33         p=0.00000s e=0.04000s total=0.04000s
+Number of collisions: 12        alg=perl-mm-multi/mbyps  np=100   match=33         p=0.00000s e=0.01000s total=0.01000s
+
+   with 2 mismatches (subpattern lengths 8, groups of 32 chars, groups of 5 patts):
+Number of collisions: 101       alg=m-multi-nomod/mbyps  np=100   match=69         p=0.00000s e=0.05000s total=0.05000s
+Number of collisions: 2         alg=perl-mm-multi/mbyps  np=100   match=69         p=0.00000s e=0.01000s total=0.01000s
+
+   with 3 mismatches (subpattern lengths 6, groups of 32 chars, groups of 5 patts):
+Number of collisions: 946       alg=m-multi-nomod/mbyps  np=100   match=99         p=0.01000s e=0.69000s total=0.70000s
+Number of collisions: 3         alg=perl-mm-multi/mbyps  np=100   match=99         p=0.00000s e=0.03000s total=0.03000s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 12, groups of 32 chars, groups of 15 patts):
+Number of collisions: 5099      alg=m-multi-nomod/mbyps  np=1000  match=228        p=0.06000s e=0.35000s total=0.41000s
+Number of collisions: 828       alg=perl-mm-multi/mbyps  np=1000  match=228        p=0.06000s e=0.03000s total=0.09000s
+
+   with 2 mismatches (subpattern lengths 8, groups of 32 chars, groups of 23 patts):
+Number of collisions: 3375      alg=m-multi-nomod/mbyps  np=1000  match=457        p=0.07000s e=0.60000s total=0.67000s
+Number of collisions: 74        alg=perl-mm-multi/mbyps  np=1000  match=457        p=0.07000s e=0.05000s total=0.12000s
+
+   with 3 mismatches (subpattern lengths 6, groups of 32 chars, groups of 23 patts):
+Number of collisions: 13755     alg=m-multi-nomod/mbyps  np=1000  match=1282       p=0.08000s e=9.53000s total=9.61000s
+Number of collisions: 246       alg=perl-mm-multi/mbyps  np=1000  match=1282       p=0.07000s e=0.16000s total=0.23000s
+
+Pattern length 32:
+
+ for sets of 10 patterns (1 search runs):
+
+   with 1 mismatches (subpattern lengths 16, groups of 32 chars, groups of 1 patts):
+Number of collisions: 0         alg=m-multi-nomod/mbyps  np=10    match=0          p=0.00000s e=0.00000s total=0.00000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=0          p=0.00000s e=0.00000s total=0.00000s
+
+   with 2 mismatches (subpattern lengths 10, groups of 32 chars, groups of 1 patts):
+Number of collisions: 4         alg=m-multi-nomod/mbyps  np=10    match=2          p=0.00000s e=0.00000s total=0.00000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=2          p=0.00000s e=0.00000s total=0.00000s
+
+   with 3 mismatches (subpattern lengths 8, groups of 32 chars, groups of 1 patts):
+Number of collisions: 1         alg=m-multi-nomod/mbyps  np=10    match=2          p=0.00000s e=0.00000s total=0.00000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=2          p=0.00000s e=0.00000s total=0.00000s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 16, groups of 32 chars, groups of 5 patts):
+Number of collisions: 33        alg=m-multi-nomod/mbyps  np=100   match=9          p=0.00000s e=0.00000s total=0.00000s
+Number of collisions: 38        alg=perl-mm-multi/mbyps  np=100   match=9          p=0.00000s e=0.00000s total=0.00000s
+
+   with 2 mismatches (subpattern lengths 10, groups of 32 chars, groups of 5 patts):
+Number of collisions: 95        alg=m-multi-nomod/mbyps  np=100   match=22         p=0.00000s e=0.05000s total=0.05000s
+Number of collisions: 8         alg=perl-mm-multi/mbyps  np=100   match=22         p=0.00000s e=0.01000s total=0.01000s
+
+   with 3 mismatches (subpattern lengths 8, groups of 32 chars, groups of 5 patts):
+Number of collisions: 133       alg=m-multi-nomod/mbyps  np=100   match=30         p=0.01000s e=0.06000s total=0.07000s
+Number of collisions: 2         alg=perl-mm-multi/mbyps  np=100   match=30         p=0.01000s e=0.01000s total=0.02000s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 16, groups of 32 chars, groups of 15 patts):
+Number of collisions: 1985      alg=m-multi-nomod/mbyps  np=1000  match=130        p=0.06000s e=0.02000s total=0.08000s
+Number of collisions: 2485      alg=perl-mm-multi/mbyps  np=1000  match=130        p=0.06000s e=0.03000s total=0.09000s
+
+   with 2 mismatches (subpattern lengths 10, groups of 32 chars, groups of 23 patts):
+Number of collisions: 4069      alg=m-multi-nomod/mbyps  np=1000  match=217        p=0.07000s e=0.78000s total=0.85000s
+Number of collisions: 957       alg=perl-mm-multi/mbyps  np=1000  match=217        p=0.07000s e=0.05000s total=0.12000s
+
+   with 3 mismatches (subpattern lengths 8, groups of 32 chars, groups of 23 patts):
+Number of collisions: 4956      alg=m-multi-nomod/mbyps  np=1000  match=294        p=0.07000s e=0.94000s total=1.01000s
+Number of collisions: 145       alg=perl-mm-multi/mbyps  np=1000  match=294        p=0.07000s e=0.06000s total=0.13000s
+
+
+
+********** ./tests/protein/hs.txt **********
+
+
+Pattern length 8:
+
+ for sets of 10 patterns (1 search runs):
+
+   with 1 mismatches (subpattern lengths 4, groups of 32 chars, groups of 1 patts):
+Number of collisions: 3         alg=m-multi-nomod/mbyps  np=10    match=3          p=0.00000s e=0.01000s total=0.01000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=3          p=0.00000s e=0.00000s total=0.00000s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 32 chars, groups of 3 patts):
+Number of collisions: 178       alg=m-multi-nomod/mbyps  np=100   match=52         p=0.00000s e=0.13000s total=0.13000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=100   match=52         p=0.00000s e=0.01000s total=0.01000s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 32 chars, groups of 15 patts):
+Number of collisions: 3639      alg=m-multi-nomod/mbyps  np=1000  match=687        p=0.01000s e=1.33000s total=1.34000s
+Number of collisions: 73        alg=perl-mm-multi/mbyps  np=1000  match=687        p=0.01000s e=0.03000s total=0.04000s
+
+Pattern length 16:
+
+ for sets of 10 patterns (1 search runs):
+
+   with 1 mismatches (subpattern lengths 8, groups of 32 chars, groups of 1 patts):
+Number of collisions: 0         alg=m-multi-nomod/mbyps  np=10    match=2          p=0.00000s e=0.00000s total=0.00000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=2          p=0.00000s e=0.00000s total=0.00000s
+
+   with 2 mismatches (subpattern lengths 5, groups of 32 chars, groups of 1 patts):
+Number of collisions: 15        alg=m-multi-nomod/mbyps  np=10    match=3          p=0.00000s e=0.02000s total=0.02000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=3          p=0.00000s e=0.01000s total=0.01000s
+
+   with 3 mismatches (subpattern lengths 4, groups of 32 chars, groups of 1 patts):
+Number of collisions: 14        alg=m-multi-nomod/mbyps  np=10    match=6          p=0.00000s e=0.03000s total=0.03000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=6          p=0.00000s e=0.01000s total=0.01000s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 8, groups of 32 chars, groups of 5 patts):
+Number of collisions: 7         alg=m-multi-nomod/mbyps  np=100   match=20         p=0.00000s e=0.01000s total=0.01000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=100   match=20         p=0.00000s e=0.01000s total=0.01000s
+
+   with 2 mismatches (subpattern lengths 5, groups of 32 chars, groups of 5 patts):
+Number of collisions: 424       alg=m-multi-nomod/mbyps  np=100   match=29         p=0.00000s e=0.24000s total=0.24000s
+Number of collisions: 2         alg=perl-mm-multi/mbyps  np=100   match=29         p=0.00000s e=0.02000s total=0.02000s
+
+   with 3 mismatches (subpattern lengths 4, groups of 32 chars, groups of 5 patts):
+Number of collisions: 503       alg=m-multi-nomod/mbyps  np=100   match=51         p=0.01000s e=0.29000s total=0.30000s
+Number of collisions: 3         alg=perl-mm-multi/mbyps  np=100   match=51         p=0.00000s e=0.02000s total=0.02000s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 8, groups of 32 chars, groups of 15 patts):
+Number of collisions: 699       alg=m-multi-nomod/mbyps  np=1000  match=297        p=0.09000s e=0.01000s total=0.10000s
+Number of collisions: 24        alg=perl-mm-multi/mbyps  np=1000  match=297        p=0.09000s e=0.02000s total=0.11000s
+
+   with 2 mismatches (subpattern lengths 5, groups of 32 chars, groups of 23 patts):
+Number of collisions: 6639      alg=m-multi-nomod/mbyps  np=1000  match=445        p=0.09000s e=2.75000s total=2.84000s
+Number of collisions: 116       alg=perl-mm-multi/mbyps  np=1000  match=445        p=0.08000s e=0.04000s total=0.12000s
+
+   with 3 mismatches (subpattern lengths 4, groups of 32 chars, groups of 23 patts):
+Number of collisions: 7639      alg=m-multi-nomod/mbyps  np=1000  match=607        p=0.09000s e=3.67000s total=3.76000s
+Number of collisions: 252       alg=perl-mm-multi/mbyps  np=1000  match=607        p=0.09000s e=0.05000s total=0.14000s
+
+Pattern length 24:
+
+ for sets of 10 patterns (1 search runs):
+
+   with 1 mismatches (subpattern lengths 12, groups of 32 chars, groups of 1 patts):
+Number of collisions: 0         alg=m-multi-nomod/mbyps  np=10    match=3          p=0.00000s e=0.00000s total=0.00000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=3          p=0.00000s e=0.00000s total=0.00000s
+
+   with 2 mismatches (subpattern lengths 8, groups of 32 chars, groups of 1 patts):
+Number of collisions: 0         alg=m-multi-nomod/mbyps  np=10    match=3          p=0.00000s e=0.00000s total=0.00000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=3          p=0.00000s e=0.00000s total=0.00000s
+
+   with 3 mismatches (subpattern lengths 6, groups of 32 chars, groups of 1 patts):
+Number of collisions: 36        alg=m-multi-nomod/mbyps  np=10    match=3          p=0.00000s e=0.03000s total=0.03000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=3          p=0.00000s e=0.01000s total=0.01000s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 12, groups of 32 chars, groups of 5 patts):
+Number of collisions: 25        alg=m-multi-nomod/mbyps  np=100   match=15         p=0.00000s e=0.00000s total=0.00000s
+Number of collisions: 10        alg=perl-mm-multi/mbyps  np=100   match=15         p=0.00000s e=0.00000s total=0.00000s
+
+   with 2 mismatches (subpattern lengths 8, groups of 32 chars, groups of 5 patts):
+Number of collisions: 9         alg=m-multi-nomod/mbyps  np=100   match=20         p=0.01000s e=0.00000s total=0.01000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=100   match=20         p=0.00000s e=0.01000s total=0.01000s
+
+   with 3 mismatches (subpattern lengths 6, groups of 32 chars, groups of 5 patts):
+Number of collisions: 1248      alg=m-multi-nomod/mbyps  np=100   match=25         p=0.00000s e=0.31000s total=0.31000s
+Number of collisions: 1         alg=perl-mm-multi/mbyps  np=100   match=25         p=0.00000s e=0.01000s total=0.01000s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 12, groups of 32 chars, groups of 15 patts):
+Number of collisions: 2541      alg=m-multi-nomod/mbyps  np=1000  match=158        p=0.07000s e=0.01000s total=0.08000s
+Number of collisions: 702       alg=perl-mm-multi/mbyps  np=1000  match=158        p=0.06000s e=0.02000s total=0.08000s
+
+   with 2 mismatches (subpattern lengths 8, groups of 32 chars, groups of 23 patts):
+Number of collisions: 1507      alg=m-multi-nomod/mbyps  np=1000  match=258        p=0.07000s e=0.03000s total=0.10000s
+Number of collisions: 62        alg=perl-mm-multi/mbyps  np=1000  match=258        p=0.07000s e=0.02000s total=0.09000s
+
+   with 3 mismatches (subpattern lengths 6, groups of 32 chars, groups of 23 patts):
+Number of collisions: 15639     alg=m-multi-nomod/mbyps  np=1000  match=360        p=0.07000s e=4.01000s total=4.08000s
+Number of collisions: 145       alg=perl-mm-multi/mbyps  np=1000  match=360        p=0.08000s e=0.03000s total=0.11000s
+
+Pattern length 32:
+
+ for sets of 10 patterns (1 search runs):
+
+   with 1 mismatches (subpattern lengths 16, groups of 32 chars, groups of 1 patts):
+Number of collisions: 0         alg=m-multi-nomod/mbyps  np=10    match=0          p=0.00000s e=0.00000s total=0.00000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=0          p=0.00000s e=0.00000s total=0.00000s
+
+   with 2 mismatches (subpattern lengths 10, groups of 32 chars, groups of 1 patts):
+Number of collisions: 0         alg=m-multi-nomod/mbyps  np=10    match=0          p=0.00000s e=0.00000s total=0.00000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=0          p=0.00000s e=0.00000s total=0.00000s
+
+   with 3 mismatches (subpattern lengths 8, groups of 32 chars, groups of 1 patts):
+Number of collisions: 0         alg=m-multi-nomod/mbyps  np=10    match=1          p=0.00000s e=0.00000s total=0.00000s
+Number of collisions: 0         alg=perl-mm-multi/mbyps  np=10    match=1          p=0.00000s e=0.00000s total=0.00000s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 16, groups of 32 chars, groups of 5 patts):
+Number of collisions: 12        alg=m-multi-nomod/mbyps  np=100   match=9          p=0.00000s e=0.00000s total=0.00000s
+Number of collisions: 15        alg=perl-mm-multi/mbyps  np=100   match=9          p=0.00000s e=0.01000s total=0.01000s
+
+   with 2 mismatches (subpattern lengths 10, groups of 32 chars, groups of 5 patts):
+Number of collisions: 20        alg=m-multi-nomod/mbyps  np=100   match=14         p=0.00000s e=0.01000s total=0.01000s
+Number of collisions: 11        alg=perl-mm-multi/mbyps  np=100   match=14         p=0.00000s e=0.01000s total=0.01000s
+
+   with 3 mismatches (subpattern lengths 8, groups of 32 chars, groups of 5 patts):
+Number of collisions: 30        alg=m-multi-nomod/mbyps  np=100   match=19         p=0.00000s e=0.01000s total=0.01000s
+Number of collisions: 1         alg=perl-mm-multi/mbyps  np=100   match=19         p=0.00000s e=0.01000s total=0.01000s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 16, groups of 32 chars, groups of 15 patts):
+Number of collisions: 1781      alg=m-multi-nomod/mbyps  np=1000  match=108        p=0.06000s e=0.01000s total=0.07000s
+Number of collisions: 2245      alg=perl-mm-multi/mbyps  np=1000  match=108        p=0.07000s e=0.01000s total=0.08000s
+
+   with 2 mismatches (subpattern lengths 10, groups of 32 chars, groups of 23 patts):
+Number of collisions: 2000      alg=m-multi-nomod/mbyps  np=1000  match=171        p=0.06000s e=0.04000s total=0.10000s
+Number of collisions: 883       alg=perl-mm-multi/mbyps  np=1000  match=171        p=0.07000s e=0.02000s total=0.09000s
+
+   with 3 mismatches (subpattern lengths 8, groups of 32 chars, groups of 23 patts):
+Number of collisions: 2521      alg=m-multi-nomod/mbyps  np=1000  match=244        p=0.07000s e=0.04000s total=0.11000s
+Number of collisions: 120       alg=perl-mm-multi/mbyps  np=1000  match=244        p=0.07000s e=0.04000s total=0.11000s
+END......................................................

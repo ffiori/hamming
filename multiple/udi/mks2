@@ -1,0 +1,3 @@
+gcc -msse4.2 -w $1.c sys/386.c magrep.c main.c -o $1 -lm -Wall -O3 -pipe -Dbitvector=unsigned -finline-functions -ffast-math -fpeephole -funroll-loops -fomit-frame-pointer -DNDEBUG -DNOSKIP
+
+#gcc -w $1.c sys/386.c magrep.c main.c -o $1 -lm -Wall -g3

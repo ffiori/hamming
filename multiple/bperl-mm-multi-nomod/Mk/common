@@ -1,0 +1,4 @@
+.SUFFIXES: .c .t .u .r
+
+.c.t:
+	gcc $(CFLAGS) $(COPT) $*.c sys/$(SYS).c main.c -o $*.t -lm 

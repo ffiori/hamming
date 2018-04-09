@@ -1,0 +1,57 @@
+CC = gcc 
+CFLAGS =   -O9 -Wall -fomit-frame-pointer -DNO_SKIP -DNDEBUG $(CFLAGS2)
+LD = gcc
+#LDFLAGS =   -non_shared -Wl,-r
+#CC = cc
+#CFLAGS = -O4 -om -non_shared -tune host -DNO_SKIP -DNDEBUG $(CFLAGS2) -Dinline=
+
+
+
+
+all: magrep
+
+magrep: mgrep.o magrep.o
+	$(CC) $(CFLAGS)  mgrep.o magrep.o  -o $@
+
+cmagrep: mgrep.o magrep.o
+	$(CC) $(CFLAGS)  mgrep.o magrep.o  -o $@
+	$(LD) -o $@.rr $(LDFLAGS) mgrep.o magrep.o 
+	atom $@.rr -v cache2.inst.c cache2.anal.c -o $@
+imagrep: mgrep.o magrep.o
+	$(CC) $(CFLAGS)  mgrep.o magrep.o  -o $@
+	$(LD) -o $@.rr $(LDFLAGS) mgrep.o magrep.o 
+	atom $@.rr -tool iprof -o $@
+
+test1:
+	./magrep -c -f ../data/wsj.words.1000 ../data/wsj.10m
+test2:
+	./magrep -cx -f ../data/wsj.words.1000 ../data/wsj.10m	
+test:
+	time ./magrep -cx -f ../data/wsj.words.1000 ../data/wsj.10m	
+ctest:
+	time ./cmagrep -cx -f ../data/wsj.words.1000 ../data/wsj.10m	
+itest:
+	time ./imagrep -cx -f ../data/wsj.words.1000 ../data/wsj.10m	
+as:
+	$(CC) -c -S $(CFLAGS) magrep.c 
+
+dep:
+	makedepend *.c
+clean:
+	rm *.o *.s
+
+# DO NOT DELETE THIS LINE -- make depend depends on it.
+
+magrep.o: /usr/include/stdio.h /usr/include/sys/feature_tests.h
+magrep.o: /usr/include/sys/va_list.h /usr/include/ctype.h
+magrep.o: /usr/include/limits.h /usr/include/sys/isa_defs.h
+magrep.o: /usr/include/stdlib.h /usr/include/stddef.h /usr/include/string.h
+magrep.o: /usr/include/assert.h mgrep.h
+mgrep.o: /usr/include/stdlib.h /usr/include/sys/feature_tests.h
+mgrep.o: /usr/include/stdio.h /usr/include/sys/va_list.h /usr/include/fcntl.h
+mgrep.o: /usr/include/sys/types.h /usr/include/sys/isa_defs.h
+mgrep.o: /usr/include/sys/machtypes.h /usr/include/sys/select.h
+mgrep.o: /usr/include/sys/time.h /usr/include/sys/time.h
+mgrep.o: /usr/include/sys/fcntl.h /usr/include/unistd.h
+mgrep.o: /usr/include/sys/unistd.h /usr/include/stdarg.h mgrep.h
+mgrep.o: /usr/include/sys/mman.h

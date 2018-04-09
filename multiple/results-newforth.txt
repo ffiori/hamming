@@ -1,0 +1,29 @@
+Guide:
+cmfn: Fredriksson-Navarro.
+udi/mgrep: Muth-Manber (only k=1).
+mepsm-nomod: MBYPS (ours) using MEPSM with no modifications (original size of the fingerprints).
+bperl-mm-multi: MBYPS (ours).
+byn-original: Baeza-Yates and Navarro original code for edit distance (adapted to Hume-Sunday environment).
+byn-mod-hamming: Baeza-Yates and Navarro (partition into exact matching) code adapted to Hamming distance.
+
+Preprocessing runs 5. Search runs 5. For 'cmfn' we make same number of preprocessing and searching runs.
+
+
+********** ./tests/genome/ecoli.txt **********
+
+
+Pattern length 8:
+
+ for sets of 10 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 0 chars, groups of 1 patts):
+alg=./udi/mgrep          np=10    match=17265      p=0.00000s e=0.10400s total=0.10400s
+alg=./cmfn-dna/cmfn      np=10    match=17265      p=0.00200s e=0.24200s total=0.24400s
+alg=byn-original/exactp  np=10    match=31447      p=0.00000s e=0.13200s total=0.13200s
+alg=-mod-hamming/exactp  np=10    match=17265      p=0.00000s e=0.13200s total=0.13200s
+alg=omod/bperl-mm-multi  np=10    match=17265      p=0.00000s e=0.10600s total=0.10600s
+alg=ulti/bperl-mm-multi  np=10    match=17265      p=0.00000s e=0.04600s total=0.04600s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 0 chars, groups of 1 patts):

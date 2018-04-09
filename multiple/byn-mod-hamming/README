@@ -1,0 +1,20 @@
+
+Paper:
+
+@TECHREPORT {
+	Multiple,
+	TITLE = "Multiple Approximate String Matching",
+	AUTHOR = "Ricardo Baeza-Yates and Gonzalo Navarro",
+	INSTITUTION = "University of Chile",
+	YEAR = 1996,
+	TITLE = "Submitted"
+	}
+
+Code from Gonzalo Navarro.
+
+     The authors of this code are Gonzalo Navarro and Ricardo Baeza-Yates, 1996.
+     This code can be freely used and distributed for teaching and research
+     purposes, provided it is not modified and this notice is kept attached.
+     No part of this code can be used for direct or indirect commercial
+     advantage without written permission of the authors.
+

@@ -1,0 +1,52 @@
+Modified to run in Hume-Sunday testbed by Tommi Hirvola
+
+This is the code for the average optimal multiple approximate string
+matching algorithm, by Kimmo Fredriksson and Gonzalo Navarro. See the
+papers in CPM'03, CPM'04 and JEA for details. The code is by Kimmo
+Fredriksson. The code can be freely used for academic/reasearch/teaching
+purposes. Commercial use is not permitted without explicit written
+permission from the authors.
+
+Installation/running:
+
+- Unzip/untar the package.
+- Say 'make all'
+- Run the program by saying 'cmfn', which gives you the list of 
+  command line options. 
+
+The code was written for research purposes, and not for end users. This 
+means in particular that there is no manual, and the code is probably 
+not very readable. The error checking is minimal, so you can probably feed
+it non-sensible parameters, and get non-sensible results if it doesn't 
+crash. To get started, try something like:
+
+cmfn -D -f dna-file -r dna-patterns -B -Sb -k1 -t8 -v
+
+-D: the alphabet is DNA alphabet 
+-f dna-file: search from the file 'dna-file'
+-r dna-patterns: the patterns, one per line, are read from file 'dna-patterns'
+-B -Sb: selects the best algorithm (for most cases)
+-k1: allows 1 error in the matches
+-t8: use 8-grams (ell-grams in the research papers)
+-v: be verbose
+
+Many more options are possible, but beware that not all combinations are
+supported/work.
+
+For proteins use -P, for ASCII use (e.g.) -A, combined with -Tx, where
+x is the number of character groups, e.g. -A -T16 to reduce the alphabet 
+size to 16. Note that the smaller the value is, the faster is the 
+preprocessing, but the filter becomes less strict. On the other hand, for 
+smaller -T values you can afford to use larger -t (ell-gram) values. 
+Conseptually -A -T4 would correspond to -D.
+
+The code was tested using patterns that are all of the same lenght. As I 
+recall, the code shouldn't assume this, but it is not tested. In any case,
+the running time (i.e. the shift) is bounded by the shortest pattern, so 
+if the patterns are wildly different lenghts, it is better to group them 
+in roughly similar length sub groups, and search them separately.
+
+Feel free to email your comments/bug reports/etc. to kf@iki.fi.
+
+Kimmo Fredriksson
+

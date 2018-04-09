@@ -1,0 +1,38 @@
+Just run make to compile. It compiles as many programs as there exists the algorithms (one for each algorithm).
+
+
+
+In a nutshell, an alg, for example ans, can be run by
+
+./ans -e3 -k2 ./4MB/genome/ecoli.txt < ./4MB/genome/ecoli.txt.8.pat
+
+where -e is the number of times the search is executed (here 3 times), -k is the number of mismatches allowed (here 2), ./4MB/genome/ecoli.txt is the text searched, and
+./4MB/genome/ecoli.txt.8.pat is the set of patterns searched from the text. Furthermore, some algorithms (ef and efs) take an additional parameter -q, which specifies
+the size of the q-gram. Do not be fooled, though. It might be called 'q' in here, but it is not the actual size of the q-gram. The q-gram has a size of (k + x), and this 'q'
+specifies 'x' instead. Lastly, you can give an argument -p that specifies the number of times the preprocessing is executed. However, it does not work for all algorithms currently.
+
+
+
+For the above example, the output could be
+
+alg=./ans T=./4MB/genome/ecoli.txt(4638690) np=200 m=8 k=2 occ=4193187 p=0.0000s(0/1) e=1.2633s(379/3)
+
+where T is the text searched, np is the number of patterns searched for, m is the pattern length (it can also be a range of values depending on the set of patterns used),
+k is the number of mismatches allowed, occ is the number of occurrences across all patterns, p is the amount of time spent preprocessing, and e is the amount of time
+spent searching. Both p and e are the running times' arithmetic means. E.g. if the search is executed 3 times, all of the times are added together and then divided by 3.
+
+
+
+All of the algs are compiled using -msse4.2 and -mavx2 flags which is not necessary. However, you can mostly just ignore algs such as abm and abndm. Besides, the flags, even
+if unnecessary, probably won't affect anything.
+
+The two different main files are due to the different interfaces, as some algorithms take 4 parameters and some 3 due to the q-grams. Moreover, ef and efs allocate
+some memory for themselves in the preprocessing phase, and freeing this memory needs to be done inside their respective sources.
+Thus, to repeat the search multiple times without having to repeat the preprocessing, another function freeArrays() had to be defined.
+It frees all the memory, and is called once the search has been repeated e times.
+
+There are different files for same alg for different pattern lengths. For example, ans(2) for m <= 16 and ans(2)b for m > 16. Same applies to efs. However, efs for m > 16 is
+efs_long instead of efsb.
+
+The code is mostly from https://github.com/hirvola/bsa, and it has a READ.me of its own. It might be worth glancing over. The texts in 4MB/ are straight from the SMART corpus, and
+it contain scripts (by Hirvola) to generate patterns.

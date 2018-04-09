@@ -1,0 +1,797 @@
+Preprocessing runs 200 in ours. Execution runs 2 (for NF we make 2 preprocessing runs and 2 searching runs.
+
+
+********** ./tests/protein/hs.txt **********
+
+
+Pattern length 8:
+
+ for sets of 10 patterns:
+   with 1 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+
+ for sets of 100 patterns:
+   with 1 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+
+ for sets of 1000 patterns:
+   with 1 mismatches (subpattern lengths 4, groups of 24 chars, groups of 15 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+
+Pattern length 16:
+
+ for sets of 10 patterns:
+   with 1 mismatches (subpattern lengths 8, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 2 mismatches (subpattern lengths 5, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+
+ for sets of 100 patterns:
+   with 1 mismatches (subpattern lengths 8, groups of 24 chars, groups of 1 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 2 mismatches (subpattern lengths 5, groups of 24 chars, groups of 1 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 4, groups of 24 chars, groups of 5 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+
+ for sets of 1000 patterns:
+   with 1 mismatches (subpattern lengths 8, groups of 24 chars, groups of 15 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 2 mismatches (subpattern lengths 5, groups of 24 chars, groups of 15 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 4, groups of 24 chars, groups of 23 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+
+Pattern length 24:
+
+ for sets of 10 patterns:
+   with 1 mismatches (subpattern lengths 12, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 2 mismatches (subpattern lengths 8, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 6, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 4 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 5 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+
+ for sets of 100 patterns:
+   with 1 mismatches (subpattern lengths 12, groups of 24 chars, groups of 1 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 2 mismatches (subpattern lengths 8, groups of 24 chars, groups of 1 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 6, groups of 24 chars, groups of 5 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 4 mismatches (subpattern lengths 4, groups of 24 chars, groups of 5 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 5 mismatches (subpattern lengths 4, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+
+ for sets of 1000 patterns:
+   with 1 mismatches (subpattern lengths 12, groups of 24 chars, groups of 15 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 2 mismatches (subpattern lengths 8, groups of 24 chars, groups of 15 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 6, groups of 24 chars, groups of 23 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 4 mismatches (subpattern lengths 4, groups of 24 chars, groups of 23 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 5 mismatches (subpattern lengths 4, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+
+Pattern length 32:
+
+ for sets of 10 patterns:
+   with 1 mismatches (subpattern lengths 16, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 2 mismatches (subpattern lengths 10, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 8, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 4 mismatches (subpattern lengths 6, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 5 mismatches (subpattern lengths 5, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 6 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 7 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+
+ for sets of 100 patterns:
+   with 1 mismatches (subpattern lengths 16, groups of 24 chars, groups of 1 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 2 mismatches (subpattern lengths 10, groups of 24 chars, groups of 1 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 8, groups of 24 chars, groups of 5 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 4 mismatches (subpattern lengths 6, groups of 24 chars, groups of 5 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 5 mismatches (subpattern lengths 5, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 6 mismatches (subpattern lengths 4, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 7 mismatches (subpattern lengths 4, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+
+ for sets of 1000 patterns:
+   with 1 mismatches (subpattern lengths 16, groups of 24 chars, groups of 15 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 2 mismatches (subpattern lengths 10, groups of 24 chars, groups of 15 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 8, groups of 24 chars, groups of 23 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 4 mismatches (subpattern lengths 6, groups of 24 chars, groups of 23 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 5 mismatches (subpattern lengths 5, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 6 mismatches (subpattern lengths 4, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 7 mismatches (subpattern lengths 4, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+
+Pattern length 40:
+
+ for sets of 10 patterns:
+   with 1 mismatches (subpattern lengths 20, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 2 mismatches (subpattern lengths 13, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 10, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 4 mismatches (subpattern lengths 8, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 5 mismatches (subpattern lengths 6, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 6 mismatches (subpattern lengths 5, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 7 mismatches (subpattern lengths 5, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 8 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 9 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+
+ for sets of 100 patterns:
+   with 1 mismatches (subpattern lengths 20, groups of 24 chars, groups of 1 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 2 mismatches (subpattern lengths 13, groups of 24 chars, groups of 1 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 10, groups of 24 chars, groups of 5 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 4 mismatches (subpattern lengths 8, groups of 24 chars, groups of 5 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 5 mismatches (subpattern lengths 6, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 6 mismatches (subpattern lengths 5, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 7 mismatches (subpattern lengths 5, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 8 mismatches (subpattern lengths 4, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 9 mismatches (subpattern lengths 4, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+
+ for sets of 1000 patterns:
+   with 1 mismatches (subpattern lengths 20, groups of 24 chars, groups of 15 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 2 mismatches (subpattern lengths 13, groups of 24 chars, groups of 15 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 10, groups of 24 chars, groups of 23 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 4 mismatches (subpattern lengths 8, groups of 24 chars, groups of 23 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 5 mismatches (subpattern lengths 6, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 6 mismatches (subpattern lengths 5, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 7 mismatches (subpattern lengths 5, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 8 mismatches (subpattern lengths 4, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 9 mismatches (subpattern lengths 4, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+
+Pattern length 48:
+
+ for sets of 10 patterns:
+   with 1 mismatches (subpattern lengths 24, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 2 mismatches (subpattern lengths 16, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 12, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 4 mismatches (subpattern lengths 9, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 5 mismatches (subpattern lengths 8, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 6 mismatches (subpattern lengths 6, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 7 mismatches (subpattern lengths 6, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 8 mismatches (subpattern lengths 5, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 9 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 10 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 11 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+
+ for sets of 100 patterns:
+   with 1 mismatches (subpattern lengths 24, groups of 24 chars, groups of 1 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 2 mismatches (subpattern lengths 16, groups of 24 chars, groups of 1 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 12, groups of 24 chars, groups of 5 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 4 mismatches (subpattern lengths 9, groups of 24 chars, groups of 5 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 5 mismatches (subpattern lengths 8, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 6 mismatches (subpattern lengths 6, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 7 mismatches (subpattern lengths 6, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 8 mismatches (subpattern lengths 5, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 9 mismatches (subpattern lengths 4, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 10 mismatches (subpattern lengths 4, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 11 mismatches (subpattern lengths 4, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+
+ for sets of 1000 patterns:
+   with 1 mismatches (subpattern lengths 24, groups of 24 chars, groups of 15 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 2 mismatches (subpattern lengths 16, groups of 24 chars, groups of 15 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 12, groups of 24 chars, groups of 23 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 4 mismatches (subpattern lengths 9, groups of 24 chars, groups of 23 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 5 mismatches (subpattern lengths 8, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 6 mismatches (subpattern lengths 6, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 7 mismatches (subpattern lengths 6, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 8 mismatches (subpattern lengths 5, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 9 mismatches (subpattern lengths 4, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 10 mismatches (subpattern lengths 4, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 11 mismatches (subpattern lengths 4, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+
+Pattern length 56:
+
+ for sets of 10 patterns:
+   with 1 mismatches (subpattern lengths 28, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 2 mismatches (subpattern lengths 18, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 14, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 4 mismatches (subpattern lengths 11, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 5 mismatches (subpattern lengths 9, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 6 mismatches (subpattern lengths 8, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 7 mismatches (subpattern lengths 7, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 8 mismatches (subpattern lengths 6, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 9 mismatches (subpattern lengths 5, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 10 mismatches (subpattern lengths 5, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 11 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 12 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 13 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+
+ for sets of 100 patterns:
+   with 1 mismatches (subpattern lengths 28, groups of 24 chars, groups of 1 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 2 mismatches (subpattern lengths 18, groups of 24 chars, groups of 1 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 14, groups of 24 chars, groups of 5 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 4 mismatches (subpattern lengths 11, groups of 24 chars, groups of 5 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 5 mismatches (subpattern lengths 9, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 6 mismatches (subpattern lengths 8, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 7 mismatches (subpattern lengths 7, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 8 mismatches (subpattern lengths 6, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 9 mismatches (subpattern lengths 5, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 10 mismatches (subpattern lengths 5, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 11 mismatches (subpattern lengths 4, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 12 mismatches (subpattern lengths 4, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 13 mismatches (subpattern lengths 4, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+
+ for sets of 1000 patterns:
+   with 1 mismatches (subpattern lengths 28, groups of 24 chars, groups of 15 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 2 mismatches (subpattern lengths 18, groups of 24 chars, groups of 15 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 14, groups of 24 chars, groups of 23 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 4 mismatches (subpattern lengths 11, groups of 24 chars, groups of 23 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 5 mismatches (subpattern lengths 9, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 6 mismatches (subpattern lengths 8, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 7 mismatches (subpattern lengths 7, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 8 mismatches (subpattern lengths 6, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 9 mismatches (subpattern lengths 5, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 10 mismatches (subpattern lengths 5, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 11 mismatches (subpattern lengths 4, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 12 mismatches (subpattern lengths 4, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 13 mismatches (subpattern lengths 4, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+
+Pattern length 64:
+
+ for sets of 10 patterns:
+   with 1 mismatches (subpattern lengths 32, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 2 mismatches (subpattern lengths 21, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 16, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 4 mismatches (subpattern lengths 12, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 5 mismatches (subpattern lengths 10, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 6 mismatches (subpattern lengths 9, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 7 mismatches (subpattern lengths 8, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 8 mismatches (subpattern lengths 7, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 9 mismatches (subpattern lengths 6, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 10 mismatches (subpattern lengths 5, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 11 mismatches (subpattern lengths 5, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 12 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 13 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 14 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 15 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+
+ for sets of 100 patterns:
+   with 1 mismatches (subpattern lengths 32, groups of 24 chars, groups of 1 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 2 mismatches (subpattern lengths 21, groups of 24 chars, groups of 1 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 16, groups of 24 chars, groups of 5 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 4 mismatches (subpattern lengths 12, groups of 24 chars, groups of 5 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 5 mismatches (subpattern lengths 10, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 6 mismatches (subpattern lengths 9, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 7 mismatches (subpattern lengths 8, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 8 mismatches (subpattern lengths 7, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 9 mismatches (subpattern lengths 6, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 10 mismatches (subpattern lengths 5, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 11 mismatches (subpattern lengths 5, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 12 mismatches (subpattern lengths 4, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 13 mismatches (subpattern lengths 4, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 14 mismatches (subpattern lengths 4, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 15 mismatches (subpattern lengths 4, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+
+ for sets of 1000 patterns:
+   with 1 mismatches (subpattern lengths 32, groups of 24 chars, groups of 15 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 2 mismatches (subpattern lengths 21, groups of 24 chars, groups of 15 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 16, groups of 24 chars, groups of 23 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 4 mismatches (subpattern lengths 12, groups of 24 chars, groups of 23 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 5 mismatches (subpattern lengths 10, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 6 mismatches (subpattern lengths 9, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 7 mismatches (subpattern lengths 8, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 8 mismatches (subpattern lengths 7, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 9 mismatches (subpattern lengths 6, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 10 mismatches (subpattern lengths 5, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 11 mismatches (subpattern lengths 5, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 12 mismatches (subpattern lengths 4, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 13 mismatches (subpattern lengths 4, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 14 mismatches (subpattern lengths 4, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 15 mismatches (subpattern lengths 4, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+
+Pattern length 72:
+
+ for sets of 10 patterns:
+   with 2 mismatches (subpattern lengths 24, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 18, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 4 mismatches (subpattern lengths 14, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 5 mismatches (subpattern lengths 12, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 6 mismatches (subpattern lengths 10, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 7 mismatches (subpattern lengths 9, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 8 mismatches (subpattern lengths 8, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 9 mismatches (subpattern lengths 7, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 10 mismatches (subpattern lengths 6, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 11 mismatches (subpattern lengths 6, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 12 mismatches (subpattern lengths 5, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 13 mismatches (subpattern lengths 5, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 14 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 15 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 16 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+   with 17 mismatches (subpattern lengths 4, groups of 24 chars, groups of 1 patts):
+test-all.sh: 26: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 27: test-all.sh: ./bperl-mm-multi: not found
+
+ for sets of 100 patterns:
+   with 2 mismatches (subpattern lengths 24, groups of 24 chars, groups of 1 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 18, groups of 24 chars, groups of 5 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 4 mismatches (subpattern lengths 14, groups of 24 chars, groups of 5 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 5 mismatches (subpattern lengths 12, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 6 mismatches (subpattern lengths 10, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 7 mismatches (subpattern lengths 9, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 8 mismatches (subpattern lengths 8, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 9 mismatches (subpattern lengths 7, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 10 mismatches (subpattern lengths 6, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 11 mismatches (subpattern lengths 6, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 12 mismatches (subpattern lengths 5, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 13 mismatches (subpattern lengths 5, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 14 mismatches (subpattern lengths 4, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 15 mismatches (subpattern lengths 4, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 16 mismatches (subpattern lengths 4, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+   with 17 mismatches (subpattern lengths 4, groups of 24 chars, groups of 3 patts):
+test-all.sh: 59: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 60: test-all.sh: ./bperl-mm-multi: not found
+
+ for sets of 1000 patterns:
+   with 2 mismatches (subpattern lengths 24, groups of 24 chars, groups of 15 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 3 mismatches (subpattern lengths 18, groups of 24 chars, groups of 23 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 4 mismatches (subpattern lengths 14, groups of 24 chars, groups of 23 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 5 mismatches (subpattern lengths 12, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 6 mismatches (subpattern lengths 10, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 7 mismatches (subpattern lengths 9, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 8 mismatches (subpattern lengths 8, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 9 mismatches (subpattern lengths 7, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 10 mismatches (subpattern lengths 6, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 11 mismatches (subpattern lengths 6, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 12 mismatches (subpattern lengths 5, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 13 mismatches (subpattern lengths 5, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 14 mismatches (subpattern lengths 4, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 15 mismatches (subpattern lengths 4, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 16 mismatches (subpattern lengths 4, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found
+   with 17 mismatches (subpattern lengths 4, groups of 24 chars, groups of 61 patts):
+test-all.sh: 91: test-all.sh: ./cmfn/cmfn: not found
+test-all.sh: 92: test-all.sh: ./bperl-mm-multi: not found

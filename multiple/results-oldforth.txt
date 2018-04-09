@@ -1,0 +1,119 @@
+nohup: ignoring input
+Guide:
+cmfn: Fredriksson-Navarro.
+udi/mgrep: Muth-Manber (only k=1).
+mepsm-nomod: MBYPS (ours) using MEPSM with no modifications (original size of the fingerprints).
+bperl-mm-multi: MBYPS (ours).
+byn-original: Baeza-Yates and Navarro original code for edit distance (adapted to Hume-Sunday environment).
+byn-mod-hamming: Baeza-Yates and Navarro (partition into exact matching) code adapted to Hamming distance.
+
+Preprocessing runs 5. Search runs 5. For 'cmfn' we make same number of preprocessing and searching runs.
+
+
+********** ./tests/genome/ecoli.txt **********
+
+
+Pattern length 8:
+
+ for sets of 10 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 0 chars, groups of 1 patts):
+alg=./udi/mgrep          np=10    match=17265      p=0.00000s e=0.10400s total=0.10400s
+alg=./cmfn-dna/cmfn      np=10    match=17265      p=0.00200s e=0.24600s total=0.24800s
+alg=byn-original/exactp  np=10    match=31447      p=0.00000s e=0.13400s total=0.13400s
+alg=-mod-hamming/exactp  np=10    match=17265      p=0.00000s e=0.13400s total=0.13400s
+alg=omod/bperl-mm-multi  np=10    match=17265      p=0.00000s e=0.13800s total=0.13800s
+alg=ulti/bperl-mm-multi  np=10    match=17265      p=0.00000s e=0.04600s total=0.04600s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 0 chars, groups of 1 patts):
+alg=./udi/mgrep          np=100   match=202240     p=0.00000s e=0.71200s total=0.71200s
+alg=./cmfn-dna/cmfn      np=100   match=202240     p=0.01400s e=2.22000s total=2.23400s
+alg=byn-original/exactp  np=100   match=348104     p=0.00000s e=0.44600s total=0.44600s
+alg=-mod-hamming/exactp  np=100   match=202240     p=0.00000s e=0.43800s total=0.43800s
+alg=omod/bperl-mm-multi  np=100   match=202240     p=0.00000s e=1.27400s total=1.27400s
+alg=ulti/bperl-mm-multi  np=100   match=202240     p=0.00000s e=0.35000s total=0.35000s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 0 chars, groups of 6 patts):
+alg=./udi/mgrep          np=1000  match=2080020    p=0.00000s e=4.78000s total=4.78000s
+alg=./cmfn-dna/cmfn      np=1000  match=2080020    p=0.11400s e=22.25800s total=22.37200s
+alg=byn-original/exactp  np=1000  match=3636745    p=0.00800s e=3.49800s total=3.50600s
+alg=-mod-hamming/exactp  np=1000  match=2080020    p=0.00800s e=3.31600s total=3.32400s
+alg=omod/bperl-mm-multi  np=1000  match=2080020    p=0.00800s e=23.24800s total=23.25600s
+alg=ulti/bperl-mm-multi  np=1000  match=2080020    p=0.00800s e=3.51000s total=3.51800s
+
+Pattern length 16:
+
+ for sets of 10 patterns:
+
+   with 1 mismatches (subpattern lengths 8, groups of 0 chars, groups of 1 patts):
+alg=./udi/mgrep          np=10    match=4          p=0.00000s e=0.10800s total=0.10800s
+alg=./cmfn-dna/cmfn      np=10    match=4          p=0.00200s e=0.03200s total=0.03400s
+alg=byn-original/exactp  np=10    match=6          p=0.00000s e=0.12000s total=0.12000s
+alg=-mod-hamming/exactp  np=10    match=4          p=0.00000s e=0.11400s total=0.11400s
+alg=omod/bperl-mm-multi  np=10    match=4          p=0.00000s e=0.01400s total=0.01400s
+alg=ulti/bperl-mm-multi  np=10    match=4          p=0.00000s e=0.01600s total=0.01600s
+
+   with 2 mismatches (subpattern lengths 5, groups of 0 chars, groups of 1 patts):
+alg=./cmfn-dna/cmfn      np=10    match=25         p=0.00000s e=0.24000s total=0.24000s
+alg=byn-original/exactp  np=10    match=78         p=0.00000s e=0.13000s total=0.13000s
+alg=-mod-hamming/exactp  np=10    match=25         p=0.00000s e=0.13200s total=0.13200s
+alg=omod/bperl-mm-multi  np=10    match=25         p=0.00000s e=0.16400s total=0.16400s
+alg=ulti/bperl-mm-multi  np=10    match=25         p=0.00000s e=0.03600s total=0.03600s
+
+   with 3 mismatches (subpattern lengths 4, groups of 0 chars, groups of 1 patts):
+alg=./cmfn-dna/cmfn      np=10    match=244        p=0.00200s e=0.86800s total=0.87000s
+alg=byn-original/exactp  np=10    match=0          p=0.00000s e=0.18800s total=0.18800s
+WARNING! Forced by Fernando.
+alg=-mod-hamming/exactp  np=10    match=967        p=0.00000s e=0.19200s total=0.19200s
+alg=omod/bperl-mm-multi  np=10    match=244        p=0.00000s e=0.27600s total=0.27600s
+alg=ulti/bperl-mm-multi  np=10    match=244        p=0.00000s e=0.11200s total=0.11200s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 8, groups of 0 chars, groups of 1 patts):
+alg=./udi/mgrep          np=100   match=45         p=0.00000s e=0.74400s total=0.74400s
+alg=./cmfn-dna/cmfn      np=100   match=45         p=0.02400s e=0.30200s total=0.32600s
+alg=byn-original/exactp  np=100   match=69         p=0.00000s e=0.18600s total=0.18600s
+alg=-mod-hamming/exactp  np=100   match=45         p=0.00200s e=0.19000s total=0.19200s
+alg=omod/bperl-mm-multi  np=100   match=45         p=0.00800s e=0.06400s total=0.07200s
+alg=ulti/bperl-mm-multi  np=100   match=45         p=0.00800s e=0.02200s total=0.03000s
+
+   with 2 mismatches (subpattern lengths 5, groups of 0 chars, groups of 1 patts):
+alg=./cmfn-dna/cmfn      np=100   match=210        p=0.02600s e=1.96400s total=1.99000s
+alg=byn-original/exactp  np=100   match=722        p=0.00000s e=0.29200s total=0.29200s
+alg=-mod-hamming/exactp  np=100   match=210        p=0.00200s e=0.28600s total=0.28800s
+alg=omod/bperl-mm-multi  np=100   match=210        p=0.00800s e=1.73800s total=1.74600s
+alg=ulti/bperl-mm-multi  np=100   match=210        p=0.01000s e=0.24600s total=0.25600s
+
+   with 3 mismatches (subpattern lengths 4, groups of 0 chars, groups of 1 patts):
+alg=./cmfn-dna/cmfn      np=100   match=2313       p=0.02400s e=9.94000s total=9.96400s
+alg=byn-original/exactp  np=100   match=0          p=0.00200s e=0.87600s total=0.87800s
+WARNING! Forced by Fernando.
+alg=-mod-hamming/exactp  np=100   match=9985       p=0.00000s e=0.91200s total=0.91200s
+alg=omod/bperl-mm-multi  np=100   match=2313       p=0.01000s e=3.05200s total=3.06200s
+alg=ulti/bperl-mm-multi  np=100   match=2313       p=0.00800s e=0.92800s total=0.93600s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 8, groups of 0 chars, groups of 6 patts):
+alg=./udi/mgrep          np=1000  match=525        p=0.00000s e=4.95800s total=4.95800s
+alg=./cmfn-dna/cmfn      np=1000  match=525        p=0.23200s e=3.09000s total=3.32200s
+alg=byn-original/exactp  np=1000  match=820        p=0.01200s e=0.33200s total=0.34400s
+alg=-mod-hamming/exactp  np=1000  match=525        p=0.01000s e=0.33000s total=0.34000s
+alg=omod/bperl-mm-multi  np=1000  match=525        p=0.09000s e=0.89000s total=0.98000s
+alg=ulti/bperl-mm-multi  np=1000  match=525        p=0.09000s e=0.06400s total=0.15400s
+
+   with 2 mismatches (subpattern lengths 5, groups of 0 chars, groups of 6 patts):
+alg=./cmfn-dna/cmfn      np=1000  match=2678       p=0.23600s e=20.35000s total=20.58600s
+alg=byn-original/exactp  np=1000  match=8148       p=0.01000s e=1.57000s total=1.58000s
+alg=-mod-hamming/exactp  np=1000  match=2678       p=0.01800s e=1.50800s total=1.52600s
+alg=omod/bperl-mm-multi  np=1000  match=2678       p=0.09000s e=35.47200s total=35.56200s
+alg=ulti/bperl-mm-multi  np=1000  match=2678       p=0.09200s e=2.68600s total=2.77800s
+
+   with 3 mismatches (subpattern lengths 4, groups of 0 chars, groups of 6 patts):
+alg=./cmfn-dna/cmfn      np=1000  match=26104      p=0.22800s e=96.98200s total=97.21000s
+alg=byn-original/exactp  np=1000  match=0          p=0.01200s e=8.24200s total=8.25400s

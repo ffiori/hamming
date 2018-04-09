@@ -1,0 +1,561 @@
+Preprocessing runs 1. Execution runs 1. Sets of 100 patterns.
+
+
+***** ./tests/protein/hs.txt *****
+
+
+Pattern length 16:
+
+ for sets of 1000 patterns:
+   with 3 mismatches (subpattern lengths ):
+With 1-grams:
+alg=./cmfn               np=1000  match=607        p=2.90000s e=5.65000s total=8.55000s
+With 2-grams:
+alg=./cmfn               np=1000  match=607        p=3.67000s e=6.16000s total=9.83000s
+With 3-grams:
+alg=./cmfn               np=1000  match=607        p=2.44000s e=6.03000s total=8.47000s
+With 4-grams:
+alg=./cmfn               np=1000  match=607        p=2.47000s e=4.91000s total=7.38000s
+With 5-grams:
+alg=./cmfn               np=1000  match=607        p=2.29000s e=3.71000s total=6.00000s
+With 6-grams:
+alg=./cmfn               np=1000  match=607        p=2.78000s e=3.16000s total=5.94000s
+With 7-grams:
+alg=./cmfn               np=1000  match=607        p=2.59000s e=2.59000s total=5.18000s
+With 8-grams:
+alg=./cmfn               np=1000  match=607        p=2.73000s e=2.43000s total=5.16000s
+With 9-grams:
+alg=./cmfn               np=1000  match=607        p=2.45000s e=2.07000s total=4.52000s
+With 10-grams:
+alg=./cmfn               np=1000  match=607        p=2.56000s e=1.83000s total=4.39000s
+With 11-grams:
+alg=./cmfn               np=1000  match=607        p=2.56000s e=1.60000s total=4.16000s
+With 12-grams:
+alg=./cmfn               np=1000  match=607        p=2.96000s e=1.78000s total=4.74000s
+With 13-grams:
+alg=./cmfn               np=1000  match=607        p=2.60000s e=1.60000s total=4.20000s
+With 14-grams:
+alg=./cmfn               np=1000  match=607        p=2.67000s e=1.44000s total=4.11000s
+With 15-grams:
+alg=./cmfn               np=1000  match=607        p=2.68000s e=1.18000s total=3.86000s
+With 16-grams:
+alg=./cmfn               np=1000  match=607        p=3.25000s e=1.57000s total=4.82000s
+With 17-grams:
+alg=./cmfn               np=1000  match=607        p=2.76000s e=1.58000s total=4.34000s
+With 18-grams:
+alg=./cmfn               np=1000  match=607        p=2.83000s e=1.50000s total=4.33000s
+With 19-grams:
+alg=./cmfn               np=1000  match=607        p=2.81000s e=1.46000s total=4.27000s
+With 20-grams:
+alg=./cmfn               np=1000  match=607        p=2.86000s e=1.33000s total=4.19000s
+With 21-grams:
+alg=./cmfn               np=1000  match=607        p=2.88000s e=1.14000s total=4.02000s
+With 22-grams:
+alg=./cmfn               np=1000  match=607        p=2.97000s e=1.02000s total=3.99000s
+With 23-grams:
+alg=./cmfn               np=1000  match=607        p=3.04000s e=0.96000s total=4.00000s
+With 24-grams:
+alg=./cmfn               np=1000  match=607        p=3.30000s e=1.86000s total=5.16000s
+With 25-grams:
+alg=./cmfn               np=1000  match=607        p=3.03000s e=1.71000s total=4.74000s
+With 26-grams:
+alg=./cmfn               np=1000  match=607        p=3.11000s e=1.77000s total=4.88000s
+With 27-grams:
+alg=./cmfn               np=1000  match=607        p=3.22000s e=1.78000s total=5.00000s
+With 28-grams:
+alg=./cmfn               np=1000  match=607        p=3.10000s e=1.79000s total=4.89000s
+With 29-grams:
+alg=./cmfn               np=1000  match=607        p=3.14000s e=1.80000s total=4.94000s
+With 30-grams:
+alg=./cmfn               np=1000  match=607        p=3.28000s e=1.76000s total=5.04000s
+With 31-grams:
+alg=./cmfn               np=1000  match=607        p=3.33000s e=1.73000s total=5.06000s
+With 32-grams:
+alg=./cmfn               np=1000  match=607        p=3.22000s e=1.75000s total=4.97000s
+
+Pattern length 32:
+
+ for sets of 1000 patterns:
+   with 3 mismatches (subpattern lengths ):
+With 1-grams:
+alg=./cmfn               np=1000  match=244        p=4.18000s e=7.22000s total=11.40000s
+With 2-grams:
+alg=./cmfn               np=1000  match=244        p=5.08000s e=3.56000s total=8.64000s
+With 3-grams:
+alg=./cmfn               np=1000  match=244        p=3.58000s e=4.84000s total=8.42000s
+With 4-grams:
+alg=./cmfn               np=1000  match=244        p=4.03000s e=3.46000s total=7.49000s
+With 5-grams:
+alg=./cmfn               np=1000  match=244        p=3.52000s e=1.85000s total=5.37000s
+With 6-grams:
+alg=./cmfn               np=1000  match=244        p=3.76000s e=1.07000s total=4.83000s
+With 7-grams:
+alg=./cmfn               np=1000  match=244        p=3.81000s e=0.77000s total=4.58000s
+With 8-grams:
+alg=./cmfn               np=1000  match=244        p=4.05000s e=0.63000s total=4.68000s
+With 9-grams:
+alg=./cmfn               np=1000  match=244        p=3.70000s e=0.50000s total=4.20000s
+With 10-grams:
+alg=./cmfn               np=1000  match=244        p=3.70000s e=0.52000s total=4.22000s
+With 11-grams:
+alg=./cmfn               np=1000  match=244        p=3.94000s e=0.39000s total=4.33000s
+With 12-grams:
+alg=./cmfn               np=1000  match=244        p=4.13000s e=0.49000s total=4.62000s
+With 13-grams:
+alg=./cmfn               np=1000  match=244        p=3.89000s e=0.53000s total=4.42000s
+With 14-grams:
+alg=./cmfn               np=1000  match=244        p=3.91000s e=0.45000s total=4.36000s
+With 15-grams:
+alg=./cmfn               np=1000  match=244        p=4.00000s e=0.31000s total=4.31000s
+With 16-grams:
+alg=./cmfn               np=1000  match=244        p=4.51000s e=0.58000s total=5.09000s
+With 17-grams:
+alg=./cmfn               np=1000  match=244        p=3.94000s e=0.58000s total=4.52000s
+With 18-grams:
+alg=./cmfn               np=1000  match=244        p=4.18000s e=0.59000s total=4.77000s
+With 19-grams:
+alg=./cmfn               np=1000  match=244        p=4.45000s e=0.57000s total=5.02000s
+With 20-grams:
+alg=./cmfn               np=1000  match=244        p=4.09000s e=0.49000s total=4.58000s
+With 21-grams:
+alg=./cmfn               np=1000  match=244        p=4.10000s e=0.35000s total=4.45000s
+With 22-grams:
+alg=./cmfn               np=1000  match=244        p=4.17000s e=0.31000s total=4.48000s
+With 23-grams:
+alg=./cmfn               np=1000  match=244        p=4.25000s e=0.26000s total=4.51000s
+With 24-grams:
+alg=./cmfn               np=1000  match=244        p=4.24000s e=0.74000s total=4.98000s
+With 25-grams:
+alg=./cmfn               np=1000  match=244        p=4.44000s e=0.76000s total=5.20000s
+With 26-grams:
+alg=./cmfn               np=1000  match=244        p=4.35000s e=0.76000s total=5.11000s
+With 27-grams:
+alg=./cmfn               np=1000  match=244        p=4.46000s e=0.84000s total=5.30000s
+With 28-grams:
+alg=./cmfn               np=1000  match=244        p=4.40000s e=0.84000s total=5.24000s
+With 29-grams:
+alg=./cmfn               np=1000  match=244        p=4.32000s e=0.84000s total=5.16000s
+With 30-grams:
+alg=./cmfn               np=1000  match=244        p=4.39000s e=0.86000s total=5.25000s
+With 31-grams:
+alg=./cmfn               np=1000  match=244        p=4.47000s e=0.82000s total=5.29000s
+With 32-grams:
+alg=./cmfn               np=1000  match=244        p=4.57000s e=0.75000s total=5.32000s
+
+Pattern length 48:
+
+ for sets of 1000 patterns:
+   with 3 mismatches (subpattern lengths ):
+With 1-grams:
+alg=./cmfn               np=1000  match=210        p=5.59000s e=9.23000s total=14.82000s
+With 2-grams:
+alg=./cmfn               np=1000  match=210        p=6.46000s e=5.89000s total=12.35000s
+With 3-grams:
+alg=./cmfn               np=1000  match=210        p=4.72000s e=3.98000s total=8.70000s
+With 4-grams:
+alg=./cmfn               np=1000  match=210        p=4.93000s e=3.49000s total=8.42000s
+With 5-grams:
+alg=./cmfn               np=1000  match=210        p=4.75000s e=1.94000s total=6.69000s
+With 6-grams:
+alg=./cmfn               np=1000  match=210        p=5.05000s e=1.10000s total=6.15000s
+With 7-grams:
+alg=./cmfn               np=1000  match=210        p=5.07000s e=0.64000s total=5.71000s
+With 8-grams:
+alg=./cmfn               np=1000  match=210        p=5.12000s e=0.48000s total=5.60000s
+With 9-grams:
+alg=./cmfn               np=1000  match=210        p=4.89000s e=0.44000s total=5.33000s
+With 10-grams:
+alg=./cmfn               np=1000  match=210        p=4.98000s e=0.39000s total=5.37000s
+With 11-grams:
+alg=./cmfn               np=1000  match=210        p=4.97000s e=0.34000s total=5.31000s
+With 12-grams:
+alg=./cmfn               np=1000  match=210        p=5.39000s e=0.36000s total=5.75000s
+With 13-grams:
+alg=./cmfn               np=1000  match=210        p=5.14000s e=0.37000s total=5.51000s
+With 14-grams:
+alg=./cmfn               np=1000  match=210        p=5.09000s e=0.37000s total=5.46000s
+With 15-grams:
+alg=./cmfn               np=1000  match=210        p=5.24000s e=0.22000s total=5.46000s
+With 16-grams:
+alg=./cmfn               np=1000  match=210        p=5.77000s e=0.43000s total=6.20000s
+With 17-grams:
+alg=./cmfn               np=1000  match=210        p=5.21000s e=0.39000s total=5.60000s
+With 18-grams:
+alg=./cmfn               np=1000  match=210        p=5.20000s e=0.42000s total=5.62000s
+With 19-grams:
+alg=./cmfn               np=1000  match=210        p=5.36000s e=0.41000s total=5.77000s
+With 20-grams:
+alg=./cmfn               np=1000  match=210        p=5.26000s e=0.40000s total=5.66000s
+With 21-grams:
+alg=./cmfn               np=1000  match=210        p=5.42000s e=0.27000s total=5.69000s
+With 22-grams:
+alg=./cmfn               np=1000  match=210        p=5.48000s e=0.23000s total=5.71000s
+With 23-grams:
+alg=./cmfn               np=1000  match=210        p=5.48000s e=0.16000s total=5.64000s
+With 24-grams:
+alg=./cmfn               np=1000  match=210        p=5.47000s e=0.51000s total=5.98000s
+With 25-grams:
+alg=./cmfn               np=1000  match=210        p=5.45000s e=0.57000s total=6.02000s
+With 26-grams:
+alg=./cmfn               np=1000  match=210        p=5.53000s e=0.59000s total=6.12000s
+With 27-grams:
+alg=./cmfn               np=1000  match=210        p=5.66000s e=0.60000s total=6.26000s
+With 28-grams:
+alg=./cmfn               np=1000  match=210        p=5.65000s e=0.68000s total=6.33000s
+With 29-grams:
+alg=./cmfn               np=1000  match=210        p=5.63000s e=0.68000s total=6.31000s
+With 30-grams:
+alg=./cmfn               np=1000  match=210        p=5.76000s e=0.70000s total=6.46000s
+With 31-grams:
+alg=./cmfn               np=1000  match=210        p=5.83000s e=0.67000s total=6.50000s
+With 32-grams:
+alg=./cmfn               np=1000  match=210        p=5.73000s e=0.67000s total=6.40000s
+
+Pattern length 64:
+
+ for sets of 1000 patterns:
+   with 3 mismatches (subpattern lengths ):
+With 1-grams:
+alg=./cmfn               np=1000  match=146        p=6.71000s e=12.39000s total=19.10000s
+With 2-grams:
+alg=./cmfn               np=1000  match=146        p=7.48000s e=10.98000s total=18.46000s
+With 3-grams:
+alg=./cmfn               np=1000  match=146        p=6.01000s e=3.14000s total=9.15000s
+With 4-grams:
+alg=./cmfn               np=1000  match=146        p=6.15000s e=4.01000s total=10.16000s
+With 5-grams:
+alg=./cmfn               np=1000  match=146        p=6.23000s e=2.47000s total=8.70000s
+With 6-grams:
+alg=./cmfn               np=1000  match=146        p=6.26000s e=1.31000s total=7.57000s
+With 7-grams:
+alg=./cmfn               np=1000  match=146        p=6.27000s e=0.79000s total=7.06000s
+With 8-grams:
+alg=./cmfn               np=1000  match=146        p=6.46000s e=0.50000s total=6.96000s
+With 9-grams:
+alg=./cmfn               np=1000  match=146        p=6.35000s e=0.48000s total=6.83000s
+With 10-grams:
+alg=./cmfn               np=1000  match=146        p=6.24000s e=0.37000s total=6.61000s
+With 11-grams:
+alg=./cmfn               np=1000  match=146        p=6.26000s e=0.42000s total=6.68000s
+With 12-grams:
+alg=./cmfn               np=1000  match=146        p=6.73000s e=0.34000s total=7.07000s
+With 13-grams:
+alg=./cmfn               np=1000  match=146        p=6.36000s e=0.37000s total=6.73000s
+With 14-grams:
+alg=./cmfn               np=1000  match=146        p=6.39000s e=0.37000s total=6.76000s
+With 15-grams:
+alg=./cmfn               np=1000  match=146        p=6.46000s e=0.23000s total=6.69000s
+With 16-grams:
+alg=./cmfn               np=1000  match=146        p=7.13000s e=0.35000s total=7.48000s
+With 17-grams:
+alg=./cmfn               np=1000  match=146        p=6.54000s e=0.38000s total=6.92000s
+With 18-grams:
+alg=./cmfn               np=1000  match=146        p=6.51000s e=0.37000s total=6.88000s
+With 19-grams:
+alg=./cmfn               np=1000  match=146        p=6.47000s e=0.41000s total=6.88000s
+With 20-grams:
+alg=./cmfn               np=1000  match=146        p=6.67000s e=0.43000s total=7.10000s
+With 21-grams:
+alg=./cmfn               np=1000  match=146        p=6.74000s e=0.29000s total=7.03000s
+With 22-grams:
+alg=./cmfn               np=1000  match=146        p=6.66000s e=0.19000s total=6.85000s
+With 23-grams:
+alg=./cmfn               np=1000  match=146        p=6.64000s e=0.19000s total=6.83000s
+With 24-grams:
+alg=./cmfn               np=1000  match=146        p=6.88000s e=0.48000s total=7.36000s
+With 25-grams:
+alg=./cmfn               np=1000  match=146        p=6.98000s e=0.51000s total=7.49000s
+With 26-grams:
+alg=./cmfn               np=1000  match=146        p=6.89000s e=0.49000s total=7.38000s
+With 27-grams:
+alg=./cmfn               np=1000  match=146        p=6.80000s e=0.53000s total=7.33000s
+With 28-grams:
+alg=./cmfn               np=1000  match=146        p=6.79000s e=0.54000s total=7.33000s
+With 29-grams:
+alg=./cmfn               np=1000  match=146        p=6.91000s e=0.56000s total=7.47000s
+With 30-grams:
+alg=./cmfn               np=1000  match=146        p=6.87000s e=0.59000s total=7.46000s
+With 31-grams:
+alg=./cmfn               np=1000  match=146        p=6.95000s e=0.62000s total=7.57000s
+With 32-grams:
+alg=./cmfn               np=1000  match=146        p=6.98000s e=0.64000s total=7.62000s
+
+
+***** ./tests/english/bible.txt *****
+
+
+Pattern length 16:
+
+ for sets of 1000 patterns:
+   with 3 mismatches (subpattern lengths ):
+With 1-grams:
+alg=./cmfn               np=1000  match=10224      p=3.12000s e=11.10000s total=14.22000s
+With 2-grams:
+alg=./cmfn               np=1000  match=10224      p=3.70000s e=10.08000s total=13.78000s
+With 3-grams:
+alg=./cmfn               np=1000  match=10224      p=2.38000s e=9.68000s total=12.06000s
+With 4-grams:
+alg=./cmfn               np=1000  match=10224      p=2.47000s e=10.27000s total=12.74000s
+With 5-grams:
+alg=./cmfn               np=1000  match=10224      p=2.34000s e=9.61000s total=11.95000s
+With 6-grams:
+alg=./cmfn               np=1000  match=10224      p=2.49000s e=9.51000s total=12.00000s
+With 7-grams:
+alg=./cmfn               np=1000  match=10224      p=2.62000s e=9.19000s total=11.81000s
+With 8-grams:
+alg=./cmfn               np=1000  match=10224      p=2.67000s e=8.25000s total=10.92000s
+With 9-grams:
+alg=./cmfn               np=1000  match=10224      p=2.52000s e=8.05000s total=10.57000s
+With 10-grams:
+alg=./cmfn               np=1000  match=10224      p=2.48000s e=6.68000s total=9.16000s
+With 11-grams:
+alg=./cmfn               np=1000  match=10224      p=2.52000s e=7.01000s total=9.53000s
+With 12-grams:
+alg=./cmfn               np=1000  match=10224      p=2.96000s e=5.97000s total=8.93000s
+With 13-grams:
+alg=./cmfn               np=1000  match=10224      p=2.63000s e=5.72000s total=8.35000s
+With 14-grams:
+alg=./cmfn               np=1000  match=10224      p=2.64000s e=5.70000s total=8.34000s
+With 15-grams:
+alg=./cmfn               np=1000  match=10224      p=2.74000s e=5.68000s total=8.42000s
+With 16-grams:
+alg=./cmfn               np=1000  match=10224      p=3.30000s e=4.78000s total=8.08000s
+With 17-grams:
+alg=./cmfn               np=1000  match=10224      p=2.81000s e=4.55000s total=7.36000s
+With 18-grams:
+alg=./cmfn               np=1000  match=10224      p=2.93000s e=4.77000s total=7.70000s
+With 19-grams:
+alg=./cmfn               np=1000  match=10224      p=2.79000s e=4.66000s total=7.45000s
+With 20-grams:
+alg=./cmfn               np=1000  match=10224      p=2.89000s e=4.55000s total=7.44000s
+With 21-grams:
+alg=./cmfn               np=1000  match=10224      p=2.99000s e=4.34000s total=7.33000s
+With 22-grams:
+alg=./cmfn               np=1000  match=10224      p=3.01000s e=4.14000s total=7.15000s
+With 23-grams:
+alg=./cmfn               np=1000  match=10224      p=3.16000s e=3.84000s total=7.00000s
+With 24-grams:
+alg=./cmfn               np=1000  match=10224      p=3.15000s e=3.97000s total=7.12000s
+With 25-grams:
+alg=./cmfn               np=1000  match=10224      p=2.99000s e=3.78000s total=6.77000s
+With 26-grams:
+alg=./cmfn               np=1000  match=10224      p=3.17000s e=3.95000s total=7.12000s
+With 27-grams:
+alg=./cmfn               np=1000  match=10224      p=3.25000s e=3.96000s total=7.21000s
+With 28-grams:
+alg=./cmfn               np=1000  match=10224      p=3.24000s e=4.04000s total=7.28000s
+With 29-grams:
+alg=./cmfn               np=1000  match=10224      p=3.19000s e=4.03000s total=7.22000s
+With 30-grams:
+alg=./cmfn               np=1000  match=10224      p=3.22000s e=4.03000s total=7.25000s
+With 31-grams:
+alg=./cmfn               np=1000  match=10224      p=3.26000s e=3.98000s total=7.24000s
+With 32-grams:
+alg=./cmfn               np=1000  match=10224      p=3.33000s e=4.12000s total=7.45000s
+
+Pattern length 32:
+
+ for sets of 1000 patterns:
+   with 3 mismatches (subpattern lengths ):
+With 1-grams:
+alg=./cmfn               np=1000  match=294        p=4.13000s e=6.73000s total=10.86000s
+With 2-grams:
+alg=./cmfn               np=1000  match=294        p=4.96000s e=4.54000s total=9.50000s
+With 3-grams:
+alg=./cmfn               np=1000  match=294        p=3.66000s e=4.38000s total=8.04000s
+With 4-grams:
+alg=./cmfn               np=1000  match=294        p=3.75000s e=3.94000s total=7.69000s
+With 5-grams:
+alg=./cmfn               np=1000  match=294        p=3.58000s e=3.07000s total=6.65000s
+With 6-grams:
+alg=./cmfn               np=1000  match=294        p=3.86000s e=2.49000s total=6.35000s
+With 7-grams:
+alg=./cmfn               np=1000  match=294        p=3.92000s e=1.92000s total=5.84000s
+With 8-grams:
+alg=./cmfn               np=1000  match=294        p=4.13000s e=1.54000s total=5.67000s
+With 9-grams:
+alg=./cmfn               np=1000  match=294        p=3.76000s e=1.41000s total=5.17000s
+With 10-grams:
+alg=./cmfn               np=1000  match=294        p=3.80000s e=1.19000s total=4.99000s
+With 11-grams:
+alg=./cmfn               np=1000  match=294        p=3.79000s e=1.01000s total=4.80000s
+With 12-grams:
+alg=./cmfn               np=1000  match=294        p=4.37000s e=1.02000s total=5.39000s
+With 13-grams:
+alg=./cmfn               np=1000  match=294        p=4.04000s e=1.01000s total=5.05000s
+With 14-grams:
+alg=./cmfn               np=1000  match=294        p=3.88000s e=0.85000s total=4.73000s
+With 15-grams:
+alg=./cmfn               np=1000  match=294        p=3.85000s e=0.69000s total=4.54000s
+With 16-grams:
+alg=./cmfn               np=1000  match=294        p=4.64000s e=0.95000s total=5.59000s
+With 17-grams:
+alg=./cmfn               np=1000  match=294        p=3.92000s e=0.93000s total=4.85000s
+With 18-grams:
+alg=./cmfn               np=1000  match=294        p=3.92000s e=0.93000s total=4.85000s
+With 19-grams:
+alg=./cmfn               np=1000  match=294        p=4.04000s e=0.92000s total=4.96000s
+With 20-grams:
+alg=./cmfn               np=1000  match=294        p=4.33000s e=0.85000s total=5.18000s
+With 21-grams:
+alg=./cmfn               np=1000  match=294        p=4.24000s e=0.68000s total=4.92000s
+With 22-grams:
+alg=./cmfn               np=1000  match=294        p=4.23000s e=0.61000s total=4.84000s
+With 23-grams:
+alg=./cmfn               np=1000  match=294        p=4.37000s e=0.53000s total=4.90000s
+With 24-grams:
+alg=./cmfn               np=1000  match=294        p=4.62000s e=1.18000s total=5.80000s
+With 25-grams:
+alg=./cmfn               np=1000  match=294        p=4.38000s e=1.10000s total=5.48000s
+With 26-grams:
+alg=./cmfn               np=1000  match=294        p=4.39000s e=1.13000s total=5.52000s
+With 27-grams:
+alg=./cmfn               np=1000  match=294        p=5.02000s e=1.27000s total=6.29000s
+With 28-grams:
+alg=./cmfn               np=1000  match=294        p=4.50000s e=1.12000s total=5.62000s
+With 29-grams:
+alg=./cmfn               np=1000  match=294        p=4.46000s e=1.20000s total=5.66000s
+With 30-grams:
+alg=./cmfn               np=1000  match=294        p=4.48000s e=1.24000s total=5.72000s
+With 31-grams:
+alg=./cmfn               np=1000  match=294        p=4.64000s e=1.24000s total=5.88000s
+With 32-grams:
+alg=./cmfn               np=1000  match=294        p=4.71000s e=1.20000s total=5.91000s
+
+Pattern length 48:
+
+ for sets of 1000 patterns:
+   with 3 mismatches (subpattern lengths ):
+With 1-grams:
+alg=./cmfn               np=1000  match=173        p=5.29000s e=7.33000s total=12.62000s
+With 2-grams:
+alg=./cmfn               np=1000  match=173        p=6.43000s e=3.55000s total=9.98000s
+With 3-grams:
+alg=./cmfn               np=1000  match=173        p=4.74000s e=3.11000s total=7.85000s
+With 4-grams:
+alg=./cmfn               np=1000  match=173        p=4.84000s e=2.54000s total=7.38000s
+With 5-grams:
+alg=./cmfn               np=1000  match=173        p=4.71000s e=1.80000s total=6.51000s
+With 6-grams:
+alg=./cmfn               np=1000  match=173        p=5.06000s e=1.44000s total=6.50000s
+With 7-grams:
+alg=./cmfn               np=1000  match=173        p=5.16000s e=1.09000s total=6.25000s
+With 8-grams:
+alg=./cmfn               np=1000  match=173        p=5.44000s e=0.93000s total=6.37000s
+With 9-grams:
+alg=./cmfn               np=1000  match=173        p=5.15000s e=0.75000s total=5.90000s
+With 10-grams:
+alg=./cmfn               np=1000  match=173        p=5.40000s e=0.77000s total=6.17000s
+With 11-grams:
+alg=./cmfn               np=1000  match=173        p=4.99000s e=0.57000s total=5.56000s
+With 12-grams:
+alg=./cmfn               np=1000  match=173        p=5.33000s e=0.64000s total=5.97000s
+With 13-grams:
+alg=./cmfn               np=1000  match=173        p=5.03000s e=0.63000s total=5.66000s
+With 14-grams:
+alg=./cmfn               np=1000  match=173        p=5.12000s e=0.58000s total=5.70000s
+With 15-grams:
+alg=./cmfn               np=1000  match=173        p=5.06000s e=0.42000s total=5.48000s
+With 16-grams:
+alg=./cmfn               np=1000  match=173        p=5.66000s e=0.66000s total=6.32000s
+With 17-grams:
+alg=./cmfn               np=1000  match=173        p=5.30000s e=0.69000s total=5.99000s
+With 18-grams:
+alg=./cmfn               np=1000  match=173        p=5.17000s e=0.66000s total=5.83000s
+With 19-grams:
+alg=./cmfn               np=1000  match=173        p=5.22000s e=0.63000s total=5.85000s
+With 20-grams:
+alg=./cmfn               np=1000  match=173        p=5.54000s e=0.62000s total=6.16000s
+With 21-grams:
+alg=./cmfn               np=1000  match=173        p=5.27000s e=0.50000s total=5.77000s
+With 22-grams:
+alg=./cmfn               np=1000  match=173        p=5.35000s e=0.35000s total=5.70000s
+With 23-grams:
+alg=./cmfn               np=1000  match=173        p=5.42000s e=0.34000s total=5.76000s
+With 24-grams:
+alg=./cmfn               np=1000  match=173        p=5.46000s e=0.82000s total=6.28000s
+With 25-grams:
+alg=./cmfn               np=1000  match=173        p=5.77000s e=0.89000s total=6.66000s
+With 26-grams:
+alg=./cmfn               np=1000  match=173        p=5.58000s e=0.89000s total=6.47000s
+With 27-grams:
+alg=./cmfn               np=1000  match=173        p=5.77000s e=0.88000s total=6.65000s
+With 28-grams:
+alg=./cmfn               np=1000  match=173        p=5.64000s e=0.90000s total=6.54000s
+With 29-grams:
+alg=./cmfn               np=1000  match=173        p=5.82000s e=0.90000s total=6.72000s
+With 30-grams:
+alg=./cmfn               np=1000  match=173        p=5.75000s e=0.89000s total=6.64000s
+With 31-grams:
+alg=./cmfn               np=1000  match=173        p=5.70000s e=0.85000s total=6.55000s
+With 32-grams:
+alg=./cmfn               np=1000  match=173        p=5.69000s e=0.86000s total=6.55000s
+
+Pattern length 64:
+
+ for sets of 1000 patterns:
+   with 3 mismatches (subpattern lengths ):
+With 1-grams:
+alg=./cmfn               np=1000  match=139        p=6.92000s e=7.63000s total=14.55000s
+With 2-grams:
+alg=./cmfn               np=1000  match=139        p=7.51000s e=3.01000s total=10.52000s
+With 3-grams:
+alg=./cmfn               np=1000  match=139        p=6.20000s e=2.56000s total=8.76000s
+With 4-grams:
+alg=./cmfn               np=1000  match=139        p=6.42000s e=1.90000s total=8.32000s
+With 5-grams:
+alg=./cmfn               np=1000  match=139        p=6.04000s e=1.39000s total=7.43000s
+With 6-grams:
+alg=./cmfn               np=1000  match=139        p=6.63000s e=1.01000s total=7.64000s
+With 7-grams:
+alg=./cmfn               np=1000  match=139        p=6.36000s e=0.74000s total=7.10000s
+With 8-grams:
+alg=./cmfn               np=1000  match=139        p=6.39000s e=0.63000s total=7.02000s
+With 9-grams:
+alg=./cmfn               np=1000  match=139        p=6.22000s e=0.52000s total=6.74000s
+With 10-grams:
+alg=./cmfn               np=1000  match=139        p=6.14000s e=0.52000s total=6.66000s
+With 11-grams:
+alg=./cmfn               np=1000  match=139        p=6.71000s e=0.43000s total=7.14000s
+With 12-grams:
+alg=./cmfn               np=1000  match=139        p=6.68000s e=0.52000s total=7.20000s
+With 13-grams:
+alg=./cmfn               np=1000  match=139        p=6.19000s e=0.53000s total=6.72000s
+With 14-grams:
+alg=./cmfn               np=1000  match=139        p=6.50000s e=0.42000s total=6.92000s
+With 15-grams:
+alg=./cmfn               np=1000  match=139        p=6.51000s e=0.32000s total=6.83000s
+With 16-grams:
+alg=./cmfn               np=1000  match=139        p=6.94000s e=0.57000s total=7.51000s
+With 17-grams:
+alg=./cmfn               np=1000  match=139        p=6.40000s e=0.54000s total=6.94000s
+With 18-grams:
+alg=./cmfn               np=1000  match=139        p=6.50000s e=0.55000s total=7.05000s
+With 19-grams:
+alg=./cmfn               np=1000  match=139        p=6.83000s e=0.50000s total=7.33000s
+With 20-grams:
+alg=./cmfn               np=1000  match=139        p=6.65000s e=0.49000s total=7.14000s
+With 21-grams:
+alg=./cmfn               np=1000  match=139        p=6.63000s e=0.37000s total=7.00000s
+With 22-grams:
+alg=./cmfn               np=1000  match=139        p=6.73000s e=0.32000s total=7.05000s
+With 23-grams:
+alg=./cmfn               np=1000  match=139        p=6.83000s e=0.29000s total=7.12000s
+With 24-grams:
+alg=./cmfn               np=1000  match=139        p=7.15000s e=0.71000s total=7.86000s
+With 25-grams:
+alg=./cmfn               np=1000  match=139        p=7.08000s e=0.75000s total=7.83000s
+With 26-grams:
+alg=./cmfn               np=1000  match=139        p=6.83000s e=0.75000s total=7.58000s
+With 27-grams:
+alg=./cmfn               np=1000  match=139        p=6.77000s e=0.77000s total=7.54000s
+With 28-grams:
+alg=./cmfn               np=1000  match=139        p=7.16000s e=0.74000s total=7.90000s
+With 29-grams:
+alg=./cmfn               np=1000  match=139        p=6.92000s e=0.72000s total=7.64000s
+With 30-grams:
+alg=./cmfn               np=1000  match=139        p=6.91000s e=0.75000s total=7.66000s
+With 31-grams:
+alg=./cmfn               np=1000  match=139        p=7.02000s e=0.72000s total=7.74000s
+With 32-grams:
+alg=./cmfn               np=1000  match=139        p=7.02000s e=0.69000s total=7.71000s

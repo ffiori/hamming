@@ -1,0 +1,57 @@
+nohup: ignoring input
+Preprocessing runs 100. Search runs 100. q-gram for EF and EFS 4.
+
+
+********** ../multiple/tests/genome/ecoli.txt **********
+
+
+Pattern length of 8:
+for 1 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=1 q=4 occ=202240 p=0.0224s(224/100) e=1.4573s(14573/100)
+alg=./efs T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=1 q=4 occ=202240 p=0.0227s(227/100) e=1.4205s(14205/100)
+alg=./ans T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=1 occ=202240 p=0.0000s(0/100) e=1.2483s(12483/100)
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=1 occ=202240 p=0.0011s(11/100) e=0.8519s(8519/100)
+alg=./sa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=1 occ=202240 p=0.0000s(0/100) e=1.6790s(16790/100)
+alg=./tusa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=1 occ=202240 p=0.0000s(0/100) e=1.3068s(13068/100)
+alg=./twsa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=1 occ=202240 p=0.0000s(0/100) e=1.6213s(16213/100)
+alg=./byp/byp-old/byp np=100   match=202240     p=0.00000s e=4.17500s total=4.17500s
+alg=./byp/byps-dna/byps np=100   match=202240     p=0.00920s e=1.71430s total=1.72350s
+
+for 2 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=2 q=4 occ=2108556 p=0.1055s(1055/100) e=2.2774s(22774/100)
+alg=./efs T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=2 q=4 occ=2108556 p=0.1042s(1042/100) e=2.1252s(21252/100)
+alg=./ans T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=2 occ=2108556 p=0.0000s(0/100) e=1.2484s(12484/100)
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=2 occ=2108556 p=0.0002s(2/100) e=0.8972s(8972/100)
+alg=./sa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=2 occ=2108556 p=0.0000s(0/100) e=1.6789s(16789/100)
+alg=./tusa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=2 occ=2108556 p=0.0001s(1/100) e=1.3065s(13065/100)
+alg=./twsa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=2 occ=2108556 p=0.0000s(0/100) e=2.1228s(21228/100)
+alg=./byp/byp-old/byp np=100   match=2108556    p=0.00000s e=10.10680s total=10.10680s
+Pattern length 2 out of range!
+
+for 3 mismatches:
+Killed
+Killed
+Command terminated by signal 15
+	Command being timed: "sh run-tests.sh"
+	User time (seconds): 4157.96
+	System time (seconds): 1.51
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:09:32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 603496
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 334
+	Minor (reclaiming a frame) page faults: 526173
+	Voluntary context switches: 53
+	Involuntary context switches: 5371
+	Swaps: 0
+	File system inputs: 182220
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
