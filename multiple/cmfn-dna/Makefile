@@ -43,7 +43,7 @@ COMPILE	= $(CC) $(CFLAGS) -c
 LINK	= $(LINKER) $(OBJS) $(DFLAGS) $(LDFLAGS) $(LIBS)
 
 #all:	$(PROGRAM) $(TEST_PROGRAM) libs
-all:	$(TEST_PROGRAM) libs
+all:	libs $(TEST_PROGRAM) 
 
 $(PROGRAM): $(OBJS)
 	@echo Linking $(PROGRAM)

@@ -14,8 +14,8 @@ PROGDIR	= .
 #For Linux:
 LIBDIR	= .
 
-CC	= gcc
-LINKER	= gcc
+CC	= gcc 
+LINKER	= gcc 
 
 OFLAGS	= -pipe -Dbitvector=unsigned -finline-functions -ffast-math -fpeephole -funroll-loops -fomit-frame-pointer -O3
 #OFLAGS	= -x c++ -O3 -xW -Dbitvector=unsigned
@@ -37,13 +37,13 @@ CFLAGS	= $(OFLAGS) $(WFLAGS) $(MFLAGS) $(DFLAGS) -I$(LIBDIR)/include
 
 LDFLAGS	= -L$(LIBDIR)/lib 
 
-LIBS	= -lm -lkstdlib # -lefence
+LIBS	= -lm -lkstdlib #-lefence
 
 COMPILE	= $(CC) $(CFLAGS) -c
 LINK	= $(LINKER) $(OBJS) $(DFLAGS) $(LDFLAGS) $(LIBS)
 
 #all:	$(PROGRAM) $(TEST_PROGRAM) libs
-all:	$(TEST_PROGRAM) libs
+all:	libs $(TEST_PROGRAM) 
 
 $(PROGRAM): $(OBJS)
 	@echo Linking $(PROGRAM)
