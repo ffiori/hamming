@@ -1,7 +1,7 @@
 #!/bin/sh
 
-eruns=100
-pruns=100
+eruns=1
+pruns=1
 
 echo "Guide:"
 echo "cmfn: Fredriksson-Navarro.
@@ -232,119 +232,119 @@ for len in 8 16 24 32; do
 done
 
 
-file=./tests/protein/hs.txt
-echo "\n\n\n********** $file **********\n"
-for len in 8 16 24 32; do
-    echo "\nPattern length $len:"
+#~ file=./tests/protein/hs.txt
+#~ echo "\n\n\n********** $file **********\n"
+#~ for len in 8 16 24 32; do
+    #~ echo "\nPattern length $len:"
  
-    p=10
-    echo "\n for sets of $p patterns ($eruns search runs):"
-    for k in 1 2 3; do
-        k1=`expr $k + 1`
-        r=`expr $len / $k1`
-        if [ $r -lt 4 -o 32 -lt $r ]
-        then
-            continue
-        fi
+    #~ p=10
+    #~ echo "\n for sets of $p patterns ($eruns search runs):"
+    #~ for k in 1 2 3; do
+        #~ k1=`expr $k + 1`
+        #~ r=`expr $len / $k1`
+        #~ if [ $r -lt 4 -o 32 -lt $r ]
+        #~ then
+            #~ continue
+        #~ fi
 
-        g=1
-        c=32
-        if [ $k -gt 7 ]
-        then
-            c=64
-        fi
+        #~ g=1
+        #~ c=32
+        #~ if [ $k -gt 7 ]
+        #~ then
+            #~ c=64
+        #~ fi
 
-        echo "\n   with $k mismatches (subpattern lengths $r, groups of $c chars, groups of $g patts):"
-        if [ $k -eq 1 ]
-		then
-			./udi/mm -e$eruns -p$pruns $file < $file.$len.n$p.badpat
-		fi
-        ./cmfn/cmfn -g$g -c$c -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./byn-original/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./byn-mod-hamming/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./bperl-mm-multi/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-    done
+        #~ echo "\n   with $k mismatches (subpattern lengths $r, groups of $c chars, groups of $g patts):"
+        #~ if [ $k -eq 1 ]
+		#~ then
+			#~ ./udi/mm -e$eruns -p$pruns $file < $file.$len.n$p.badpat
+		#~ fi
+        #~ ./cmfn/cmfn -g$g -c$c -e$eruns -k$k $file < $file.$len.n$p.badpat
+        #~ ./byn-original/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+        #~ ./byn-mod-hamming/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+        #~ ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+        #~ ./bperl-mm-multi/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+    #~ done
 
-    p=100
-    echo "\n for sets of $p patterns:"
-    for k in 1 2 3; do
-        k1=`expr $k + 1`
-        r=`expr $len / $k1`
-        if [ $r -lt 4 -o 32 -lt $r ]
-        then
-            continue
-        fi
+    #~ p=100
+    #~ echo "\n for sets of $p patterns:"
+    #~ for k in 1 2 3; do
+        #~ k1=`expr $k + 1`
+        #~ r=`expr $len / $k1`
+        #~ if [ $r -lt 4 -o 32 -lt $r ]
+        #~ then
+            #~ continue
+        #~ fi
 
-        g=5
-        c=32
-        if [ $k -gt 1 ]
-        then
-            g=5
-        fi
+        #~ g=5
+        #~ c=32
+        #~ if [ $k -gt 1 ]
+        #~ then
+            #~ g=5
+        #~ fi
 
-        if [ $len -eq 8 ]
-        then
-            g=3
-        fi
+        #~ if [ $len -eq 8 ]
+        #~ then
+            #~ g=3
+        #~ fi
 
-        if [ $k -gt 7 ]
-        then
-            g=8
-            c=64
-        fi
+        #~ if [ $k -gt 7 ]
+        #~ then
+            #~ g=8
+            #~ c=64
+        #~ fi
 
-        echo "\n   with $k mismatches (subpattern lengths $r, groups of $c chars, groups of $g patts):"
-        if [ $k -eq 1 ]
-	then
-		./udi/mm -e$eruns -p$pruns $file < $file.$len.n$p.badpat
-	fi
-        ./cmfn/cmfn -g$g -c$c -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./byn-original/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./byn-mod-hamming/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./bperl-mm-multi/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-    done
+        #~ echo "\n   with $k mismatches (subpattern lengths $r, groups of $c chars, groups of $g patts):"
+        #~ if [ $k -eq 1 ]
+	#~ then
+		#~ ./udi/mm -e$eruns -p$pruns $file < $file.$len.n$p.badpat
+	#~ fi
+        #~ ./cmfn/cmfn -g$g -c$c -e$eruns -k$k $file < $file.$len.n$p.badpat
+        #~ ./byn-original/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+        #~ ./byn-mod-hamming/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+        #~ ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+        #~ ./bperl-mm-multi/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+    #~ done
 
-    p=1000
-    echo "\n for sets of $p patterns:"
-    for k in 1 2 3; do
-        k1=`expr $k + 1`
-        r=`expr $len / $k1`
-        if [ $r -lt 4 -o 32 -lt $r ]
-        then
-            continue
-        fi
+    #~ p=1000
+    #~ echo "\n for sets of $p patterns:"
+    #~ for k in 1 2 3; do
+        #~ k1=`expr $k + 1`
+        #~ r=`expr $len / $k1`
+        #~ if [ $r -lt 4 -o 32 -lt $r ]
+        #~ then
+            #~ continue
+        #~ fi
         
-        g=15
-        c=32
-        if [ $k -gt 1 ]
-        then
-            g=23
-        fi
+        #~ g=15
+        #~ c=32
+        #~ if [ $k -gt 1 ]
+        #~ then
+            #~ g=23
+        #~ fi
         
-        if [ $k -gt 3 ]
-        then
-            g=62
-        fi
+        #~ if [ $k -gt 3 ]
+        #~ then
+            #~ g=62
+        #~ fi
 
-        if [ $k -gt 7 ]
-        then
-            c=64
-        fi
+        #~ if [ $k -gt 7 ]
+        #~ then
+            #~ c=64
+        #~ fi
 
-        echo "\n   with $k mismatches (subpattern lengths $r, groups of $c chars, groups of $g patts):"
-        if [ $k -eq 1 ]
-	then
-		./udi/mm -e$eruns -p$pruns $file < $file.$len.n$p.badpat
-	fi
-        ./cmfn/cmfn -g$g -c$c -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./byn-original/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./byn-mod-hamming/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./bperl-mm-multi/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-    done
-done
+        #~ echo "\n   with $k mismatches (subpattern lengths $r, groups of $c chars, groups of $g patts):"
+        #~ if [ $k -eq 1 ]
+	#~ then
+		#~ ./udi/mm -e$eruns -p$pruns $file < $file.$len.n$p.badpat
+	#~ fi
+        #~ ./cmfn/cmfn -g$g -c$c -e$eruns -k$k $file < $file.$len.n$p.badpat
+        #~ ./byn-original/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+        #~ ./byn-mod-hamming/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+        #~ ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+        #~ ./bperl-mm-multi/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+    #~ done
+#~ done
 
 
 
