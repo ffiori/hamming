@@ -1,0 +1,12 @@
+# Don't track content of these folders
+# someOtherfoler/
+
+# generated patterns
+####################
+*.badpat
+*.rot
+*.pat
+
+# Compiled source #
+###################
+*.o
