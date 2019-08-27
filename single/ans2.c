@@ -39,7 +39,7 @@ typedef TABTYPE Tab;
 
 #define LIM 65536
 
-uint16_t d3[LIM];
+uint8_t d3[LIM];
 
 static struct
 {
@@ -81,21 +81,19 @@ for (i = 0; i < (2<<(m-1)); ++i) {
 
 int exec(CHARTYPE *y, int n, int k, int q)
 {
-	int i, j, id, matches = 0, m=pat.patlen, nm=n-m;
-	uint16_t t;
-	mi x_ptr, y_ptr;
-	for (j = 0; j < 16; j++) y[n+j]=1;
+    int j, matches = 0, m=pat.patlen, nm=n-m;
+    uint16_t t;
+    mi x_ptr, y_ptr;
+    for (j = 0; j < 16; j++) y[n+j]=1;
 
-	x_ptr = loadu_si(( mi *)(pat.pat));
+    x_ptr = loadu_si(( mi *)(pat.pat));
 
-	for (j = 0; j <= nm; j++) {
-		y_ptr = loadu_si(( mi *)(y+j));
-		t = movemask_epi8( cmpeq_epi8(x_ptr, y_ptr) );
-    //pn(t); pb(t);
-		//pn(_mm_popcnt_u32(t));
-		//if ((m-_mm_popcnt_u32(t))<=k) matches++;
-		if (d3[t]) matches++;
-	}
+    for (j = 0; j <= nm; j++) {
+        y_ptr = loadu_si(( mi *)(y+j));
+        t = movemask_epi8( cmpeq_epi8(x_ptr, y_ptr) );
+        if (d3[t]) matches++;
+        //~ matches+=d3[t];
+    }
 
-	return matches;
+    return matches;
 }

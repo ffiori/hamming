@@ -1,6 +1,6 @@
 CFLAGS ?= -O3 -Wall -msse4.2 -mavx2
 LDFLAGS ?= -lm
-ALGS = ef efs efs_long abm abndm asb bsa naive sa tuabndm tusa twsa ans2b ans2 ansb ans
+ALGS = ef efs efs_long abm abndm asb bsa naive sa tuabndm tusa twsa ans2b ans2 ansb ans ans2b-noif
 
 all: $(ALGS)
 

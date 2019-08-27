@@ -11,6 +11,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include "bperl-mm-multi.h"
+#include "ans2b.h"
 
 #define CHARTYPE unsigned char
 
@@ -270,6 +271,14 @@ int shift = mepsm_get_shift();
 //int lastbegin = -1;
 
     if (m <= 32) {
+        int(*ans_exec)(CHARTYPE *, int, int, int);
+        if(m<=16){
+            ans_exec = ans_exec_short;
+        }
+        else{
+            ans_exec = ans_exec_long;
+        }
+        
         while (true) {
             list = mepsm_exec (text, n - 1);
             if (list.patt == -1)
