@@ -1,7 +1,7 @@
 #!/bin/sh
 
-eruns=1
-pruns=1
+eruns=100
+pruns=100
 
 echo "Guide:"
 echo "cmfn: Fredriksson-Navarro.
@@ -39,7 +39,7 @@ for len in 8 16 24 32; do
         ./cmfn-dna/cmfn -g$g -c$c -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./byn-original/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./byn-mod-hamming/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+        #~ ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./bperl-mm-multi/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
     done
 
@@ -72,7 +72,7 @@ for len in 8 16 24 32; do
         ./cmfn-dna/cmfn -g$g -c$c -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./byn-original/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./byn-mod-hamming/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+        #~ ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./bperl-mm-multi/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
     done
 
@@ -109,7 +109,7 @@ for len in 8 16 24 32; do
         ./cmfn-dna/cmfn -g$g -c$c -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./byn-original/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./byn-mod-hamming/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+        #~ ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./bperl-mm-multi/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
     done
 done
@@ -147,7 +147,7 @@ for len in 8 16 24 32; do
         ./cmfn/cmfn -g$g -c$c -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./byn-original/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./byn-mod-hamming/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+        #~ ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./bperl-mm-multi/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
     done
 
@@ -187,7 +187,7 @@ for len in 8 16 24 32; do
         ./cmfn/cmfn -g$g -c$c -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./byn-original/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./byn-mod-hamming/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+        #~ ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./bperl-mm-multi/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
     done
 
@@ -226,7 +226,7 @@ for len in 8 16 24 32; do
         ./cmfn/cmfn -g$g -c$c -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./byn-original/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./byn-mod-hamming/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+        #~ ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./bperl-mm-multi/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
     done
 done
