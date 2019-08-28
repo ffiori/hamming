@@ -14,6 +14,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include "bperl-mm.h"
+#include "ans2b.h"
 
 #define safe_free(x) { if((x)!=NULL) free(x); }
 #define min(a,b) ((a)<(b)) ? (a) : (b)
@@ -449,6 +450,14 @@ void PartExactSearch(register uchar * text, register int n,
     //printf("pattern %s aparece: %d. Total %d\n", pat, ans_exec(text, n, k, 123), total);
 
     if(m<=MAXSIMD){
+        int(*ans_exec)(CHARTYPE *, int, int, int);
+        if(m<=16){
+            ans_exec = ans_exec_short;
+        }
+        else{
+            ans_exec = ans_exec_long;
+        }
+        
         while (true) 
         {
           ExactAns ans = mepsm_exec(text, n-1);
