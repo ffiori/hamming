@@ -19,7 +19,7 @@ typedef TABTYPE Tab;
 #define CHARTYPE        unsigned char
 #endif
 
-#ifdef USE_AVX
+#if 0
 #define ALPHA 32
 #define LOG_ALPHA 5
 #define movemask_epi8 _mm256_movemask_epi8
@@ -78,7 +78,7 @@ void prep(CHARTYPE *base, register int m, int k, int q)
 int exec(CHARTYPE *y, int n, int k, int q)
 {
     int j, matches = 0, m=pat.patlen, nm=n-m;
-    uint8_t t;
+    uint16_t t;
     mi x_ptr, y_ptr;
     for (j = 0; j < 16; j++) y[n+j]=1;
 
