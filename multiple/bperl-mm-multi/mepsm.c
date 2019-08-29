@@ -162,41 +162,41 @@ void prep4 (unsigned char **ps, int _, int kval, int qval)
             flist[signature] = t;
         }
 
-        if (strlen (ps[i]) > Plen) {
-#if(!MOD)
-            intptr = (unsigned long long *) &ps[i][shift];
-            crc = _mm_crc32_u16 (crcAdditiveConstant, (*intptr & 0x0000ffff));
-#else
-#if(DNA)
-            unsigned char *base = &pats[i * (Plen + 1) + shift];
+        //~ if (strlen (ps[i]) > Plen) {
+//~ #if(!MOD)
+            //~ intptr = (unsigned long long *) &ps[i][shift];
+            //~ crc = _mm_crc32_u16 (crcAdditiveConstant, (*intptr & 0x0000ffff));
+//~ #else
+//~ #if(DNA)
+            //~ unsigned char *base = &pats[i * (Plen + 1) + shift];
 
-            if (Plen == 4)
-                signature = EXPRS4 (Plen - 1);
-            if (Plen == 5)
-                signature = EXPRS5 (Plen - 1);
-            if (Plen == 6)
-                signature = EXPRS6 (Plen - 1);
-            if (Plen == 7)
-                signature = EXPRS7 (Plen - 1);
-#else
-            lptr = (unsigned long long *) &ps[i][shift];
-            crc = _mm_crc32_u64 (crcAdditiveConstant, mask & *lptr);
-#endif
-#endif
-            signature = (unsigned short int) crc;
+            //~ if (Plen == 4)
+                //~ signature = EXPRS4 (Plen - 1);
+            //~ if (Plen == 5)
+                //~ signature = EXPRS5 (Plen - 1);
+            //~ if (Plen == 6)
+                //~ signature = EXPRS6 (Plen - 1);
+            //~ if (Plen == 7)
+                //~ signature = EXPRS7 (Plen - 1);
+//~ #else
+            //~ lptr = (unsigned long long *) &ps[i][shift];
+            //~ crc = _mm_crc32_u64 (crcAdditiveConstant, mask & *lptr);
+//~ #endif
+//~ #endif
+            //~ signature = (unsigned short int) crc;
 
-#if(COLLISIONS)
-            if (!printed && flist[signature])
-                col++;
-#endif
+//~ #if(COLLISIONS)
+            //~ if (!printed && flist[signature])
+                //~ col++;
+//~ #endif
 
-            t = (LIST *) malloc (sizeof (LIST));
-            t->next = flist[signature];
-            t->pos = -1;
-            t->patt = patnow;
-            t->subpatt = i;
-            flist[signature] = t;
-        }
+            //~ t = (LIST *) malloc (sizeof (LIST));
+            //~ t->next = flist[signature];
+            //~ t->pos = -1;
+            //~ t->patt = patnow;
+            //~ t->subpatt = i;
+            //~ flist[signature] = t;
+        //~ }
     }
 }
 
@@ -238,35 +238,35 @@ void prep8 (unsigned char **ps, int _, int kval, int qval)
             flist[signature] = t;
         }
 
-        if (strlen (ps[i]) > Plen) {
-#if(!MOD)
-            intptr = (unsigned int *) &ps[i][shift + 1];
-            crc = _mm_crc32_u32 (crcAdditiveConstant, *intptr);
-            signature = (unsigned short int) crc;
-#else
-#if(DNA)
-            unsigned char *base = &pats[i * (Plen + 1) + shift];
+        //~ if (strlen (ps[i]) > Plen) {
+//~ #if(!MOD)
+            //~ intptr = (unsigned int *) &ps[i][shift + 1];
+            //~ crc = _mm_crc32_u32 (crcAdditiveConstant, *intptr);
+            //~ signature = (unsigned short int) crc;
+//~ #else
+//~ #if(DNA)
+            //~ unsigned char *base = &pats[i * (Plen + 1) + shift];
 
-            signature = EXPRS8 (7);
-#else
-            lptr = (unsigned long long *) &ps[i][shift];
-            lcrc = _mm_crc32_u64 (crcAdditiveConstant, *lptr);
-            signature = (unsigned short int) lcrc;
-#endif
-#endif
+            //~ signature = EXPRS8 (7);
+//~ #else
+            //~ lptr = (unsigned long long *) &ps[i][shift];
+            //~ lcrc = _mm_crc32_u64 (crcAdditiveConstant, *lptr);
+            //~ signature = (unsigned short int) lcrc;
+//~ #endif
+//~ #endif
 
-#if(COLLISIONS)
-            if (!printed && flist[signature])
-                col++;
-#endif
+//~ #if(COLLISIONS)
+            //~ if (!printed && flist[signature])
+                //~ col++;
+//~ #endif
 
-            t = (LIST *) malloc (sizeof (LIST));
-            t->next = flist[signature];
-            t->pos = -1;
-            t->patt = patnow;
-            t->subpatt = i;
-            flist[signature] = t;
-        }
+            //~ t = (LIST *) malloc (sizeof (LIST));
+            //~ t->next = flist[signature];
+            //~ t->pos = -1;
+            //~ t->patt = patnow;
+            //~ t->subpatt = i;
+            //~ flist[signature] = t;
+        //~ }
     }
 }
 
@@ -309,34 +309,34 @@ void prep16 (unsigned char **ps, int _, int kval, int qval)
             flist[signature] = t;
         }
 
-        if (strlen (ps[i]) > Plen) {
-#if(!MOD)
-            lptr = (unsigned long long *) &ps[i][shift - j];
-            lcrc = _mm_crc32_u64 (crcAdditiveConstant, *lptr);
-#else
-#if(DNA)
-            unsigned char *base = &pats[i * (Plen + 1) + shift - 1 - j];
+        //~ if (strlen (ps[i]) > Plen) {
+//~ #if(!MOD)
+            //~ lptr = (unsigned long long *) &ps[i][shift - j];
+            //~ lcrc = _mm_crc32_u64 (crcAdditiveConstant, *lptr);
+//~ #else
+//~ #if(DNA)
+            //~ unsigned char *base = &pats[i * (Plen + 1) + shift - 1 - j];
 
-            lcrc = EXPRS8 (7);
-#else
-            lptr = (unsigned long long *) &ps[i][shift - 1 - j];
-            lcrc = _mm_crc32_u64 (crcAdditiveConstant, *lptr);
-#endif
-#endif
-            signature = (unsigned short int) lcrc;
+            //~ lcrc = EXPRS8 (7);
+//~ #else
+            //~ lptr = (unsigned long long *) &ps[i][shift - 1 - j];
+            //~ lcrc = _mm_crc32_u64 (crcAdditiveConstant, *lptr);
+//~ #endif
+//~ #endif
+            //~ signature = (unsigned short int) lcrc;
 
-#if(COLLISIONS)
-            if (!printed && flist[signature])
-                col++;
-#endif
+//~ #if(COLLISIONS)
+            //~ if (!printed && flist[signature])
+                //~ col++;
+//~ #endif
 
-            t = (LIST *) malloc (sizeof (LIST));
-            t->next = flist[signature];
-            t->pos = -1;
-            t->patt = patnow;
-            t->subpatt = i;
-            flist[signature] = t;
-        }
+            //~ t = (LIST *) malloc (sizeof (LIST));
+            //~ t->next = flist[signature];
+            //~ t->pos = -1;
+            //~ t->patt = patnow;
+            //~ t->subpatt = i;
+            //~ flist[signature] = t;
+        //~ }
     }
 }
 

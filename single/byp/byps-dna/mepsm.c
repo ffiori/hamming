@@ -112,22 +112,22 @@ if(!printed && flist[signature]) col++;
 		   flist[signature] = t;
 	   }
 	   
-        if(strlen(pats[i])>Plen){
-#if(!MOD)
-            lptr = (unsigned int*) &pats[i][shift+1];
-            //crc = _mm_crc32_u16(crcAdditiveConstant, (*intptr & 0x0000ffff));
-            crc = *intptr;
-#else
-            lptr = (unsigned long long*) &pats[i][shift];
-            crc = _mm_crc32_u64(crcAdditiveConstant, *lptr);
-#endif
-            signature = (unsigned short int) crc;
-            t = (LIST*)malloc(sizeof(LIST));
-            t->next = flist[signature];
-            t->pos  = -1;
-            t->patt = i;
-            flist[signature] = t;
-        }
+        //~ if(strlen(pats[i])>Plen){
+//~ #if(!MOD)
+            //~ lptr = (unsigned int*) &pats[i][shift+1];
+            //~ //crc = _mm_crc32_u16(crcAdditiveConstant, (*intptr & 0x0000ffff));
+            //~ crc = *intptr;
+//~ #else
+            //~ lptr = (unsigned long long*) &pats[i][shift];
+            //~ crc = _mm_crc32_u64(crcAdditiveConstant, *lptr);
+//~ #endif
+            //~ signature = (unsigned short int) crc;
+            //~ t = (LIST*)malloc(sizeof(LIST));
+            //~ t->next = flist[signature];
+            //~ t->pos  = -1;
+            //~ t->patt = i;
+            //~ flist[signature] = t;
+        //~ }
 	}
 }
 
@@ -169,21 +169,21 @@ if(!printed && flist[signature]) col++;
             flist[signature] = t;
         }
         
-        if(strlen(pats[i])>Plen){
-#if(!MOD || HYBRID)
-            lptr = (unsigned int*) &pats[i][shift+1];
-            lcrc = _mm_crc32_u32(crcAdditiveConstant, *lptr);
-#else
-            lptr = (unsigned long long*) &pats[i][shift];
-            lcrc = _mm_crc32_u64(crcAdditiveConstant, *lptr);
-#endif
-            signature = (unsigned short int) lcrc;
-            t = (LIST*)malloc(sizeof(LIST));
-            t->next = flist[signature];
-            t->pos  = -1;
-            t->patt = i;
-            flist[signature] = t;
-        }
+        //~ if(strlen(pats[i])>Plen){
+//~ #if(!MOD || HYBRID)
+            //~ lptr = (unsigned int*) &pats[i][shift+1];
+            //~ lcrc = _mm_crc32_u32(crcAdditiveConstant, *lptr);
+//~ #else
+            //~ lptr = (unsigned long long*) &pats[i][shift];
+            //~ lcrc = _mm_crc32_u64(crcAdditiveConstant, *lptr);
+//~ #endif
+            //~ signature = (unsigned short int) lcrc;
+            //~ t = (LIST*)malloc(sizeof(LIST));
+            //~ t->next = flist[signature];
+            //~ t->pos  = -1;
+            //~ t->patt = i;
+            //~ flist[signature] = t;
+        //~ }
     }
 }
 
@@ -225,21 +225,21 @@ if(!printed && flist[signature]) col++;
             flist[signature] = t;
         }
         
-        if(strlen(pats[i])>Plen){
-#if(!MOD || HYBRID)
-            lptr = (unsigned long long*) &pats[i][shift+1];
-            lcrc = _mm_crc32_u64(crcAdditiveConstant, *lptr);
-#else
-            lptr = (unsigned long long*) &pats[i][shift];
-            lcrc = _mm_crc32_u64(crcAdditiveConstant, *lptr);
-#endif
-            signature = (unsigned short int) lcrc;
-            t = (LIST*)malloc(sizeof(LIST));
-            t->next = flist[signature];
-            t->pos  = -1;
-            t->patt = i;
-            flist[signature] = t;
-        }
+        //~ if(strlen(pats[i])>Plen){
+//~ #if(!MOD || HYBRID)
+            //~ lptr = (unsigned long long*) &pats[i][shift+1];
+            //~ lcrc = _mm_crc32_u64(crcAdditiveConstant, *lptr);
+//~ #else
+            //~ lptr = (unsigned long long*) &pats[i][shift];
+            //~ lcrc = _mm_crc32_u64(crcAdditiveConstant, *lptr);
+//~ #endif
+            //~ signature = (unsigned short int) lcrc;
+            //~ t = (LIST*)malloc(sizeof(LIST));
+            //~ t->next = flist[signature];
+            //~ t->pos  = -1;
+            //~ t->patt = i;
+            //~ flist[signature] = t;
+        //~ }
 	}
 }
 
