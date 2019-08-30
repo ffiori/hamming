@@ -1,0 +1,54 @@
+nohup: ignoring input
+Preprocessing runs 100. Search runs 100. q-gram for EF and EFS 4.
+
+
+********** ../multiple/tests/genome/ecoli.txt **********
+
+
+Pattern length of 8:
+for 1 mismatches:
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=1 occ=202240 p=0.0006s(6/100) e=0.7499s(7499/100)
+
+for 2 mismatches:
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=2 occ=2108556 p=0.0004s(4/100) e=0.7501s(7501/100)
+
+for 3 mismatches:
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=3 occ=13132371 p=0.0004s(4/100) e=0.7512s(7512/100)
+
+
+Pattern length of 16:
+for 1 mismatches:
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=1 occ=45 p=0.0077s(77/100) e=0.7781s(7781/100)
+
+for 2 mismatches:
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=2 occ=210 p=0.0077s(77/100) e=0.7779s(7779/100)
+
+for 3 mismatches:
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=3 occ=2313 p=0.0090s(90/100) e=0.7768s(7768/100)
+
+
+
+********** ../multiple/tests/english/bible.txt **********
+
+
+Pattern length of 8:
+for 1 mismatches:
+alg=./ans2b-noif T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=1 occ=21623 p=0.0004s(4/100) e=0.6537s(6537/100)
+
+for 2 mismatches:
+alg=./ans2b-noif T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=2 occ=102327 p=0.0004s(4/100) e=0.6544s(6544/100)
+
+for 3 mismatches:
+alg=./ans2b-noif T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=3 occ=504694 p=0.0003s(3/100) e=0.6547s(6547/100)
+
+
+Pattern length of 16:
+for 1 mismatches:
+alg=./ans2b-noif T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=1 occ=78 p=0.0083s(83/100) e=0.6554s(6554/100)
+
+for 2 mismatches:
+alg=./ans2b-noif T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=2 occ=510 p=0.0086s(86/100) e=0.6554s(6554/100)
+
+for 3 mismatches:
+alg=./ans2b-noif T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=3 occ=1161 p=0.0083s(83/100) e=0.6561s(6561/100)
+
