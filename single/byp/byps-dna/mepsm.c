@@ -9,7 +9,7 @@ ASSUMPTION: all patterns are separated by '\n' or '\0' and are the same length (
 #include "bperl-mm.h"
 #define max(a,b) (a)>(b) ? (a) : (b)
 
-#define DNA 1 //tuning for DNA
+#define DNA 1 //tuning for DNA, actually for English too.
 
 #if(DNA)
 
@@ -111,23 +111,6 @@ if(!printed && flist[signature]) col++;
 		   t->patt = i;
 		   flist[signature] = t;
 	   }
-	   
-        //~ if(strlen(pats[i])>Plen){
-//~ #if(!MOD)
-            //~ lptr = (unsigned int*) &pats[i][shift+1];
-            //~ //crc = _mm_crc32_u16(crcAdditiveConstant, (*intptr & 0x0000ffff));
-            //~ crc = *intptr;
-//~ #else
-            //~ lptr = (unsigned long long*) &pats[i][shift];
-            //~ crc = _mm_crc32_u64(crcAdditiveConstant, *lptr);
-//~ #endif
-            //~ signature = (unsigned short int) crc;
-            //~ t = (LIST*)malloc(sizeof(LIST));
-            //~ t->next = flist[signature];
-            //~ t->pos  = -1;
-            //~ t->patt = i;
-            //~ flist[signature] = t;
-        //~ }
 	}
 }
 
@@ -136,7 +119,7 @@ void prep8(unsigned char **ps, int len, int  kval, int qval)
 {
 #if(!MOD || HYBRID)
     //shift = (Plen/4 - 1)*4; //original
-    shift = Plen - sizeof(*intptr);
+    shift = Plen - sizeof(*intptr) + 1;
 #else
     shift = Plen - sizeof(*lptr) + 1; //Plen - sizeof(hashed_block) + 1
 #endif
@@ -151,7 +134,7 @@ void prep8(unsigned char **ps, int len, int  kval, int qval)
         //for(j=0;j<shift;j++){
         for(j=shift-1;j>=0;j--){
 #if(!MOD || HYBRID)
-            intptr = (unsigned int*) &pats[i][shift-j];
+            intptr = (unsigned int*) &pats[i][shift-1-j];
             crc = _mm_crc32_u32(crcAdditiveConstant, *intptr);
             signature = (unsigned short int) crc;
 #else
@@ -168,22 +151,6 @@ if(!printed && flist[signature]) col++;
             t->patt = i;
             flist[signature] = t;
         }
-        
-        //~ if(strlen(pats[i])>Plen){
-//~ #if(!MOD || HYBRID)
-            //~ lptr = (unsigned int*) &pats[i][shift+1];
-            //~ lcrc = _mm_crc32_u32(crcAdditiveConstant, *lptr);
-//~ #else
-            //~ lptr = (unsigned long long*) &pats[i][shift];
-            //~ lcrc = _mm_crc32_u64(crcAdditiveConstant, *lptr);
-//~ #endif
-            //~ signature = (unsigned short int) lcrc;
-            //~ t = (LIST*)malloc(sizeof(LIST));
-            //~ t->next = flist[signature];
-            //~ t->pos  = -1;
-            //~ t->patt = i;
-            //~ flist[signature] = t;
-        //~ }
     }
 }
 
@@ -192,28 +159,18 @@ if(!printed && flist[signature]) col++;
 // 16 <= Plen < 32
 void prep16(unsigned char **ps, int len, int  kval, int qval)
 {
-#if(!MOD || HYBRID)
-    //shift = (Plen/8 - 1)*8; //original
-    shift = Plen - sizeof(*lptr);
-#else
     shift = Plen - sizeof(*lptr) + 1; //Plen - sizeof(hashed_block) + 1 
     //shift = Plen - 2*sizeof(*lptr) + 1;
-#endif
 
     Hlen = sizeof(*lptr);
 
     for(i=0;i<r;i++){//for all patterns
         //for(j=0;j<shift;j++){
         for(j=shift-1;j>=0;j--){
-#if(!MOD || HYBRID)
-            lptr = (unsigned long long*) &pats[i][shift-j];
-            lcrc = _mm_crc32_u64(crcAdditiveConstant, *lptr);
-#else
             lptr = (unsigned long long*) &pats[i][shift-1-j];
             lcrc = _mm_crc32_u64(crcAdditiveConstant, *lptr);
             //unsigned long long block = *lptr ^ *(lptr+1);
             //lcrc = _mm_crc32_u64(crcAdditiveConstant, block);
-#endif
             signature = (unsigned short int) lcrc;
 #if(COLLISIONS)
 if(!printed && flist[signature]) col++;
@@ -224,22 +181,6 @@ if(!printed && flist[signature]) col++;
             t->patt = i;
             flist[signature] = t;
         }
-        
-        //~ if(strlen(pats[i])>Plen){
-//~ #if(!MOD || HYBRID)
-            //~ lptr = (unsigned long long*) &pats[i][shift+1];
-            //~ lcrc = _mm_crc32_u64(crcAdditiveConstant, *lptr);
-//~ #else
-            //~ lptr = (unsigned long long*) &pats[i][shift];
-            //~ lcrc = _mm_crc32_u64(crcAdditiveConstant, *lptr);
-//~ #endif
-            //~ signature = (unsigned short int) lcrc;
-            //~ t = (LIST*)malloc(sizeof(LIST));
-            //~ t->next = flist[signature];
-            //~ t->pos  = -1;
-            //~ t->patt = i;
-            //~ flist[signature] = t;
-        //~ }
 	}
 }
 
@@ -343,11 +284,7 @@ ExactAns search8(unsigned char *buf, int Tlen, int _, int qval)
 
         t = flist[signature];
         while(t){
-#if(!MOD || HYBRID)
-            possibleStart = charPtr-shift+t->pos;
-#else
             possibleStart = charPtr-shift+1+t->pos; //t->pos is negative
-#endif
             if (0==memcmp(possibleStart, pats[t->patt], Plen)){
                 offset = charPtr - buf + shift;
                 ans.pos = possibleStart-buf;
@@ -384,11 +321,7 @@ ExactAns search16(unsigned char *buf, int Tlen, int _, int qval)
         signature = (unsigned short int) lcrc;
         t = flist[signature];
         while(t){
-#if(!MOD || HYBRID)
-            possibleStart = charPtr-shift+t->pos;
-#else
             possibleStart = charPtr-shift+1+t->pos;
-#endif
             if (0==memcmp(possibleStart, pats[t->patt], Plen)){
                 offset = charPtr - buf + shift;
                 ans.pos = possibleStart-buf;
@@ -412,11 +345,7 @@ ExactAns mepsm_exec(unsigned char *buf, int Tlen)
 #if 1 //turn to 0 to check only first coincident q-gram
     char* charPtr = &buf[offset-shift];    
     while(t!=NULL){
-#if(!MOD || HYBRID)
-            possibleStart = Plen<8 ? charPtr-shift+1+t->pos : charPtr-shift+t->pos;
-#else
-            possibleStart = charPtr-shift+1+t->pos;
-#endif
+        possibleStart = charPtr-shift+1+t->pos;
         if (0==memcmp(possibleStart, pats[t->patt], Plen)){
                 ans.pos = possibleStart-buf;
                 ans.subpatt = t->patt;
