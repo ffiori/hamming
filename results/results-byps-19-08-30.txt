@@ -1,0 +1,98 @@
+nohup: ignoring input
+Preprocessing runs 100. Search runs 100. q-gram for EF and EFS 4.
+
+
+********** ../multiple/tests/genome/ecoli.txt **********
+
+
+Pattern length of 8:
+for 1 mismatches:
+alg=./byp/byps-dna/byps np=100   match=202240     p=0.00870s e=1.59840s total=1.60710s
+
+for 2 mismatches:
+Pattern length 2 out of range!
+
+for 3 mismatches:
+Pattern length 2 out of range!
+
+
+Pattern length of 16:
+for 1 mismatches:
+alg=./byp/byps-dna/byps np=100   match=45         p=0.01700s e=0.35420s total=0.37120s
+
+for 2 mismatches:
+alg=./byp/byps-dna/byps np=100   match=210        p=0.01600s e=1.56000s total=1.57600s
+
+for 3 mismatches:
+alg=./byp/byps-dna/byps np=100   match=2313       p=0.01550s e=1.93020s total=1.94570s
+
+
+Pattern length of 24:
+for 1 mismatches:
+alg=./byp/byps-dna/byps np=100   match=22         p=0.01610s e=0.25200s total=0.26810s
+
+for 2 mismatches:
+alg=./byp/byps-dna/byps np=100   match=34         p=0.01580s e=0.42070s total=0.43650s
+
+for 3 mismatches:
+alg=./byp/byps-dna/byps np=100   match=52         p=0.00000s e=1.60370s total=1.60370s
+
+
+Pattern length of 32:
+for 1 mismatches:
+alg=./byp/byps-dna/byps np=100   match=14         p=0.01510s e=0.19370s total=0.20880s
+
+for 2 mismatches:
+alg=./byp/byps-dna/byps np=100   match=18         p=0.01550s e=0.34950s total=0.36500s
+
+for 3 mismatches:
+alg=./byp/byps-dna/byps np=100   match=30         p=0.01590s e=0.47870s total=0.49460s
+
+
+
+********** ../multiple/tests/english/bible.txt **********
+
+
+Pattern length of 8:
+for 1 mismatches:
+alg=./byp/byps-dna/byps np=100   match=21623      p=0.00800s e=1.37250s total=1.38050s
+
+for 2 mismatches:
+Pattern length 2 out of range!
+
+for 3 mismatches:
+Pattern length 2 out of range!
+
+
+Pattern length of 16:
+for 1 mismatches:
+alg=./byp/byps-dna/byps np=100   match=78         p=0.01560s e=0.27400s total=0.28960s
+
+for 2 mismatches:
+alg=./byp/byps-dna/byps np=100   match=510        p=0.01620s e=1.42670s total=1.44290s
+
+for 3 mismatches:
+alg=./byp/byps-dna/byps np=100   match=1161       p=0.01630s e=1.41560s total=1.43190s
+
+
+Pattern length of 24:
+for 1 mismatches:
+alg=./byp/byps-dna/byps np=100   match=33         p=0.01510s e=0.16270s total=0.17780s
+
+for 2 mismatches:
+alg=./byp/byps-dna/byps np=100   match=69         p=0.01550s e=0.28110s total=0.29660s
+
+for 3 mismatches:
+alg=./byp/byps-dna/byps np=100   match=99         p=0.01660s e=1.44150s total=1.45810s
+
+
+Pattern length of 32:
+for 1 mismatches:
+alg=./byp/byps-dna/byps np=100   match=9          p=0.01470s e=0.16640s total=0.18110s
+
+for 2 mismatches:
+alg=./byp/byps-dna/byps np=100   match=22         p=0.01580s e=0.20330s total=0.21910s
+
+for 3 mismatches:
+alg=./byp/byps-dna/byps np=100   match=30         p=0.01560s e=0.28200s total=0.29760s
+
