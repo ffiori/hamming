@@ -1,0 +1,68 @@
+nohup: ignoring input
+Preprocessing runs 100. Search runs 100. q-gram for EF and EFS 4.
+
+
+********** ../multiple/tests/genome/ecoli.txt **********
+
+
+Pattern length of 16:
+for 1 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=1 occ=45 p=0.0081s(81/100) e=0.8831s(8831/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=1 occ=45 p=0.0080s(80/100) e=0.7779s(7779/100)
+
+for 2 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=2 occ=210 p=0.0082s(82/100) e=0.8824s(8824/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=2 occ=210 p=0.0082s(82/100) e=0.7780s(7780/100)
+
+for 3 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=3 occ=2313 p=0.0087s(87/100) e=0.8845s(8845/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=3 occ=2313 p=0.0085s(85/100) e=0.7775s(7775/100)
+
+for 4 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=4 occ=21586 p=0.0095s(95/100) e=0.8857s(8857/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=4 occ=21586 p=0.0095s(95/100) e=0.7778s(7778/100)
+
+for 5 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=5 occ=151781 p=0.0106s(106/100) e=0.8899s(8899/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=5 occ=151781 p=0.0108s(108/100) e=0.7765s(7765/100)
+
+for 6 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=6 occ=839822 p=0.0130s(130/100) e=0.9029s(9029/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=6 occ=839822 p=0.0115s(115/100) e=0.7760s(7760/100)
+
+for 7 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=7 occ=3688238 p=0.0157s(157/100) e=0.9706s(9706/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=7 occ=3688238 p=0.0120s(120/100) e=0.7768s(7768/100)
+
+for 8 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=8 occ=13072317 p=0.0156s(156/100) e=1.1996s(11996/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=8 occ=13072317 p=0.0106s(106/100) e=0.7774s(7774/100)
+
+for 9 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=9 occ=37642440 p=0.0136s(136/100) e=1.7618s(17618/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=9 occ=37642440 p=0.0104s(104/100) e=0.7769s(7769/100)
+
+for 10 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=10 occ=88639234 p=0.0118s(118/100) e=2.8427s(28427/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=10 occ=88639234 p=0.0097s(97/100) e=0.7769s(7769/100)
+
+for 11 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=11 occ=171612892 p=0.0098s(98/100) e=4.5190s(45190/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=11 occ=171612892 p=0.0090s(90/100) e=0.7767s(7767/100)
+
+for 12 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=12 occ=275300761 p=0.0079s(79/100) e=4.8092s(48092/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=12 occ=275300761 p=0.0087s(87/100) e=0.7760s(7760/100)
+
+for 13 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=13 occ=371425252 p=0.0086s(86/100) e=2.8535s(28535/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=13 occ=371425252 p=0.0080s(80/100) e=0.7776s(7776/100)
+
+for 14 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=14 occ=433781701 p=0.0079s(79/100) e=1.5013s(15013/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=14 occ=433781701 p=0.0084s(84/100) e=0.7770s(7770/100)
+
+for 15 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=15 occ=459045794 p=0.0079s(79/100) e=0.9816s(9816/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=15 occ=459045794 p=0.0076s(76/100) e=0.7774s(7774/100)
+

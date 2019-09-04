@@ -1,0 +1,36 @@
+nohup: ignoring input
+Preprocessing runs 100. Search runs 100. q-gram for EF and EFS 4.
+
+
+********** ../multiple/tests/genome/ecoli.txt **********
+
+
+Pattern length of 8:
+for 1 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=1 occ=202240 p=0.0004s(4/100) e=0.8627s(8627/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=1 occ=202240 p=0.0006s(6/100) e=0.7505s(7505/100)
+
+for 2 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=2 occ=2108556 p=0.0007s(7/100) e=0.9060s(9060/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=2 occ=2108556 p=0.0008s(8/100) e=0.7497s(7497/100)
+
+for 3 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=3 occ=13132371 p=0.0003s(3/100) e=1.1563s(11563/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=3 occ=13132371 p=0.0004s(4/100) e=0.7504s(7504/100)
+
+for 4 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=4 occ=53525604 p=0.0006s(6/100) e=2.0149s(20149/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=4 occ=53525604 p=0.0005s(5/100) e=0.7503s(7503/100)
+
+for 5 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=5 occ=149356926 p=0.0004s(4/100) e=3.9357s(39357/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=5 occ=149356926 p=0.0006s(6/100) e=0.7497s(7497/100)
+
+for 6 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=6 occ=292897248 p=0.0002s(2/100) e=4.3714s(43714/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=6 occ=292897248 p=0.0005s(5/100) e=0.7505s(7505/100)
+
+for 7 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=7 occ=416759655 p=0.0007s(7/100) e=1.8388s(18388/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=7 occ=416759655 p=0.0003s(3/100) e=0.7497s(7497/100)
+
