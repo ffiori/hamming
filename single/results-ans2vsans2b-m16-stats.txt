@@ -1,0 +1,308 @@
+nohup: ignoring input
+Preprocessing runs 1. Search runs 1. q-gram for EF and EFS 4.
+
+
+********** ../multiple/tests/genome/ecoli.txt **********
+
+
+P attern length of 16:
+for 1 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=1 occ=45 p=0.0000s(0/1) e=0.9500s(95/1)
+957.348331;;task-clock;957348331;100.00;0.973;CPUs utilized
+3;;context-switches;957348331;100.00;0.003;K/sec
+1;;cpu-migrations;957348331;100.00;0.001;K/sec
+1220;;page-faults;957348331;100.00;0.001;M/sec
+1518458084;;cycles;957366672;100.00;1.586;GHz
+3777145316;;instructions;957366672;100.00;2.49;insn per cycle
+942212352;;branches;957366672;100.00;984.190;M/sec
+20861;;branch-misses;957366672;100.00;0.00;of all branches
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=1 occ=45 p=0.0000s(0/1) e=0.8300s(83/1)
+842.057532;;task-clock;842057532;100.00;0.999;CPUs utilized
+1;;context-switches;842057532;100.00;0.001;K/sec
+0;;cpu-migrations;842057532;100.00;0.000;K/sec
+1220;;page-faults;842057532;100.00;0.001;M/sec
+1340410714;;cycles;842066689;100.00;1.592;GHz
+3776927965;;instructions;842066689;100.00;2.82;insn per cycle
+478246127;;branches;842066689;100.00;567.949;M/sec
+21347;;branch-misses;842066689;100.00;0.00;of all branches
+
+for 2 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=2 occ=210 p=0.0000s(0/1) e=0.9400s(94/1)
+950.248703;;task-clock;950248703;100.00;0.999;CPUs utilized
+2;;context-switches;950248703;100.00;0.002;K/sec
+0;;cpu-migrations;950248703;100.00;0.000;K/sec
+1219;;page-faults;950248703;100.00;0.001;M/sec
+1517303213;;cycles;950262701;100.00;1.597;GHz
+3777078895;;instructions;950262701;100.00;2.49;insn per cycle
+942136209;;branches;950262701;100.00;991.463;M/sec
+27133;;branch-misses;950262701;100.00;0.00;of all branches
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=2 occ=210 p=0.0000s(0/1) e=0.8300s(83/1)
+837.828468;;task-clock;837828468;100.00;0.999;CPUs utilized
+2;;context-switches;837828468;100.00;0.002;K/sec
+0;;cpu-migrations;837828468;100.00;0.000;K/sec
+1220;;page-faults;837828468;100.00;0.001;M/sec
+1341134003;;cycles;837841359;100.00;1.601;GHz
+3776913494;;instructions;837841359;100.00;2.82;insn per cycle
+478300777;;branches;837841359;100.00;570.882;M/sec
+24463;;branch-misses;837841359;100.00;0.01;of all branches
+
+for 3 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=3 occ=2313 p=0.0100s(1/1) e=0.9000s(90/1)
+933.154577;;task-clock;933154577;100.00;0.999;CPUs utilized
+2;;context-switches;933154577;100.00;0.002;K/sec
+0;;cpu-migrations;933154577;100.00;0.000;K/sec
+1218;;page-faults;933154577;100.00;0.001;M/sec
+1522869475;;cycles;933166729;100.00;1.632;GHz
+3777097664;;instructions;933166729;100.00;2.48;insn per cycle
+942125520;;branches;933166729;100.00;1009.614;M/sec
+45979;;branch-misses;933166729;100.00;0.00;of all branches
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=3 occ=2313 p=0.0100s(1/1) e=0.8400s(84/1)
+858.807223;;task-clock;858807223;100.00;0.999;CPUs utilized
+1;;context-switches;858807223;100.00;0.001;K/sec
+0;;cpu-migrations;858807223;100.00;0.000;K/sec
+1218;;page-faults;858807223;100.00;0.001;M/sec
+1339970361;;cycles;858816509;100.00;1.560;GHz
+3776930437;;instructions;858816509;100.00;2.82;insn per cycle
+478278707;;branches;858816509;100.00;556.910;M/sec
+41075;;branch-misses;858816509;100.00;0.01;of all branches
+
+for 4 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=4 occ=21586 p=0.0200s(2/1) e=0.9100s(91/1)
+943.058558;;task-clock;943058558;100.00;0.995;CPUs utilized
+2;;context-switches;943058558;100.00;0.002;K/sec
+0;;cpu-migrations;943058558;100.00;0.000;K/sec
+1219;;page-faults;943058558;100.00;0.001;M/sec
+1531570530;;cycles;943069455;100.00;1.624;GHz
+3777334640;;instructions;943069455;100.00;2.47;insn per cycle
+942134683;;branches;943069455;100.00;999.020;M/sec
+97520;;branch-misses;943069455;100.00;0.01;of all branches
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=4 occ=21586 p=0.0100s(1/1) e=0.8400s(84/1)
+859.358822;;task-clock;859358822;100.00;0.999;CPUs utilized
+0;;context-switches;859358822;100.00;0.000;K/sec
+0;;cpu-migrations;859358822;100.00;0.000;K/sec
+1219;;page-faults;859358822;100.00;0.001;M/sec
+1340475101;;cycles;859363774;100.00;1.560;GHz
+3777122906;;instructions;859363774;100.00;2.82;insn per cycle
+478281065;;branches;859363774;100.00;556.556;M/sec
+71988;;branch-misses;859363774;100.00;0.02;of all branches
+
+for 5 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=5 occ=151781 p=0.0200s(2/1) e=0.9100s(91/1)
+941.858781;;task-clock;941858781;100.00;0.999;CPUs utilized
+1;;context-switches;941858781;100.00;0.001;K/sec
+0;;cpu-migrations;941858781;100.00;0.000;K/sec
+1220;;page-faults;941858781;100.00;0.001;M/sec
+1537408760;;cycles;941869054;100.00;1.632;GHz
+3777928394;;instructions;941869054;100.00;2.46;insn per cycle
+942205608;;branches;941869054;100.00;1000.368;M/sec
+267157;;branch-misses;941869054;100.00;0.03;of all branches
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=5 occ=151781 p=0.0000s(0/1) e=0.8400s(84/1)
+849.993506;;task-clock;849993506;100.00;0.999;CPUs utilized
+1;;context-switches;849993506;100.00;0.001;K/sec
+0;;cpu-migrations;849993506;100.00;0.000;K/sec
+1220;;page-faults;849993506;100.00;0.001;M/sec
+1343703265;;cycles;850001433;100.00;1.581;GHz
+3777635431;;instructions;850001433;100.00;2.81;insn per cycle
+478311786;;branches;850001433;100.00;562.724;M/sec
+105576;;branch-misses;850001433;100.00;0.02;of all branches
+
+for 6 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=6 occ=839822 p=0.0200s(2/1) e=0.9400s(94/1)
+969.829080;;task-clock;969829080;100.00;0.999;CPUs utilized
+3;;context-switches;969829080;100.00;0.003;K/sec
+0;;cpu-migrations;969829080;100.00;0.000;K/sec
+1221;;page-faults;969829080;100.00;0.001;M/sec
+1565387639;;cycles;969842980;100.00;1.614;GHz
+3779421099;;instructions;969842980;100.00;2.41;insn per cycle
+942137128;;branches;969842980;100.00;971.447;M/sec
+1093630;;branch-misses;969842980;100.00;0.12;of all branches
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=6 occ=839822 p=0.0000s(0/1) e=0.8300s(83/1)
+846.855105;;task-clock;846855105;100.00;0.999;CPUs utilized
+0;;context-switches;846855105;100.00;0.000;K/sec
+0;;cpu-migrations;846855105;100.00;0.000;K/sec
+1221;;page-faults;846855105;100.00;0.001;M/sec
+1345285498;;cycles;846861035;100.00;1.589;GHz
+3778462707;;instructions;846861035;100.00;2.81;insn per cycle
+478328572;;branches;846861035;100.00;564.829;M/sec
+128544;;branch-misses;846861035;100.00;0.03;of all branches
+
+for 7 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=7 occ=3688238 p=0.0400s(4/1) e=0.9800s(98/1)
+1032.765119;;task-clock;1032765119;100.00;1.000;CPUs utilized
+1;;context-switches;1032765119;100.00;0.001;K/sec
+0;;cpu-migrations;1032765119;100.00;0.000;K/sec
+1218;;page-faults;1032765119;100.00;0.001;M/sec
+1685402955;;cycles;1032776173;100.00;1.632;GHz
+3783552649;;instructions;1032776173;100.00;2.24;insn per cycle
+942168940;;branches;1032776173;100.00;912.278;M/sec
+4158098;;branch-misses;1032776173;100.00;0.44;of all branches
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=7 occ=3688238 p=0.0100s(1/1) e=0.8200s(82/1)
+836.749863;;task-clock;836749863;100.00;0.999;CPUs utilized
+0;;context-switches;836749863;100.00;0.000;K/sec
+0;;cpu-migrations;836749863;100.00;0.000;K/sec
+1219;;page-faults;836749863;100.00;0.001;M/sec
+1345164489;;cycles;836755482;100.00;1.608;GHz
+3779522394;;instructions;836755482;100.00;2.81;insn per cycle
+478300435;;branches;836755482;100.00;571.617;M/sec
+129131;;branch-misses;836755482;100.00;0.03;of all branches
+
+for 8 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=8 occ=13072317 p=0.0000s(0/1) e=1.2800s(128/1)
+1293.337172;;task-clock;1293337172;100.00;0.999;CPUs utilized
+6;;context-switches;1293337172;100.00;0.005;K/sec
+0;;cpu-migrations;1293337172;100.00;0.000;K/sec
+1218;;page-faults;1293337172;100.00;0.942;K/sec
+2077606450;;cycles;1293361332;100.00;1.606;GHz
+3794734902;;instructions;1293361332;100.00;1.83;insn per cycle
+942257299;;branches;1293361332;100.00;728.547;M/sec
+14060420;;branch-misses;1293361332;100.00;1.49;of all branches
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=8 occ=13072317 p=0.0100s(1/1) e=0.8400s(84/1)
+862.014238;;task-clock;862014238;100.00;0.999;CPUs utilized
+1;;context-switches;862014238;100.00;0.001;K/sec
+0;;cpu-migrations;862014238;100.00;0.000;K/sec
+1219;;page-faults;862014238;100.00;0.001;M/sec
+1343340119;;cycles;862023171;100.00;1.558;GHz
+3780793959;;instructions;862023171;100.00;2.81;insn per cycle
+478280871;;branches;862023171;100.00;554.841;M/sec
+117962;;branch-misses;862023171;100.00;0.02;of all branches
+
+for 9 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=9 occ=37642440 p=0.0300s(3/1) e=1.8200s(182/1)
+1863.455361;;task-clock;1863455361;100.00;1.000;CPUs utilized
+3;;context-switches;1863455361;100.00;0.002;K/sec
+0;;cpu-migrations;1863455361;100.00;0.000;K/sec
+1221;;page-faults;1863455361;100.00;0.655;K/sec
+3044314557;;cycles;1863469647;100.00;1.634;GHz
+3821779772;;instructions;1863469647;100.00;1.26;insn per cycle
+942650068;;branches;1863469647;100.00;505.861;M/sec
+40186155;;branch-misses;1863469647;100.00;4.26;of all branches
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=9 occ=37642440 p=0.0200s(2/1) e=0.8000s(80/1)
+828.203000;;task-clock;828203000;100.00;1.000;CPUs utilized
+1;;context-switches;828203000;100.00;0.001;K/sec
+0;;cpu-migrations;828203000;100.00;0.000;K/sec
+1219;;page-faults;828203000;100.00;0.001;M/sec
+1343279896;;cycles;828209596;100.00;1.622;GHz
+3781972272;;instructions;828209596;100.00;2.82;insn per cycle
+478307329;;branches;828209596;100.00;577.524;M/sec
+99129;;branch-misses;828209596;100.00;0.02;of all branches
+
+for 10 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=10 occ=88639234 p=0.0200s(2/1) e=2.9300s(293/1)
+2959.035573;;task-clock;2959035573;100.00;1.000;CPUs utilized
+6;;context-switches;2959035573;100.00;0.002;K/sec
+0;;cpu-migrations;2959035573;100.00;0.000;K/sec
+1218;;page-faults;2959035573;100.00;0.412;K/sec
+4914896340;;cycles;2959057219;100.00;1.661;GHz
+3875642511;;instructions;2959057219;100.00;0.79;insn per cycle
+942886403;;branches;2959057219;100.00;318.647;M/sec
+94362312;;branch-misses;2959057219;100.00;10.01;of all branches
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=10 occ=88639234 p=0.0100s(1/1) e=0.8100s(81/1)
+825.776731;;task-clock;825776731;100.00;1.000;CPUs utilized
+2;;context-switches;825776731;100.00;0.002;K/sec
+0;;cpu-migrations;825776731;100.00;0.000;K/sec
+1218;;page-faults;825776731;100.00;0.001;M/sec
+1339155262;;cycles;825784734;100.00;1.622;GHz
+3782704237;;instructions;825784734;100.00;2.82;insn per cycle
+478228314;;branches;825784734;100.00;579.125;M/sec
+82915;;branch-misses;825784734;100.00;0.02;of all branches
+
+for 11 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=11 occ=171612892 p=0.0000s(0/1) e=4.6700s(467/1)
+4681.892288;;task-clock;4681892288;100.00;1.000;CPUs utilized
+4;;context-switches;4681892288;100.00;0.001;K/sec
+0;;cpu-migrations;4681892288;100.00;0.000;K/sec
+1221;;page-faults;4681892288;100.00;0.261;K/sec
+7826345586;;cycles;4681905826;100.00;1.672;GHz
+3962910729;;instructions;4681905826;100.00;0.51;insn per cycle
+943958214;;branches;4681905826;100.00;201.619;M/sec
+182821982;;branch-misses;4681905826;100.00;19.37;of all branches
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=11 occ=171612892 p=0.0100s(1/1) e=0.8300s(83/1)
+857.880320;;task-clock;857880320;100.00;0.999;CPUs utilized
+1;;context-switches;857880320;100.00;0.001;K/sec
+0;;cpu-migrations;857880320;100.00;0.000;K/sec
+1220;;page-faults;857880320;100.00;0.001;M/sec
+1338122352;;cycles;857890598;100.00;1.560;GHz
+3783134182;;instructions;857890598;100.00;2.83;insn per cycle
+478222341;;branches;857890598;100.00;557.446;M/sec
+58495;;branch-misses;857890598;100.00;0.01;of all branches
+
+for 12 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=12 occ=275300761 p=0.0100s(1/1) e=4.9200s(492/1)
+4937.129918;;task-clock;4937129918;100.00;1.000;CPUs utilized
+6;;context-switches;4937129918;100.00;0.001;K/sec
+0;;cpu-migrations;4937129918;100.00;0.000;K/sec
+1220;;page-faults;4937129918;100.00;0.247;K/sec
+8197855346;;cycles;4937147618;100.00;1.660;GHz
+4066952224;;instructions;4937147618;100.00;0.50;insn per cycle
+943637480;;branches;4937147618;100.00;191.131;M/sec
+195021186;;branch-misses;4937147618;100.00;20.67;of all branches
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=12 occ=275300761 p=0.0300s(3/1) e=0.8100s(81/1)
+856.215888;;task-clock;856215888;100.00;0.999;CPUs utilized
+2;;context-switches;856215888;100.00;0.002;K/sec
+0;;cpu-migrations;856215888;100.00;0.000;K/sec
+1221;;page-faults;856215888;100.00;0.001;M/sec
+1339416321;;cycles;856229365;100.00;1.564;GHz
+3783431063;;instructions;856229365;100.00;2.82;insn per cycle
+478308545;;branches;856229365;100.00;558.631;M/sec
+36572;;branch-misses;856229365;100.00;0.01;of all branches
+
+for 13 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=13 occ=371425252 p=0.0000s(0/1) e=2.9000s(290/1)
+2915.065291;;task-clock;2915065291;100.00;1.000;CPUs utilized
+10;;context-switches;2915065291;100.00;0.003;K/sec
+0;;cpu-migrations;2915065291;100.00;0.000;K/sec
+1221;;page-faults;2915065291;100.00;0.419;K/sec
+4864508077;;cycles;2915093496;100.00;1.669;GHz
+4159001946;;instructions;2915093496;100.00;0.85;insn per cycle
+942865527;;branches;2915093496;100.00;323.446;M/sec
+98774615;;branch-misses;2915093496;100.00;10.48;of all branches
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=13 occ=371425252 p=0.0200s(2/1) e=0.8000s(80/1)
+826.040226;;task-clock;826040226;100.00;0.999;CPUs utilized
+3;;context-switches;826040226;100.00;0.004;K/sec
+0;;cpu-migrations;826040226;100.00;0.000;K/sec
+1220;;page-faults;826040226;100.00;0.001;M/sec
+1340140980;;cycles;826051638;100.00;1.622;GHz
+3783415643;;instructions;826051638;100.00;2.82;insn per cycle
+478232525;;branches;826051638;100.00;578.946;M/sec
+26437;;branch-misses;826051638;100.00;0.01;of all branches
+
+for 14 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=14 occ=433781701 p=0.0000s(0/1) e=1.5700s(157/1)
+1585.156081;;task-clock;1585156081;100.00;1.000;CPUs utilized
+5;;context-switches;1585156081;100.00;0.003;K/sec
+0;;cpu-migrations;1585156081;100.00;0.000;K/sec
+1221;;page-faults;1585156081;100.00;0.770;K/sec
+2569853436;;cycles;1585175237;100.00;1.621;GHz
+4218810925;;instructions;1585175237;100.00;1.64;insn per cycle
+942506943;;branches;1585175237;100.00;594.583;M/sec
+31043676;;branch-misses;1585175237;100.00;3.29;of all branches
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=14 occ=433781701 p=0.0100s(1/1) e=0.8300s(83/1)
+849.657007;;task-clock;849657007;100.00;0.999;CPUs utilized
+2;;context-switches;849657007;100.00;0.002;K/sec
+0;;cpu-migrations;849657007;100.00;0.000;K/sec
+1220;;page-faults;849657007;100.00;0.001;M/sec
+1339715445;;cycles;849669777;100.00;1.577;GHz
+3783459641;;instructions;849669777;100.00;2.82;insn per cycle
+478237933;;branches;849669777;100.00;562.860;M/sec
+20843;;branch-misses;849669777;100.00;0.00;of all branches
+
+for 15 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=15 occ=459045794 p=0.0100s(1/1) e=1.0200s(102/1)
+1038.762232;;task-clock;1038762232;100.00;1.000;CPUs utilized
+3;;context-switches;1038762232;100.00;0.003;K/sec
+0;;cpu-migrations;1038762232;100.00;0.000;K/sec
+1220;;page-faults;1038762232;100.00;0.001;M/sec
+1686511619;;cycles;1038776892;100.00;1.624;GHz
+4243049439;;instructions;1038776892;100.00;2.52;insn per cycle
+942304859;;branches;1038776892;100.00;907.142;M/sec
+4860046;;branch-misses;1038776892;100.00;0.52;of all branches
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=15 occ=459045794 p=0.0000s(0/1) e=0.8200s(82/1)
+837.315049;;task-clock;837315049;100.00;0.999;CPUs utilized
+3;;context-switches;837315049;100.00;0.004;K/sec
+0;;cpu-migrations;837315049;100.00;0.000;K/sec
+1219;;page-faults;837315049;100.00;0.001;M/sec
+1339504073;;cycles;837329935;100.00;1.600;GHz
+3783393241;;instructions;837329935;100.00;2.82;insn per cycle
+478228222;;branches;837329935;100.00;571.145;M/sec
+19430;;branch-misses;837329935;100.00;0.00;of all branches
+

@@ -1,0 +1,488 @@
+nohup: ignoring input
+Preprocessing runs 1. Search runs 1. q-gram for EF and EFS 4.
+
+
+********** ../multiple/tests/genome/ecoli.txt **********
+
+
+P attern length of 16:
+for 1 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=1 occ=45 p=0.0000s(0/1) e=0.9500s(95/1)
+
+ Performance counter stats for './ans2 -e1 -k1 -p1 ../multiple/tests/genome/ecoli.txt':
+
+        965.390901      task-clock (msec)         #    0.999 CPUs utilized          
+                 2      context-switches          #    0.002 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1220      page-faults               #    0.001 M/sec                  
+        1519210056      cycles                    #    1.574 GHz                    
+        3777144467      instructions              #    2.49  insn per cycle         
+         942211156      branches                  #  975.989 M/sec                  
+             19765      branch-misses             #    0.00% of all branches        
+
+       0.965910825 seconds time elapsed
+
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=1 occ=45 p=0.0000s(0/1) e=0.8200s(82/1)
+
+ Performance counter stats for './ans2b-noif -e1 -k1 -p1 ../multiple/tests/genome/ecoli.txt':
+
+        831.931795      task-clock (msec)         #    0.999 CPUs utilized          
+                 1      context-switches          #    0.001 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1220      page-faults               #    0.001 M/sec                  
+        1341592965      cycles                    #    1.613 GHz                    
+        3776904071      instructions              #    2.82  insn per cycle         
+         478304897      branches                  #  574.933 M/sec                  
+             18601      branch-misses             #    0.00% of all branches        
+
+       0.832352442 seconds time elapsed
+
+
+for 2 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=2 occ=210 p=0.0000s(0/1) e=0.9500s(95/1)
+
+ Performance counter stats for './ans2 -e1 -k2 -p1 ../multiple/tests/genome/ecoli.txt':
+
+        963.957270      task-clock (msec)         #    1.000 CPUs utilized          
+                 1      context-switches          #    0.001 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1220      page-faults               #    0.001 M/sec                  
+        1516759488      cycles                    #    1.573 GHz                    
+        3777037557      instructions              #    2.49  insn per cycle         
+         942125929      branches                  #  977.352 M/sec                  
+             26787      branch-misses             #    0.00% of all branches        
+
+       0.964434612 seconds time elapsed
+
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=2 occ=210 p=0.0100s(1/1) e=0.8100s(81/1)
+
+ Performance counter stats for './ans2b-noif -e1 -k2 -p1 ../multiple/tests/genome/ecoli.txt':
+
+        833.252535      task-clock (msec)         #    0.999 CPUs utilized          
+                 2      context-switches          #    0.002 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1220      page-faults               #    0.001 M/sec                  
+        1339996644      cycles                    #    1.608 GHz                    
+        3776861587      instructions              #    2.82  insn per cycle         
+         478230208      branches                  #  573.932 M/sec                  
+             26699      branch-misses             #    0.01% of all branches        
+
+       0.833729913 seconds time elapsed
+
+
+for 3 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=3 occ=2313 p=0.0000s(0/1) e=0.9400s(94/1)
+
+ Performance counter stats for './ans2 -e1 -k3 -p1 ../multiple/tests/genome/ecoli.txt':
+
+        954.229165      task-clock (msec)         #    0.999 CPUs utilized          
+                 3      context-switches          #    0.003 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1219      page-faults               #    0.001 M/sec                  
+        1523943010      cycles                    #    1.597 GHz                    
+        3777194230      instructions              #    2.48  insn per cycle         
+         942145573      branches                  #  987.337 M/sec                  
+             46856      branch-misses             #    0.00% of all branches        
+
+       0.954964532 seconds time elapsed
+
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=3 occ=2313 p=0.0100s(1/1) e=0.8100s(81/1)
+
+ Performance counter stats for './ans2b-noif -e1 -k3 -p1 ../multiple/tests/genome/ecoli.txt':
+
+        838.014583      task-clock (msec)         #    0.999 CPUs utilized          
+                 2      context-switches          #    0.002 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1220      page-faults               #    0.001 M/sec                  
+        1342209580      cycles                    #    1.602 GHz                    
+        3777040590      instructions              #    2.81  insn per cycle         
+         478322792      branches                  #  570.781 M/sec                  
+             41272      branch-misses             #    0.01% of all branches        
+
+       0.838477884 seconds time elapsed
+
+
+for 4 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=4 occ=21586 p=0.0300s(3/1) e=0.9300s(93/1)
+
+ Performance counter stats for './ans2 -e1 -k4 -p1 ../multiple/tests/genome/ecoli.txt':
+
+        971.791944      task-clock (msec)         #    1.000 CPUs utilized          
+                 1      context-switches          #    0.001 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1220      page-faults               #    0.001 M/sec                  
+        1528147018      cycles                    #    1.573 GHz                    
+        3777332069      instructions              #    2.47  insn per cycle         
+         942131987      branches                  #  969.479 M/sec                  
+             97385      branch-misses             #    0.01% of all branches        
+
+       0.972234704 seconds time elapsed
+
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=4 occ=21586 p=0.0000s(0/1) e=0.8300s(83/1)
+
+ Performance counter stats for './ans2b-noif -e1 -k4 -p1 ../multiple/tests/genome/ecoli.txt':
+
+        846.747946      task-clock (msec)         #    0.999 CPUs utilized          
+                 2      context-switches          #    0.002 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1220      page-faults               #    0.001 M/sec                  
+        1340789443      cycles                    #    1.583 GHz                    
+        3777178102      instructions              #    2.82  insn per cycle         
+         478306298      branches                  #  564.874 M/sec                  
+             71979      branch-misses             #    0.02% of all branches        
+
+       0.847246419 seconds time elapsed
+
+
+for 5 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=5 occ=151781 p=0.0100s(1/1) e=0.9500s(95/1)
+
+ Performance counter stats for './ans2 -e1 -k5 -p1 ../multiple/tests/genome/ecoli.txt':
+
+        970.007018      task-clock (msec)         #    1.000 CPUs utilized          
+                 2      context-switches          #    0.002 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1221      page-faults               #    0.001 M/sec                  
+        1536519185      cycles                    #    1.584 GHz                    
+        3777955519      instructions              #    2.46  insn per cycle         
+         942145661      branches                  #  971.277 M/sec                  
+            266679      branch-misses             #    0.03% of all branches        
+
+       0.970465479 seconds time elapsed
+
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=5 occ=151781 p=0.0000s(0/1) e=0.7800s(78/1)
+
+ Performance counter stats for './ans2b-noif -e1 -k5 -p1 ../multiple/tests/genome/ecoli.txt':
+
+        790.940478      task-clock (msec)         #    0.999 CPUs utilized          
+                 3      context-switches          #    0.004 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1221      page-faults               #    0.002 M/sec                  
+        1342802185      cycles                    #    1.698 GHz                    
+        3777531961      instructions              #    2.81  insn per cycle         
+         478223458      branches                  #  604.626 M/sec                  
+            106458      branch-misses             #    0.02% of all branches        
+
+       0.791739189 seconds time elapsed
+
+
+for 6 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=6 occ=839822 p=0.0200s(2/1) e=0.9500s(95/1)
+
+ Performance counter stats for './ans2 -e1 -k6 -p1 ../multiple/tests/genome/ecoli.txt':
+
+        983.836080      task-clock (msec)         #    1.000 CPUs utilized          
+                 3      context-switches          #    0.003 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1221      page-faults               #    0.001 M/sec                  
+        1564840562      cycles                    #    1.591 GHz                    
+        3779564329      instructions              #    2.42  insn per cycle         
+         942239921      branches                  #  957.720 M/sec                  
+           1126618      branch-misses             #    0.12% of all branches        
+
+       0.984318038 seconds time elapsed
+
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=6 occ=839822 p=0.0000s(0/1) e=0.8500s(85/1)
+
+ Performance counter stats for './ans2b-noif -e1 -k6 -p1 ../multiple/tests/genome/ecoli.txt':
+
+        864.210190      task-clock (msec)         #    0.999 CPUs utilized          
+                 4      context-switches          #    0.005 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1220      page-faults               #    0.001 M/sec                  
+        1345223919      cycles                    #    1.557 GHz                    
+        3778374496      instructions              #    2.81  insn per cycle         
+         478285168      branches                  #  553.436 M/sec                  
+            127321      branch-misses             #    0.03% of all branches        
+
+       0.864928175 seconds time elapsed
+
+
+for 7 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=7 occ=3688238 p=0.0100s(1/1) e=1.0400s(104/1)
+
+ Performance counter stats for './ans2 -e1 -k7 -p1 ../multiple/tests/genome/ecoli.txt':
+
+       1064.498418      task-clock (msec)         #    1.000 CPUs utilized          
+                 2      context-switches          #    0.002 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1218      page-faults               #    0.001 M/sec                  
+        1687262729      cycles                    #    1.585 GHz                    
+        3783630530      instructions              #    2.24  insn per cycle         
+         942251961      branches                  #  885.161 M/sec                  
+           4172258      branch-misses             #    0.44% of all branches        
+
+       1.065003668 seconds time elapsed
+
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=7 occ=3688238 p=0.0200s(2/1) e=0.8300s(83/1)
+
+ Performance counter stats for './ans2b-noif -e1 -k7 -p1 ../multiple/tests/genome/ecoli.txt':
+
+        858.279198      task-clock (msec)         #    0.995 CPUs utilized          
+                 4      context-switches          #    0.005 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1219      page-faults               #    0.001 M/sec                  
+        1345175097      cycles                    #    1.567 GHz                    
+        3779536921      instructions              #    2.81  insn per cycle         
+         478238974      branches                  #  557.207 M/sec                  
+            131222      branch-misses             #    0.03% of all branches        
+
+       0.862161121 seconds time elapsed
+
+
+for 8 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=8 occ=13072317 p=0.0100s(1/1) e=1.2500s(125/1)
+
+ Performance counter stats for './ans2 -e1 -k8 -p1 ../multiple/tests/genome/ecoli.txt':
+
+       1268.628407      task-clock (msec)         #    1.000 CPUs utilized          
+                 2      context-switches          #    0.002 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1217      page-faults               #    0.959 K/sec                  
+        2081937292      cycles                    #    1.641 GHz                    
+        3794920535      instructions              #    1.82  insn per cycle         
+         942411243      branches                  #  742.858 M/sec                  
+          14069192      branch-misses             #    1.49% of all branches        
+
+       1.269109797 seconds time elapsed
+
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=8 occ=13072317 p=0.0000s(0/1) e=0.8300s(83/1)
+
+ Performance counter stats for './ans2b-noif -e1 -k8 -p1 ../multiple/tests/genome/ecoli.txt':
+
+        842.185866      task-clock (msec)         #    0.999 CPUs utilized          
+                 1      context-switches          #    0.001 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1220      page-faults               #    0.001 M/sec                  
+        1344166027      cycles                    #    1.596 GHz                    
+        3780792803      instructions              #    2.81  insn per cycle         
+         478231566      branches                  #  567.846 M/sec                  
+            113831      branch-misses             #    0.02% of all branches        
+
+       0.842664084 seconds time elapsed
+
+
+for 9 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=9 occ=37642440 p=0.0100s(1/1) e=1.8300s(183/1)
+
+ Performance counter stats for './ans2 -e1 -k9 -p1 ../multiple/tests/genome/ecoli.txt':
+
+       1848.230918      task-clock (msec)         #    1.000 CPUs utilized          
+                 2      context-switches          #    0.001 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1218      page-faults               #    0.659 K/sec                  
+        3038741313      cycles                    #    1.644 GHz                    
+        3821535855      instructions              #    1.26  insn per cycle         
+         942461349      branches                  #  509.926 M/sec                  
+          40217987      branch-misses             #    4.27% of all branches        
+
+       1.848749754 seconds time elapsed
+
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=9 occ=37642440 p=0.0000s(0/1) e=0.8200s(82/1)
+
+ Performance counter stats for './ans2b-noif -e1 -k9 -p1 ../multiple/tests/genome/ecoli.txt':
+
+        833.304791      task-clock (msec)         #    0.999 CPUs utilized          
+                 1      context-switches          #    0.001 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1220      page-faults               #    0.001 M/sec                  
+        1341203022      cycles                    #    1.609 GHz                    
+        3781969842      instructions              #    2.82  insn per cycle         
+         478300426      branches                  #  573.980 M/sec                  
+             99877      branch-misses             #    0.02% of all branches        
+
+       0.833762776 seconds time elapsed
+
+
+for 10 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=10 occ=88639234 p=0.0000s(0/1) e=2.9300s(293/1)
+
+ Performance counter stats for './ans2 -e1 -k10 -p1 ../multiple/tests/genome/ecoli.txt':
+
+       2942.204822      task-clock (msec)         #    1.000 CPUs utilized          
+                 4      context-switches          #    0.001 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1220      page-faults               #    0.415 K/sec                  
+        4894155529      cycles                    #    1.663 GHz                    
+        3875832722      instructions              #    0.79  insn per cycle         
+         943142306      branches                  #  320.556 M/sec                  
+          94155384      branch-misses             #    9.98% of all branches        
+
+       2.942717457 seconds time elapsed
+
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=10 occ=88639234 p=0.0000s(0/1) e=0.8200s(82/1)
+
+ Performance counter stats for './ans2b-noif -e1 -k10 -p1 ../multiple/tests/genome/ecoli.txt':
+
+        828.653087      task-clock (msec)         #    1.000 CPUs utilized          
+                 0      context-switches          #    0.000 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1221      page-faults               #    0.001 M/sec                  
+        1341387384      cycles                    #    1.619 GHz                    
+        3782772437      instructions              #    2.82  insn per cycle         
+         478306962      branches                  #  577.210 M/sec                  
+             80163      branch-misses             #    0.02% of all branches        
+
+       0.829034471 seconds time elapsed
+
+
+for 11 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=11 occ=171612892 p=0.0000s(0/1) e=4.6700s(467/1)
+
+ Performance counter stats for './ans2 -e1 -k11 -p1 ../multiple/tests/genome/ecoli.txt':
+
+       4677.748490      task-clock (msec)         #    1.000 CPUs utilized          
+                 3      context-switches          #    0.001 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1219      page-faults               #    0.261 K/sec                  
+        7786626605      cycles                    #    1.665 GHz                    
+        3962940248      instructions              #    0.51  insn per cycle         
+         943978020      branches                  #  201.802 M/sec                  
+         181524323      branch-misses             #   19.23% of all branches        
+
+       4.678273634 seconds time elapsed
+
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=11 occ=171612892 p=0.0000s(0/1) e=0.8300s(83/1)
+
+ Performance counter stats for './ans2b-noif -e1 -k11 -p1 ../multiple/tests/genome/ecoli.txt':
+
+        843.599907      task-clock (msec)         #    0.999 CPUs utilized          
+                 4      context-switches          #    0.005 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1219      page-faults               #    0.001 M/sec                  
+        1341896435      cycles                    #    1.591 GHz                    
+        3783179603      instructions              #    2.82  insn per cycle         
+         478234298      branches                  #  566.897 M/sec                  
+             59805      branch-misses             #    0.01% of all branches        
+
+       0.844387276 seconds time elapsed
+
+
+for 12 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=12 occ=275300761 p=0.0000s(0/1) e=4.8700s(487/1)
+
+ Performance counter stats for './ans2 -e1 -k12 -p1 ../multiple/tests/genome/ecoli.txt':
+
+       4882.908933      task-clock (msec)         #    1.000 CPUs utilized          
+                 6      context-switches          #    0.001 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1217      page-faults               #    0.249 K/sec                  
+        8224363659      cycles                    #    1.684 GHz                    
+        4067410086      instructions              #    0.49  insn per cycle         
+         944121372      branches                  #  193.352 M/sec                  
+         195262798      branch-misses             #   20.68% of all branches        
+
+       4.883623025 seconds time elapsed
+
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=12 occ=275300761 p=0.0100s(1/1) e=0.8100s(81/1)
+
+ Performance counter stats for './ans2b-noif -e1 -k12 -p1 ../multiple/tests/genome/ecoli.txt':
+
+        826.090876      task-clock (msec)         #    1.000 CPUs utilized          
+                 1      context-switches          #    0.001 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1220      page-faults               #    0.001 M/sec                  
+        1339764782      cycles                    #    1.622 GHz                    
+        3783364330      instructions              #    2.82  insn per cycle         
+         478302414      branches                  #  578.995 M/sec                  
+             35941      branch-misses             #    0.01% of all branches        
+
+       0.826467816 seconds time elapsed
+
+
+for 13 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=13 occ=371425252 p=0.0000s(0/1) e=2.9300s(293/1)
+
+ Performance counter stats for './ans2 -e1 -k13 -p1 ../multiple/tests/genome/ecoli.txt':
+
+       2943.256941      task-clock (msec)         #    1.000 CPUs utilized          
+                 6      context-switches          #    0.002 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1221      page-faults               #    0.415 K/sec                  
+        4891525017      cycles                    #    1.662 GHz                    
+        4159107853      instructions              #    0.85  insn per cycle         
+         942884392      branches                  #  320.354 M/sec                  
+          99326725      branch-misses             #   10.53% of all branches        
+
+       2.944469657 seconds time elapsed
+
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=13 occ=371425252 p=0.0000s(0/1) e=0.8400s(84/1)
+
+ Performance counter stats for './ans2b-noif -e1 -k13 -p1 ../multiple/tests/genome/ecoli.txt':
+
+        847.684422      task-clock (msec)         #    0.999 CPUs utilized          
+                 3      context-switches          #    0.004 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1220      page-faults               #    0.001 M/sec                  
+        1340662714      cycles                    #    1.582 GHz                    
+        3783384376      instructions              #    2.82  insn per cycle         
+         478228343      branches                  #  564.158 M/sec                  
+             25876      branch-misses             #    0.01% of all branches        
+
+       0.848282484 seconds time elapsed
+
+
+for 14 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=14 occ=433781701 p=0.0000s(0/1) e=1.5500s(155/1)
+
+ Performance counter stats for './ans2 -e1 -k14 -p1 ../multiple/tests/genome/ecoli.txt':
+
+       1560.058033      task-clock (msec)         #    1.000 CPUs utilized          
+                 4      context-switches          #    0.003 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1218      page-faults               #    0.781 K/sec                  
+        2569412198      cycles                    #    1.647 GHz                    
+        4218667348      instructions              #    1.64  insn per cycle         
+         942370892      branches                  #  604.061 M/sec                  
+          31046695      branch-misses             #    3.29% of all branches        
+
+       1.560615642 seconds time elapsed
+
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=14 occ=433781701 p=0.0200s(2/1) e=0.8000s(80/1)
+
+ Performance counter stats for './ans2b-noif -e1 -k14 -p1 ../multiple/tests/genome/ecoli.txt':
+
+        832.756736      task-clock (msec)         #    0.999 CPUs utilized          
+                 4      context-switches          #    0.005 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1218      page-faults               #    0.001 M/sec                  
+        1340140166      cycles                    #    1.609 GHz                    
+        3783458571      instructions              #    2.82  insn per cycle         
+         478300976      branches                  #  574.359 M/sec                  
+             19010      branch-misses             #    0.00% of all branches        
+
+       0.833422862 seconds time elapsed
+
+
+for 15 mismatches:
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=15 occ=459045794 p=0.0100s(1/1) e=1.0400s(104/1)
+
+ Performance counter stats for './ans2 -e1 -k15 -p1 ../multiple/tests/genome/ecoli.txt':
+
+       1062.622150      task-clock (msec)         #    1.000 CPUs utilized          
+                 2      context-switches          #    0.002 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1221      page-faults               #    0.001 M/sec                  
+        1684888198      cycles                    #    1.586 GHz                    
+        4242843377      instructions              #    2.52  insn per cycle         
+         942167777      branches                  #  886.644 M/sec                  
+           4861828      branch-misses             #    0.52% of all branches        
+
+       1.063106913 seconds time elapsed
+
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=15 occ=459045794 p=0.0200s(2/1) e=0.7800s(78/1)
+
+ Performance counter stats for './ans2b-noif -e1 -k15 -p1 ../multiple/tests/genome/ecoli.txt':
+
+        817.682402      task-clock (msec)         #    0.999 CPUs utilized          
+                 2      context-switches          #    0.002 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              1218      page-faults               #    0.001 M/sec                  
+        1339492094      cycles                    #    1.638 GHz                    
+        3783375425      instructions              #    2.82  insn per cycle         
+         478277260      branches                  #  584.918 M/sec                  
+             17728      branch-misses             #    0.00% of all branches        
+
+       0.818151626 seconds time elapsed
+
+
