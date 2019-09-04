@@ -23,4 +23,5 @@ set ylabel 'Number of instructions'
 set xrange [1:15]
 set yrange [0:5000000000]
 set xtic 1
-plot "$ANS2" using 1:2   title 'BYPS'  pointtype 10  dashtype 10 linecolor rgb "blue" with linespoint
+set key top left
+plot "$ANS2" using 1:2  title 'ANS2'  pointtype 10  dashtype 10 linecolor rgb "blue" with linespoint

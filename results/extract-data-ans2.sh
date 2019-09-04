@@ -20,3 +20,12 @@ for i in $nums; do
 	printf "%d %.2f \n" $k $i;
 	k=$(( k+1 ))
 done
+
+echo "k vs occurrences"
+regexp='s/^.*ans2 .*occ=\([0-9]\{1,30\}\).*/\1 /p'
+nums=$(sed -n '/ans2 /,/ans2b-noif/p' $results_file | sed -n -e "$regexp")
+k=1
+for i in $nums; do
+	printf "%d %d \n" $k $i;
+	k=$(( k+1 ))
+done

@@ -16,11 +16,12 @@ $ANS2 << EOD
 15 0.98 
 EOD
 
-set terminal epslatex size 5,4
+set terminal epslatex size 5,2.5
 set output 'plot_ans2_time.tex'
 set xlabel '$k$'
 set ylabel 'Search time ($s$)'
 set xrange [1:15]
-set yrange [0:5]
+set yrange [0:6]
 set xtic 1
-plot "$ANS2" using 1:2 pointtype 10  dashtype 10 linecolor rgb "blue" with linespoint
+set key top left
+plot "$ANS2" using 1:2 title 'ANS2' pointtype 10  dashtype 10 linecolor rgb "blue" with linespoint
