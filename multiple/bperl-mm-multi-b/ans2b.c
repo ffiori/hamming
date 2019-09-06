@@ -126,7 +126,7 @@ int ans_exec_short (CHARTYPE * y, int n, int k, int patnow)
     for (j = 0; j <= nm; j++) {
         y_ptr = _mm_loadu_si128 ((__m128i *) (y + j));
         t = _mm_movemask_epi8 (_mm_cmpeq_epi8 (x_ptr, y_ptr));
-        if(d3[t]) matches++;
+        matches+=d3[t];
     }
 
     return matches;
