@@ -1,0 +1,263 @@
+nohup: ignoring input
+Guide:
+cmfn: Fredriksson-Navarro.
+udi/mm: Muth-Manber (only k=1).
+mepsm-nomod/mbyps: MBYPS (ours) using MEPSM with no modifications (original size of the fingerprints).
+mbyps: MBYPS (ours).
+byn-original/byn: Baeza-Yates and Navarro original code for edit distance (adapted to Hume-Sunday environment).
+byn-mod-hamming/byn: Baeza-Yates and Navarro (partition into exact matching) code adapted to Hamming distance.
+
+Preprocessing runs 100. Search runs 100. For 'cmfn' we make same number of preprocessing and searching runs.
+
+
+********** ./tests/genome/ecoli.txt **********
+
+
+Pattern length 8:
+
+ for sets of 10 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 0 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=10    match=17265      p=0.00010s e=0.02880s total=0.02890s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 0 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=100   match=202240     p=0.00080s e=0.22700s total=0.22780s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 0 chars, groups of 6 patts):
+alg=perl-mm-multi/mbyps  np=1000  match=2080020    p=0.00560s e=2.23100s total=2.23660s
+
+Pattern length 16:
+
+ for sets of 10 patterns:
+
+   with 1 mismatches (subpattern lengths 8, groups of 0 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=10    match=4          p=0.00110s e=0.01240s total=0.01350s
+
+   with 2 mismatches (subpattern lengths 5, groups of 0 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=10    match=25         p=0.00120s e=0.02070s total=0.02190s
+
+   with 3 mismatches (subpattern lengths 4, groups of 0 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=10    match=244        p=0.00130s e=0.06180s total=0.06310s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 8, groups of 0 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=100   match=45         p=0.00830s e=0.01460s total=0.02290s
+
+   with 2 mismatches (subpattern lengths 5, groups of 0 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=100   match=210        p=0.00840s e=0.12420s total=0.13260s
+
+   with 3 mismatches (subpattern lengths 4, groups of 0 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=100   match=2313       p=0.00930s e=0.51270s total=0.52200s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 8, groups of 0 chars, groups of 6 patts):
+alg=perl-mm-multi/mbyps  np=1000  match=525        p=0.07730s e=0.04150s total=0.11880s
+
+   with 2 mismatches (subpattern lengths 5, groups of 0 chars, groups of 6 patts):
+alg=perl-mm-multi/mbyps  np=1000  match=2678       p=0.07940s e=1.34930s total=1.42870s
+
+   with 3 mismatches (subpattern lengths 4, groups of 0 chars, groups of 6 patts):
+alg=perl-mm-multi/mbyps  np=1000  match=26104      p=0.08870s e=6.00080s total=6.08950s
+
+Pattern length 24:
+
+ for sets of 10 patterns:
+
+   with 1 mismatches (subpattern lengths 12, groups of 0 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=10    match=1          p=0.00110s e=0.00320s total=0.00430s
+
+   with 2 mismatches (subpattern lengths 8, groups of 0 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=10    match=2          p=0.00120s e=0.01230s total=0.01350s
+
+   with 3 mismatches (subpattern lengths 6, groups of 0 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=10    match=4          p=0.00090s e=0.01570s total=0.01660s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 12, groups of 0 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=100   match=22         p=0.00800s e=0.00540s total=0.01340s
+
+   with 2 mismatches (subpattern lengths 8, groups of 0 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=100   match=34         p=0.00840s e=0.01680s total=0.02520s
+
+   with 3 mismatches (subpattern lengths 6, groups of 0 chars, groups of 2 patts):
+alg=perl-mm-multi/mbyps  np=100   match=52         p=0.00900s e=0.06600s total=0.07500s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 12, groups of 0 chars, groups of 6 patts):
+alg=perl-mm-multi/mbyps  np=1000  match=226        p=0.07630s e=0.03270s total=0.10900s
+
+   with 2 mismatches (subpattern lengths 8, groups of 0 chars, groups of 15 patts):
+alg=perl-mm-multi/mbyps  np=1000  match=371        p=0.07960s e=0.06450s total=0.14410s
+
+   with 3 mismatches (subpattern lengths 6, groups of 0 chars, groups of 15 patts):
+alg=perl-mm-multi/mbyps  np=1000  match=511        p=0.08240s e=0.67730s total=0.75970s
+
+Pattern length 32:
+
+ for sets of 10 patterns:
+
+   with 1 mismatches (subpattern lengths 16, groups of 0 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=10    match=0          p=0.00110s e=0.00220s total=0.00330s
+
+   with 2 mismatches (subpattern lengths 10, groups of 0 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=10    match=0          p=0.00120s e=0.00450s total=0.00570s
+
+   with 3 mismatches (subpattern lengths 8, groups of 0 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=10    match=2          p=0.00120s e=0.01260s total=0.01380s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 16, groups of 0 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=100   match=14         p=0.00820s e=0.00450s total=0.01270s
+
+   with 2 mismatches (subpattern lengths 10, groups of 0 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=100   match=18         p=0.00840s e=0.00920s total=0.01760s
+
+   with 3 mismatches (subpattern lengths 8, groups of 0 chars, groups of 2 patts):
+alg=perl-mm-multi/mbyps  np=100   match=30         p=0.00900s e=0.01900s total=0.02800s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 16, groups of 0 chars, groups of 6 patts):
+alg=perl-mm-multi/mbyps  np=1000  match=159        p=0.07770s e=0.03520s total=0.11290s
+
+   with 2 mismatches (subpattern lengths 10, groups of 0 chars, groups of 6 patts):
+alg=perl-mm-multi/mbyps  np=1000  match=242        p=0.07970s e=0.05880s total=0.13850s
+
+   with 3 mismatches (subpattern lengths 8, groups of 0 chars, groups of 15 patts):
+alg=perl-mm-multi/mbyps  np=1000  match=339        p=0.08280s e=0.09070s total=0.17350s
+
+
+
+********** ./tests/english/bible.txt **********
+
+
+Pattern length 8:
+
+ for sets of 10 patterns (100 search runs):
+
+   with 1 mismatches (subpattern lengths 4, groups of 32 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=10    match=1237       p=0.00010s e=0.01550s total=0.01560s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 32 chars, groups of 3 patts):
+alg=perl-mm-multi/mbyps  np=100   match=21623      p=0.00070s e=0.04070s total=0.04140s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 32 chars, groups of 15 patts):
+alg=perl-mm-multi/mbyps  np=1000  match=222867     p=0.00550s e=0.25910s total=0.26460s
+
+Pattern length 16:
+
+ for sets of 10 patterns (100 search runs):
+
+   with 1 mismatches (subpattern lengths 8, groups of 32 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=10    match=9          p=0.00110s e=0.01000s total=0.01110s
+
+   with 2 mismatches (subpattern lengths 5, groups of 32 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=10    match=9          p=0.00120s e=0.01140s total=0.01260s
+
+   with 3 mismatches (subpattern lengths 4, groups of 32 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=10    match=12         p=0.00130s e=0.01150s total=0.01280s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 8, groups of 32 chars, groups of 5 patts):
+alg=perl-mm-multi/mbyps  np=100   match=78         p=0.00830s e=0.01220s total=0.02050s
+
+   with 2 mismatches (subpattern lengths 5, groups of 32 chars, groups of 5 patts):
+alg=perl-mm-multi/mbyps  np=100   match=510        p=0.00860s e=0.03420s total=0.04280s
+
+   with 3 mismatches (subpattern lengths 4, groups of 32 chars, groups of 5 patts):
+alg=perl-mm-multi/mbyps  np=100   match=1161       p=0.00940s e=0.07110s total=0.08050s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 8, groups of 32 chars, groups of 15 patts):
+alg=perl-mm-multi/mbyps  np=1000  match=1854       p=0.07780s e=0.02960s total=0.10740s
+
+   with 2 mismatches (subpattern lengths 5, groups of 32 chars, groups of 23 patts):
+alg=perl-mm-multi/mbyps  np=1000  match=4585       p=0.08060s e=0.23230s total=0.31290s
+
+   with 3 mismatches (subpattern lengths 4, groups of 32 chars, groups of 23 patts):
+alg=perl-mm-multi/mbyps  np=1000  match=10224      p=0.08930s e=0.72130s total=0.81060s
+
+Pattern length 24:
+
+ for sets of 10 patterns (100 search runs):
+
+   with 1 mismatches (subpattern lengths 12, groups of 32 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=10    match=2          p=0.00110s e=0.00240s total=0.00350s
+
+   with 2 mismatches (subpattern lengths 8, groups of 32 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=10    match=3          p=0.00120s e=0.00990s total=0.01110s
+
+   with 3 mismatches (subpattern lengths 6, groups of 32 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=10    match=3          p=0.00120s e=0.01180s total=0.01300s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 12, groups of 32 chars, groups of 5 patts):
+alg=perl-mm-multi/mbyps  np=100   match=33         p=0.00770s e=0.00420s total=0.01190s
+
+   with 2 mismatches (subpattern lengths 8, groups of 32 chars, groups of 5 patts):
+alg=perl-mm-multi/mbyps  np=100   match=69         p=0.00840s e=0.01310s total=0.02150s
+
+   with 3 mismatches (subpattern lengths 6, groups of 32 chars, groups of 5 patts):
+alg=perl-mm-multi/mbyps  np=100   match=99         p=0.00900s e=0.02390s total=0.03290s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 12, groups of 32 chars, groups of 15 patts):
+alg=perl-mm-multi/mbyps  np=1000  match=228        p=0.07700s e=0.02360s total=0.10060s
+
+   with 2 mismatches (subpattern lengths 8, groups of 32 chars, groups of 23 patts):
+alg=perl-mm-multi/mbyps  np=1000  match=457        p=0.07920s e=0.04470s total=0.12390s
+
+   with 3 mismatches (subpattern lengths 6, groups of 32 chars, groups of 23 patts):
+alg=perl-mm-multi/mbyps  np=1000  match=1282       p=0.08280s e=0.15250s total=0.23530s
+
+Pattern length 32:
+
+ for sets of 10 patterns (100 search runs):
+
+   with 1 mismatches (subpattern lengths 16, groups of 32 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=10    match=0          p=0.00120s e=0.00170s total=0.00290s
+
+   with 2 mismatches (subpattern lengths 10, groups of 32 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=10    match=2          p=0.00120s e=0.00370s total=0.00490s
+
+   with 3 mismatches (subpattern lengths 8, groups of 32 chars, groups of 1 patts):
+alg=perl-mm-multi/mbyps  np=10    match=2          p=0.00080s e=0.01000s total=0.01080s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 16, groups of 32 chars, groups of 5 patts):
+alg=perl-mm-multi/mbyps  np=100   match=9          p=0.00870s e=0.00310s total=0.01180s
+
+   with 2 mismatches (subpattern lengths 10, groups of 32 chars, groups of 5 patts):
+alg=perl-mm-multi/mbyps  np=100   match=22         p=0.00840s e=0.00580s total=0.01420s
+
+   with 3 mismatches (subpattern lengths 8, groups of 32 chars, groups of 5 patts):
+alg=perl-mm-multi/mbyps  np=100   match=30         p=0.00830s e=0.01420s total=0.02250s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 16, groups of 32 chars, groups of 15 patts):
+alg=perl-mm-multi/mbyps  np=1000  match=130        p=0.07770s e=0.02290s total=0.10060s
+
+   with 2 mismatches (subpattern lengths 10, groups of 32 chars, groups of 23 patts):
+alg=perl-mm-multi/mbyps  np=1000  match=217        p=0.07990s e=0.03840s total=0.11830s
+
+   with 3 mismatches (subpattern lengths 8, groups of 32 chars, groups of 23 patts):
+alg=perl-mm-multi/mbyps  np=1000  match=294        p=0.08300s e=0.06190s total=0.14490s
