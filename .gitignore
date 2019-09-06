@@ -28,8 +28,11 @@ single/sa
 single/tuabndm
 single/tusa
 single/twsa
+single/byp/byps/byps
+single/byp/bypsb/bypsb
 
 multiple/bperl-mm-multi-nomod/mbyps
+multiple/bperl-mm-multi-b/mbypsb
 multiple/bperl-mm-multi/mbyps
 multiple/byn-mod-hamming/byn
 multiple/byn-original/byn
@@ -37,7 +40,6 @@ multiple/cmfn-dna/kstdlib/libkstdlib.a
 multiple/cmfn-dna/lib/libkstdlib.a
 multiple/cmfn/kstdlib/libkstdlib.a
 multiple/cmfn/lib/libkstdlib.a
-
 multiple/byn-mod-hamming/lsearch
 multiple/byn-original/lsearch
 multiple/cmfn-dna/cmfn
