@@ -1,2 +1,0 @@
-#gcc -O3 -march=native -msse4.2 -mavx2 -w $1.c sys/386.c main.c -o $1.t -lm
-gcc -msse4.2 -mavx2 -w $1.c sys/386.c main.c -o $1 -lm -O3

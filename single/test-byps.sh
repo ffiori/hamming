@@ -14,7 +14,7 @@ for text in ../multiple/tests/genome/ecoli.txt ../multiple/tests/english/bible.t
         for k in 1 2 3; do
               echo "for $k mismatches:"
 
-              ./byp/byps-dna/byps -e$e -k$k -p$p $text < $text.$m.n100.badpat
+              ./byp/byps/byps -e$e -k$k -p$p $text < $text.$m.n100.badpat
 
               echo ""
         done
