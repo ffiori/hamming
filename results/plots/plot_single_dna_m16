@@ -1,0 +1,74 @@
+$ANS << EOD
+1 1.25
+2 1.25
+3 1.25
+EOD
+
+$ANS2 << EOD
+1 0.88
+2 0.88
+3 0.88
+EOD
+
+$ANS2b << EOD
+1 0.78
+2 0.78
+3 0.78
+EOD
+
+$BYPSb << EOD
+1 0.35
+2 1.56
+3 1.93
+EOD
+
+$EF << EOD
+1 0.70
+2 1.04
+3 1.75
+EOD
+
+$EFS << EOD
+1 0.67
+2 0.97
+3 1.59
+EOD
+
+$SA << EOD
+1 1.68
+2 1.69
+3 1.68
+EOD
+
+$TuSA << EOD
+1 1.31
+2 1.31
+3 1.31
+EOD
+
+$TwSA << EOD
+1 0.81
+2 1.07
+3 1.29
+EOD
+
+set terminal epslatex size 5,5
+set output 'plot_single_dna_m16.tex'
+set xlabel '$k$'
+set ylabel 'Search time ($s$)'
+set xrange [1:3]
+set xtic 1
+set yrange [0:2]
+
+set key bottom right
+
+plot \
+"$EF" using 1:2     title 'EF'    pointtype 1   dashtype 1  linecolor rgb "grey" with linespoint , \
+"$EFS" using 1:2    title 'EFS'   pointtype 2   dashtype 2  linecolor rgb "black" with linespoint , \
+"$SA" using 1:2     title 'SA'    pointtype 3   dashtype 3  linecolor rgb "cyan" with linespoint , \
+"$TuSA" using 1:2   title 'TuSA'  pointtype 4   dashtype 4  linecolor rgb "blue" with linespoint , \
+"$TwSA" using 1:2   title 'TwSA'  pointtype 5   dashtype 5  linecolor rgb "0x4C0099" with linespoint , \
+"$ANS" using 1:2    title 'ANS'   pointtype 6   dashtype 6  linecolor rgb "0xCCCC00" with linespoint , \
+"$ANS2" using 1:2   title 'ANS2'  pointtype 7   dashtype 7  linecolor rgb "orange" with linespoint , \
+"$ANS2b" using 1:2  title 'ANS2b' pointtype 8   dashtype 8  linecolor rgb "red" with linespoint , \
+"$BYPSb" using 1:2  title 'BYPSb' pointtype 11  dashtype 11 linecolor rgb "0x009900" with linespoint
