@@ -16,7 +16,7 @@ $ANS2 << EOD
 15 0.98 
 EOD
 
-set terminal epslatex size 5,2.5
+set terminal epslatex size 5,2.2
 set output 'plot_ans2_time.tex'
 set xlabel '$k$'
 set ylabel 'Search time ($s$)'
