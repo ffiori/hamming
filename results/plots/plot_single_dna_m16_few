@@ -53,7 +53,7 @@ $TwSA << EOD
 EOD
 
 set terminal epslatex size 6,3.5
-set output 'plot_single_dna_m16.tex'
+set output 'plot_single_dna_m16_few.tex'
 set xlabel '$k$'
 set ylabel 'Search time ($s$)'
 set xrange [1:3]
