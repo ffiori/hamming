@@ -32,10 +32,9 @@ $MM << EOD
 EOD
 set terminal epslatex size 6,3.5
 set output 'plot_multiple_dna_m32_r.tex'
-set xlabel '$k$'
+set xlabel '$r$'
 set ylabel 'Search time ($s$)'
 set xrange [10:1000]
-set xtic 1
 set yrange [0:0.3]
 
 set logscale x 10
