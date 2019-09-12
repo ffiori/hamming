@@ -1,40 +1,44 @@
 $BYN << EOD
-1 0.093
-2 0.109
-3 0.117
+10 0.032
+100 0.093
+1000 0.178
 EOD
 
 $FN << EOD
-1 0.048
-2 0.069
-3 0.105
+10 0.006
+100 0.048
+1000 0.270
 EOD
 
 $HBYN << EOD
-1 0.096
+10 0.031
+100 0.096
+1000 0.174
 EOD
 
 $MBYPS << EOD
-3 0.014
 EOD
 
 $MBYPSb << EOD
-1 0.003
-2 0.006
-3 0.014
+10 0.002
+100 0.003
+1000 0.023
 EOD
 
 $MM << EOD
-1 0.066
+10 0.052
+100 0.066
+1000 0.274
 EOD
 
 set terminal epslatex size 6,3.5
-set output 'plot_multiple_english_m32_few.tex'
-set xlabel '$k$'
+set output 'plot_multiple_english_m32_r_k1.tex'
+set xlabel '$r$'
 set ylabel 'Search time ($s$)'
-set xrange [1:3]
-set xtic 1
-set yrange [0:0.15]
+set xrange [10:1000]
+
+set logscale x 10
+set logscale y 10
 
 set key outside
 set key bottom right

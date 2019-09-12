@@ -66,7 +66,7 @@ set key bottom right
 set style line 1 lw 1
 
 plot \
-"$EFS" using 1:2    title 'EFS'   ls 1 pointtype 1     linecolor rgb "black" with linespoint , \
-"$TwSA" using 1:2   title 'TwSA'  ls 1 pointtype 2     linecolor rgb "0x4C0099" with linespoint , \
-"$ANS2b" using 1:2  title 'ANS2b' ls 1 pointtype 3     linecolor rgb "red" with linespoint , \
-"$BYPSb" using 1:2  title 'BYPSb' ls 1 pointtype 4     linecolor rgb "0x009900" with linespoint
+"$EFS" using 1:2    title 'EFS'   ls 1 ps 1.5 pointtype 1     linecolor rgb "0xCCCC00" with linespoint , \
+"$TwSA" using 1:2   title 'TwSA'  ls 1 ps 1.5 pointtype 7     linecolor rgb "0x4C0099" with linespoint , \
+"$ANS2b" using 1:2  title 'ANS2b' ls 1 ps 1.5 pointtype 3     linecolor rgb "red" with linespoint , \
+"$BYPSb" using 1:2  title 'BYPSb' ls 1 ps 1.5 pointtype 4     linecolor rgb "0x009900" with linespoint

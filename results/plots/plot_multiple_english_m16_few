@@ -46,7 +46,7 @@ set key bottom right
 set style line 1 lw 1
 
 plot \
-"$MM" using 1:2    	title 'MM'   	ls 1 pointtype 5     linecolor rgb "yellow" with linespoint , \
-"$FN" using 1:2   	title 'FN'  	ls 1 pointtype 2     linecolor rgb "0x4C0099" with linespoint , \
-"$HBYN" using 1:2  	title 'HBYN' 	ls 1 pointtype 3     linecolor rgb "red" with linespoint , \
-"$MBYPSb" using 1:2 title 'MBYPSb' 	ls 1 pointtype 4     linecolor rgb "0x009900" with linespoint
+"$MM" using 1:2    	title 'MM'   	ls 1 ps 1.5 pointtype 5     linecolor rgb "0xCCCC00" with linespoint , \
+"$FN" using 1:2   	title 'FN'  	ls 1 ps 1.5 pointtype 2     linecolor rgb "0x4C0099" with linespoint , \
+"$HBYN" using 1:2  	title 'HBYN' 	ls 1 ps 1.5 pointtype 3     linecolor rgb "red" with linespoint , \
+"$MBYPSb" using 1:2 title 'MBYPSb' 	ls 1 ps 1.5 pointtype 4     linecolor rgb "0x009900" with linespoint
