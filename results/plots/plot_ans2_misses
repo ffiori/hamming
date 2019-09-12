@@ -16,7 +16,7 @@ $ANS2 << EOD
 15 0.52 
 EOD
 
-set terminal epslatex size 5,2.2
+set terminal epslatex size 5,2.1
 set output 'plot_ans2_misses.tex'
 set xlabel '$k$'
 set ylabel 'Percentage of branch misses'
