@@ -22,19 +22,6 @@ $BYPSb << EOD
 3 0.28
 EOD
 
-$SA << EOD
-1 1.47
-EOD
-
-$TuSA << EOD
-1 1.14
-EOD
-
-$TwSA << EOD
-1 0.26
-EOD
-
-
 set terminal epslatex size 6,3.5
 set output 'plot_single_english_m32_few.tex'
 set xlabel '$k$'
@@ -47,6 +34,5 @@ set key outside
 set key bottom right
 
 plot \
-"$TwSA" using 1:2   title 'TwSA'  ps 1.5 pointtype 7  linecolor rgb "0x4C0099" with linespoint , \
 "$ANS2b" using 1:2  title 'ANS2b' ps 1.5 pointtype 3  linecolor rgb "red" with linespoint , \
 "$BYPSb" using 1:2  title 'BYPSb' ps 1.5 pointtype 4  linecolor rgb "0x009900" with linespoint

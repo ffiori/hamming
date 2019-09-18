@@ -30,6 +30,7 @@ $MM << EOD
 100 0.758
 1000 5.151
 EOD
+
 set terminal epslatex size 6,3.5
 set output 'plot_multiple_dna_m32_r_k1.tex'
 set xlabel '$r$'

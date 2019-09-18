@@ -34,18 +34,6 @@ $EFS << EOD
 3 1.10
 EOD
 
-$SA << EOD
-1 1.68
-EOD
-
-$TuSA << EOD
-1 1.31
-EOD
-
-$TwSA << EOD
-1 0.41
-EOD
-
 set terminal epslatex size 6,3.5
 set output 'plot_single_dna_m32_few.tex'
 set xlabel '$k$'
@@ -59,6 +47,5 @@ set key bottom right
 
 plot \
 "$EFS" using 1:2    title 'EFS'   ps 1.5 pointtype 1 linecolor rgb "0xCCCC00" with linespoint , \
-"$TwSA" using 1:2   title 'TwSA'  ps 1.5 pointtype 7 linecolor rgb "0x4C0099" with linespoint , \
 "$ANS2b" using 1:2  title 'ANS2b' ps 1.5 pointtype 3 linecolor rgb "red" with linespoint , \
 "$BYPSb" using 1:2  title 'BYPSb' ps 1.5 pointtype 4 linecolor rgb "0x009900" with linespoint
