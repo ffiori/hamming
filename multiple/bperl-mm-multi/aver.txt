@@ -1,0 +1,910 @@
+
+ans2b.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+0000000000000000 <pb> 41 54                	push   %r12
+0000000000000002 <pb+0x2> 55                   	push   %rbp
+0000000000000003 <pb+0x3> 48 8d 2d 00 00 00 00 	lea    0x0(%rip),%rbp        # 000000000000000a <pb+0xa>
+			6: R_X86_64_PC32	.LC0-0x4
+000000000000000a <pb+0xa> 53                   	push   %rbx
+000000000000000b <pb+0xb> 41 89 fc             	mov    %edi,%r12d
+000000000000000e <pb+0xe> 31 db                	xor    %ebx,%ebx
+0000000000000010 <pb+0x10> 89 d9                	mov    %ebx,%ecx
+0000000000000012 <pb+0x12> 44 89 e2             	mov    %r12d,%edx
+0000000000000015 <pb+0x15> 48 89 ee             	mov    %rbp,%rsi
+0000000000000018 <pb+0x18> d3 e2                	shl    %cl,%edx
+000000000000001a <pb+0x1a> bf 01 00 00 00       	mov    $0x1,%edi
+000000000000001f <pb+0x1f> 31 c0                	xor    %eax,%eax
+0000000000000021 <pb+0x21> c1 ea 0f             	shr    $0xf,%edx
+0000000000000024 <pb+0x24> 83 e2 01             	and    $0x1,%edx
+0000000000000027 <pb+0x27> e8 00 00 00 00       	callq  000000000000002c <pb+0x2c>
+			28: R_X86_64_PLT32	__printf_chk-0x4
+000000000000002c <pb+0x2c> 8d 4b 01             	lea    0x1(%rbx),%ecx
+000000000000002f <pb+0x2f> 44 89 e2             	mov    %r12d,%edx
+0000000000000032 <pb+0x32> 48 89 ee             	mov    %rbp,%rsi
+0000000000000035 <pb+0x35> bf 01 00 00 00       	mov    $0x1,%edi
+000000000000003a <pb+0x3a> 31 c0                	xor    %eax,%eax
+000000000000003c <pb+0x3c> d3 e2                	shl    %cl,%edx
+000000000000003e <pb+0x3e> c1 ea 0f             	shr    $0xf,%edx
+0000000000000041 <pb+0x41> 83 e2 01             	and    $0x1,%edx
+0000000000000044 <pb+0x44> e8 00 00 00 00       	callq  0000000000000049 <pb+0x49>
+			45: R_X86_64_PLT32	__printf_chk-0x4
+0000000000000049 <pb+0x49> 8d 4b 02             	lea    0x2(%rbx),%ecx
+000000000000004c <pb+0x4c> 44 89 e2             	mov    %r12d,%edx
+000000000000004f <pb+0x4f> 48 89 ee             	mov    %rbp,%rsi
+0000000000000052 <pb+0x52> bf 01 00 00 00       	mov    $0x1,%edi
+0000000000000057 <pb+0x57> 31 c0                	xor    %eax,%eax
+0000000000000059 <pb+0x59> d3 e2                	shl    %cl,%edx
+000000000000005b <pb+0x5b> c1 ea 0f             	shr    $0xf,%edx
+000000000000005e <pb+0x5e> 83 e2 01             	and    $0x1,%edx
+0000000000000061 <pb+0x61> e8 00 00 00 00       	callq  0000000000000066 <pb+0x66>
+			62: R_X86_64_PLT32	__printf_chk-0x4
+0000000000000066 <pb+0x66> 8d 4b 03             	lea    0x3(%rbx),%ecx
+0000000000000069 <pb+0x69> 44 89 e2             	mov    %r12d,%edx
+000000000000006c <pb+0x6c> 48 89 ee             	mov    %rbp,%rsi
+000000000000006f <pb+0x6f> bf 01 00 00 00       	mov    $0x1,%edi
+0000000000000074 <pb+0x74> 31 c0                	xor    %eax,%eax
+0000000000000076 <pb+0x76> d3 e2                	shl    %cl,%edx
+0000000000000078 <pb+0x78> c1 ea 0f             	shr    $0xf,%edx
+000000000000007b <pb+0x7b> 83 e2 01             	and    $0x1,%edx
+000000000000007e <pb+0x7e> e8 00 00 00 00       	callq  0000000000000083 <pb+0x83>
+			7f: R_X86_64_PLT32	__printf_chk-0x4
+0000000000000083 <pb+0x83> 8d 4b 04             	lea    0x4(%rbx),%ecx
+0000000000000086 <pb+0x86> 44 89 e2             	mov    %r12d,%edx
+0000000000000089 <pb+0x89> 48 89 ee             	mov    %rbp,%rsi
+000000000000008c <pb+0x8c> bf 01 00 00 00       	mov    $0x1,%edi
+0000000000000091 <pb+0x91> 31 c0                	xor    %eax,%eax
+0000000000000093 <pb+0x93> d3 e2                	shl    %cl,%edx
+0000000000000095 <pb+0x95> c1 ea 0f             	shr    $0xf,%edx
+0000000000000098 <pb+0x98> 83 e2 01             	and    $0x1,%edx
+000000000000009b <pb+0x9b> e8 00 00 00 00       	callq  00000000000000a0 <pb+0xa0>
+			9c: R_X86_64_PLT32	__printf_chk-0x4
+00000000000000a0 <pb+0xa0> 8d 4b 05             	lea    0x5(%rbx),%ecx
+00000000000000a3 <pb+0xa3> 44 89 e2             	mov    %r12d,%edx
+00000000000000a6 <pb+0xa6> 48 89 ee             	mov    %rbp,%rsi
+00000000000000a9 <pb+0xa9> bf 01 00 00 00       	mov    $0x1,%edi
+00000000000000ae <pb+0xae> 31 c0                	xor    %eax,%eax
+00000000000000b0 <pb+0xb0> d3 e2                	shl    %cl,%edx
+00000000000000b2 <pb+0xb2> c1 ea 0f             	shr    $0xf,%edx
+00000000000000b5 <pb+0xb5> 83 e2 01             	and    $0x1,%edx
+00000000000000b8 <pb+0xb8> e8 00 00 00 00       	callq  00000000000000bd <pb+0xbd>
+			b9: R_X86_64_PLT32	__printf_chk-0x4
+00000000000000bd <pb+0xbd> 8d 4b 06             	lea    0x6(%rbx),%ecx
+00000000000000c0 <pb+0xc0> 44 89 e2             	mov    %r12d,%edx
+00000000000000c3 <pb+0xc3> 48 89 ee             	mov    %rbp,%rsi
+00000000000000c6 <pb+0xc6> bf 01 00 00 00       	mov    $0x1,%edi
+00000000000000cb <pb+0xcb> d3 e2                	shl    %cl,%edx
+00000000000000cd <pb+0xcd> c1 ea 0f             	shr    $0xf,%edx
+00000000000000d0 <pb+0xd0> 83 e2 01             	and    $0x1,%edx
+00000000000000d3 <pb+0xd3> 31 c0                	xor    %eax,%eax
+00000000000000d5 <pb+0xd5> e8 00 00 00 00       	callq  00000000000000da <pb+0xda>
+			d6: R_X86_64_PLT32	__printf_chk-0x4
+00000000000000da <pb+0xda> 8d 4b 07             	lea    0x7(%rbx),%ecx
+00000000000000dd <pb+0xdd> 44 89 e2             	mov    %r12d,%edx
+00000000000000e0 <pb+0xe0> 31 c0                	xor    %eax,%eax
+00000000000000e2 <pb+0xe2> 48 89 ee             	mov    %rbp,%rsi
+00000000000000e5 <pb+0xe5> bf 01 00 00 00       	mov    $0x1,%edi
+00000000000000ea <pb+0xea> 83 c3 08             	add    $0x8,%ebx
+00000000000000ed <pb+0xed> d3 e2                	shl    %cl,%edx
+00000000000000ef <pb+0xef> c1 ea 0f             	shr    $0xf,%edx
+00000000000000f2 <pb+0xf2> 83 e2 01             	and    $0x1,%edx
+00000000000000f5 <pb+0xf5> e8 00 00 00 00       	callq  00000000000000fa <pb+0xfa>
+			f6: R_X86_64_PLT32	__printf_chk-0x4
+00000000000000fa <pb+0xfa> 83 fb 10             	cmp    $0x10,%ebx
+00000000000000fd <pb+0xfd> 0f 85 0d ff ff ff    	jne    0000000000000010 <pb+0x10>
+0000000000000103 <pb+0x103> 5b                   	pop    %rbx
+0000000000000104 <pb+0x104> 5d                   	pop    %rbp
+0000000000000105 <pb+0x105> 41 5c                	pop    %r12
+0000000000000107 <pb+0x107> bf 0a 00 00 00       	mov    $0xa,%edi
+000000000000010c <pb+0x10c> e9 00 00 00 00       	jmpq   0000000000000111 <pb+0x111>
+			10d: R_X86_64_PLT32	putchar-0x4
+0000000000000111 <pb+0x111> 0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+0000000000000116 <pb+0x116> 66 2e 0f 1f 84 00 00 00 00 00 	nopw   %cs:0x0(%rax,%rax,1)
+0000000000000120 <pnn> 48 8d 35 00 00 00 00 	lea    0x0(%rip),%rsi        # 0000000000000127 <pnn+0x7>
+			123: R_X86_64_PC32	.LC1-0x4
+0000000000000127 <pnn+0x7> 89 fa                	mov    %edi,%edx
+0000000000000129 <pnn+0x9> 31 c0                	xor    %eax,%eax
+000000000000012b <pnn+0xb> bf 01 00 00 00       	mov    $0x1,%edi
+0000000000000130 <pnn+0x10> e9 00 00 00 00       	jmpq   0000000000000135 <pnn+0x15>
+			131: R_X86_64_PLT32	__printf_chk-0x4
+0000000000000135 <pnn+0x15> 90                   	nop
+0000000000000136 <pnn+0x16> 66 2e 0f 1f 84 00 00 00 00 00 	nopw   %cs:0x0(%rax,%rax,1)
+0000000000000140 <pn> 48 8d 35 00 00 00 00 	lea    0x0(%rip),%rsi        # 0000000000000147 <pn+0x7>
+			143: R_X86_64_PC32	.LC2-0x4
+0000000000000147 <pn+0x7> 89 fa                	mov    %edi,%edx
+0000000000000149 <pn+0x9> 31 c0                	xor    %eax,%eax
+000000000000014b <pn+0xb> bf 01 00 00 00       	mov    $0x1,%edi
+0000000000000150 <pn+0x10> e9 00 00 00 00       	jmpq   0000000000000155 <pn+0x15>
+			151: R_X86_64_PLT32	__printf_chk-0x4
+0000000000000155 <pn+0x15> 90                   	nop
+0000000000000156 <pn+0x16> 66 2e 0f 1f 84 00 00 00 00 00 	nopw   %cs:0x0(%rax,%rax,1)
+0000000000000160 <pc> 48 8d 35 00 00 00 00 	lea    0x0(%rip),%rsi        # 0000000000000167 <pc+0x7>
+			163: R_X86_64_PC32	.LC3-0x4
+0000000000000167 <pc+0x7> 89 fa                	mov    %edi,%edx
+0000000000000169 <pc+0x9> 31 c0                	xor    %eax,%eax
+000000000000016b <pc+0xb> bf 01 00 00 00       	mov    $0x1,%edi
+0000000000000170 <pc+0x10> e9 00 00 00 00       	jmpq   0000000000000175 <pc+0x15>
+			171: R_X86_64_PLT32	__printf_chk-0x4
+0000000000000175 <pc+0x15> 90                   	nop
+0000000000000176 <pc+0x16> 66 2e 0f 1f 84 00 00 00 00 00 	nopw   %cs:0x0(%rax,%rax,1)
+0000000000000180 <ans_prep> 41 57                	push   %r15
+0000000000000182 <ans_prep+0x2> 41 56                	push   %r14
+0000000000000184 <ans_prep+0x4> 49 89 fe             	mov    %rdi,%r14
+0000000000000187 <ans_prep+0x7> 41 55                	push   %r13
+0000000000000189 <ans_prep+0x9> 41 54                	push   %r12
+000000000000018b <ans_prep+0xb> 55                   	push   %rbp
+000000000000018c <ans_prep+0xc> 53                   	push   %rbx
+000000000000018d <ans_prep+0xd> 89 f5                	mov    %esi,%ebp
+000000000000018f <ans_prep+0xf> 89 d3                	mov    %edx,%ebx
+0000000000000191 <ans_prep+0x11> 89 ca                	mov    %ecx,%edx
+0000000000000193 <ans_prep+0x13> 48 83 ec 18          	sub    $0x18,%rsp
+0000000000000197 <ans_prep+0x17> 48 8b 3d 00 00 00 00 	mov    0x0(%rip),%rdi        # 000000000000019e <ans_prep+0x1e>
+			19a: R_X86_64_PC32	.bss-0x4
+000000000000019e <ans_prep+0x1e> 89 35 00 00 00 00    	mov    %esi,0x0(%rip)        # 00000000000001a4 <ans_prep+0x24>
+			1a0: R_X86_64_PC32	patlen-0x4
+00000000000001a4 <ans_prep+0x24> 48 85 ff             	test   %rdi,%rdi
+00000000000001a7 <ans_prep+0x27> 74 0b                	je     00000000000001b4 <ans_prep+0x34>
+00000000000001a9 <ans_prep+0x29> 89 0c 24             	mov    %ecx,(%rsp)
+00000000000001ac <ans_prep+0x2c> e8 00 00 00 00       	callq  00000000000001b1 <ans_prep+0x31>
+			1ad: R_X86_64_PLT32	free-0x4
+00000000000001b1 <ans_prep+0x31> 8b 14 24             	mov    (%rsp),%edx
+00000000000001b4 <ans_prep+0x34> 48 63 fa             	movslq %edx,%rdi
+00000000000001b7 <ans_prep+0x37> 89 14 24             	mov    %edx,(%rsp)
+00000000000001ba <ans_prep+0x3a> 48 69 ff 88 08 00 00 	imul   $0x888,%rdi,%rdi
+00000000000001c1 <ans_prep+0x41> e8 00 00 00 00       	callq  00000000000001c6 <ans_prep+0x46>
+			1c2: R_X86_64_PLT32	malloc-0x4
+00000000000001c6 <ans_prep+0x46> 83 fd 10             	cmp    $0x10,%ebp
+00000000000001c9 <ans_prep+0x49> 48 89 05 00 00 00 00 	mov    %rax,0x0(%rip)        # 00000000000001d0 <ans_prep+0x50>
+			1cc: R_X86_64_PC32	.bss-0x4
+00000000000001d0 <ans_prep+0x50> 44 8b 0c 24          	mov    (%rsp),%r9d
+00000000000001d4 <ans_prep+0x54> 0f 8e 46 02 00 00    	jle    0000000000000420 <ans_prep+0x2a0>
+00000000000001da <ans_prep+0x5a> 45 85 c9             	test   %r9d,%r9d
+00000000000001dd <ans_prep+0x5d> 0f 8e 28 02 00 00    	jle    000000000000040b <ans_prep+0x28b>
+00000000000001e3 <ans_prep+0x63> 41 83 e9 01          	sub    $0x1,%r9d
+00000000000001e7 <ans_prep+0x67> 4c 63 e5             	movslq %ebp,%r12
+00000000000001ea <ans_prep+0x6a> 4c 8d 40 04          	lea    0x4(%rax),%r8
+00000000000001ee <ans_prep+0x6e> 49 69 c9 88 08 00 00 	imul   $0x888,%r9,%rcx
+00000000000001f5 <ans_prep+0x75> 83 c5 01             	add    $0x1,%ebp
+00000000000001f8 <ans_prep+0x78> 4c 8d 3d 00 00 00 00 	lea    0x0(%rip),%r15        # 00000000000001ff <ans_prep+0x7f>
+			1fb: R_X86_64_PC32	d3-0x4
+00000000000001ff <ans_prep+0x7f> 48 63 ed             	movslq %ebp,%rbp
+0000000000000202 <ans_prep+0x82> 4c 8d ac 08 8c 08 00 00 	lea    0x88c(%rax,%rcx,1),%r13
+000000000000020a <ans_prep+0x8a> 66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+0000000000000210 <ans_prep+0x90> 49 8d 78 08          	lea    0x8(%r8),%rdi
+0000000000000214 <ans_prep+0x94> 4c 89 c1             	mov    %r8,%rcx
+0000000000000217 <ans_prep+0x97> 31 c0                	xor    %eax,%eax
+0000000000000219 <ans_prep+0x99> 49 c7 00 00 00 00 00 	movq   $0x0,(%r8)
+0000000000000220 <ans_prep+0xa0> 49 c7 40 78 00 00 00 00 	movq   $0x0,0x78(%r8)
+0000000000000228 <ans_prep+0xa8> 4c 89 e2             	mov    %r12,%rdx
+000000000000022b <ans_prep+0xab> 48 83 e7 f8          	and    $0xfffffffffffffff8,%rdi
+000000000000022f <ans_prep+0xaf> 4c 89 f6             	mov    %r14,%rsi
+0000000000000232 <ans_prep+0xb2> 48 29 f9             	sub    %rdi,%rcx
+0000000000000235 <ans_prep+0xb5> 83 e9 80             	sub    $0xffffff80,%ecx
+0000000000000238 <ans_prep+0xb8> c1 e9 03             	shr    $0x3,%ecx
+000000000000023b <ans_prep+0xbb> f3 48 ab             	rep stos %rax,%es:(%rdi)
+000000000000023e <ans_prep+0xbe> 4c 89 c7             	mov    %r8,%rdi
+0000000000000241 <ans_prep+0xc1> e8 00 00 00 00       	callq  0000000000000246 <ans_prep+0xc6>
+			242: R_X86_64_PLT32	memcpy-0x4
+0000000000000246 <ans_prep+0xc6> 45 31 d2             	xor    %r10d,%r10d
+0000000000000249 <ans_prep+0xc9> 49 89 c0             	mov    %rax,%r8
+000000000000024c <ans_prep+0xcc> 45 31 c9             	xor    %r9d,%r9d
+000000000000024f <ans_prep+0xcf> 41 bb 10 00 00 00    	mov    $0x10,%r11d
+0000000000000255 <ans_prep+0xd5> e9 7e 01 00 00       	jmpq   00000000000003d8 <ans_prep+0x258>
+000000000000025a <ans_prep+0xda> 66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+0000000000000260 <ans_prep+0xe0> 45 31 c9             	xor    %r9d,%r9d
+0000000000000263 <ans_prep+0xe3> 44 89 d9             	mov    %r11d,%ecx
+0000000000000266 <ans_prep+0xe6> f3 45 0f b8 ca       	popcnt %r10d,%r9d
+000000000000026b <ans_prep+0xeb> 44 29 c9             	sub    %r9d,%ecx
+000000000000026e <ans_prep+0xee> 39 d9                	cmp    %ebx,%ecx
+0000000000000270 <ans_prep+0xf0> 7f 05                	jg     0000000000000277 <ans_prep+0xf7>
+0000000000000272 <ans_prep+0xf2> 43 c6 04 17 01       	movb   $0x1,(%r15,%r10,1)
+0000000000000277 <ans_prep+0xf7> 49 8d 7a 01          	lea    0x1(%r10),%rdi
+000000000000027b <ans_prep+0xfb> 31 d2                	xor    %edx,%edx
+000000000000027d <ans_prep+0xfd> 44 89 d9             	mov    %r11d,%ecx
+0000000000000280 <ans_prep+0x100> f3 0f b8 d7          	popcnt %edi,%edx
+0000000000000284 <ans_prep+0x104> 29 d1                	sub    %edx,%ecx
+0000000000000286 <ans_prep+0x106> 39 d9                	cmp    %ebx,%ecx
+0000000000000288 <ans_prep+0x108> 7f 06                	jg     0000000000000290 <ans_prep+0x110>
+000000000000028a <ans_prep+0x10a> 43 c6 44 17 01 01    	movb   $0x1,0x1(%r15,%r10,1)
+0000000000000290 <ans_prep+0x110> 4d 8d 4a 02          	lea    0x2(%r10),%r9
+0000000000000294 <ans_prep+0x114> 31 c0                	xor    %eax,%eax
+0000000000000296 <ans_prep+0x116> 44 89 d9             	mov    %r11d,%ecx
+0000000000000299 <ans_prep+0x119> f3 41 0f b8 c1       	popcnt %r9d,%eax
+000000000000029e <ans_prep+0x11e> 29 c1                	sub    %eax,%ecx
+00000000000002a0 <ans_prep+0x120> 39 d9                	cmp    %ebx,%ecx
+00000000000002a2 <ans_prep+0x122> 7f 06                	jg     00000000000002aa <ans_prep+0x12a>
+00000000000002a4 <ans_prep+0x124> 43 c6 44 17 02 01    	movb   $0x1,0x2(%r15,%r10,1)
+00000000000002aa <ans_prep+0x12a> 49 8d 52 03          	lea    0x3(%r10),%rdx
+00000000000002ae <ans_prep+0x12e> 45 31 c9             	xor    %r9d,%r9d
+00000000000002b1 <ans_prep+0x131> 44 89 d9             	mov    %r11d,%ecx
+00000000000002b4 <ans_prep+0x134> f3 44 0f b8 ca       	popcnt %edx,%r9d
+00000000000002b9 <ans_prep+0x139> 44 29 c9             	sub    %r9d,%ecx
+00000000000002bc <ans_prep+0x13c> 39 d9                	cmp    %ebx,%ecx
+00000000000002be <ans_prep+0x13e> 7f 06                	jg     00000000000002c6 <ans_prep+0x146>
+00000000000002c0 <ans_prep+0x140> 43 c6 44 17 03 01    	movb   $0x1,0x3(%r15,%r10,1)
+00000000000002c6 <ans_prep+0x146> 49 8d 42 04          	lea    0x4(%r10),%rax
+00000000000002ca <ans_prep+0x14a> 31 d2                	xor    %edx,%edx
+00000000000002cc <ans_prep+0x14c> 44 89 d9             	mov    %r11d,%ecx
+00000000000002cf <ans_prep+0x14f> f3 0f b8 d0          	popcnt %eax,%edx
+00000000000002d3 <ans_prep+0x153> 29 d1                	sub    %edx,%ecx
+00000000000002d5 <ans_prep+0x155> 39 d9                	cmp    %ebx,%ecx
+00000000000002d7 <ans_prep+0x157> 7f 06                	jg     00000000000002df <ans_prep+0x15f>
+00000000000002d9 <ans_prep+0x159> 43 c6 44 17 04 01    	movb   $0x1,0x4(%r15,%r10,1)
+00000000000002df <ans_prep+0x15f> 4d 8d 4a 05          	lea    0x5(%r10),%r9
+00000000000002e3 <ans_prep+0x163> 31 c0                	xor    %eax,%eax
+00000000000002e5 <ans_prep+0x165> 44 89 d9             	mov    %r11d,%ecx
+00000000000002e8 <ans_prep+0x168> f3 41 0f b8 c1       	popcnt %r9d,%eax
+00000000000002ed <ans_prep+0x16d> 29 c1                	sub    %eax,%ecx
+00000000000002ef <ans_prep+0x16f> 39 d9                	cmp    %ebx,%ecx
+00000000000002f1 <ans_prep+0x171> 7f 06                	jg     00000000000002f9 <ans_prep+0x179>
+00000000000002f3 <ans_prep+0x173> 43 c6 44 17 05 01    	movb   $0x1,0x5(%r15,%r10,1)
+00000000000002f9 <ans_prep+0x179> 49 8d 52 06          	lea    0x6(%r10),%rdx
+00000000000002fd <ans_prep+0x17d> 45 31 c9             	xor    %r9d,%r9d
+0000000000000300 <ans_prep+0x180> 44 89 d9             	mov    %r11d,%ecx
+0000000000000303 <ans_prep+0x183> f3 44 0f b8 ca       	popcnt %edx,%r9d
+0000000000000308 <ans_prep+0x188> 44 29 c9             	sub    %r9d,%ecx
+000000000000030b <ans_prep+0x18b> 39 d9                	cmp    %ebx,%ecx
+000000000000030d <ans_prep+0x18d> 7f 06                	jg     0000000000000315 <ans_prep+0x195>
+000000000000030f <ans_prep+0x18f> 43 c6 44 17 06 01    	movb   $0x1,0x6(%r15,%r10,1)
+0000000000000315 <ans_prep+0x195> 49 8d 42 07          	lea    0x7(%r10),%rax
+0000000000000319 <ans_prep+0x199> 31 d2                	xor    %edx,%edx
+000000000000031b <ans_prep+0x19b> 44 89 d9             	mov    %r11d,%ecx
+000000000000031e <ans_prep+0x19e> f3 0f b8 d0          	popcnt %eax,%edx
+0000000000000322 <ans_prep+0x1a2> 29 d1                	sub    %edx,%ecx
+0000000000000324 <ans_prep+0x1a4> 39 d9                	cmp    %ebx,%ecx
+0000000000000326 <ans_prep+0x1a6> 7f 06                	jg     000000000000032e <ans_prep+0x1ae>
+0000000000000328 <ans_prep+0x1a8> 43 c6 44 17 07 01    	movb   $0x1,0x7(%r15,%r10,1)
+000000000000032e <ans_prep+0x1ae> 4d 8d 4a 08          	lea    0x8(%r10),%r9
+0000000000000332 <ans_prep+0x1b2> 31 c0                	xor    %eax,%eax
+0000000000000334 <ans_prep+0x1b4> 44 89 d9             	mov    %r11d,%ecx
+0000000000000337 <ans_prep+0x1b7> f3 41 0f b8 c1       	popcnt %r9d,%eax
+000000000000033c <ans_prep+0x1bc> 29 c1                	sub    %eax,%ecx
+000000000000033e <ans_prep+0x1be> 39 d9                	cmp    %ebx,%ecx
+0000000000000340 <ans_prep+0x1c0> 7f 06                	jg     0000000000000348 <ans_prep+0x1c8>
+0000000000000342 <ans_prep+0x1c2> 43 c6 44 17 08 01    	movb   $0x1,0x8(%r15,%r10,1)
+0000000000000348 <ans_prep+0x1c8> 49 8d 52 09          	lea    0x9(%r10),%rdx
+000000000000034c <ans_prep+0x1cc> 45 31 c9             	xor    %r9d,%r9d
+000000000000034f <ans_prep+0x1cf> 44 89 d9             	mov    %r11d,%ecx
+0000000000000352 <ans_prep+0x1d2> f3 44 0f b8 ca       	popcnt %edx,%r9d
+0000000000000357 <ans_prep+0x1d7> 44 29 c9             	sub    %r9d,%ecx
+000000000000035a <ans_prep+0x1da> 39 d9                	cmp    %ebx,%ecx
+000000000000035c <ans_prep+0x1dc> 7f 06                	jg     0000000000000364 <ans_prep+0x1e4>
+000000000000035e <ans_prep+0x1de> 43 c6 44 17 09 01    	movb   $0x1,0x9(%r15,%r10,1)
+0000000000000364 <ans_prep+0x1e4> 49 8d 42 0a          	lea    0xa(%r10),%rax
+0000000000000368 <ans_prep+0x1e8> 31 d2                	xor    %edx,%edx
+000000000000036a <ans_prep+0x1ea> 44 89 d9             	mov    %r11d,%ecx
+000000000000036d <ans_prep+0x1ed> f3 0f b8 d0          	popcnt %eax,%edx
+0000000000000371 <ans_prep+0x1f1> 29 d1                	sub    %edx,%ecx
+0000000000000373 <ans_prep+0x1f3> 39 d9                	cmp    %ebx,%ecx
+0000000000000375 <ans_prep+0x1f5> 7f 06                	jg     000000000000037d <ans_prep+0x1fd>
+0000000000000377 <ans_prep+0x1f7> 43 c6 44 17 0a 01    	movb   $0x1,0xa(%r15,%r10,1)
+000000000000037d <ans_prep+0x1fd> 4d 8d 4a 0b          	lea    0xb(%r10),%r9
+0000000000000381 <ans_prep+0x201> 31 c0                	xor    %eax,%eax
+0000000000000383 <ans_prep+0x203> 44 89 d9             	mov    %r11d,%ecx
+0000000000000386 <ans_prep+0x206> f3 41 0f b8 c1       	popcnt %r9d,%eax
+000000000000038b <ans_prep+0x20b> 29 c1                	sub    %eax,%ecx
+000000000000038d <ans_prep+0x20d> 39 d9                	cmp    %ebx,%ecx
+000000000000038f <ans_prep+0x20f> 7f 06                	jg     0000000000000397 <ans_prep+0x217>
+0000000000000391 <ans_prep+0x211> 43 c6 44 17 0b 01    	movb   $0x1,0xb(%r15,%r10,1)
+0000000000000397 <ans_prep+0x217> 49 8d 52 0c          	lea    0xc(%r10),%rdx
+000000000000039b <ans_prep+0x21b> 45 31 c9             	xor    %r9d,%r9d
+000000000000039e <ans_prep+0x21e> 44 89 d9             	mov    %r11d,%ecx
+00000000000003a1 <ans_prep+0x221> f3 44 0f b8 ca       	popcnt %edx,%r9d
+00000000000003a6 <ans_prep+0x226> 44 29 c9             	sub    %r9d,%ecx
+00000000000003a9 <ans_prep+0x229> 39 d9                	cmp    %ebx,%ecx
+00000000000003ab <ans_prep+0x22b> 7f 06                	jg     00000000000003b3 <ans_prep+0x233>
+00000000000003ad <ans_prep+0x22d> 43 c6 44 17 0c 01    	movb   $0x1,0xc(%r15,%r10,1)
+00000000000003b3 <ans_prep+0x233> 49 8d 42 0d          	lea    0xd(%r10),%rax
+00000000000003b7 <ans_prep+0x237> 31 d2                	xor    %edx,%edx
+00000000000003b9 <ans_prep+0x239> 44 89 d9             	mov    %r11d,%ecx
+00000000000003bc <ans_prep+0x23c> f3 0f b8 d0          	popcnt %eax,%edx
+00000000000003c0 <ans_prep+0x240> 29 d1                	sub    %edx,%ecx
+00000000000003c2 <ans_prep+0x242> 39 d9                	cmp    %ebx,%ecx
+00000000000003c4 <ans_prep+0x244> 7f 06                	jg     00000000000003cc <ans_prep+0x24c>
+00000000000003c6 <ans_prep+0x246> 43 c6 44 17 0d 01    	movb   $0x1,0xd(%r15,%r10,1)
+00000000000003cc <ans_prep+0x24c> 49 83 c2 0e          	add    $0xe,%r10
+00000000000003d0 <ans_prep+0x250> 45 31 c9             	xor    %r9d,%r9d
+00000000000003d3 <ans_prep+0x253> f3 45 0f b8 ca       	popcnt %r10d,%r9d
+00000000000003d8 <ans_prep+0x258> 44 89 de             	mov    %r11d,%esi
+00000000000003db <ans_prep+0x25b> 44 29 ce             	sub    %r9d,%esi
+00000000000003de <ans_prep+0x25e> 39 de                	cmp    %ebx,%esi
+00000000000003e0 <ans_prep+0x260> 7f 05                	jg     00000000000003e7 <ans_prep+0x267>
+00000000000003e2 <ans_prep+0x262> 43 c6 04 17 01       	movb   $0x1,(%r15,%r10,1)
+00000000000003e7 <ans_prep+0x267> 49 83 c2 01          	add    $0x1,%r10
+00000000000003eb <ans_prep+0x26b> 49 81 fa 00 00 01 00 	cmp    $0x10000,%r10
+00000000000003f2 <ans_prep+0x272> 0f 85 68 fe ff ff    	jne    0000000000000260 <ans_prep+0xe0>
+00000000000003f8 <ans_prep+0x278> 49 81 c0 88 08 00 00 	add    $0x888,%r8
+00000000000003ff <ans_prep+0x27f> 49 01 ee             	add    %rbp,%r14
+0000000000000402 <ans_prep+0x282> 4d 39 c5             	cmp    %r8,%r13
+0000000000000405 <ans_prep+0x285> 0f 85 05 fe ff ff    	jne    0000000000000210 <ans_prep+0x90>
+000000000000040b <ans_prep+0x28b> 48 83 c4 18          	add    $0x18,%rsp
+000000000000040f <ans_prep+0x28f> 5b                   	pop    %rbx
+0000000000000410 <ans_prep+0x290> 5d                   	pop    %rbp
+0000000000000411 <ans_prep+0x291> 41 5c                	pop    %r12
+0000000000000413 <ans_prep+0x293> 41 5d                	pop    %r13
+0000000000000415 <ans_prep+0x295> 41 5e                	pop    %r14
+0000000000000417 <ans_prep+0x297> 41 5f                	pop    %r15
+0000000000000419 <ans_prep+0x299> c3                   	retq   
+000000000000041a <ans_prep+0x29a> 66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+0000000000000420 <ans_prep+0x2a0> 45 85 c9             	test   %r9d,%r9d
+0000000000000423 <ans_prep+0x2a3> 7e e6                	jle    000000000000040b <ans_prep+0x28b>
+0000000000000425 <ans_prep+0x2a5> 41 83 e9 01          	sub    $0x1,%r9d
+0000000000000429 <ans_prep+0x2a9> 8d 4d ff             	lea    -0x1(%rbp),%ecx
+000000000000042c <ans_prep+0x2ac> be 02 00 00 00       	mov    $0x2,%esi
+0000000000000431 <ans_prep+0x2b1> 4d 69 c1 88 08 00 00 	imul   $0x888,%r9,%r8
+0000000000000438 <ans_prep+0x2b8> 41 89 f2             	mov    %esi,%r10d
+000000000000043b <ans_prep+0x2bb> 44 8d 6d 01          	lea    0x1(%rbp),%r13d
+000000000000043f <ans_prep+0x2bf> 41 d3 e2             	shl    %cl,%r10d
+0000000000000442 <ans_prep+0x2c2> 4c 63 fd             	movslq %ebp,%r15
+0000000000000445 <ans_prep+0x2c5> 4c 8d 60 04          	lea    0x4(%rax),%r12
+0000000000000449 <ans_prep+0x2c9> 41 8d 7a ff          	lea    -0x1(%r10),%edi
+000000000000044d <ans_prep+0x2cd> 44 89 54 24 0c       	mov    %r10d,0xc(%rsp)
+0000000000000452 <ans_prep+0x2d2> 4d 63 ed             	movslq %r13d,%r13
+0000000000000455 <ans_prep+0x2d5> 4e 8d 9c 00 8c 08 00 00 	lea    0x88c(%rax,%r8,1),%r11
+000000000000045d <ans_prep+0x2dd> 89 d8                	mov    %ebx,%eax
+000000000000045f <ans_prep+0x2df> 4c 8d 05 00 00 00 00 	lea    0x0(%rip),%r8        # 0000000000000466 <ans_prep+0x2e6>
+			462: R_X86_64_PC32	d3-0x4
+0000000000000466 <ans_prep+0x2e6> 4c 89 fb             	mov    %r15,%rbx
+0000000000000469 <ans_prep+0x2e9> 89 7c 24 08          	mov    %edi,0x8(%rsp)
+000000000000046d <ans_prep+0x2ed> 41 89 c7             	mov    %eax,%r15d
+0000000000000470 <ans_prep+0x2f0> 4c 89 1c 24          	mov    %r11,(%rsp)
+0000000000000474 <ans_prep+0x2f4> 0f 1f 40 00          	nopl   0x0(%rax)
+0000000000000478 <ans_prep+0x2f8> 49 8d 54 24 08       	lea    0x8(%r12),%rdx
+000000000000047d <ans_prep+0x2fd> 4d 89 e1             	mov    %r12,%r9
+0000000000000480 <ans_prep+0x300> 31 c0                	xor    %eax,%eax
+0000000000000482 <ans_prep+0x302> 49 c7 04 24 00 00 00 00 	movq   $0x0,(%r12)
+000000000000048a <ans_prep+0x30a> 49 c7 44 24 78 00 00 00 00 	movq   $0x0,0x78(%r12)
+0000000000000493 <ans_prep+0x313> 48 83 e2 f8          	and    $0xfffffffffffffff8,%rdx
+0000000000000497 <ans_prep+0x317> 49 29 d1             	sub    %rdx,%r9
+000000000000049a <ans_prep+0x31a> 48 89 d7             	mov    %rdx,%rdi
+000000000000049d <ans_prep+0x31d> 41 8d 89 80 00 00 00 	lea    0x80(%r9),%ecx
+00000000000004a4 <ans_prep+0x324> c1 e9 03             	shr    $0x3,%ecx
+00000000000004a7 <ans_prep+0x327> 48 83 fb 08          	cmp    $0x8,%rbx
+00000000000004ab <ans_prep+0x32b> f3 48 ab             	rep stos %rax,%es:(%rdi)
+00000000000004ae <ans_prep+0x32e> 0f 83 34 02 00 00    	jae    00000000000006e8 <ans_prep+0x568>
+00000000000004b4 <ans_prep+0x334> f6 c3 04             	test   $0x4,%bl
+00000000000004b7 <ans_prep+0x337> 0f 85 72 03 00 00    	jne    000000000000082f <ans_prep+0x6af>
+00000000000004bd <ans_prep+0x33d> 48 85 db             	test   %rbx,%rbx
+00000000000004c0 <ans_prep+0x340> 74 11                	je     00000000000004d3 <ans_prep+0x353>
+00000000000004c2 <ans_prep+0x342> 45 0f b6 1e          	movzbl (%r14),%r11d
+00000000000004c6 <ans_prep+0x346> f6 c3 02             	test   $0x2,%bl
+00000000000004c9 <ans_prep+0x349> 45 88 1c 24          	mov    %r11b,(%r12)
+00000000000004cd <ans_prep+0x34d> 0f 85 72 03 00 00    	jne    0000000000000845 <ans_prep+0x6c5>
+00000000000004d3 <ans_prep+0x353> 31 f6                	xor    %esi,%esi
+00000000000004d5 <ans_prep+0x355> 4c 89 c7             	mov    %r8,%rdi
+00000000000004d8 <ans_prep+0x358> ba 00 00 01 00       	mov    $0x10000,%edx
+00000000000004dd <ans_prep+0x35d> e8 00 00 00 00       	callq  00000000000004e2 <ans_prep+0x362>
+			4de: R_X86_64_PLT32	memset-0x4
+00000000000004e2 <ans_prep+0x362> 44 8b 54 24 0c       	mov    0xc(%rsp),%r10d
+00000000000004e7 <ans_prep+0x367> 49 89 c0             	mov    %rax,%r8
+00000000000004ea <ans_prep+0x36a> 45 85 d2             	test   %r10d,%r10d
+00000000000004ed <ans_prep+0x36d> 0f 8e d9 01 00 00    	jle    00000000000006cc <ans_prep+0x54c>
+00000000000004f3 <ans_prep+0x373> 44 8b 4c 24 08       	mov    0x8(%rsp),%r9d
+00000000000004f8 <ans_prep+0x378> 45 31 db             	xor    %r11d,%r11d
+00000000000004fb <ans_prep+0x37b> 31 f6                	xor    %esi,%esi
+00000000000004fd <ans_prep+0x37d> 49 8d 49 01          	lea    0x1(%r9),%rcx
+0000000000000501 <ans_prep+0x381> 41 83 e1 07          	and    $0x7,%r9d
+0000000000000505 <ans_prep+0x385> 0f 84 a6 01 00 00    	je     00000000000006b1 <ans_prep+0x531>
+000000000000050b <ans_prep+0x38b> 44 39 fd             	cmp    %r15d,%ebp
+000000000000050e <ans_prep+0x38e> 7f 07                	jg     0000000000000517 <ans_prep+0x397>
+0000000000000510 <ans_prep+0x390> c6 05 00 00 00 00 01 	movb   $0x1,0x0(%rip)        # 0000000000000517 <ans_prep+0x397>
+			512: R_X86_64_PC32	d3-0x5
+0000000000000517 <ans_prep+0x397> 49 83 f9 01          	cmp    $0x1,%r9
+000000000000051b <ans_prep+0x39b> 41 bb 01 00 00 00    	mov    $0x1,%r11d
+0000000000000521 <ans_prep+0x3a1> be 01 00 00 00       	mov    $0x1,%esi
+0000000000000526 <ans_prep+0x3a6> 0f 84 85 01 00 00    	je     00000000000006b1 <ans_prep+0x531>
+000000000000052c <ans_prep+0x3ac> 49 83 f9 02          	cmp    $0x2,%r9
+0000000000000530 <ans_prep+0x3b0> 0f 84 98 00 00 00    	je     00000000000005ce <ans_prep+0x44e>
+0000000000000536 <ans_prep+0x3b6> 49 83 f9 03          	cmp    $0x3,%r9
+000000000000053a <ans_prep+0x3ba> 74 77                	je     00000000000005b3 <ans_prep+0x433>
+000000000000053c <ans_prep+0x3bc> 49 83 f9 04          	cmp    $0x4,%r9
+0000000000000540 <ans_prep+0x3c0> 74 56                	je     0000000000000598 <ans_prep+0x418>
+0000000000000542 <ans_prep+0x3c2> 49 83 f9 05          	cmp    $0x5,%r9
+0000000000000546 <ans_prep+0x3c6> 74 37                	je     000000000000057f <ans_prep+0x3ff>
+0000000000000548 <ans_prep+0x3c8> 49 83 f9 06          	cmp    $0x6,%r9
+000000000000054c <ans_prep+0x3cc> 74 18                	je     0000000000000566 <ans_prep+0x3e6>
+000000000000054e <ans_prep+0x3ce> 89 ea                	mov    %ebp,%edx
+0000000000000550 <ans_prep+0x3d0> 29 f2                	sub    %esi,%edx
+0000000000000552 <ans_prep+0x3d2> 44 39 fa             	cmp    %r15d,%edx
+0000000000000555 <ans_prep+0x3d5> 0f 8e b8 02 00 00    	jle    0000000000000813 <ans_prep+0x693>
+000000000000055b <ans_prep+0x3db> 49 83 c3 01          	add    $0x1,%r11
+000000000000055f <ans_prep+0x3df> 31 f6                	xor    %esi,%esi
+0000000000000561 <ans_prep+0x3e1> f3 41 0f b8 f3       	popcnt %r11d,%esi
+0000000000000566 <ans_prep+0x3e6> 89 e8                	mov    %ebp,%eax
+0000000000000568 <ans_prep+0x3e8> 29 f0                	sub    %esi,%eax
+000000000000056a <ans_prep+0x3ea> 44 39 f8             	cmp    %r15d,%eax
+000000000000056d <ans_prep+0x3ed> 7f 05                	jg     0000000000000574 <ans_prep+0x3f4>
+000000000000056f <ans_prep+0x3ef> 43 c6 04 18 01       	movb   $0x1,(%r8,%r11,1)
+0000000000000574 <ans_prep+0x3f4> 49 83 c3 01          	add    $0x1,%r11
+0000000000000578 <ans_prep+0x3f8> 31 f6                	xor    %esi,%esi
+000000000000057a <ans_prep+0x3fa> f3 41 0f b8 f3       	popcnt %r11d,%esi
+000000000000057f <ans_prep+0x3ff> 89 ef                	mov    %ebp,%edi
+0000000000000581 <ans_prep+0x401> 29 f7                	sub    %esi,%edi
+0000000000000583 <ans_prep+0x403> 44 39 ff             	cmp    %r15d,%edi
+0000000000000586 <ans_prep+0x406> 7f 05                	jg     000000000000058d <ans_prep+0x40d>
+0000000000000588 <ans_prep+0x408> 43 c6 04 18 01       	movb   $0x1,(%r8,%r11,1)
+000000000000058d <ans_prep+0x40d> 49 83 c3 01          	add    $0x1,%r11
+0000000000000591 <ans_prep+0x411> 31 f6                	xor    %esi,%esi
+0000000000000593 <ans_prep+0x413> f3 41 0f b8 f3       	popcnt %r11d,%esi
+0000000000000598 <ans_prep+0x418> 41 89 ea             	mov    %ebp,%r10d
+000000000000059b <ans_prep+0x41b> 41 29 f2             	sub    %esi,%r10d
+000000000000059e <ans_prep+0x41e> 45 39 fa             	cmp    %r15d,%r10d
+00000000000005a1 <ans_prep+0x421> 7f 05                	jg     00000000000005a8 <ans_prep+0x428>
+00000000000005a3 <ans_prep+0x423> 43 c6 04 18 01       	movb   $0x1,(%r8,%r11,1)
+00000000000005a8 <ans_prep+0x428> 49 83 c3 01          	add    $0x1,%r11
+00000000000005ac <ans_prep+0x42c> 31 f6                	xor    %esi,%esi
+00000000000005ae <ans_prep+0x42e> f3 41 0f b8 f3       	popcnt %r11d,%esi
+00000000000005b3 <ans_prep+0x433> 41 89 e9             	mov    %ebp,%r9d
+00000000000005b6 <ans_prep+0x436> 41 29 f1             	sub    %esi,%r9d
+00000000000005b9 <ans_prep+0x439> 45 39 f9             	cmp    %r15d,%r9d
+00000000000005bc <ans_prep+0x43c> 7f 05                	jg     00000000000005c3 <ans_prep+0x443>
+00000000000005be <ans_prep+0x43e> 43 c6 04 18 01       	movb   $0x1,(%r8,%r11,1)
+00000000000005c3 <ans_prep+0x443> 49 83 c3 01          	add    $0x1,%r11
+00000000000005c7 <ans_prep+0x447> 31 f6                	xor    %esi,%esi
+00000000000005c9 <ans_prep+0x449> f3 41 0f b8 f3       	popcnt %r11d,%esi
+00000000000005ce <ans_prep+0x44e> 89 ea                	mov    %ebp,%edx
+00000000000005d0 <ans_prep+0x450> 29 f2                	sub    %esi,%edx
+00000000000005d2 <ans_prep+0x452> 44 39 fa             	cmp    %r15d,%edx
+00000000000005d5 <ans_prep+0x455> 7f 05                	jg     00000000000005dc <ans_prep+0x45c>
+00000000000005d7 <ans_prep+0x457> 43 c6 04 18 01       	movb   $0x1,(%r8,%r11,1)
+00000000000005dc <ans_prep+0x45c> 49 83 c3 01          	add    $0x1,%r11
+00000000000005e0 <ans_prep+0x460> 31 f6                	xor    %esi,%esi
+00000000000005e2 <ans_prep+0x462> f3 41 0f b8 f3       	popcnt %r11d,%esi
+00000000000005e7 <ans_prep+0x467> e9 c5 00 00 00       	jmpq   00000000000006b1 <ans_prep+0x531>
+00000000000005ec <ans_prep+0x46c> 0f 1f 40 00          	nopl   0x0(%rax)
+00000000000005f0 <ans_prep+0x470> 31 ff                	xor    %edi,%edi
+00000000000005f2 <ans_prep+0x472> 89 ea                	mov    %ebp,%edx
+00000000000005f4 <ans_prep+0x474> f3 41 0f b8 fb       	popcnt %r11d,%edi
+00000000000005f9 <ans_prep+0x479> 29 fa                	sub    %edi,%edx
+00000000000005fb <ans_prep+0x47b> 44 39 fa             	cmp    %r15d,%edx
+00000000000005fe <ans_prep+0x47e> 7f 05                	jg     0000000000000605 <ans_prep+0x485>
+0000000000000600 <ans_prep+0x480> 43 c6 04 18 01       	movb   $0x1,(%r8,%r11,1)
+0000000000000605 <ans_prep+0x485> 4d 8d 53 01          	lea    0x1(%r11),%r10
+0000000000000609 <ans_prep+0x489> 45 31 c9             	xor    %r9d,%r9d
+000000000000060c <ans_prep+0x48c> 89 ea                	mov    %ebp,%edx
+000000000000060e <ans_prep+0x48e> f3 45 0f b8 ca       	popcnt %r10d,%r9d
+0000000000000613 <ans_prep+0x493> 44 29 ca             	sub    %r9d,%edx
+0000000000000616 <ans_prep+0x496> 44 39 fa             	cmp    %r15d,%edx
+0000000000000619 <ans_prep+0x499> 7f 06                	jg     0000000000000621 <ans_prep+0x4a1>
+000000000000061b <ans_prep+0x49b> 43 c6 44 18 01 01    	movb   $0x1,0x1(%r8,%r11,1)
+0000000000000621 <ans_prep+0x4a1> 49 8d 7b 02          	lea    0x2(%r11),%rdi
+0000000000000625 <ans_prep+0x4a5> 45 31 d2             	xor    %r10d,%r10d
+0000000000000628 <ans_prep+0x4a8> 89 ea                	mov    %ebp,%edx
+000000000000062a <ans_prep+0x4aa> f3 44 0f b8 d7       	popcnt %edi,%r10d
+000000000000062f <ans_prep+0x4af> 44 29 d2             	sub    %r10d,%edx
+0000000000000632 <ans_prep+0x4b2> 44 39 fa             	cmp    %r15d,%edx
+0000000000000635 <ans_prep+0x4b5> 7f 06                	jg     000000000000063d <ans_prep+0x4bd>
+0000000000000637 <ans_prep+0x4b7> 43 c6 44 18 02 01    	movb   $0x1,0x2(%r8,%r11,1)
+000000000000063d <ans_prep+0x4bd> 4d 8d 4b 03          	lea    0x3(%r11),%r9
+0000000000000641 <ans_prep+0x4c1> 31 c0                	xor    %eax,%eax
+0000000000000643 <ans_prep+0x4c3> 89 ea                	mov    %ebp,%edx
+0000000000000645 <ans_prep+0x4c5> f3 41 0f b8 c1       	popcnt %r9d,%eax
+000000000000064a <ans_prep+0x4ca> 29 c2                	sub    %eax,%edx
+000000000000064c <ans_prep+0x4cc> 44 39 fa             	cmp    %r15d,%edx
+000000000000064f <ans_prep+0x4cf> 7f 06                	jg     0000000000000657 <ans_prep+0x4d7>
+0000000000000651 <ans_prep+0x4d1> 43 c6 44 18 03 01    	movb   $0x1,0x3(%r8,%r11,1)
+0000000000000657 <ans_prep+0x4d7> 4d 8d 53 04          	lea    0x4(%r11),%r10
+000000000000065b <ans_prep+0x4db> 45 31 c9             	xor    %r9d,%r9d
+000000000000065e <ans_prep+0x4de> 89 ea                	mov    %ebp,%edx
+0000000000000660 <ans_prep+0x4e0> f3 45 0f b8 ca       	popcnt %r10d,%r9d
+0000000000000665 <ans_prep+0x4e5> 44 29 ca             	sub    %r9d,%edx
+0000000000000668 <ans_prep+0x4e8> 44 39 fa             	cmp    %r15d,%edx
+000000000000066b <ans_prep+0x4eb> 7f 06                	jg     0000000000000673 <ans_prep+0x4f3>
+000000000000066d <ans_prep+0x4ed> 43 c6 44 18 04 01    	movb   $0x1,0x4(%r8,%r11,1)
+0000000000000673 <ans_prep+0x4f3> 49 8d 43 05          	lea    0x5(%r11),%rax
+0000000000000677 <ans_prep+0x4f7> 31 ff                	xor    %edi,%edi
+0000000000000679 <ans_prep+0x4f9> 89 ea                	mov    %ebp,%edx
+000000000000067b <ans_prep+0x4fb> f3 0f b8 f8          	popcnt %eax,%edi
+000000000000067f <ans_prep+0x4ff> 29 fa                	sub    %edi,%edx
+0000000000000681 <ans_prep+0x501> 44 39 fa             	cmp    %r15d,%edx
+0000000000000684 <ans_prep+0x504> 7f 06                	jg     000000000000068c <ans_prep+0x50c>
+0000000000000686 <ans_prep+0x506> 43 c6 44 18 05 01    	movb   $0x1,0x5(%r8,%r11,1)
+000000000000068c <ans_prep+0x50c> 4d 8d 4b 06          	lea    0x6(%r11),%r9
+0000000000000690 <ans_prep+0x510> 31 f6                	xor    %esi,%esi
+0000000000000692 <ans_prep+0x512> 89 ea                	mov    %ebp,%edx
+0000000000000694 <ans_prep+0x514> f3 41 0f b8 f1       	popcnt %r9d,%esi
+0000000000000699 <ans_prep+0x519> 29 f2                	sub    %esi,%edx
+000000000000069b <ans_prep+0x51b> 44 39 fa             	cmp    %r15d,%edx
+000000000000069e <ans_prep+0x51e> 7f 06                	jg     00000000000006a6 <ans_prep+0x526>
+00000000000006a0 <ans_prep+0x520> 43 c6 44 18 06 01    	movb   $0x1,0x6(%r8,%r11,1)
+00000000000006a6 <ans_prep+0x526> 49 83 c3 07          	add    $0x7,%r11
+00000000000006aa <ans_prep+0x52a> 31 f6                	xor    %esi,%esi
+00000000000006ac <ans_prep+0x52c> f3 41 0f b8 f3       	popcnt %r11d,%esi
+00000000000006b1 <ans_prep+0x531> 89 e8                	mov    %ebp,%eax
+00000000000006b3 <ans_prep+0x533> 29 f0                	sub    %esi,%eax
+00000000000006b5 <ans_prep+0x535> 44 39 f8             	cmp    %r15d,%eax
+00000000000006b8 <ans_prep+0x538> 7f 05                	jg     00000000000006bf <ans_prep+0x53f>
+00000000000006ba <ans_prep+0x53a> 43 c6 04 18 01       	movb   $0x1,(%r8,%r11,1)
+00000000000006bf <ans_prep+0x53f> 49 83 c3 01          	add    $0x1,%r11
+00000000000006c3 <ans_prep+0x543> 49 39 cb             	cmp    %rcx,%r11
+00000000000006c6 <ans_prep+0x546> 0f 85 24 ff ff ff    	jne    00000000000005f0 <ans_prep+0x470>
+00000000000006cc <ans_prep+0x54c> 49 81 c4 88 08 00 00 	add    $0x888,%r12
+00000000000006d3 <ans_prep+0x553> 4d 01 ee             	add    %r13,%r14
+00000000000006d6 <ans_prep+0x556> 4c 3b 24 24          	cmp    (%rsp),%r12
+00000000000006da <ans_prep+0x55a> 0f 85 98 fd ff ff    	jne    0000000000000478 <ans_prep+0x2f8>
+00000000000006e0 <ans_prep+0x560> e9 26 fd ff ff       	jmpq   000000000000040b <ans_prep+0x28b>
+00000000000006e5 <ans_prep+0x565> 0f 1f 00             	nopl   (%rax)
+00000000000006e8 <ans_prep+0x568> 49 8b 0e             	mov    (%r14),%rcx
+00000000000006eb <ans_prep+0x56b> 49 89 d2             	mov    %rdx,%r10
+00000000000006ee <ans_prep+0x56e> 49 89 0c 24          	mov    %rcx,(%r12)
+00000000000006f2 <ans_prep+0x572> 4c 89 f1             	mov    %r14,%rcx
+00000000000006f5 <ans_prep+0x575> 49 8b 7c 1e f8       	mov    -0x8(%r14,%rbx,1),%rdi
+00000000000006fa <ans_prep+0x57a> 4c 29 c9             	sub    %r9,%rcx
+00000000000006fd <ans_prep+0x57d> 49 01 d9             	add    %rbx,%r9
+0000000000000700 <ans_prep+0x580> 4c 89 ce             	mov    %r9,%rsi
+0000000000000703 <ans_prep+0x583> 48 83 e6 f8          	and    $0xfffffffffffffff8,%rsi
+0000000000000707 <ans_prep+0x587> 49 89 7c 1c f8       	mov    %rdi,-0x8(%r12,%rbx,1)
+000000000000070c <ans_prep+0x58c> 48 83 fe 08          	cmp    $0x8,%rsi
+0000000000000710 <ans_prep+0x590> 0f 82 bd fd ff ff    	jb     00000000000004d3 <ans_prep+0x353>
+0000000000000716 <ans_prep+0x596> 4c 8d 5e ff          	lea    -0x1(%rsi),%r11
+000000000000071a <ans_prep+0x59a> 48 8b 01             	mov    (%rcx),%rax
+000000000000071d <ans_prep+0x59d> 49 89 f1             	mov    %rsi,%r9
+0000000000000720 <ans_prep+0x5a0> be 08 00 00 00       	mov    $0x8,%esi
+0000000000000725 <ans_prep+0x5a5> 49 c1 eb 03          	shr    $0x3,%r11
+0000000000000729 <ans_prep+0x5a9> 41 83 e3 07          	and    $0x7,%r11d
+000000000000072d <ans_prep+0x5ad> 4c 39 ce             	cmp    %r9,%rsi
+0000000000000730 <ans_prep+0x5b0> 48 89 02             	mov    %rax,(%rdx)
+0000000000000733 <ans_prep+0x5b3> 0f 83 9a fd ff ff    	jae    00000000000004d3 <ans_prep+0x353>
+0000000000000739 <ans_prep+0x5b9> 4d 85 db             	test   %r11,%r11
+000000000000073c <ans_prep+0x5bc> 74 79                	je     00000000000007b7 <ans_prep+0x637>
+000000000000073e <ans_prep+0x5be> 49 83 fb 01          	cmp    $0x1,%r11
+0000000000000742 <ans_prep+0x5c2> 74 5e                	je     00000000000007a2 <ans_prep+0x622>
+0000000000000744 <ans_prep+0x5c4> 49 83 fb 02          	cmp    $0x2,%r11
+0000000000000748 <ans_prep+0x5c8> 74 4c                	je     0000000000000796 <ans_prep+0x616>
+000000000000074a <ans_prep+0x5ca> 49 83 fb 03          	cmp    $0x3,%r11
+000000000000074e <ans_prep+0x5ce> 74 3a                	je     000000000000078a <ans_prep+0x60a>
+0000000000000750 <ans_prep+0x5d0> 49 83 fb 04          	cmp    $0x4,%r11
+0000000000000754 <ans_prep+0x5d4> 74 28                	je     000000000000077e <ans_prep+0x5fe>
+0000000000000756 <ans_prep+0x5d6> 49 83 fb 05          	cmp    $0x5,%r11
+000000000000075a <ans_prep+0x5da> 74 16                	je     0000000000000772 <ans_prep+0x5f2>
+000000000000075c <ans_prep+0x5dc> 49 83 fb 06          	cmp    $0x6,%r11
+0000000000000760 <ans_prep+0x5e0> 0f 85 b7 00 00 00    	jne    000000000000081d <ans_prep+0x69d>
+0000000000000766 <ans_prep+0x5e6> 4c 8b 1c 31          	mov    (%rcx,%rsi,1),%r11
+000000000000076a <ans_prep+0x5ea> 4c 89 1c 32          	mov    %r11,(%rdx,%rsi,1)
+000000000000076e <ans_prep+0x5ee> 48 83 c6 08          	add    $0x8,%rsi
+0000000000000772 <ans_prep+0x5f2> 48 8b 04 31          	mov    (%rcx,%rsi,1),%rax
+0000000000000776 <ans_prep+0x5f6> 48 89 04 32          	mov    %rax,(%rdx,%rsi,1)
+000000000000077a <ans_prep+0x5fa> 48 83 c6 08          	add    $0x8,%rsi
+000000000000077e <ans_prep+0x5fe> 48 8b 3c 31          	mov    (%rcx,%rsi,1),%rdi
+0000000000000782 <ans_prep+0x602> 48 89 3c 32          	mov    %rdi,(%rdx,%rsi,1)
+0000000000000786 <ans_prep+0x606> 48 83 c6 08          	add    $0x8,%rsi
+000000000000078a <ans_prep+0x60a> 4c 8b 1c 31          	mov    (%rcx,%rsi,1),%r11
+000000000000078e <ans_prep+0x60e> 4c 89 1c 32          	mov    %r11,(%rdx,%rsi,1)
+0000000000000792 <ans_prep+0x612> 48 83 c6 08          	add    $0x8,%rsi
+0000000000000796 <ans_prep+0x616> 48 8b 04 31          	mov    (%rcx,%rsi,1),%rax
+000000000000079a <ans_prep+0x61a> 48 89 04 32          	mov    %rax,(%rdx,%rsi,1)
+000000000000079e <ans_prep+0x61e> 48 83 c6 08          	add    $0x8,%rsi
+00000000000007a2 <ans_prep+0x622> 48 8b 3c 31          	mov    (%rcx,%rsi,1),%rdi
+00000000000007a6 <ans_prep+0x626> 48 89 3c 32          	mov    %rdi,(%rdx,%rsi,1)
+00000000000007aa <ans_prep+0x62a> 48 83 c6 08          	add    $0x8,%rsi
+00000000000007ae <ans_prep+0x62e> 4c 39 ce             	cmp    %r9,%rsi
+00000000000007b1 <ans_prep+0x631> 0f 83 1c fd ff ff    	jae    00000000000004d3 <ans_prep+0x353>
+00000000000007b7 <ans_prep+0x637> 48 8b 14 31          	mov    (%rcx,%rsi,1),%rdx
+00000000000007bb <ans_prep+0x63b> 49 89 14 32          	mov    %rdx,(%r10,%rsi,1)
+00000000000007bf <ans_prep+0x63f> 4c 8b 5c 31 08       	mov    0x8(%rcx,%rsi,1),%r11
+00000000000007c4 <ans_prep+0x644> 4d 89 5c 32 08       	mov    %r11,0x8(%r10,%rsi,1)
+00000000000007c9 <ans_prep+0x649> 48 8b 44 31 10       	mov    0x10(%rcx,%rsi,1),%rax
+00000000000007ce <ans_prep+0x64e> 49 89 44 32 10       	mov    %rax,0x10(%r10,%rsi,1)
+00000000000007d3 <ans_prep+0x653> 48 8b 7c 31 18       	mov    0x18(%rcx,%rsi,1),%rdi
+00000000000007d8 <ans_prep+0x658> 49 89 7c 32 18       	mov    %rdi,0x18(%r10,%rsi,1)
+00000000000007dd <ans_prep+0x65d> 48 8b 54 31 20       	mov    0x20(%rcx,%rsi,1),%rdx
+00000000000007e2 <ans_prep+0x662> 49 89 54 32 20       	mov    %rdx,0x20(%r10,%rsi,1)
+00000000000007e7 <ans_prep+0x667> 4c 8b 5c 31 28       	mov    0x28(%rcx,%rsi,1),%r11
+00000000000007ec <ans_prep+0x66c> 4d 89 5c 32 28       	mov    %r11,0x28(%r10,%rsi,1)
+00000000000007f1 <ans_prep+0x671> 48 8b 44 31 30       	mov    0x30(%rcx,%rsi,1),%rax
+00000000000007f6 <ans_prep+0x676> 49 89 44 32 30       	mov    %rax,0x30(%r10,%rsi,1)
+00000000000007fb <ans_prep+0x67b> 48 8b 7c 31 38       	mov    0x38(%rcx,%rsi,1),%rdi
+0000000000000800 <ans_prep+0x680> 49 89 7c 32 38       	mov    %rdi,0x38(%r10,%rsi,1)
+0000000000000805 <ans_prep+0x685> 48 83 c6 40          	add    $0x40,%rsi
+0000000000000809 <ans_prep+0x689> 4c 39 ce             	cmp    %r9,%rsi
+000000000000080c <ans_prep+0x68c> 72 a9                	jb     00000000000007b7 <ans_prep+0x637>
+000000000000080e <ans_prep+0x68e> e9 c0 fc ff ff       	jmpq   00000000000004d3 <ans_prep+0x353>
+0000000000000813 <ans_prep+0x693> 41 c6 40 01 01       	movb   $0x1,0x1(%r8)
+0000000000000818 <ans_prep+0x698> e9 3e fd ff ff       	jmpq   000000000000055b <ans_prep+0x3db>
+000000000000081d <ans_prep+0x69d> 48 8b 79 08          	mov    0x8(%rcx),%rdi
+0000000000000821 <ans_prep+0x6a1> be 10 00 00 00       	mov    $0x10,%esi
+0000000000000826 <ans_prep+0x6a6> 48 89 7a 08          	mov    %rdi,0x8(%rdx)
+000000000000082a <ans_prep+0x6aa> e9 37 ff ff ff       	jmpq   0000000000000766 <ans_prep+0x5e6>
+000000000000082f <ans_prep+0x6af> 41 8b 36             	mov    (%r14),%esi
+0000000000000832 <ans_prep+0x6b2> 41 89 34 24          	mov    %esi,(%r12)
+0000000000000836 <ans_prep+0x6b6> 45 8b 54 1e fc       	mov    -0x4(%r14,%rbx,1),%r10d
+000000000000083b <ans_prep+0x6bb> 45 89 54 1c fc       	mov    %r10d,-0x4(%r12,%rbx,1)
+0000000000000840 <ans_prep+0x6c0> e9 8e fc ff ff       	jmpq   00000000000004d3 <ans_prep+0x353>
+0000000000000845 <ans_prep+0x6c5> 41 0f b7 54 1e fe    	movzwl -0x2(%r14,%rbx,1),%edx
+000000000000084b <ans_prep+0x6cb> 66 41 89 54 1c fe    	mov    %dx,-0x2(%r12,%rbx,1)
+0000000000000851 <ans_prep+0x6d1> e9 7d fc ff ff       	jmpq   00000000000004d3 <ans_prep+0x353>
+0000000000000856 <ans_prep+0x6d6> 66 2e 0f 1f 84 00 00 00 00 00 	nopw   %cs:0x0(%rax,%rax,1)
+0000000000000860 <ans_exec_short> 48 63 c1             	movslq %ecx,%rax
+0000000000000863 <ans_exec_short+0x3> 83 ee 01             	sub    $0x1,%esi
+0000000000000866 <ans_exec_short+0x6> 48 69 d0 88 08 00 00 	imul   $0x888,%rax,%rdx
+000000000000086d <ans_exec_short+0xd> 48 03 15 00 00 00 00 	add    0x0(%rip),%rdx        # 0000000000000874 <ans_exec_short+0x14>
+			870: R_X86_64_PC32	.bss-0x4
+0000000000000874 <ans_exec_short+0x14> 2b 35 00 00 00 00    	sub    0x0(%rip),%esi        # 000000000000087a <ans_exec_short+0x1a>
+			876: R_X86_64_PC32	patlen-0x4
+000000000000087a <ans_exec_short+0x1a> c5 fa 6f 42 04       	vmovdqu 0x4(%rdx),%xmm0
+000000000000087f <ans_exec_short+0x1f> 0f 88 1b 02 00 00    	js     0000000000000aa0 <ans_exec_short+0x240>
+0000000000000885 <ans_exec_short+0x25> 4c 63 ce             	movslq %esi,%r9
+0000000000000888 <ans_exec_short+0x28> 31 c0                	xor    %eax,%eax
+000000000000088a <ans_exec_short+0x2a> 48 89 f9             	mov    %rdi,%rcx
+000000000000088d <ans_exec_short+0x2d> 4e 8d 44 0f 01       	lea    0x1(%rdi,%r9,1),%r8
+0000000000000892 <ans_exec_short+0x32> 49 83 c1 01          	add    $0x1,%r9
+0000000000000896 <ans_exec_short+0x36> 48 8d 35 00 00 00 00 	lea    0x0(%rip),%rsi        # 000000000000089d <ans_exec_short+0x3d>
+			899: R_X86_64_PC32	d3-0x4
+000000000000089d <ans_exec_short+0x3d> 41 83 e1 07          	and    $0x7,%r9d
+00000000000008a1 <ans_exec_short+0x41> 0f 84 ea 00 00 00    	je     0000000000000991 <ans_exec_short+0x131>
+00000000000008a7 <ans_exec_short+0x47> 49 83 f9 01          	cmp    $0x1,%r9
+00000000000008ab <ans_exec_short+0x4b> 0f 84 bf 00 00 00    	je     0000000000000970 <ans_exec_short+0x110>
+00000000000008b1 <ans_exec_short+0x51> 49 83 f9 02          	cmp    $0x2,%r9
+00000000000008b5 <ans_exec_short+0x55> 0f 84 9b 00 00 00    	je     0000000000000956 <ans_exec_short+0xf6>
+00000000000008bb <ans_exec_short+0x5b> 49 83 f9 03          	cmp    $0x3,%r9
+00000000000008bf <ans_exec_short+0x5f> 74 7b                	je     000000000000093c <ans_exec_short+0xdc>
+00000000000008c1 <ans_exec_short+0x61> 49 83 f9 04          	cmp    $0x4,%r9
+00000000000008c5 <ans_exec_short+0x65> 74 5d                	je     0000000000000924 <ans_exec_short+0xc4>
+00000000000008c7 <ans_exec_short+0x67> 49 83 f9 05          	cmp    $0x5,%r9
+00000000000008cb <ans_exec_short+0x6b> 74 3d                	je     000000000000090a <ans_exec_short+0xaa>
+00000000000008cd <ans_exec_short+0x6d> 49 83 f9 06          	cmp    $0x6,%r9
+00000000000008d1 <ans_exec_short+0x71> 74 1e                	je     00000000000008f1 <ans_exec_short+0x91>
+00000000000008d3 <ans_exec_short+0x73> c5 f9 74 0f          	vpcmpeqb (%rdi),%xmm0,%xmm1
+00000000000008d7 <ans_exec_short+0x77> 41 bb 01 00 00 00    	mov    $0x1,%r11d
+00000000000008dd <ans_exec_short+0x7d> c5 f9 d7 c9          	vpmovmskb %xmm1,%ecx
+00000000000008e1 <ans_exec_short+0x81> 4c 63 d1             	movslq %ecx,%r10
+00000000000008e4 <ans_exec_short+0x84> 48 8d 4f 01          	lea    0x1(%rdi),%rcx
+00000000000008e8 <ans_exec_short+0x88> 42 80 3c 16 00       	cmpb   $0x0,(%rsi,%r10,1)
+00000000000008ed <ans_exec_short+0x8d> 41 0f 45 c3          	cmovne %r11d,%eax
+00000000000008f1 <ans_exec_short+0x91> c5 f9 74 11          	vpcmpeqb (%rcx),%xmm0,%xmm2
+00000000000008f5 <ans_exec_short+0x95> c5 f9 d7 fa          	vpmovmskb %xmm2,%edi
+00000000000008f9 <ans_exec_short+0x99> 48 63 d7             	movslq %edi,%rdx
+00000000000008fc <ans_exec_short+0x9c> 80 3c 16 00          	cmpb   $0x0,(%rsi,%rdx,1)
+0000000000000900 <ans_exec_short+0xa0> 0f 85 92 01 00 00    	jne    0000000000000a98 <ans_exec_short+0x238>
+0000000000000906 <ans_exec_short+0xa6> 48 83 c1 01          	add    $0x1,%rcx
+000000000000090a <ans_exec_short+0xaa> c5 f9 74 19          	vpcmpeqb (%rcx),%xmm0,%xmm3
+000000000000090e <ans_exec_short+0xae> c5 79 d7 cb          	vpmovmskb %xmm3,%r9d
+0000000000000912 <ans_exec_short+0xb2> 4d 63 d1             	movslq %r9d,%r10
+0000000000000915 <ans_exec_short+0xb5> 42 80 3c 16 00       	cmpb   $0x0,(%rsi,%r10,1)
+000000000000091a <ans_exec_short+0xba> 0f 85 60 01 00 00    	jne    0000000000000a80 <ans_exec_short+0x220>
+0000000000000920 <ans_exec_short+0xc0> 48 83 c1 01          	add    $0x1,%rcx
+0000000000000924 <ans_exec_short+0xc4> c5 f9 74 21          	vpcmpeqb (%rcx),%xmm0,%xmm4
+0000000000000928 <ans_exec_short+0xc8> c5 79 d7 dc          	vpmovmskb %xmm4,%r11d
+000000000000092c <ans_exec_short+0xcc> 49 63 fb             	movslq %r11d,%rdi
+000000000000092f <ans_exec_short+0xcf> 80 3c 3e 00          	cmpb   $0x0,(%rsi,%rdi,1)
+0000000000000933 <ans_exec_short+0xd3> 74 03                	je     0000000000000938 <ans_exec_short+0xd8>
+0000000000000935 <ans_exec_short+0xd5> 83 c0 01             	add    $0x1,%eax
+0000000000000938 <ans_exec_short+0xd8> 48 83 c1 01          	add    $0x1,%rcx
+000000000000093c <ans_exec_short+0xdc> c5 f9 74 29          	vpcmpeqb (%rcx),%xmm0,%xmm5
+0000000000000940 <ans_exec_short+0xe0> c5 f9 d7 d5          	vpmovmskb %xmm5,%edx
+0000000000000944 <ans_exec_short+0xe4> 4c 63 ca             	movslq %edx,%r9
+0000000000000947 <ans_exec_short+0xe7> 42 80 3c 0e 00       	cmpb   $0x0,(%rsi,%r9,1)
+000000000000094c <ans_exec_short+0xec> 0f 85 1e 01 00 00    	jne    0000000000000a70 <ans_exec_short+0x210>
+0000000000000952 <ans_exec_short+0xf2> 48 83 c1 01          	add    $0x1,%rcx
+0000000000000956 <ans_exec_short+0xf6> c5 f9 74 31          	vpcmpeqb (%rcx),%xmm0,%xmm6
+000000000000095a <ans_exec_short+0xfa> c5 79 d7 d6          	vpmovmskb %xmm6,%r10d
+000000000000095e <ans_exec_short+0xfe> 4d 63 da             	movslq %r10d,%r11
+0000000000000961 <ans_exec_short+0x101> 42 80 3c 1e 00       	cmpb   $0x0,(%rsi,%r11,1)
+0000000000000966 <ans_exec_short+0x106> 0f 85 f4 00 00 00    	jne    0000000000000a60 <ans_exec_short+0x200>
+000000000000096c <ans_exec_short+0x10c> 48 83 c1 01          	add    $0x1,%rcx
+0000000000000970 <ans_exec_short+0x110> c5 f9 74 39          	vpcmpeqb (%rcx),%xmm0,%xmm7
+0000000000000974 <ans_exec_short+0x114> c5 f9 d7 ff          	vpmovmskb %xmm7,%edi
+0000000000000978 <ans_exec_short+0x118> 48 63 d7             	movslq %edi,%rdx
+000000000000097b <ans_exec_short+0x11b> 80 3c 16 00          	cmpb   $0x0,(%rsi,%rdx,1)
+000000000000097f <ans_exec_short+0x11f> 74 03                	je     0000000000000984 <ans_exec_short+0x124>
+0000000000000981 <ans_exec_short+0x121> 83 c0 01             	add    $0x1,%eax
+0000000000000984 <ans_exec_short+0x124> 48 83 c1 01          	add    $0x1,%rcx
+0000000000000988 <ans_exec_short+0x128> 49 39 c8             	cmp    %rcx,%r8
+000000000000098b <ans_exec_short+0x12b> 0f 84 ff 00 00 00    	je     0000000000000a90 <ans_exec_short+0x230>
+0000000000000991 <ans_exec_short+0x131> c5 79 74 01          	vpcmpeqb (%rcx),%xmm0,%xmm8
+0000000000000995 <ans_exec_short+0x135> c4 41 79 d7 c8       	vpmovmskb %xmm8,%r9d
+000000000000099a <ans_exec_short+0x13a> 4d 63 d1             	movslq %r9d,%r10
+000000000000099d <ans_exec_short+0x13d> 42 80 3c 16 00       	cmpb   $0x0,(%rsi,%r10,1)
+00000000000009a2 <ans_exec_short+0x142> 74 03                	je     00000000000009a7 <ans_exec_short+0x147>
+00000000000009a4 <ans_exec_short+0x144> 83 c0 01             	add    $0x1,%eax
+00000000000009a7 <ans_exec_short+0x147> c5 7a 6f 49 01       	vmovdqu 0x1(%rcx),%xmm9
+00000000000009ac <ans_exec_short+0x14c> 4c 8d 59 01          	lea    0x1(%rcx),%r11
+00000000000009b0 <ans_exec_short+0x150> c5 31 74 d0          	vpcmpeqb %xmm0,%xmm9,%xmm10
+00000000000009b4 <ans_exec_short+0x154> c4 c1 79 d7 ca       	vpmovmskb %xmm10,%ecx
+00000000000009b9 <ans_exec_short+0x159> 48 63 f9             	movslq %ecx,%rdi
+00000000000009bc <ans_exec_short+0x15c> 80 3c 3e 00          	cmpb   $0x0,(%rsi,%rdi,1)
+00000000000009c0 <ans_exec_short+0x160> 74 03                	je     00000000000009c5 <ans_exec_short+0x165>
+00000000000009c2 <ans_exec_short+0x162> 83 c0 01             	add    $0x1,%eax
+00000000000009c5 <ans_exec_short+0x165> c4 41 79 74 5b 01    	vpcmpeqb 0x1(%r11),%xmm0,%xmm11
+00000000000009cb <ans_exec_short+0x16b> c4 c1 79 d7 d3       	vpmovmskb %xmm11,%edx
+00000000000009d0 <ans_exec_short+0x170> 4c 63 ca             	movslq %edx,%r9
+00000000000009d3 <ans_exec_short+0x173> 42 80 3c 0e 00       	cmpb   $0x0,(%rsi,%r9,1)
+00000000000009d8 <ans_exec_short+0x178> 74 03                	je     00000000000009dd <ans_exec_short+0x17d>
+00000000000009da <ans_exec_short+0x17a> 83 c0 01             	add    $0x1,%eax
+00000000000009dd <ans_exec_short+0x17d> c4 41 79 74 63 02    	vpcmpeqb 0x2(%r11),%xmm0,%xmm12
+00000000000009e3 <ans_exec_short+0x183> c4 41 79 d7 d4       	vpmovmskb %xmm12,%r10d
+00000000000009e8 <ans_exec_short+0x188> 49 63 ca             	movslq %r10d,%rcx
+00000000000009eb <ans_exec_short+0x18b> 80 3c 0e 00          	cmpb   $0x0,(%rsi,%rcx,1)
+00000000000009ef <ans_exec_short+0x18f> 74 03                	je     00000000000009f4 <ans_exec_short+0x194>
+00000000000009f1 <ans_exec_short+0x191> 83 c0 01             	add    $0x1,%eax
+00000000000009f4 <ans_exec_short+0x194> c4 41 79 74 6b 03    	vpcmpeqb 0x3(%r11),%xmm0,%xmm13
+00000000000009fa <ans_exec_short+0x19a> c4 c1 79 d7 fd       	vpmovmskb %xmm13,%edi
+00000000000009ff <ans_exec_short+0x19f> 48 63 d7             	movslq %edi,%rdx
+0000000000000a02 <ans_exec_short+0x1a2> 80 3c 16 00          	cmpb   $0x0,(%rsi,%rdx,1)
+0000000000000a06 <ans_exec_short+0x1a6> 74 03                	je     0000000000000a0b <ans_exec_short+0x1ab>
+0000000000000a08 <ans_exec_short+0x1a8> 83 c0 01             	add    $0x1,%eax
+0000000000000a0b <ans_exec_short+0x1ab> c4 41 79 74 73 04    	vpcmpeqb 0x4(%r11),%xmm0,%xmm14
+0000000000000a11 <ans_exec_short+0x1b1> c4 41 79 d7 ce       	vpmovmskb %xmm14,%r9d
+0000000000000a16 <ans_exec_short+0x1b6> 4d 63 d1             	movslq %r9d,%r10
+0000000000000a19 <ans_exec_short+0x1b9> 42 80 3c 16 00       	cmpb   $0x0,(%rsi,%r10,1)
+0000000000000a1e <ans_exec_short+0x1be> 74 03                	je     0000000000000a23 <ans_exec_short+0x1c3>
+0000000000000a20 <ans_exec_short+0x1c0> 83 c0 01             	add    $0x1,%eax
+0000000000000a23 <ans_exec_short+0x1c3> c4 41 79 74 7b 05    	vpcmpeqb 0x5(%r11),%xmm0,%xmm15
+0000000000000a29 <ans_exec_short+0x1c9> c4 c1 79 d7 cf       	vpmovmskb %xmm15,%ecx
+0000000000000a2e <ans_exec_short+0x1ce> 48 63 f9             	movslq %ecx,%rdi
+0000000000000a31 <ans_exec_short+0x1d1> 80 3c 3e 00          	cmpb   $0x0,(%rsi,%rdi,1)
+0000000000000a35 <ans_exec_short+0x1d5> 74 03                	je     0000000000000a3a <ans_exec_short+0x1da>
+0000000000000a37 <ans_exec_short+0x1d7> 83 c0 01             	add    $0x1,%eax
+0000000000000a3a <ans_exec_short+0x1da> c4 c1 79 74 4b 06    	vpcmpeqb 0x6(%r11),%xmm0,%xmm1
+0000000000000a40 <ans_exec_short+0x1e0> c5 f9 d7 d1          	vpmovmskb %xmm1,%edx
+0000000000000a44 <ans_exec_short+0x1e4> 4c 63 ca             	movslq %edx,%r9
+0000000000000a47 <ans_exec_short+0x1e7> 42 80 3c 0e 00       	cmpb   $0x0,(%rsi,%r9,1)
+0000000000000a4c <ans_exec_short+0x1ec> 74 03                	je     0000000000000a51 <ans_exec_short+0x1f1>
+0000000000000a4e <ans_exec_short+0x1ee> 83 c0 01             	add    $0x1,%eax
+0000000000000a51 <ans_exec_short+0x1f1> 49 8d 4b 07          	lea    0x7(%r11),%rcx
+0000000000000a55 <ans_exec_short+0x1f5> 49 39 c8             	cmp    %rcx,%r8
+0000000000000a58 <ans_exec_short+0x1f8> 0f 85 33 ff ff ff    	jne    0000000000000991 <ans_exec_short+0x131>
+0000000000000a5e <ans_exec_short+0x1fe> f3 c3                	repz retq 
+0000000000000a60 <ans_exec_short+0x200> 83 c0 01             	add    $0x1,%eax
+0000000000000a63 <ans_exec_short+0x203> e9 04 ff ff ff       	jmpq   000000000000096c <ans_exec_short+0x10c>
+0000000000000a68 <ans_exec_short+0x208> 0f 1f 84 00 00 00 00 00 	nopl   0x0(%rax,%rax,1)
+0000000000000a70 <ans_exec_short+0x210> 83 c0 01             	add    $0x1,%eax
+0000000000000a73 <ans_exec_short+0x213> e9 da fe ff ff       	jmpq   0000000000000952 <ans_exec_short+0xf2>
+0000000000000a78 <ans_exec_short+0x218> 0f 1f 84 00 00 00 00 00 	nopl   0x0(%rax,%rax,1)
+0000000000000a80 <ans_exec_short+0x220> 83 c0 01             	add    $0x1,%eax
+0000000000000a83 <ans_exec_short+0x223> e9 98 fe ff ff       	jmpq   0000000000000920 <ans_exec_short+0xc0>
+0000000000000a88 <ans_exec_short+0x228> 0f 1f 84 00 00 00 00 00 	nopl   0x0(%rax,%rax,1)
+0000000000000a90 <ans_exec_short+0x230> f3 c3                	repz retq 
+0000000000000a92 <ans_exec_short+0x232> 66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+0000000000000a98 <ans_exec_short+0x238> 83 c0 01             	add    $0x1,%eax
+0000000000000a9b <ans_exec_short+0x23b> e9 66 fe ff ff       	jmpq   0000000000000906 <ans_exec_short+0xa6>
+0000000000000aa0 <ans_exec_short+0x240> 31 c0                	xor    %eax,%eax
+0000000000000aa2 <ans_exec_short+0x242> c3                   	retq   
+0000000000000aa3 <ans_exec_short+0x243> 0f 1f 00             	nopl   (%rax)
+0000000000000aa6 <ans_exec_short+0x246> 66 2e 0f 1f 84 00 00 00 00 00 	nopw   %cs:0x0(%rax,%rax,1)
+0000000000000ab0 <ans_exec_long> 48 63 c1             	movslq %ecx,%rax
+0000000000000ab3 <ans_exec_long+0x3> 44 8b 05 00 00 00 00 	mov    0x0(%rip),%r8d        # 0000000000000aba <ans_exec_long+0xa>
+			ab6: R_X86_64_PC32	patlen-0x4
+0000000000000aba <ans_exec_long+0xa> 83 ee 01             	sub    $0x1,%esi
+0000000000000abd <ans_exec_long+0xd> 48 69 c8 88 08 00 00 	imul   $0x888,%rax,%rcx
+0000000000000ac4 <ans_exec_long+0x14> 48 03 0d 00 00 00 00 	add    0x0(%rip),%rcx        # 0000000000000acb <ans_exec_long+0x1b>
+			ac7: R_X86_64_PC32	.bss-0x4
+0000000000000acb <ans_exec_long+0x1b> 44 29 c6             	sub    %r8d,%esi
+0000000000000ace <ans_exec_long+0x1e> c5 fa 6f 49 04       	vmovdqu 0x4(%rcx),%xmm1
+0000000000000ad3 <ans_exec_long+0x23> c4 e3 75 38 51 14 01 	vinserti128 $0x1,0x14(%rcx),%ymm1,%ymm2
+0000000000000ada <ans_exec_long+0x2a> 0f 88 e8 01 00 00    	js     0000000000000cc8 <ans_exec_long+0x218>
+0000000000000ae0 <ans_exec_long+0x30> 48 63 f6             	movslq %esi,%rsi
+0000000000000ae3 <ans_exec_long+0x33> 31 c0                	xor    %eax,%eax
+0000000000000ae5 <ans_exec_long+0x35> 48 89 f9             	mov    %rdi,%rcx
+0000000000000ae8 <ans_exec_long+0x38> 4c 8d 54 37 01       	lea    0x1(%rdi,%rsi,1),%r10
+0000000000000aed <ans_exec_long+0x3d> 48 83 c6 01          	add    $0x1,%rsi
+0000000000000af1 <ans_exec_long+0x41> 4c 8d 0d 00 00 00 00 	lea    0x0(%rip),%r9        # 0000000000000af8 <ans_exec_long+0x48>
+			af4: R_X86_64_PC32	d3-0x4
+0000000000000af8 <ans_exec_long+0x48> 83 e6 03             	and    $0x3,%esi
+0000000000000afb <ans_exec_long+0x4b> 0f 84 b5 00 00 00    	je     0000000000000bb6 <ans_exec_long+0x106>
+0000000000000b01 <ans_exec_long+0x51> 48 83 fe 01          	cmp    $0x1,%rsi
+0000000000000b05 <ans_exec_long+0x55> 74 67                	je     0000000000000b6e <ans_exec_long+0xbe>
+0000000000000b07 <ans_exec_long+0x57> 48 83 fe 02          	cmp    $0x2,%rsi
+0000000000000b0b <ans_exec_long+0x5b> 74 26                	je     0000000000000b33 <ans_exec_long+0x83>
+0000000000000b0d <ans_exec_long+0x5d> c5 fa 6f 07          	vmovdqu (%rdi),%xmm0
+0000000000000b11 <ans_exec_long+0x61> c4 e3 7d 38 5f 10 01 	vinserti128 $0x1,0x10(%rdi),%ymm0,%ymm3
+0000000000000b18 <ans_exec_long+0x68> c5 ed 74 e3          	vpcmpeqb %ymm3,%ymm2,%ymm4
+0000000000000b1c <ans_exec_long+0x6c> c5 7d d7 dc          	vpmovmskb %ymm4,%r11d
+0000000000000b20 <ans_exec_long+0x70> 41 0f b7 cb          	movzwl %r11w,%ecx
+0000000000000b24 <ans_exec_long+0x74> 41 80 3c 09 00       	cmpb   $0x0,(%r9,%rcx,1)
+0000000000000b29 <ans_exec_long+0x79> 0f 85 79 01 00 00    	jne    0000000000000ca8 <ans_exec_long+0x1f8>
+0000000000000b2f <ans_exec_long+0x7f> 48 8d 4f 01          	lea    0x1(%rdi),%rcx
+0000000000000b33 <ans_exec_long+0x83> c5 fa 6f 29          	vmovdqu (%rcx),%xmm5
+0000000000000b37 <ans_exec_long+0x87> c4 e3 55 38 71 10 01 	vinserti128 $0x1,0x10(%rcx),%ymm5,%ymm6
+0000000000000b3e <ans_exec_long+0x8e> c5 ed 74 fe          	vpcmpeqb %ymm6,%ymm2,%ymm7
+0000000000000b42 <ans_exec_long+0x92> c5 fd d7 f7          	vpmovmskb %ymm7,%esi
+0000000000000b46 <ans_exec_long+0x96> 0f b7 fe             	movzwl %si,%edi
+0000000000000b49 <ans_exec_long+0x99> 41 80 3c 39 00       	cmpb   $0x0,(%r9,%rdi,1)
+0000000000000b4e <ans_exec_long+0x9e> 74 1a                	je     0000000000000b6a <ans_exec_long+0xba>
+0000000000000b50 <ans_exec_long+0xa0> 45 31 db             	xor    %r11d,%r11d
+0000000000000b53 <ans_exec_long+0xa3> f3 44 0f b8 de       	popcnt %esi,%r11d
+0000000000000b58 <ans_exec_long+0xa8> 44 89 c6             	mov    %r8d,%esi
+0000000000000b5b <ans_exec_long+0xab> 44 29 de             	sub    %r11d,%esi
+0000000000000b5e <ans_exec_long+0xae> 39 f2                	cmp    %esi,%edx
+0000000000000b60 <ans_exec_long+0xb0> 41 0f 9d c3          	setge  %r11b
+0000000000000b64 <ans_exec_long+0xb4> 41 0f b6 f3          	movzbl %r11b,%esi
+0000000000000b68 <ans_exec_long+0xb8> 01 f0                	add    %esi,%eax
+0000000000000b6a <ans_exec_long+0xba> 48 83 c1 01          	add    $0x1,%rcx
+0000000000000b6e <ans_exec_long+0xbe> c5 7a 6f 01          	vmovdqu (%rcx),%xmm8
+0000000000000b72 <ans_exec_long+0xc2> c4 63 3d 38 49 10 01 	vinserti128 $0x1,0x10(%rcx),%ymm8,%ymm9
+0000000000000b79 <ans_exec_long+0xc9> c4 41 6d 74 d1       	vpcmpeqb %ymm9,%ymm2,%ymm10
+0000000000000b7e <ans_exec_long+0xce> c4 41 7d d7 da       	vpmovmskb %ymm10,%r11d
+0000000000000b83 <ans_exec_long+0xd3> 41 0f b7 fb          	movzwl %r11w,%edi
+0000000000000b87 <ans_exec_long+0xd7> 41 80 3c 39 00       	cmpb   $0x0,(%r9,%rdi,1)
+0000000000000b8c <ans_exec_long+0xdc> 74 1b                	je     0000000000000ba9 <ans_exec_long+0xf9>
+0000000000000b8e <ans_exec_long+0xde> 31 f6                	xor    %esi,%esi
+0000000000000b90 <ans_exec_long+0xe0> f3 41 0f b8 f3       	popcnt %r11d,%esi
+0000000000000b95 <ans_exec_long+0xe5> 45 89 c3             	mov    %r8d,%r11d
+0000000000000b98 <ans_exec_long+0xe8> 41 29 f3             	sub    %esi,%r11d
+0000000000000b9b <ans_exec_long+0xeb> 44 39 da             	cmp    %r11d,%edx
+0000000000000b9e <ans_exec_long+0xee> 40 0f 9d c6          	setge  %sil
+0000000000000ba2 <ans_exec_long+0xf2> 44 0f b6 de          	movzbl %sil,%r11d
+0000000000000ba6 <ans_exec_long+0xf6> 44 01 d8             	add    %r11d,%eax
+0000000000000ba9 <ans_exec_long+0xf9> 48 83 c1 01          	add    $0x1,%rcx
+0000000000000bad <ans_exec_long+0xfd> 49 39 ca             	cmp    %rcx,%r10
+0000000000000bb0 <ans_exec_long+0x100> 0f 84 ea 00 00 00    	je     0000000000000ca0 <ans_exec_long+0x1f0>
+0000000000000bb6 <ans_exec_long+0x106> c5 7a 6f 19          	vmovdqu (%rcx),%xmm11
+0000000000000bba <ans_exec_long+0x10a> c4 63 25 38 61 10 01 	vinserti128 $0x1,0x10(%rcx),%ymm11,%ymm12
+0000000000000bc1 <ans_exec_long+0x111> c4 41 6d 74 ec       	vpcmpeqb %ymm12,%ymm2,%ymm13
+0000000000000bc6 <ans_exec_long+0x116> c4 c1 7d d7 f5       	vpmovmskb %ymm13,%esi
+0000000000000bcb <ans_exec_long+0x11b> 0f b7 fe             	movzwl %si,%edi
+0000000000000bce <ans_exec_long+0x11e> 41 80 3c 39 00       	cmpb   $0x0,(%r9,%rdi,1)
+0000000000000bd3 <ans_exec_long+0x123> 74 1a                	je     0000000000000bef <ans_exec_long+0x13f>
+0000000000000bd5 <ans_exec_long+0x125> 45 31 db             	xor    %r11d,%r11d
+0000000000000bd8 <ans_exec_long+0x128> f3 44 0f b8 de       	popcnt %esi,%r11d
+0000000000000bdd <ans_exec_long+0x12d> 44 89 c6             	mov    %r8d,%esi
+0000000000000be0 <ans_exec_long+0x130> 44 29 de             	sub    %r11d,%esi
+0000000000000be3 <ans_exec_long+0x133> 39 f2                	cmp    %esi,%edx
+0000000000000be5 <ans_exec_long+0x135> 41 0f 9d c3          	setge  %r11b
+0000000000000be9 <ans_exec_long+0x139> 41 0f b6 f3          	movzbl %r11b,%esi
+0000000000000bed <ans_exec_long+0x13d> 01 f0                	add    %esi,%eax
+0000000000000bef <ans_exec_long+0x13f> 4c 8d 59 01          	lea    0x1(%rcx),%r11
+0000000000000bf3 <ans_exec_long+0x143> c5 7a 6f 71 01       	vmovdqu 0x1(%rcx),%xmm14
+0000000000000bf8 <ans_exec_long+0x148> c4 43 0d 38 7b 10 01 	vinserti128 $0x1,0x10(%r11),%ymm14,%ymm15
+0000000000000bff <ans_exec_long+0x14f> c4 c1 6d 74 cf       	vpcmpeqb %ymm15,%ymm2,%ymm1
+0000000000000c04 <ans_exec_long+0x154> c5 fd d7 c9          	vpmovmskb %ymm1,%ecx
+0000000000000c08 <ans_exec_long+0x158> 0f b7 f9             	movzwl %cx,%edi
+0000000000000c0b <ans_exec_long+0x15b> 41 80 3c 39 00       	cmpb   $0x0,(%r9,%rdi,1)
+0000000000000c10 <ans_exec_long+0x160> 74 17                	je     0000000000000c29 <ans_exec_long+0x179>
+0000000000000c12 <ans_exec_long+0x162> 31 f6                	xor    %esi,%esi
+0000000000000c14 <ans_exec_long+0x164> f3 0f b8 f1          	popcnt %ecx,%esi
+0000000000000c18 <ans_exec_long+0x168> 44 89 c1             	mov    %r8d,%ecx
+0000000000000c1b <ans_exec_long+0x16b> 29 f1                	sub    %esi,%ecx
+0000000000000c1d <ans_exec_long+0x16d> 39 ca                	cmp    %ecx,%edx
+0000000000000c1f <ans_exec_long+0x16f> 40 0f 9d c6          	setge  %sil
+0000000000000c23 <ans_exec_long+0x173> 40 0f b6 ce          	movzbl %sil,%ecx
+0000000000000c27 <ans_exec_long+0x177> 01 c8                	add    %ecx,%eax
+0000000000000c29 <ans_exec_long+0x179> c4 c1 7a 6f 43 01    	vmovdqu 0x1(%r11),%xmm0
+0000000000000c2f <ans_exec_long+0x17f> c4 c3 7d 38 5b 11 01 	vinserti128 $0x1,0x11(%r11),%ymm0,%ymm3
+0000000000000c36 <ans_exec_long+0x186> c5 ed 74 e3          	vpcmpeqb %ymm3,%ymm2,%ymm4
+0000000000000c3a <ans_exec_long+0x18a> c5 fd d7 f4          	vpmovmskb %ymm4,%esi
+0000000000000c3e <ans_exec_long+0x18e> 0f b7 fe             	movzwl %si,%edi
+0000000000000c41 <ans_exec_long+0x191> 41 80 3c 39 00       	cmpb   $0x0,(%r9,%rdi,1)
+0000000000000c46 <ans_exec_long+0x196> 74 15                	je     0000000000000c5d <ans_exec_long+0x1ad>
+0000000000000c48 <ans_exec_long+0x198> 31 c9                	xor    %ecx,%ecx
+0000000000000c4a <ans_exec_long+0x19a> f3 0f b8 ce          	popcnt %esi,%ecx
+0000000000000c4e <ans_exec_long+0x19e> 44 89 c6             	mov    %r8d,%esi
+0000000000000c51 <ans_exec_long+0x1a1> 29 ce                	sub    %ecx,%esi
+0000000000000c53 <ans_exec_long+0x1a3> 39 f2                	cmp    %esi,%edx
+0000000000000c55 <ans_exec_long+0x1a5> 0f 9d c1             	setge  %cl
+0000000000000c58 <ans_exec_long+0x1a8> 0f b6 f1             	movzbl %cl,%esi
+0000000000000c5b <ans_exec_long+0x1ab> 01 f0                	add    %esi,%eax
+0000000000000c5d <ans_exec_long+0x1ad> c4 c1 7a 6f 6b 02    	vmovdqu 0x2(%r11),%xmm5
+0000000000000c63 <ans_exec_long+0x1b3> c4 c3 55 38 73 12 01 	vinserti128 $0x1,0x12(%r11),%ymm5,%ymm6
+0000000000000c6a <ans_exec_long+0x1ba> c5 ed 74 fe          	vpcmpeqb %ymm6,%ymm2,%ymm7
+0000000000000c6e <ans_exec_long+0x1be> c5 fd d7 cf          	vpmovmskb %ymm7,%ecx
+0000000000000c72 <ans_exec_long+0x1c2> 0f b7 f9             	movzwl %cx,%edi
+0000000000000c75 <ans_exec_long+0x1c5> 41 80 3c 39 00       	cmpb   $0x0,(%r9,%rdi,1)
+0000000000000c7a <ans_exec_long+0x1ca> 74 17                	je     0000000000000c93 <ans_exec_long+0x1e3>
+0000000000000c7c <ans_exec_long+0x1cc> 31 f6                	xor    %esi,%esi
+0000000000000c7e <ans_exec_long+0x1ce> f3 0f b8 f1          	popcnt %ecx,%esi
+0000000000000c82 <ans_exec_long+0x1d2> 44 89 c1             	mov    %r8d,%ecx
+0000000000000c85 <ans_exec_long+0x1d5> 29 f1                	sub    %esi,%ecx
+0000000000000c87 <ans_exec_long+0x1d7> 39 ca                	cmp    %ecx,%edx
+0000000000000c89 <ans_exec_long+0x1d9> 40 0f 9d c6          	setge  %sil
+0000000000000c8d <ans_exec_long+0x1dd> 40 0f b6 ce          	movzbl %sil,%ecx
+0000000000000c91 <ans_exec_long+0x1e1> 01 c8                	add    %ecx,%eax
+0000000000000c93 <ans_exec_long+0x1e3> 49 8d 4b 03          	lea    0x3(%r11),%rcx
+0000000000000c97 <ans_exec_long+0x1e7> 49 39 ca             	cmp    %rcx,%r10
+0000000000000c9a <ans_exec_long+0x1ea> 0f 85 16 ff ff ff    	jne    0000000000000bb6 <ans_exec_long+0x106>
+0000000000000ca0 <ans_exec_long+0x1f0> c5 f8 77             	vzeroupper 
+0000000000000ca3 <ans_exec_long+0x1f3> c3                   	retq   
+0000000000000ca4 <ans_exec_long+0x1f4> 0f 1f 40 00          	nopl   0x0(%rax)
+0000000000000ca8 <ans_exec_long+0x1f8> 31 f6                	xor    %esi,%esi
+0000000000000caa <ans_exec_long+0x1fa> 44 89 c0             	mov    %r8d,%eax
+0000000000000cad <ans_exec_long+0x1fd> f3 41 0f b8 f3       	popcnt %r11d,%esi
+0000000000000cb2 <ans_exec_long+0x202> 29 f0                	sub    %esi,%eax
+0000000000000cb4 <ans_exec_long+0x204> 39 c2                	cmp    %eax,%edx
+0000000000000cb6 <ans_exec_long+0x206> 41 0f 9d c3          	setge  %r11b
+0000000000000cba <ans_exec_long+0x20a> 41 0f b6 c3          	movzbl %r11b,%eax
+0000000000000cbe <ans_exec_long+0x20e> e9 6c fe ff ff       	jmpq   0000000000000b2f <ans_exec_long+0x7f>
+0000000000000cc3 <ans_exec_long+0x213> 0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+0000000000000cc8 <ans_exec_long+0x218> 31 c0                	xor    %eax,%eax
+0000000000000cca <ans_exec_long+0x21a> c5 f8 77             	vzeroupper 
+0000000000000ccd <ans_exec_long+0x21d> c3                   	retq   

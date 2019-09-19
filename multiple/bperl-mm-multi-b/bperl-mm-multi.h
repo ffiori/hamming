@@ -287,7 +287,7 @@ typedef struct
     Multi M;                    /* multipattern search */
     VerData dyn;                /* dynammic programing verification */
     Cut cut;                    /* subpatterns */
-    int *back;
+    int back;
     int *forth;            /* precomputed values */
 } PartExact;                    /* partitioning into exact search */
 
