@@ -1,0 +1,239 @@
+nohup: ignoring input
+Guide:
+cmfn: Fredriksson-Navarro.
+udi/mm: Muth-Manber (only k=1).
+mepsm-nomod/mbyps: MBYPS (ours) using MEPSM with no modifications (original size of the fingerprints).
+mbyps: MBYPS (ours).
+byn-original/byn: Baeza-Yates and Navarro original code for edit distance (adapted to Hume-Sunday environment).
+byn-mod-hamming/byn: Baeza-Yates and Navarro (partition into exact matching) code adapted to Hamming distance.
+
+Preprocessing runs 100. Search runs 100. For 'cmfn' we make same number of preprocessing and searching runs.
+
+
+
+********** ./tests/protein/hs.txt **********
+
+
+Pattern length 8:
+
+ for sets of 10 patterns (100 search runs):
+
+   with 1 mismatches (subpattern lengths 4, groups of 32 chars, groups of 1 patts):
+alg=./udi/mm             np=10    match=3          p=0.00020s e=0.04190s total=0.04210s
+alg=./cmfn/cmfn          np=10    match=3          p=0.00190s e=0.02420s total=0.02610s
+alg=./byn-original/byn   np=10    match=6          p=0.00010s e=0.03680s total=0.03690s
+alg=byn-mod-hamming/byn  np=10    match=3          p=0.00010s e=0.04000s total=0.04010s
+alg=l-mm-multi-b/mbypsb  np=10    match=3          p=0.00010s e=0.01010s total=0.01020s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 32 chars, groups of 3 patts):
+alg=./udi/mm             np=100   match=52         p=0.00010s e=0.04620s total=0.04630s
+alg=./cmfn/cmfn          np=100   match=52         p=0.01260s e=0.10900s total=0.12160s
+alg=./byn-original/byn   np=100   match=78         p=0.00100s e=0.07330s total=0.07430s
+alg=byn-mod-hamming/byn  np=100   match=52         p=0.00120s e=0.07220s total=0.07340s
+alg=l-mm-multi-b/mbypsb  np=100   match=52         p=0.00080s e=0.01210s total=0.01290s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 32 chars, groups of 15 patts):
+alg=./udi/mm             np=1000  match=687        p=0.00030s e=0.08770s total=0.08800s
+alg=./cmfn/cmfn          np=1000  match=687        p=0.07970s e=0.85590s total=0.93560s
+alg=./byn-original/byn   np=1000  match=1000       p=0.01120s e=0.09430s total=0.10550s
+alg=byn-mod-hamming/byn  np=1000  match=687        p=0.01170s e=0.09460s total=0.10630s
+alg=l-mm-multi-b/mbypsb  np=1000  match=687        p=0.00560s e=0.03190s total=0.03750s
+
+Pattern length 16:
+
+ for sets of 10 patterns (100 search runs):
+
+   with 1 mismatches (subpattern lengths 8, groups of 32 chars, groups of 1 patts):
+alg=./udi/mm             np=10    match=2          p=0.00010s e=0.04370s total=0.04380s
+alg=./cmfn/cmfn          np=10    match=2          p=0.00170s e=0.01170s total=0.01340s
+alg=./byn-original/byn   np=10    match=3          p=0.00010s e=0.03050s total=0.03060s
+alg=byn-mod-hamming/byn  np=10    match=2          p=0.00010s e=0.02960s total=0.02970s
+alg=l-mm-multi-b/mbypsb  np=10    match=2          p=0.00110s e=0.00900s total=0.01010s
+
+   with 2 mismatches (subpattern lengths 5, groups of 32 chars, groups of 1 patts):
+alg=./cmfn/cmfn          np=10    match=3          p=0.00200s e=0.01770s total=0.01970s
+alg=./byn-original/byn   np=10    match=6          p=0.00020s e=0.03710s total=0.03730s
+alg=byn-mod-hamming/byn  np=10    match=3          p=0.00020s e=0.04090s total=0.04110s
+alg=l-mm-multi-b/mbypsb  np=10    match=3          p=0.00120s e=0.00980s total=0.01100s
+
+   with 3 mismatches (subpattern lengths 4, groups of 32 chars, groups of 1 patts):
+alg=./cmfn/cmfn          np=10    match=6          p=0.00190s e=0.02840s total=0.03030s
+alg=./byn-original/byn   np=10    match=0          p=0.00020s e=0.03920s total=0.03940s
+alg=byn-mod-hamming/byn  np=10    match=6          p=0.00020s e=0.03940s total=0.03960s
+alg=l-mm-multi-b/mbypsb  np=10    match=6          p=0.00130s e=0.01010s total=0.01140s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 8, groups of 32 chars, groups of 5 patts):
+alg=./udi/mm             np=100   match=20         p=0.00010s e=0.04610s total=0.04620s
+alg=./cmfn/cmfn          np=100   match=20         p=0.01290s e=0.05480s total=0.06770s
+alg=./byn-original/byn   np=100   match=27         p=0.00180s e=0.07330s total=0.07510s
+alg=byn-mod-hamming/byn  np=100   match=20         p=0.00130s e=0.07100s total=0.07230s
+alg=l-mm-multi-b/mbypsb  np=100   match=20         p=0.00800s e=0.00940s total=0.01740s
+
+   with 2 mismatches (subpattern lengths 5, groups of 32 chars, groups of 5 patts):
+alg=./cmfn/cmfn          np=100   match=29         p=0.01230s e=0.09150s total=0.10380s
+alg=./byn-original/byn   np=100   match=57         p=0.00190s e=0.07160s total=0.07350s
+alg=byn-mod-hamming/byn  np=100   match=29         p=0.00200s e=0.07290s total=0.07490s
+alg=l-mm-multi-b/mbypsb  np=100   match=29         p=0.00860s e=0.01190s total=0.02050s
+
+   with 3 mismatches (subpattern lengths 4, groups of 32 chars, groups of 5 patts):
+alg=./cmfn/cmfn          np=100   match=51         p=0.01260s e=0.15050s total=0.16310s
+alg=./byn-original/byn   np=100   match=0          p=0.00270s e=0.06940s total=0.07210s
+alg=byn-mod-hamming/byn  np=100   match=51         p=0.00340s e=0.06920s total=0.07260s
+alg=l-mm-multi-b/mbypsb  np=100   match=51         p=0.00910s e=0.01450s total=0.02360s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 8, groups of 32 chars, groups of 15 patts):
+alg=./udi/mm             np=1000  match=297        p=0.00020s e=0.08830s total=0.08850s
+alg=./cmfn/cmfn          np=1000  match=297        p=0.09980s e=0.33680s total=0.43660s
+alg=./byn-original/byn   np=1000  match=462        p=0.01370s e=0.08620s total=0.09990s
+alg=byn-mod-hamming/byn  np=1000  match=297        p=0.01470s e=0.08250s total=0.09720s
+alg=l-mm-multi-b/mbypsb  np=1000  match=297        p=0.07700s e=0.02020s total=0.09720s
+
+   with 2 mismatches (subpattern lengths 5, groups of 32 chars, groups of 23 patts):
+alg=./cmfn/cmfn          np=1000  match=445        p=0.10800s e=0.79140s total=0.89940s
+alg=./byn-original/byn   np=1000  match=916        p=0.02050s e=0.10300s total=0.12350s
+alg=byn-mod-hamming/byn  np=1000  match=445        p=0.02410s e=0.10360s total=0.12770s
+alg=l-mm-multi-b/mbypsb  np=1000  match=445        p=0.08310s e=0.03060s total=0.11370s
+
+   with 3 mismatches (subpattern lengths 4, groups of 32 chars, groups of 23 patts):
+alg=./cmfn/cmfn          np=1000  match=607        p=0.10330s e=1.59460s total=1.69790s
+alg=./byn-original/byn   np=1000  match=0          p=0.02710s e=0.13420s total=0.16130s
+alg=byn-mod-hamming/byn  np=1000  match=607        p=0.03180s e=0.13340s total=0.16520s
+alg=l-mm-multi-b/mbypsb  np=1000  match=607        p=0.08830s e=0.05950s total=0.14780s
+
+Pattern length 24:
+
+ for sets of 10 patterns (100 search runs):
+
+   with 1 mismatches (subpattern lengths 12, groups of 32 chars, groups of 1 patts):
+alg=./udi/mm             np=10    match=3          p=0.00020s e=0.04190s total=0.04210s
+alg=./cmfn/cmfn          np=10    match=3          p=0.00230s e=0.00690s total=0.00920s
+alg=./byn-original/byn   np=10    match=10         p=0.00020s e=0.04980s total=0.05000s
+alg=byn-mod-hamming/byn  np=10    match=3          p=0.00020s e=0.05170s total=0.05190s
+alg=l-mm-multi-b/mbypsb  np=10    match=3          p=0.00110s e=0.00220s total=0.00330s
+
+   with 2 mismatches (subpattern lengths 8, groups of 32 chars, groups of 1 patts):
+alg=./cmfn/cmfn          np=10    match=3          p=0.00200s e=0.01080s total=0.01280s
+alg=./byn-original/byn   np=10    match=0          p=0.00020s e=0.04030s total=0.04050s
+Error: Automaton won't fit in a w=64 bits word. It must be m <= w/ceil(log2(k+1)+1), and here m=24 and k=2
+alg=l-mm-multi-b/mbypsb  np=10    match=3          p=0.00110s e=0.00900s total=0.01010s
+
+   with 3 mismatches (subpattern lengths 6, groups of 32 chars, groups of 1 patts):
+alg=./cmfn/cmfn          np=10    match=3          p=0.00220s e=0.01550s total=0.01770s
+alg=./byn-original/byn   np=10    match=10         p=0.00030s e=0.04810s total=0.04840s
+Error: Automaton won't fit in a w=64 bits word. It must be m <= w/ceil(log2(k+1)+1), and here m=24 and k=3
+alg=l-mm-multi-b/mbypsb  np=10    match=3          p=0.00090s e=0.00960s total=0.01050s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 12, groups of 32 chars, groups of 5 patts):
+alg=./udi/mm             np=100   match=15         p=0.00020s e=0.04620s total=0.04640s
+alg=./cmfn/cmfn          np=100   match=15         p=0.01860s e=0.03250s total=0.05110s
+alg=./byn-original/byn   np=100   match=52         p=0.00170s e=0.07310s total=0.07480s
+alg=byn-mod-hamming/byn  np=100   match=15         p=0.00190s e=0.06980s total=0.07170s
+alg=l-mm-multi-b/mbypsb  np=100   match=15         p=0.00810s e=0.00310s total=0.01120s
+
+   with 2 mismatches (subpattern lengths 8, groups of 32 chars, groups of 5 patts):
+alg=./cmfn/cmfn          np=100   match=20         p=0.01400s e=0.05740s total=0.07140s
+alg=./byn-original/byn   np=100   match=0          p=0.00210s e=0.06970s total=0.07180s
+Error: Automaton won't fit in a w=64 bits word. It must be m <= w/ceil(log2(k+1)+1), and here m=24 and k=2
+alg=l-mm-multi-b/mbypsb  np=100   match=20         p=0.00770s e=0.01030s total=0.01800s
+
+   with 3 mismatches (subpattern lengths 6, groups of 32 chars, groups of 5 patts):
+alg=./cmfn/cmfn          np=100   match=25         p=0.01430s e=0.08300s total=0.09730s
+alg=./byn-original/byn   np=100   match=66         p=0.00300s e=0.06730s total=0.07030s
+Error: Automaton won't fit in a w=64 bits word. It must be m <= w/ceil(log2(k+1)+1), and here m=24 and k=3
+alg=l-mm-multi-b/mbypsb  np=100   match=25         p=0.00810s e=0.01230s total=0.02040s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 12, groups of 32 chars, groups of 15 patts):
+alg=./udi/mm             np=1000  match=158        p=0.00020s e=0.08920s total=0.08940s
+alg=./cmfn/cmfn          np=1000  match=158        p=0.11730s e=0.20060s total=0.31790s
+alg=./byn-original/byn   np=1000  match=584        p=0.01890s e=0.08580s total=0.10470s
+alg=byn-mod-hamming/byn  np=1000  match=158        p=0.02100s e=0.08620s total=0.10720s
+alg=l-mm-multi-b/mbypsb  np=1000  match=158        p=0.07690s e=0.01490s total=0.09180s
+
+   with 2 mismatches (subpattern lengths 8, groups of 32 chars, groups of 23 patts):
+alg=./cmfn/cmfn          np=1000  match=258        p=0.12410s e=0.44180s total=0.56590s
+alg=./byn-original/byn   np=1000  match=0          p=0.02310s e=0.10090s total=0.12400s
+Error: Automaton won't fit in a w=64 bits word. It must be m <= w/ceil(log2(k+1)+1), and here m=24 and k=2
+alg=l-mm-multi-b/mbypsb  np=1000  match=258        p=0.07630s e=0.02870s total=0.10500s
+
+   with 3 mismatches (subpattern lengths 6, groups of 32 chars, groups of 23 patts):
+alg=./cmfn/cmfn          np=1000  match=360        p=0.12180s e=0.69820s total=0.82000s
+alg=./byn-original/byn   np=1000  match=859        p=0.03070s e=0.10770s total=0.13840s
+Error: Automaton won't fit in a w=64 bits word. It must be m <= w/ceil(log2(k+1)+1), and here m=24 and k=3
+alg=l-mm-multi-b/mbypsb  np=1000  match=360        p=0.08110s e=0.03800s total=0.11910s
+
+Pattern length 32:
+
+ for sets of 10 patterns (100 search runs):
+
+   with 1 mismatches (subpattern lengths 16, groups of 32 chars, groups of 1 patts):
+alg=./udi/mm             np=10    match=0          p=0.00020s e=0.04190s total=0.04210s
+alg=./cmfn/cmfn          np=10    match=0          p=0.00230s e=0.00570s total=0.00800s
+alg=./byn-original/byn   np=10    match=11         p=0.00030s e=0.03970s total=0.04000s
+alg=byn-mod-hamming/byn  np=10    match=0          p=0.00020s e=0.04040s total=0.04060s
+alg=l-mm-multi-b/mbypsb  np=10    match=0          p=0.00110s e=0.00140s total=0.00250s
+
+   with 2 mismatches (subpattern lengths 10, groups of 32 chars, groups of 1 patts):
+alg=./cmfn/cmfn          np=10    match=0          p=0.00240s e=0.00820s total=0.01060s
+alg=./byn-original/byn   np=10    match=0          p=0.00030s e=0.03630s total=0.03660s
+Error: Automaton won't fit in a w=64 bits word. It must be m <= w/ceil(log2(k+1)+1), and here m=32 and k=2
+alg=l-mm-multi-b/mbypsb  np=10    match=0          p=0.00110s e=0.00330s total=0.00440s
+
+   with 3 mismatches (subpattern lengths 8, groups of 32 chars, groups of 1 patts):
+alg=./cmfn/cmfn          np=10    match=1          p=0.00220s e=0.01290s total=0.01510s
+alg=./byn-original/byn   np=10    match=0          p=0.00040s e=0.03770s total=0.03810s
+Error: Automaton won't fit in a w=64 bits word. It must be m <= w/ceil(log2(k+1)+1), and here m=32 and k=3
+alg=l-mm-multi-b/mbypsb  np=10    match=1          p=0.00080s e=0.00850s total=0.00930s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 16, groups of 32 chars, groups of 5 patts):
+alg=./udi/mm             np=100   match=9          p=0.00020s e=0.04610s total=0.04630s
+alg=./cmfn/cmfn          np=100   match=9          p=0.01570s e=0.02980s total=0.04550s
+alg=./byn-original/byn   np=100   match=137        p=0.00280s e=0.07230s total=0.07510s
+alg=byn-mod-hamming/byn  np=100   match=9          p=0.00280s e=0.07580s total=0.07860s
+alg=l-mm-multi-b/mbypsb  np=100   match=9          p=0.00830s e=0.00240s total=0.01070s
+
+   with 2 mismatches (subpattern lengths 10, groups of 32 chars, groups of 5 patts):
+alg=./cmfn/cmfn          np=100   match=14         p=0.01640s e=0.04250s total=0.05890s
+alg=./byn-original/byn   np=100   match=27         p=0.00250s e=0.07170s total=0.07420s
+Error: Automaton won't fit in a w=64 bits word. It must be m <= w/ceil(log2(k+1)+1), and here m=32 and k=2
+alg=l-mm-multi-b/mbypsb  np=100   match=14         p=0.00770s e=0.00490s total=0.01260s
+
+   with 3 mismatches (subpattern lengths 8, groups of 32 chars, groups of 5 patts):
+alg=./cmfn/cmfn          np=100   match=19         p=0.01570s e=0.06070s total=0.07640s
+alg=./byn-original/byn   np=100   match=0          p=0.00340s e=0.06740s total=0.07080s
+Error: Automaton won't fit in a w=64 bits word. It must be m <= w/ceil(log2(k+1)+1), and here m=32 and k=3
+alg=l-mm-multi-b/mbypsb  np=100   match=19         p=0.00810s e=0.01110s total=0.01920s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 16, groups of 32 chars, groups of 15 patts):
+alg=./udi/mm             np=1000  match=108        p=0.00030s e=0.08880s total=0.08910s
+alg=./cmfn/cmfn          np=1000  match=108        p=0.13390s e=0.15510s total=0.28900s
+alg=./byn-original/byn   np=1000  match=1546       p=0.02270s e=0.08520s total=0.10790s
+alg=byn-mod-hamming/byn  np=1000  match=108        p=0.02580s e=0.08210s total=0.10790s
+alg=l-mm-multi-b/mbypsb  np=1000  match=108        p=0.07790s e=0.01540s total=0.09330s
+
+   with 2 mismatches (subpattern lengths 10, groups of 32 chars, groups of 23 patts):
+alg=./cmfn/cmfn          np=1000  match=171        p=0.13850s e=0.31650s total=0.45500s
+alg=./byn-original/byn   np=1000  match=338        p=0.02750s e=0.10190s total=0.12940s
+Error: Automaton won't fit in a w=64 bits word. It must be m <= w/ceil(log2(k+1)+1), and here m=32 and k=2
+alg=l-mm-multi-b/mbypsb  np=1000  match=171        p=0.07740s e=0.02460s total=0.10200s
+
+   with 3 mismatches (subpattern lengths 8, groups of 32 chars, groups of 23 patts):
+alg=./cmfn/cmfn          np=1000  match=244        p=0.13890s e=0.46320s total=0.60210s
+alg=./byn-original/byn   np=1000  match=0          p=0.03220s e=0.10700s total=0.13920s
+Error: Automaton won't fit in a w=64 bits word. It must be m <= w/ceil(log2(k+1)+1), and here m=32 and k=3
+alg=l-mm-multi-b/mbypsb  np=1000  match=244        p=0.08080s e=0.03730s total=0.11810s

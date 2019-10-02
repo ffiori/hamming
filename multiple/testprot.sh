@@ -43,8 +43,8 @@ for len in 8 16 24 32; do
         ./cmfn/cmfn -g$g -c$c -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./byn-original/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./byn-mod-hamming/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./bperl-mm-multi/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+#        ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+        ./bperl-mm-multi-b/mbypsb -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
     done
 
     p=100
@@ -83,8 +83,8 @@ for len in 8 16 24 32; do
         ./cmfn/cmfn -g$g -c$c -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./byn-original/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./byn-mod-hamming/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./bperl-mm-multi/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+        # ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+        ./bperl-mm-multi-b/mbypsb -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
     done
 
     p=1000
@@ -122,8 +122,8 @@ for len in 8 16 24 32; do
         ./cmfn/cmfn -g$g -c$c -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./byn-original/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
         ./byn-mod-hamming/byn -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
-        ./bperl-mm-multi/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+        # ./bperl-mm-multi-nomod/mbyps -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
+        ./bperl-mm-multi-b/mbypsb -p$pruns -e$eruns -k$k $file < $file.$len.n$p.badpat
     done
 done
 

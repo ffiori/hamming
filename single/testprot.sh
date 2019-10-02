@@ -20,12 +20,12 @@ for text in ../multiple/tests/protein/hs.txt; do
                       $alg -e$e -k$k -p$p $text < $text.$m.n100.badpat
                   done
               else
-                  for alg in ./ans ./ans2; do
+                  for alg in ./ans ./ans2 ./ans2b-noif; do
                       $alg -e$e -k$k -p$p $text < $text.$m.n100.badpat
                   done
               fi
 
-              for alg in ./sa ./tusa ./twsa ./byp/byp-old/byp ./byp/byps-dna/byps; do
+              for alg in ./sa ./tusa ./twsa ./byp/byps/byps ./byp/bypsb/bypsb; do
                 $alg -e$e -k$k -p$p $text < $text.$m.n100.badpat
               done
               echo ""
