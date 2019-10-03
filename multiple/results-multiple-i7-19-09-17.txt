@@ -1,0 +1,115 @@
+nohup: ignoring input
+Guide:
+cmfn: Fredriksson-Navarro.
+udi/mm: Muth-Manber (only k=1).
+mepsm-nomod/mbyps: MBYPS (ours) using MEPSM with no modifications (original size of the fingerprints).
+mbyps: MBYPS (ours).
+byn-original/byn: Baeza-Yates and Navarro original code for edit distance (adapted to Hume-Sunday environment).
+byn-mod-hamming/byn: Baeza-Yates and Navarro (partition into exact matching) code adapted to Hamming distance.
+
+Preprocessing runs 100. Search runs 100. For 'cmfn' we make same number of preprocessing and searching runs.
+
+
+********** ./tests/genome/ecoli.txt **********
+
+
+Pattern length 8:
+
+ for sets of 10 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 0 chars, groups of 1 patts):
+alg=./udi/mm             np=10    match=17265      p=0.00000s e=0.04490s total=0.04490s
+alg=./cmfn-dna/cmfn      np=10    match=17265      p=0.00120s e=0.10180s total=0.10300s
+alg=./byn-original/byn   np=10    match=31447      p=0.00000s e=0.06170s total=0.06170s
+alg=byn-mod-hamming/byn  np=10    match=17265      p=0.00000s e=0.05880s total=0.05880s
+alg=perl-mm-multi/mbyps  np=10    match=17265      p=0.00000s e=0.01250s total=0.01250s
+alg=l-mm-multi-b/mbypsb  np=10    match=17265      p=0.00000s e=0.01290s total=0.01290s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 0 chars, groups of 1 patts):
+alg=./udi/mm             np=100   match=202240     p=0.00000s e=0.32620s total=0.32620s
+alg=./cmfn-dna/cmfn      np=100   match=202240     p=0.00530s e=0.97260s total=0.97790s
+alg=./byn-original/byn   np=100   match=348104     p=0.00030s e=0.19820s total=0.19850s
+alg=byn-mod-hamming/byn  np=100   match=202240     p=0.00040s e=0.19070s total=0.19110s
+alg=perl-mm-multi/mbyps  np=100   match=202240     p=0.00010s e=0.09460s total=0.09470s
+alg=l-mm-multi-b/mbypsb  np=100   match=202240     p=0.00010s e=0.10180s total=0.10190s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 4, groups of 0 chars, groups of 6 patts):
+alg=./udi/mm             np=1000  match=2080020    p=0.00010s e=2.24800s total=2.24810s
+alg=./cmfn-dna/cmfn      np=1000  match=2080020    p=0.04940s e=9.80560s total=9.85500s
+alg=./byn-original/byn   np=1000  match=3636745    p=0.00470s e=1.61910s total=1.62380s
+alg=byn-mod-hamming/byn  np=1000  match=2080020    p=0.00560s e=1.56770s total=1.57330s
+alg=perl-mm-multi/mbyps  np=1000  match=2080020    p=0.00150s e=0.95960s total=0.96110s
+alg=l-mm-multi-b/mbypsb  np=1000  match=2080020    p=0.00170s e=1.11410s total=1.11580s
+
+Pattern length 16:
+
+ for sets of 10 patterns:
+
+   with 1 mismatches (subpattern lengths 8, groups of 0 chars, groups of 1 patts):
+alg=./udi/mm             np=10    match=4          p=0.00000s e=0.04720s total=0.04720s
+alg=./cmfn-dna/cmfn      np=10    match=4          p=0.00140s e=0.01370s total=0.01510s
+alg=./byn-original/byn   np=10    match=6          p=0.00000s e=0.04850s total=0.04850s
+alg=byn-mod-hamming/byn  np=10    match=4          p=0.00000s e=0.04830s total=0.04830s
+alg=perl-mm-multi/mbyps  np=10    match=4          p=0.00020s e=0.00530s total=0.00550s
+alg=l-mm-multi-b/mbypsb  np=10    match=4          p=0.00030s e=0.00530s total=0.00560s
+
+   with 2 mismatches (subpattern lengths 5, groups of 0 chars, groups of 1 patts):
+alg=./cmfn-dna/cmfn      np=10    match=25         p=0.00130s e=0.09980s total=0.10110s
+alg=./byn-original/byn   np=10    match=78         p=0.00000s e=0.05850s total=0.05850s
+alg=byn-mod-hamming/byn  np=10    match=25         p=0.00000s e=0.05730s total=0.05730s
+alg=perl-mm-multi/mbyps  np=10    match=25         p=0.00020s e=0.00900s total=0.00920s
+alg=l-mm-multi-b/mbypsb  np=10    match=25         p=0.00030s e=0.00930s total=0.00960s
+
+   with 3 mismatches (subpattern lengths 4, groups of 0 chars, groups of 1 patts):
+alg=./cmfn-dna/cmfn      np=10    match=244        p=0.00150s e=0.37380s total=0.37530s
+alg=./byn-original/byn   np=10    match=0          p=0.00000s e=0.08720s total=0.08720s
+alg=byn-mod-hamming/byn  np=10    match=244        p=0.00000s e=0.08040s total=0.08040s
+alg=perl-mm-multi/mbyps  np=10    match=244        p=0.00030s e=0.02680s total=0.02710s
+alg=l-mm-multi-b/mbypsb  np=10    match=244        p=0.00030s e=0.02950s total=0.02980s
+
+ for sets of 100 patterns:
+
+   with 1 mismatches (subpattern lengths 8, groups of 0 chars, groups of 1 patts):
+alg=./udi/mm             np=100   match=45         p=0.00000s e=0.33830s total=0.33830s
+alg=./cmfn-dna/cmfn      np=100   match=45         p=0.01010s e=0.12880s total=0.13890s
+alg=./byn-original/byn   np=100   match=69         p=0.00050s e=0.08580s total=0.08630s
+alg=byn-mod-hamming/byn  np=100   match=45         p=0.00040s e=0.08420s total=0.08460s
+alg=perl-mm-multi/mbyps  np=100   match=45         p=0.00280s e=0.00660s total=0.00940s
+alg=l-mm-multi-b/mbypsb  np=100   match=45         p=0.00300s e=0.00670s total=0.00970s
+
+   with 2 mismatches (subpattern lengths 5, groups of 0 chars, groups of 1 patts):
+alg=./cmfn-dna/cmfn      np=100   match=210        p=0.01000s e=0.84670s total=0.85670s
+alg=./byn-original/byn   np=100   match=722        p=0.00060s e=0.13640s total=0.13700s
+alg=byn-mod-hamming/byn  np=100   match=210        p=0.00070s e=0.13050s total=0.13120s
+alg=perl-mm-multi/mbyps  np=100   match=210        p=0.00280s e=0.05530s total=0.05810s
+alg=l-mm-multi-b/mbypsb  np=100   match=210        p=0.00300s e=0.06000s total=0.06300s
+
+   with 3 mismatches (subpattern lengths 4, groups of 0 chars, groups of 1 patts):
+alg=./cmfn-dna/cmfn      np=100   match=2313       p=0.01000s e=4.26370s total=4.27370s
+alg=./byn-original/byn   np=100   match=0          p=0.00130s e=0.38670s total=0.38800s
+alg=byn-mod-hamming/byn  np=100   match=2313       p=0.00110s e=0.35460s total=0.35570s
+alg=perl-mm-multi/mbyps  np=100   match=2313       p=0.00290s e=0.21410s total=0.21700s
+alg=l-mm-multi-b/mbypsb  np=100   match=2313       p=0.00300s e=0.23530s total=0.23830s
+
+ for sets of 1000 patterns:
+
+   with 1 mismatches (subpattern lengths 8, groups of 0 chars, groups of 6 patts):
+alg=./udi/mm             np=1000  match=525        p=0.00000s e=2.31090s total=2.31090s
+alg=./cmfn-dna/cmfn      np=1000  match=525        p=0.09750s e=1.33320s total=1.43070s
+alg=./byn-original/byn   np=1000  match=820        p=0.00650s e=0.15070s total=0.15720s
+alg=byn-mod-hamming/byn  np=1000  match=525        p=0.00740s e=0.15010s total=0.15750s
+alg=perl-mm-multi/mbyps  np=1000  match=525        p=0.02810s e=0.01880s total=0.04690s
+alg=l-mm-multi-b/mbypsb  np=1000  match=525        p=0.03000s e=0.02050s total=0.05050s
+
+   with 2 mismatches (subpattern lengths 5, groups of 0 chars, groups of 6 patts):
+alg=./cmfn-dna/cmfn      np=1000  match=2678       p=0.09650s e=8.77770s total=8.87420s
+alg=./byn-original/byn   np=1000  match=8148       p=0.00930s e=0.69140s total=0.70070s
+alg=byn-mod-hamming/byn  np=1000  match=2678       p=0.01100s e=0.64580s total=0.65680s
+alg=perl-mm-multi/mbyps  np=1000  match=2678       p=0.02800s e=0.58850s total=0.61650s
+alg=l-mm-multi-b/mbypsb  np=1000  match=2678       p=0.02950s e=0.65580s total=0.68530s
+
+   with 3 mismatches (subpattern lengths 4, groups of 0 chars, groups of 6 patts):

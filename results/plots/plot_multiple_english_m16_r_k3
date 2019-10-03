@@ -1,0 +1,51 @@
+$BYN << EOD
+10 0.055
+100 0.224
+1000 1.512
+EOD
+
+$FN << EOD
+10 0.052
+100 0.397
+1000 7.809
+EOD
+
+$HBYN << EOD
+10 0.056
+100 0.218
+1000 1.436
+EOD
+
+$MBYPS << EOD
+10 0.011
+100 0.071
+1000 0.721
+EOD
+
+$MBYPSb << EOD
+10 0.011
+100 0.068
+1000 0.688
+EOD
+
+$MM << EOD
+EOD
+
+set terminal epslatex size 6,3.5
+set output 'plot_multiple_english_m16_r_k3.tex'
+set xlabel '$r$'
+set ylabel 'Search time ($s$)'
+set xrange [10:1000]
+
+set logscale x 10
+set logscale y 10
+
+set key outside
+set key bottom right
+
+set style line 1 lw 1
+
+plot \
+"$FN" using 1:2   	title 'FN'  	ls 1 ps 1.5 pointtype 2     linecolor rgb "0x4C0099" with linespoint , \
+"$HBYN" using 1:2  	title 'HBYN' 	ls 1 ps 1.5 pointtype 3     linecolor rgb "red" with linespoint , \
+"$MBYPSb" using 1:2 title 'MBYPSb' 	ls 1 ps 1.5 pointtype 4     linecolor rgb "0x009900" with linespoint

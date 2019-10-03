@@ -1,0 +1,51 @@
+$ANS << EOD
+1 1.34
+2 1.34
+3 1.34
+EOD
+
+$ANS2b << EOD
+1 1.05
+2 1.05
+3 1.07
+EOD
+
+$BYP << EOD
+1 3.67
+2 4.99
+3 5.83
+EOD
+
+$BYPSb << EOD
+1 0.19
+2 0.35
+3 0.48
+EOD
+
+$EF << EOD
+1 0.39
+2 0.64
+3 1.20
+EOD
+
+$EFS << EOD
+1 0.38
+2 0.59
+3 1.10
+EOD
+
+set terminal epslatex size 6,3.5
+set output 'plot_single_dna_m32_few.tex'
+set xlabel '$k$'
+set ylabel 'Search time ($s$)'
+set xrange [1:3]
+set xtic 1
+set yrange [0:2]
+
+set key outside
+set key bottom right
+
+plot \
+"$EFS" using 1:2    title 'EFS'   ps 1.5 pointtype 1 linecolor rgb "0xCCCC00" with linespoint , \
+"$ANS2b" using 1:2  title 'ANS2b' ps 1.5 pointtype 3 linecolor rgb "red" with linespoint , \
+"$BYPSb" using 1:2  title 'BYPSb' ps 1.5 pointtype 4 linecolor rgb "0x009900" with linespoint

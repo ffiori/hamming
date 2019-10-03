@@ -64,11 +64,16 @@ void prepPartExact (PartExact * P, uchar * pattern, int m, int k)
             prepVer (&P[i].dyn, pattern + i * (m + 1), m, k);
 
         /* precompute some values */
-        P[i].back = m - P[i].cut.len[k] + !MOD; //TODO check
+        //~ P[i].back = m - P[i].cut.len[k] + !MOD; //TODO check
+        //~ _back = A[patnow].cut.aclen[list.subpatt - 1];
         
         P[i].forth = malloc(sizeof(int) * P[i].cut.j);
-        for (j = 0; j < P[i].cut.j; j++)
+        P[i].back = malloc(sizeof(int) * P[i].cut.j);
+        for (j = 0; j < P[i].cut.j; j++){
 			P[i].forth[j] = m - P[i].cut.aclen[j-1];
+            //~ P[i].back[j] = P[i].cut.aclen[j-1];
+            P[i].back[j] = m - P[i].cut.len[k];
+        }
     }
 
     if (m <= 32)
@@ -89,6 +94,7 @@ int searchPartExact (PartExact * P, register uchar * text, register int n, Tcode
 void freePartExact (PartExact * P)
 {
 	safe_free(P->forth);
+	safe_free(P->back);
     freeVer (&P->dyn);
     //freeMulti(&P->M);
     freeCut (&P->cut);
@@ -268,7 +274,7 @@ int shift = mepsm_get_shift();
 
     RetList list;
 
-//int lastbegin = -1;
+//~ int lastbegin = -1;
 
     if (m <= 32) {
         int(*ans_exec)(CHARTYPE *, int, int, int);
@@ -287,13 +293,15 @@ int shift = mepsm_get_shift();
             patnow = list.patt;
 
             _pe_n = list.pos;
-            int _back = A[patnow].back;
-            //~ int _forth = A[patnow].forth;
+            //~ int _back = A[patnow].back; //TODO fix
+            int _back = A[patnow].back[list.subpatt];
             int _forth = A[patnow].forth[list.subpatt];
 
 //TODO OOOOOOOOOOOOOOOOOOO
-            //_back = A[patnow].cut.aclen[list.subpatt - 1];
-//            _forth = m - A[patnow].cut.aclen[list.subpatt - 1];
+            //~ _back = A[patnow].cut.aclen[list.subpatt - 1];
+          //~ _forth = m - A[patnow].cut.aclen[list.subpatt - 1];
+          //~ _back = m - A[patnow].cut.len[k];
+          //~ _forth = m+1;
 //printf("patnow %d, subpat %d, _back %d,  _forth %d\n",patnow,list->subpatt,_back,_forth);
 
             //int _pe_f = _pe_n + _forth;
@@ -303,24 +311,24 @@ int shift = mepsm_get_shift();
 
             //must check between i and _pe_f
             begin = max (0, max (begin, A[patnow].dyn.lastpos - m + 1));
-            //begin = max (0, i);
+            //~ begin = max (0, begin);
 
             end = min (n - 1, _pe_n + _forth);
 
             if (end - begin + 1 < m) continue;
             A[patnow].dyn.lastpos = end;
 
-//lastbegin = A[patnow].dyn.lastpos;
-/*
-if(A[patnow].dyn.lastpos >= begin){
-if(lastbegin - begin > shift-1)
-	printf("ans2 from %d to %d, lastbegin %d.   back %d, forth %d\n",begin,end,lastbegin,_back,_forth);
-A[patnow].dyn.lastpos = begin;
-continue;
-}
+//~ lastbegin = A[patnow].dyn.lastpos;
 
-A[patnow].dyn.lastpos = begin;
-*/
+//~ if(A[patnow].dyn.lastpos >= begin){
+    //~ if(lastbegin - begin > shift-1)
+        //~ printf("ans2 from %d to %d, lastbegin %d.   back %d, forth %d\n",begin,end,lastbegin,_back,_forth);
+    //~ A[patnow].dyn.lastpos = begin;
+    //~ continue;
+//~ }
+
+//~ A[patnow].dyn.lastpos = begin;
+
             nmatch += ans_exec (text + begin, end - begin + 1, k, patnow);
 
             //free(list);

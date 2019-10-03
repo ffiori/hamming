@@ -1,6 +1,6 @@
 #!/bin/sh
 
-results_file="results-19-08-27.txt"
+results_file="../results-multiple-i7-19-09-18.txt"
 
 echo "DNA DNA DNA DNA DNA DNA DNA DNA DNA DNA DNA DNA\n"
 
@@ -28,6 +28,11 @@ echo "& \\\\\\"
 
 printf "%s" "MBYPS & "
 nums=$(sed -n '/ecoli/,/english/p' $results_file | sed -n '/10 patterns/,/100 patterns/p' | sed -n -e 's/^.*multi\/mbyps.*e=\([0-9]\{1,3\}\.[0-9]\{3\}[5-9]\{0,1\}\).*/\1 /p')
+for i in $nums; do printf "{%.3f} & " $i; done
+echo "& \\\\\\"
+
+printf "%s" "MBYPSb & "
+nums=$(sed -n '/ecoli/,/english/p' $results_file | sed -n '/10 patterns/,/100 patterns/p' | sed -n -e 's/^.*multi-b\/mbypsb.*e=\([0-9]\{1,3\}\.[0-9]\{3\}[5-9]\{0,1\}\).*/\1 /p')
 for i in $nums; do printf "\\\textbf{%.3f} & " $i; done
 echo "& \\\\\\"
 
@@ -56,9 +61,13 @@ echo "& \\\\\\"
 
 printf "%s" "MBYPS & "
 nums=$(sed -n '/ecoli/,/english/p' $results_file | sed -n '/100 patterns/,/1000 patterns/p' | sed -n -e 's/^.*multi\/mbyps.*e=\([0-9]\{1,3\}\.[0-9]\{3\}[5-9]\{0,1\}\).*/\1 /p')
-for i in $nums; do printf "\\\textbf{%.3f} & " $i; done
+for i in $nums; do printf "{%.3f} & " $i; done
 echo "& \\\\\\"
 
+printf "%s" "MBYPSb & "
+nums=$(sed -n '/ecoli/,/english/p' $results_file | sed -n '/100 patterns/,/1000 patterns/p' | sed -n -e 's/^.*multi-b\/mbypsb.*e=\([0-9]\{1,3\}\.[0-9]\{3\}[5-9]\{0,1\}\).*/\1 /p')
+for i in $nums; do printf "\\\textbf{%.3f} & " $i; done
+echo "& \\\\\\"
 
 echo "\n1000 patterns\n"
 
@@ -84,9 +93,13 @@ echo "& \\\\\\"
 
 printf "%s" "MBYPS & "
 nums=$(sed -n '/ecoli/,/english/p' $results_file | sed -n '/1000 patterns/,/10 patterns/p' | sed -n -e 's/^.*multi\/mbyps.*e=\([0-9]\{1,3\}\.[0-9]\{3\}[5-9]\{0,1\}\).*/\1 /p')
-for i in $nums; do printf "\\\textbf{%.3f} & " $i; done
+for i in $nums; do printf "{%.3f} & " $i; done
 echo "& \\\\\\"
 
+printf "%s" "MBYPSb & "
+nums=$(sed -n '/ecoli/,/english/p' $results_file | sed -n '/1000 patterns/,/10 patterns/p' | sed -n -e 's/^.*multi-b\/mbypsb.*e=\([0-9]\{1,3\}\.[0-9]\{3\}[5-9]\{0,1\}\).*/\1 /p')
+for i in $nums; do printf "\\\textbf{%.3f} & " $i; done
+echo "& \\\\\\"
 
 echo "\nEnglish English English English English English English English English English English \n"
 
@@ -114,9 +127,13 @@ echo "& \\\\\\"
 
 printf "%s" "MBYPS & "
 nums=$(sed -n '/english/,/ecoli/p' $results_file | sed -n '/10 patterns/,/100 patterns/p' | sed -n -e 's/^.*multi\/mbyps.*e=\([0-9]\{1,3\}\.[0-9]\{3\}[5-9]\{0,1\}\).*/\1 /p')
-for i in $nums; do printf "\\\textbf{%.3f} & " $i; done
+for i in $nums; do printf "{%.3f} & " $i; done
 echo "& \\\\\\"
 
+printf "%s" "MBYPSb & "
+nums=$(sed -n '/english/,/ecoli/p' $results_file | sed -n '/10 patterns/,/100 patterns/p' | sed -n -e 's/^.*multi-b\/mbypsb.*e=\([0-9]\{1,3\}\.[0-9]\{3\}[5-9]\{0,1\}\).*/\1 /p')
+for i in $nums; do printf "\\\textbf{%.3f} & " $i; done
+echo "& \\\\\\"
 
 echo "\n100 patterns\n"
 
@@ -142,9 +159,13 @@ echo "& \\\\\\"
 
 printf "%s" "MBYPS & "
 nums=$(sed -n '/english/,/ecoli/p' $results_file | sed -n '/100 patterns/,/1000 patterns/p' | sed -n -e 's/^.*multi\/mbyps.*e=\([0-9]\{1,3\}\.[0-9]\{3\}[5-9]\{0,1\}\).*/\1 /p')
-for i in $nums; do printf "\\\textbf{%.3f} & " $i; done
+for i in $nums; do printf "{%.3f} & " $i; done
 echo "& \\\\\\"
 
+printf "%s" "MBYPSb & "
+nums=$(sed -n '/english/,/ecoli/p' $results_file | sed -n '/100 patterns/,/1000 patterns/p' | sed -n -e 's/^.*multi-b\/mbypsb.*e=\([0-9]\{1,3\}\.[0-9]\{3\}[5-9]\{0,1\}\).*/\1 /p')
+for i in $nums; do printf "\\\textbf{%.3f} & " $i; done
+echo "& \\\\\\"
 
 echo "\n1000 patterns\n"
 
@@ -170,5 +191,10 @@ echo "& \\\\\\"
 
 printf "%s" "MBYPS & "
 nums=$(sed -n '/english/,/ecoli/p' $results_file | sed -n '/1000 patterns/,/10 patterns/p' | sed -n -e 's/^.*multi\/mbyps.*e=\([0-9]\{1,3\}\.[0-9]\{3\}[5-9]\{0,1\}\).*/\1 /p')
+for i in $nums; do printf "{%.3f} & " $i; done
+echo "& \\\\\\"
+
+printf "%s" "MBYPSb & "
+nums=$(sed -n '/english/,/ecoli/p' $results_file | sed -n '/1000 patterns/,/10 patterns/p' | sed -n -e 's/^.*multi-b\/mbypsb.*e=\([0-9]\{1,3\}\.[0-9]\{3\}[5-9]\{0,1\}\).*/\1 /p')
 for i in $nums; do printf "\\\textbf{%.3f} & " $i; done
 echo "& \\\\\\"

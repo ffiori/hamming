@@ -1,0 +1,51 @@
+$BYN << EOD
+10 0.196
+100 0.972
+1000 8.742
+EOD
+
+$FN << EOD
+10 0.873
+100 9.952
+1000 97.438
+EOD
+
+$HBYN << EOD
+10 0.189
+100 0.898
+1000 7.931
+EOD
+
+$MBYPS << EOD
+10 0.062
+100 0.513
+1000 6.001
+EOD
+
+$MBYPSb << EOD
+10 0.060
+100 0.480
+1000 5.833
+EOD
+
+$MM << EOD
+EOD
+
+set terminal epslatex size 6,3.5
+set output 'plot_multiple_dna_m16_r_k3.tex'
+set xlabel '$r$'
+set ylabel 'Search time ($s$)'
+set xrange [10:1000]
+
+set logscale x 10
+set logscale y 10
+
+set key outside
+set key bottom right
+
+set style line 1 lw 1
+
+plot \
+"$FN" using 1:2   	title 'FN'  	ls 1 ps 1.5 pointtype 2     linecolor rgb "0x4C0099" with linespoint , \
+"$HBYN" using 1:2  	title 'HBYN' 	ls 1 ps 1.5 pointtype 3     linecolor rgb "red" with linespoint , \
+"$MBYPSb" using 1:2 title 'MBYPSb' 	ls 1 ps 1.5 pointtype 4     linecolor rgb "0x009900" with linespoint

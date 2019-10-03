@@ -1,0 +1,38 @@
+$ANS << EOD
+1 1.17
+2 1.17
+3 1.17
+EOD
+
+$ANS2b << EOD
+1 0.91
+2 0.91
+3 0.91
+EOD
+
+$BYP << EOD
+1 0.49
+2 0.80
+3 1.08
+EOD
+
+$BYPSb << EOD
+1 0.17
+2 0.20
+3 0.28
+EOD
+
+set terminal epslatex size 6,3.5
+set output 'plot_single_english_m32_few.tex'
+set xlabel '$k$'
+set ylabel 'Search time ($s$)'
+set xrange [1:3]
+set xtic 1
+set yrange [0:2]
+
+set key outside
+set key bottom right
+
+plot \
+"$ANS2b" using 1:2  title 'ANS2b' ps 1.5 pointtype 3  linecolor rgb "red" with linespoint , \
+"$BYPSb" using 1:2  title 'BYPSb' ps 1.5 pointtype 4  linecolor rgb "0x009900" with linespoint

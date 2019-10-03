@@ -1,0 +1,302 @@
+nohup: ignoring input
+Preprocessing runs 100. Search runs 100. q-gram for EF and EFS 4.
+
+
+********** ../multiple/tests/genome/ecoli.txt **********
+
+
+Pattern length of 8:
+for 1 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=1 q=4 occ=202240 p=0.0096s(96/100) e=0.6580s(6580/100)
+alg=./efs T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=1 q=4 occ=202240 p=0.0100s(100/100) e=0.6154s(6154/100)
+alg=./ans T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=1 occ=202240 p=0.0000s(0/100) e=0.4673s(4673/100)
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=1 occ=202240 p=0.0001s(1/100) e=0.3032s(3032/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=1 occ=202240 p=0.0001s(1/100) e=0.2897s(2897/100)
+alg=./sa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=1 occ=202240 p=0.0000s(0/100) e=0.6815s(6815/100)
+alg=./tusa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=1 occ=202240 p=0.0000s(0/100) e=0.6047s(6047/100)
+alg=./twsa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=1 occ=202240 p=0.0000s(0/100) e=0.7684s(7684/100)
+alg=./byp/byp-old/byp np=100   match=202240     p=0.00000s e=1.82460s total=1.82460s
+alg=./byp/byps/byps np=100   match=202240     p=0.00380s e=0.71880s total=0.72260s
+alg=./byp/bypsb/bypsb np=100   match=202240     p=0.00360s e=0.70540s total=0.70900s
+
+for 2 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=2 q=4 occ=2108556 p=0.0469s(469/100) e=0.9929s(9929/100)
+alg=./efs T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=2 q=4 occ=2108556 p=0.0491s(491/100) e=0.9919s(9919/100)
+alg=./ans T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=2 occ=2108556 p=0.0000s(0/100) e=0.5188s(5188/100)
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=2 occ=2108556 p=0.0001s(1/100) e=0.3378s(3378/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=2 occ=2108556 p=0.0003s(3/100) e=0.2980s(2980/100)
+alg=./sa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=2 occ=2108556 p=0.0000s(0/100) e=0.7354s(7354/100)
+alg=./tusa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=2 occ=2108556 p=0.0000s(0/100) e=0.6254s(6254/100)
+alg=./twsa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=2 occ=2108556 p=0.0000s(0/100) e=1.0263s(10263/100)
+alg=./byp/byp-old/byp np=100   match=2108556    p=0.00000s e=4.51420s total=4.51420s
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+
+for 3 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=3 q=4 occ=13132371 p=0.2254s(2254/100) e=1.7285s(17285/100)
+alg=./efs T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=3 q=4 occ=13132371 p=0.2247s(2247/100) e=1.7005s(17005/100)
+alg=./ans T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=3 occ=13132371 p=0.0000s(0/100) e=0.4762s(4762/100)
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=3 occ=13132371 p=0.0003s(3/100) e=0.4303s(4303/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=3 occ=13132371 p=0.0003s(3/100) e=0.2931s(2931/100)
+alg=./sa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=3 occ=13132371 p=0.0001s(1/100) e=0.6848s(6848/100)
+alg=./tusa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=3 occ=13132371 p=0.0000s(0/100) e=0.5920s(5920/100)
+alg=./twsa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=3 occ=13132371 p=0.0000s(0/100) e=1.1354s(11354/100)
+alg=./byp/byp-old/byp np=100   match=13132390   p=0.00000s e=6.45940s total=6.45940s
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+
+
+Pattern length of 16:
+for 1 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=1 q=4 occ=45 p=0.0145s(145/100) e=0.3107s(3107/100)
+alg=./efs T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=1 q=4 occ=45 p=0.0200s(200/100) e=0.2907s(2907/100)
+alg=./ans T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=1 occ=45 p=0.0000s(0/100) e=0.4682s(4682/100)
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=1 occ=45 p=0.0049s(49/100) e=0.3067s(3067/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=1 occ=45 p=0.0061s(61/100) e=0.2837s(2837/100)
+alg=./sa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=1 occ=45 p=0.0000s(0/100) e=0.6811s(6811/100)
+alg=./tusa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=1 occ=45 p=0.0000s(0/100) e=0.5825s(5825/100)
+alg=./twsa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=1 occ=45 p=0.0000s(0/100) e=0.3567s(3567/100)
+alg=./byp/byp-old/byp np=100   match=45         p=0.00000s e=1.56520s total=1.56520s
+alg=./byp/byps/byps np=100   match=45         p=0.00990s e=0.14800s total=0.15790s
+alg=./byp/bypsb/bypsb np=100   match=45         p=0.01010s e=0.14810s total=0.15820s
+
+for 2 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=2 q=4 occ=210 p=0.0742s(742/100) e=0.4597s(4597/100)
+alg=./efs T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=2 q=4 occ=210 p=0.0802s(802/100) e=0.4481s(4481/100)
+alg=./ans T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=2 occ=210 p=0.0000s(0/100) e=0.4615s(4615/100)
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=2 occ=210 p=0.0057s(57/100) e=0.3065s(3065/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=2 occ=210 p=0.0055s(55/100) e=0.2844s(2844/100)
+alg=./sa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=2 occ=210 p=0.0001s(1/100) e=0.6814s(6814/100)
+alg=./tusa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=2 occ=210 p=0.0000s(0/100) e=0.5596s(5596/100)
+alg=./twsa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=2 occ=210 p=0.0000s(0/100) e=0.4658s(4658/100)
+alg=./byp/byp-old/byp np=100   match=210        p=0.00000s e=2.34370s total=2.34370s
+alg=./byp/byps/byps np=100   match=210        p=0.00950s e=0.64340s total=0.65290s
+alg=./byp/bypsb/bypsb np=100   match=210        p=0.00980s e=0.64740s total=0.65720s
+
+for 3 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=3 q=4 occ=2313 p=0.3395s(3395/100) e=0.7440s(7440/100)
+alg=./efs T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=3 q=4 occ=2313 p=0.3501s(3501/100) e=0.7011s(7011/100)
+alg=./ans T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=3 occ=2313 p=0.0000s(0/100) e=0.4635s(4635/100)
+alg=./ans2 T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=3 occ=2313 p=0.0063s(63/100) e=0.3042s(3042/100)
+alg=./ans2b-noif T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=3 occ=2313 p=0.0055s(55/100) e=0.2841s(2841/100)
+alg=./sa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=3 occ=2313 p=0.0000s(0/100) e=0.6813s(6813/100)
+alg=./tusa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=3 occ=2313 p=0.0000s(0/100) e=0.5615s(5615/100)
+alg=./twsa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=3 occ=2313 p=0.0000s(0/100) e=0.5561s(5561/100)
+alg=./byp/byp-old/byp np=100   match=2313       p=0.00000s e=3.59600s total=3.59600s
+alg=./byp/byps/byps np=100   match=2313       p=0.01000s e=0.79560s total=0.80560s
+alg=./byp/bypsb/bypsb np=100   match=2313       p=0.01010s e=0.78540s total=0.79550s
+
+
+Pattern length of 24:
+for 1 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=1 q=4 occ=22 p=0.0207s(207/100) e=0.2158s(2158/100)
+alg=./efs_long T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=1 q=4 occ=22 p=0.0248s(248/100) e=0.2012s(2012/100)
+alg=./ansb T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=1 occ=22 p=0.0000s(0/100) e=0.5058s(5058/100)
+alg=./ans2b T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=1 occ=22 p=0.0055s(55/100) e=0.4072s(4072/100)
+alg=./sa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=1 occ=22 p=0.0000s(0/100) e=0.6815s(6815/100)
+alg=./tusa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=1 occ=22 p=0.0001s(1/100) e=0.5618s(5618/100)
+alg=./twsa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=1 occ=22 p=0.0000s(0/100) e=0.2401s(2401/100)
+alg=./byp/byp-old/byp np=100   match=22         p=0.00000s e=1.59400s total=1.59400s
+alg=./byp/byps/byps np=100   match=22         p=0.00970s e=0.10830s total=0.11800s
+alg=./byp/bypsb/bypsb np=100   match=22         p=0.00930s e=0.10910s total=0.11840s
+
+for 2 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=2 q=4 occ=34 p=0.0978s(978/100) e=0.3250s(3250/100)
+alg=./efs_long T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=2 q=4 occ=34 p=0.1060s(1060/100) e=0.3234s(3234/100)
+alg=./ansb T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=2 occ=34 p=0.0000s(0/100) e=0.5183s(5183/100)
+alg=./ans2b T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=2 occ=34 p=0.0059s(59/100) e=0.4238s(4238/100)
+need m*B=72 > 64=W bits
+need m*L=72 > 64=W bits
+need m*L=72 > 64=W bits
+alg=./byp/byp-old/byp np=100   match=34         p=0.00000s e=2.32730s total=2.32730s
+alg=./byp/byps/byps np=100   match=34         p=0.00990s e=0.18910s total=0.19900s
+alg=./byp/bypsb/bypsb np=100   match=34         p=0.00990s e=0.18920s total=0.19910s
+
+for 3 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=3 q=4 occ=52 p=0.4653s(4653/100) e=0.6060s(6060/100)
+alg=./efs_long T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=3 q=4 occ=52 p=0.4671s(4671/100) e=0.5749s(5749/100)
+alg=./ansb T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=3 occ=52 p=0.0000s(0/100) e=0.5223s(5223/100)
+alg=./ans2b T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=3 occ=52 p=0.0059s(59/100) e=0.4349s(4349/100)
+need m*B=72 > 64=W bits
+need m*L=72 > 64=W bits
+need m*L=72 > 64=W bits
+alg=./byp/byp-old/byp np=100   match=52         p=0.00000s e=2.86620s total=2.86620s
+alg=./byp/byps/byps np=100   match=52         p=0.01090s e=0.80580s total=0.81670s
+alg=./byp/bypsb/bypsb np=100   match=52         p=0.01020s e=0.79820s total=0.80840s
+
+
+Pattern length of 32:
+for 1 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=1 q=4 occ=14 p=0.0254s(254/100) e=0.1769s(1769/100)
+alg=./efs_long T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=1 q=4 occ=14 p=0.0320s(320/100) e=0.1668s(1668/100)
+alg=./ansb T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=1 occ=14 p=0.0000s(0/100) e=0.5222s(5222/100)
+alg=./ans2b T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=1 occ=14 p=0.0056s(56/100) e=0.4220s(4220/100)
+alg=./sa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=1 occ=14 p=0.0001s(1/100) e=0.7009s(7009/100)
+alg=./tusa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=1 occ=14 p=0.0000s(0/100) e=0.5928s(5928/100)
+alg=./twsa T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=1 occ=14 p=0.0000s(0/100) e=0.1895s(1895/100)
+alg=./byp/byp-old/byp np=100   match=14         p=0.00000s e=1.65740s total=1.65740s
+alg=./byp/byps/byps np=100   match=14         p=0.00920s e=0.09470s total=0.10390s
+alg=./byp/bypsb/bypsb np=100   match=14         p=0.00970s e=0.09550s total=0.10520s
+
+for 2 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=2 q=4 occ=18 p=0.1228s(1228/100) e=0.2780s(2780/100)
+alg=./efs_long T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=2 q=4 occ=18 p=0.1279s(1279/100) e=0.2723s(2723/100)
+alg=./ansb T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=2 occ=18 p=0.0001s(1/100) e=0.5233s(5233/100)
+alg=./ans2b T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=2 occ=18 p=0.0057s(57/100) e=0.4171s(4171/100)
+need m*B=96 > 64=W bits
+need m*L=96 > 64=W bits
+need m*L=96 > 64=W bits
+alg=./byp/byp-old/byp np=100   match=18         p=0.00000s e=2.19210s total=2.19210s
+alg=./byp/byps/byps np=100   match=18         p=0.00950s e=0.15330s total=0.16280s
+alg=./byp/bypsb/bypsb np=100   match=18         p=0.00950s e=0.15320s total=0.16270s
+
+for 3 mismatches:
+alg=./ef T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=3 q=4 occ=30 p=0.5826s(5826/100) e=0.5112s(5112/100)
+alg=./efs_long T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=3 q=4 occ=30 p=0.5715s(5715/100) e=0.4982s(4982/100)
+alg=./ansb T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=3 occ=30 p=0.0000s(0/100) e=0.5075s(5075/100)
+alg=./ans2b T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=3 occ=30 p=0.0059s(59/100) e=0.4171s(4171/100)
+need m*B=96 > 64=W bits
+need m*L=96 > 64=W bits
+need m*L=96 > 64=W bits
+alg=./byp/byp-old/byp np=100   match=30         p=0.00020s e=2.56170s total=2.56190s
+alg=./byp/byps/byps np=100   match=30         p=0.00960s e=0.20930s total=0.21890s
+alg=./byp/bypsb/bypsb np=100   match=30         p=0.00970s e=0.20860s total=0.21830s
+
+
+
+********** ../multiple/tests/english/bible.txt **********
+
+
+Pattern length of 8:
+for 1 mismatches:
+alg=./ans T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=1 occ=21623 p=0.0000s(0/100) e=0.4070s(4070/100)
+alg=./ans2 T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=1 occ=21623 p=0.0001s(1/100) e=0.2541s(2541/100)
+alg=./ans2b-noif T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=1 occ=21623 p=0.0001s(1/100) e=0.2355s(2355/100)
+alg=./sa T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=1 occ=21623 p=0.0000s(0/100) e=0.5944s(5944/100)
+alg=./tusa T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=1 occ=21623 p=0.0000s(0/100) e=0.4870s(4870/100)
+alg=./twsa T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=1 occ=21623 p=0.0000s(0/100) e=0.3633s(3633/100)
+alg=./byp/byp-old/byp np=100   match=21623      p=0.00010s e=0.51720s total=0.51730s
+alg=./byp/byps/byps np=100   match=21623      p=0.00360s e=0.61980s total=0.62340s
+alg=./byp/bypsb/bypsb np=100   match=21623      p=0.00300s e=0.62300s total=0.62600s
+
+for 2 mismatches:
+alg=./ans T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=2 occ=102327 p=0.0000s(0/100) e=0.4083s(4083/100)
+alg=./ans2 T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=2 occ=102327 p=0.0001s(1/100) e=0.2549s(2549/100)
+alg=./ans2b-noif T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=2 occ=102327 p=0.0001s(1/100) e=0.2353s(2353/100)
+alg=./sa T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=2 occ=102327 p=0.0000s(0/100) e=0.5955s(5955/100)
+alg=./tusa T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=2 occ=102327 p=0.0000s(0/100) e=0.4885s(4885/100)
+alg=./twsa T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=2 occ=102327 p=0.0000s(0/100) e=0.5045s(5045/100)
+alg=./byp/byp-old/byp np=100   match=102327     p=0.00000s e=0.99610s total=0.99610s
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+
+for 3 mismatches:
+alg=./ans T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=3 occ=504694 p=0.0000s(0/100) e=0.4047s(4047/100)
+alg=./ans2 T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=3 occ=504694 p=0.0000s(0/100) e=0.2609s(2609/100)
+alg=./ans2b-noif T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=3 occ=504694 p=0.0003s(3/100) e=0.2359s(2359/100)
+alg=./sa T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=3 occ=504694 p=0.0000s(0/100) e=0.5947s(5947/100)
+alg=./tusa T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=3 occ=504694 p=0.0001s(1/100) e=0.4866s(4866/100)
+alg=./twsa T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=3 occ=504694 p=0.0000s(0/100) e=0.6450s(6450/100)
+alg=./byp/byp-old/byp np=100   match=504694     p=0.00000s e=1.38960s total=1.38960s
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+
+
+Pattern length of 16:
+for 1 mismatches:
+alg=./ans T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=1 occ=78 p=0.0000s(0/100) e=0.4021s(4021/100)
+alg=./ans2 T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=1 occ=78 p=0.0045s(45/100) e=0.2537s(2537/100)
+alg=./ans2b-noif T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=1 occ=78 p=0.0042s(42/100) e=0.2365s(2365/100)
+alg=./sa T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=1 occ=78 p=0.0000s(0/100) e=0.5946s(5946/100)
+alg=./tusa T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=1 occ=78 p=0.0000s(0/100) e=0.4845s(4845/100)
+alg=./twsa T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=1 occ=78 p=0.0000s(0/100) e=0.2131s(2131/100)
+alg=./byp/byp-old/byp np=100   match=78         p=0.00000s e=0.33450s total=0.33450s
+alg=./byp/byps/byps np=100   match=78         p=0.00980s e=0.11690s total=0.12670s
+alg=./byp/bypsb/bypsb np=100   match=78         p=0.01000s e=0.11610s total=0.12610s
+
+for 2 mismatches:
+alg=./ans T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=2 occ=510 p=0.0000s(0/100) e=0.4043s(4043/100)
+alg=./ans2 T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=2 occ=510 p=0.0057s(57/100) e=0.2518s(2518/100)
+alg=./ans2b-noif T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=2 occ=510 p=0.0055s(55/100) e=0.2355s(2355/100)
+alg=./sa T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=2 occ=510 p=0.0001s(1/100) e=0.5943s(5943/100)
+alg=./tusa T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=2 occ=510 p=0.0000s(0/100) e=0.4856s(4856/100)
+alg=./twsa T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=2 occ=510 p=0.0000s(0/100) e=0.2671s(2671/100)
+alg=./byp/byp-old/byp np=100   match=510        p=0.00010s e=0.57840s total=0.57850s
+alg=./byp/byps/byps np=100   match=510        p=0.00990s e=0.64760s total=0.65750s
+alg=./byp/bypsb/bypsb np=100   match=510        p=0.00990s e=0.64630s total=0.65620s
+
+for 3 mismatches:
+alg=./ans T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=3 occ=1161 p=0.0000s(0/100) e=0.4073s(4073/100)
+alg=./ans2 T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=3 occ=1161 p=0.0051s(51/100) e=0.2533s(2533/100)
+alg=./ans2b-noif T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=3 occ=1161 p=0.0049s(49/100) e=0.2362s(2362/100)
+alg=./sa T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=3 occ=1161 p=0.0000s(0/100) e=0.5947s(5947/100)
+alg=./tusa T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=3 occ=1161 p=0.0000s(0/100) e=0.4864s(4864/100)
+alg=./twsa T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=3 occ=1161 p=0.0000s(0/100) e=0.3383s(3383/100)
+alg=./byp/byp-old/byp np=100   match=1161       p=0.00000s e=0.81860s total=0.81860s
+alg=./byp/byps/byps np=100   match=1161       p=0.00990s e=0.63300s total=0.64290s
+alg=./byp/bypsb/bypsb np=100   match=1161       p=0.00980s e=0.63500s total=0.64480s
+
+
+Pattern length of 24:
+for 1 mismatches:
+alg=./ansb T=../multiple/tests/english/bible.txt(4047392) np=100 m=24 k=1 occ=33 p=0.0000s(0/100) e=0.4428s(4428/100)
+alg=./ans2b T=../multiple/tests/english/bible.txt(4047392) np=100 m=24 k=1 occ=33 p=0.0062s(62/100) e=0.3555s(3555/100)
+alg=./sa T=../multiple/tests/english/bible.txt(4047392) np=100 m=24 k=1 occ=33 p=0.0000s(0/100) e=0.5946s(5946/100)
+alg=./tusa T=../multiple/tests/english/bible.txt(4047392) np=100 m=24 k=1 occ=33 p=0.0000s(0/100) e=0.4839s(4839/100)
+alg=./twsa T=../multiple/tests/english/bible.txt(4047392) np=100 m=24 k=1 occ=33 p=0.0000s(0/100) e=0.1482s(1482/100)
+alg=./byp/byp-old/byp np=100   match=33         p=0.00010s e=0.23380s total=0.23390s
+alg=./byp/byps/byps np=100   match=33         p=0.00950s e=0.07060s total=0.08010s
+alg=./byp/bypsb/bypsb np=100   match=33         p=0.00900s e=0.07050s total=0.07950s
+
+for 2 mismatches:
+alg=./ansb T=../multiple/tests/english/bible.txt(4047392) np=100 m=24 k=2 occ=69 p=0.0000s(0/100) e=0.4503s(4503/100)
+alg=./ans2b T=../multiple/tests/english/bible.txt(4047392) np=100 m=24 k=2 occ=69 p=0.0052s(52/100) e=0.3698s(3698/100)
+need m*B=72 > 64=W bits
+need m*L=72 > 64=W bits
+need m*L=72 > 64=W bits
+alg=./byp/byp-old/byp np=100   match=69         p=0.00010s e=0.39880s total=0.39890s
+alg=./byp/byps/byps np=100   match=69         p=0.00970s e=0.12050s total=0.13020s
+alg=./byp/bypsb/bypsb np=100   match=69         p=0.00980s e=0.12070s total=0.13050s
+
+for 3 mismatches:
+alg=./ansb T=../multiple/tests/english/bible.txt(4047392) np=100 m=24 k=3 occ=99 p=0.0000s(0/100) e=0.4439s(4439/100)
+alg=./ans2b T=../multiple/tests/english/bible.txt(4047392) np=100 m=24 k=3 occ=99 p=0.0051s(51/100) e=0.3531s(3531/100)
+need m*B=72 > 64=W bits
+need m*L=72 > 64=W bits
+need m*L=72 > 64=W bits
+alg=./byp/byp-old/byp np=100   match=99         p=0.00000s e=0.57070s total=0.57070s
+alg=./byp/byps/byps np=100   match=99         p=0.01000s e=0.66860s total=0.67860s
+alg=./byp/bypsb/bypsb np=100   match=99         p=0.01030s e=0.67060s total=0.68090s
+
+
+Pattern length of 32:
+for 1 mismatches:
+alg=./ansb T=../multiple/tests/english/bible.txt(4047392) np=100 m=32 k=1 occ=9 p=0.0000s(0/100) e=0.4397s(4397/100)
+alg=./ans2b T=../multiple/tests/english/bible.txt(4047392) np=100 m=32 k=1 occ=9 p=0.0054s(54/100) e=0.3541s(3541/100)
+alg=./sa T=../multiple/tests/english/bible.txt(4047392) np=100 m=32 k=1 occ=9 p=0.0000s(0/100) e=0.5948s(5948/100)
+alg=./tusa T=../multiple/tests/english/bible.txt(4047392) np=100 m=32 k=1 occ=9 p=0.0000s(0/100) e=0.4827s(4827/100)
+alg=./twsa T=../multiple/tests/english/bible.txt(4047392) np=100 m=32 k=1 occ=9 p=0.0001s(1/100) e=0.1137s(1137/100)
+alg=./byp/byp-old/byp np=100   match=9          p=0.00000s e=0.21100s total=0.21100s
+alg=./byp/byps/byps np=100   match=9          p=0.00880s e=0.07330s total=0.08210s
+alg=./byp/bypsb/bypsb np=100   match=9          p=0.00940s e=0.07320s total=0.08260s
+
+for 2 mismatches:
+alg=./ansb T=../multiple/tests/english/bible.txt(4047392) np=100 m=32 k=2 occ=22 p=0.0000s(0/100) e=0.4394s(4394/100)
+alg=./ans2b T=../multiple/tests/english/bible.txt(4047392) np=100 m=32 k=2 occ=22 p=0.0051s(51/100) e=0.3536s(3536/100)
+need m*B=96 > 64=W bits
+need m*L=96 > 64=W bits
+need m*L=96 > 64=W bits
+alg=./byp/byp-old/byp np=100   match=22         p=0.00000s e=0.34720s total=0.34720s
+alg=./byp/byps/byps np=100   match=22         p=0.00930s e=0.08750s total=0.09680s
+alg=./byp/bypsb/bypsb np=100   match=22         p=0.00950s e=0.08730s total=0.09680s
+
+for 3 mismatches:
+alg=./ansb T=../multiple/tests/english/bible.txt(4047392) np=100 m=32 k=3 occ=30 p=0.0000s(0/100) e=0.4396s(4396/100)
+alg=./ans2b T=../multiple/tests/english/bible.txt(4047392) np=100 m=32 k=3 occ=30 p=0.0057s(57/100) e=0.3530s(3530/100)
+need m*B=96 > 64=W bits
+need m*L=96 > 64=W bits
+need m*L=96 > 64=W bits
+alg=./byp/byp-old/byp np=100   match=30         p=0.00010s e=0.47160s total=0.47170s
+alg=./byp/byps/byps np=100   match=30         p=0.00980s e=0.19150s total=0.20130s
+alg=./byp/bypsb/bypsb np=100   match=30         p=0.01000s e=0.12030s total=0.13030s
+
