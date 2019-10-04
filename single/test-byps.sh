@@ -14,14 +14,17 @@ for text in ../multiple/tests/genome/ecoli.txt ../multiple/tests/english/bible.t
         for k in 1 2 3; do
               echo "for $k mismatches:"
 
-              ./byp/byps/byps -e$e -k$k -p$p $text < $text.$m.n100.badpat
+              ./byp/bypsb/bypsb-memcmp -e$e -k$k -p$p $text < $text.$m.n100.badpat
+              ./byp/bypsb/bypsb-simdcmp16 -e$e -k$k -p$p $text < $text.$m.n100.badpat
+              ./byp/bypsb/bypsb-simdcmp32 -e$e -k$k -p$p $text < $text.$m.n100.badpat
+              ./byp/bypsb/bypsb-nocomp -e$e -k$k -p$p $text < $text.$m.n100.badpat
 
               echo ""
         done
     done
 done
 
-# sh test-all.sh 2>&1 | tee results-all.txt
+# sh test-byps.sh 2>&1 | tee results-bypsb-19-10-04.txt
 
 # to run in background (final &) even if terminal closes (nohup)
 # nohup sh test-all.sh > results.txt 2>&1 &

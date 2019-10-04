@@ -6,6 +6,9 @@ ASSUMPTION: all patterns are separated by '\n' or '\0' and are the same length (
 #include	<stdlib.h>
 #include	<string.h>
 #include 	<smmintrin.h>
+#include <xmmintrin.h>
+#include <immintrin.h>
+#include <x86intrin.h>
 #include "bperl-mm-multi.h"
 
 #define EXPRS4(x) ((*(base + (x)) & 6) << 5) | ((*(base + (x) - 1) & 6) << 3) | ((*(base + (x) - 2) & 6) << 1) | ((*(base + (x) - 3) & 6) >> 1)
@@ -62,6 +65,77 @@ unsigned char **pats[MAXPATS];  //patterns. pats[i]: pattern i. pats[i][j]: subp
 int r;                          //number of patterns
 int Plen;                       //length of pattern
 unsigned int patnow;            //identifier of pattern that I'm preprocessing now
+
+
+
+#define EQUAL 0
+#define DIFFER 1
+#define BYTES_PER_SIMD_REG 32
+#define MASK_ALL_1 (((u_int32_t)1 << BYTES_PER_SIMD_REG)-1)
+u_int8_t simd_memcmp(unsigned char *x, unsigned char *y, int sz)
+{
+    __m256i x_ptr, y_ptr;
+
+    //~ for(; sz>=BYTES_PER_SIMD_REG; sz-=BYTES_PER_SIMD_REG){
+        //~ x_ptr = _mm256_loadu_si256 ((__m256i *) x);
+        //~ y_ptr = _mm256_loadu_si256 ((__m256i *) y);
+        //~ u_int32_t t = _mm256_movemask_epi8 (_mm256_cmpeq_epi8 (x_ptr, y_ptr));
+        //~ if(t != MASK_ALL_1) return DIFFER;
+        //~ x+=BYTES_PER_SIMD_REG;
+        //~ y+=BYTES_PER_SIMD_REG;
+    //~ }
+
+    //~ if(sz){ //compare sz bytes
+        u_int32_t mask = ((1 << sz) - 1);
+        x_ptr = _mm256_loadu_si256 ((__m256i *) x);
+        y_ptr = _mm256_loadu_si256 ((__m256i *) y);
+        u_int32_t t = _mm256_movemask_epi8 (_mm256_cmpeq_epi8 (x_ptr, y_ptr));
+        //~ printf("t %d, mask %u\n",t,mask);
+        //~ printBits(4,&t);
+        //~ printBits(4,&mask);
+        //~ u_int32_t aver = t&mask; printBits(4,&aver);
+        if((t&mask) != mask) return DIFFER;
+        else return EQUAL;
+    //~ }
+
+    //~ return EQUAL;
+}
+
+#define BYTES_PER_SIMD_REG 16
+#define MASK_ALL_1 (((u_int32_t)1 << BYTES_PER_SIMD_REG)-1)
+u_int8_t simd_memcmp16(unsigned char *x, unsigned char *y, int sz)
+{
+    __m128i x_ptr, y_ptr;
+
+    //~ for(; sz>=BYTES_PER_SIMD_REG; sz-=BYTES_PER_SIMD_REG){
+        //~ x_ptr = _mm256_loadu_si256 ((__m256i *) x);
+        //~ y_ptr = _mm256_loadu_si256 ((__m256i *) y);
+        //~ u_int32_t t = _mm256_movemask_epi8 (_mm256_cmpeq_epi8 (x_ptr, y_ptr));
+        //~ if(t != MASK_ALL_1) return DIFFER;
+        //~ x+=BYTES_PER_SIMD_REG;
+        //~ y+=BYTES_PER_SIMD_REG;
+    //~ }
+
+    //~ if(sz){ //compare sz bytes
+        u_int32_t mask = ((1 << sz) - 1);
+        x_ptr = _mm_loadu_si128 ((__m128i *) x);
+        y_ptr = _mm_loadu_si128 ((__m128i *) y);
+        u_int32_t t = _mm_movemask_epi8 (_mm_cmpeq_epi8 (x_ptr, y_ptr));
+        //~ printf("t %d, mask %u\n",t,mask);
+        //~ printBits(4,&t);
+        //~ printBits(4,&mask);
+        //~ u_int32_t aver = t&mask; printBits(4,&aver);
+        if((t&mask) != mask) return DIFFER;
+        else return EQUAL;
+    //~ }
+
+    //~ return EQUAL;
+}
+
+#define MEMCMP_FUNC memcmp // string comparison function to use
+#define SKIP_CMP 1 // set to 1 to skip string comparisons and go straight to approximate search in case of a hash match
+
+
 
 /*
 Inserts a node in searchAns[patnow], keeping it ordered.
@@ -428,7 +502,7 @@ RetList search4 (char *buf, int Tlen, int *patans, int qval)
 #else
             possibleStart = charPtr - shift + 1 + t->pos;
 #endif
-            if (1 || 0 == memcmp (possibleStart, pats[t->patt][t->subpatt], Plen)) { //Plen?? si hay distintas len? No importa, total se rechequea después
+            if ( SKIP_CMP || 0 == MEMCMP_FUNC (possibleStart, pats[t->patt][t->subpatt], Plen)) { //Plen?? si hay distintas len? No importa, total se rechequea después
                 //RetList *newnode = malloc(sizeof(RetList));
                 RetList newnode;
 
@@ -491,7 +565,7 @@ RetList search8 (char *buf, int Tlen, int *patans, int qval)
             possibleStart = charPtr - shift + 1 + t->pos;
 #endif
 
-            if (1 || 0 == memcmp (possibleStart, pats[t->patt][t->subpatt], Plen)) {
+            if ( SKIP_CMP || 0 == MEMCMP_FUNC (possibleStart, pats[t->patt][t->subpatt], Plen)) {
                 //RetList *newnode = malloc(sizeof(RetList));
                 RetList newnode;
 
@@ -544,7 +618,7 @@ RetList search16 (char *buf, int Tlen, int *patans, int qval)
 #else
             possibleStart = charPtr - shift + 1 + t->pos;
 #endif
-            if (1 || 0 == memcmp (possibleStart, pats[t->patt][t->subpatt], Plen)) {
+            if (SKIP_CMP || 0 == MEMCMP_FUNC (possibleStart, pats[t->patt][t->subpatt], Plen)) {
                 //RetList *newnode = malloc(sizeof(RetList));
                 RetList newnode;
 
@@ -586,7 +660,7 @@ RetList mepsm_exec (char *buf, int Tlen)
 #else
         possibleStart = charPtr - shift + 1 + t->pos;
 #endif
-        if (1 || 0 == memcmp (possibleStart, pats[t->patt][t->subpatt], Plen)) {
+        if ( SKIP_CMP || 0 == MEMCMP_FUNC (possibleStart, pats[t->patt][t->subpatt], Plen)) {
             //RetList *newnode = malloc(sizeof(RetList));
             RetList newnode;
 

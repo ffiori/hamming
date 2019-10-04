@@ -428,7 +428,7 @@ RetList search4 (char *buf, int Tlen, int *patans, int qval)
 #else
             possibleStart = charPtr - shift + 1 + t->pos;
 #endif
-            if (1 || 0 == memcmp (possibleStart, pats[t->patt][t->subpatt], Plen)) { //Plen?? si hay distintas len? No importa, total se rechequea después
+            if (0 == memcmp (possibleStart, pats[t->patt][t->subpatt], Plen)) { //Plen?? si hay distintas len? No importa, total se rechequea después
                 //RetList *newnode = malloc(sizeof(RetList));
                 RetList newnode;
 
@@ -491,7 +491,7 @@ RetList search8 (char *buf, int Tlen, int *patans, int qval)
             possibleStart = charPtr - shift + 1 + t->pos;
 #endif
 
-            if (1 || 0 == memcmp (possibleStart, pats[t->patt][t->subpatt], Plen)) {
+            if (0 == memcmp (possibleStart, pats[t->patt][t->subpatt], Plen)) {
                 //RetList *newnode = malloc(sizeof(RetList));
                 RetList newnode;
 
@@ -544,7 +544,7 @@ RetList search16 (char *buf, int Tlen, int *patans, int qval)
 #else
             possibleStart = charPtr - shift + 1 + t->pos;
 #endif
-            if (1 || 0 == memcmp (possibleStart, pats[t->patt][t->subpatt], Plen)) {
+            if (0 == memcmp (possibleStart, pats[t->patt][t->subpatt], Plen)) {
                 //RetList *newnode = malloc(sizeof(RetList));
                 RetList newnode;
 
@@ -586,7 +586,7 @@ RetList mepsm_exec (char *buf, int Tlen)
 #else
         possibleStart = charPtr - shift + 1 + t->pos;
 #endif
-        if (1 || 0 == memcmp (possibleStart, pats[t->patt][t->subpatt], Plen)) {
+        if (0 == memcmp (possibleStart, pats[t->patt][t->subpatt], Plen)) {
             //RetList *newnode = malloc(sizeof(RetList));
             RetList newnode;
 
