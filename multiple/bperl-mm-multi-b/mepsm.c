@@ -108,17 +108,17 @@ u_int8_t simd_memcmp(unsigned char *x, unsigned char *y, int sz)
 #define BYTES_PER_SIMD_REG 16
 #define MASK_ALL_1 (((u_int32_t)1 << BYTES_PER_SIMD_REG)-1)
 #define CMP_VALUE_LIMIT (1<<BYTES_PER_SIMD_REG)
-u_int8_t cmp_result[BYTES_PER_SIMD_REG+1][CMP_VALUE_LIMIT];
+//~ u_int8_t cmp_result[BYTES_PER_SIMD_REG+1][CMP_VALUE_LIMIT];
 
-void simd_memcmp16_prep(){
-    u_int32_t i,sz;
-    for(sz=0; sz<=BYTES_PER_SIMD_REG; ++sz){
-        u_int32_t mask=((1 << sz) - 1);
-        for(i=0; i<CMP_VALUE_LIMIT; ++i)
-            if((i&mask) != mask) cmp_result[sz][i] = DIFFER;
-            else cmp_result[sz][i] = EQUAL;
-    }    
-}
+//~ void simd_memcmp16_prep(){
+    //~ u_int32_t i,sz;
+    //~ for(sz=0; sz<=BYTES_PER_SIMD_REG; ++sz){
+        //~ u_int32_t mask=((1 << sz) - 1);
+        //~ for(i=0; i<CMP_VALUE_LIMIT; ++i)
+            //~ if((i&mask) != mask) cmp_result[sz][i] = DIFFER;
+            //~ else cmp_result[sz][i] = EQUAL;
+    //~ }    
+//~ }
 
 u_int8_t simd_memcmp16(unsigned char *x, unsigned char *y, int sz)
 {
@@ -348,9 +348,9 @@ void mepsm_prep (unsigned char **ps, int nsubpats, int _Plen, int _patnow)
     offset = shift - 1;         //TODO check!!
     //printf("shift: %d\n",shift);
 
-#if(MEMCMP_FUNC == simd_memcmp16)
-    simd_memcmp16_prep();
-#endif
+//~ #if(MEMCMP_FUNC == simd_memcmp16)
+    //~ simd_memcmp16_prep();
+//~ #endif
 
 #if(0 && COLLISIONS) //only valid for one pattern
     if (!printed) {
