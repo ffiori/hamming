@@ -12,6 +12,9 @@ ASSUMPTION: all patterns are separated by '\n' or '\0' and are the same length (
 #include "bperl-mm.h"
 #define max(a,b) (a)>(b) ? (a) : (b)
 
+#define MEMCMP_FUNC simd_memcmp16  // string comparison function to use
+#define SKIP_CMP 0  // set to 1 to skip string comparisons and go straight to approximate search in case of a hash match
+
 #define DNA 1 //tuning for DNA, actually for English too.
 
 #if(DNA)
@@ -113,33 +116,17 @@ u_int8_t simd_memcmp16(unsigned char *x, unsigned char *y, int sz)
 {
     __m128i x_ptr, y_ptr;
 
-    //~ for(; sz>=BYTES_PER_SIMD_REG; sz-=BYTES_PER_SIMD_REG){
-        //~ x_ptr = _mm256_loadu_si256 ((__m256i *) x);
-        //~ y_ptr = _mm256_loadu_si256 ((__m256i *) y);
-        //~ u_int32_t t = _mm256_movemask_epi8 (_mm256_cmpeq_epi8 (x_ptr, y_ptr));
-        //~ if(t != MASK_ALL_1) return DIFFER;
-        //~ x+=BYTES_PER_SIMD_REG;
-        //~ y+=BYTES_PER_SIMD_REG;
-    //~ }
+    u_int16_t mask = ((1 << sz) - 1);
+    x_ptr = _mm_loadu_si128 ((__m128i *) x);
+    y_ptr = _mm_loadu_si128 ((__m128i *) y);
+    u_int16_t t = _mm_movemask_epi8 (_mm_cmpeq_epi8 (x_ptr, y_ptr));
 
-    //~ if(sz){ //compare sz bytes
-        u_int32_t mask = ((1 << sz) - 1);
-        x_ptr = _mm_loadu_si128 ((__m128i *) x);
-        y_ptr = _mm_loadu_si128 ((__m128i *) y);
-        u_int32_t t = _mm_movemask_epi8 (_mm_cmpeq_epi8 (x_ptr, y_ptr));
-        //~ printf("t %d, mask %u\n",t,mask);
-        //~ printBits(4,&t);
-        //~ printBits(4,&mask);
-        //~ u_int32_t aver = t&mask; printBits(4,&aver);
-        if((t&mask) != mask) return DIFFER;
-        else return EQUAL;
-    //~ }
-
-    //~ return EQUAL;
+#if(EQUAL==0)
+    return (t&mask) != mask;
+#else
+    return (t&mask) == mask;
+#endif
 }
-
-#define MEMCMP_FUNC simd_memcmp16 // string comparison function to use
-#define SKIP_CMP 0 // set to 1 to skip string comparisons and go straight to approximate search in case of a hash match
 
 
 // ***** preprocessing *****

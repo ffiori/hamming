@@ -11,6 +11,9 @@ ASSUMPTION: all patterns are separated by '\n' or '\0' and are the same length (
 #include <x86intrin.h>
 #include "bperl-mm-multi.h"
 
+#define MEMCMP_FUNC simd_memcmp16  // string comparison function to use
+#define SKIP_CMP 0  // set to 1 to skip string comparisons and go straight to approximate search in case of a hash match
+
 #define EXPRS4(x) ((*(base + (x)) & 6) << 5) | ((*(base + (x) - 1) & 6) << 3) | ((*(base + (x) - 2) & 6) << 1) | ((*(base + (x) - 3) & 6) >> 1)
 #define EXPRS5(x) ((*(base + (x)) & 6) << 7) | EXPRS4((x)-1)
 #define EXPRS6(x) ((*(base + (x)) & 6) << 9) | EXPRS5((x)-1)
@@ -101,41 +104,37 @@ u_int8_t simd_memcmp(unsigned char *x, unsigned char *y, int sz)
     //~ return EQUAL;
 }
 
+
 #define BYTES_PER_SIMD_REG 16
 #define MASK_ALL_1 (((u_int32_t)1 << BYTES_PER_SIMD_REG)-1)
+#define CMP_VALUE_LIMIT (1<<BYTES_PER_SIMD_REG)
+u_int8_t cmp_result[BYTES_PER_SIMD_REG+1][CMP_VALUE_LIMIT];
+
+void simd_memcmp16_prep(){
+    u_int32_t i,sz;
+    for(sz=0; sz<=BYTES_PER_SIMD_REG; ++sz){
+        u_int32_t mask=((1 << sz) - 1);
+        for(i=0; i<CMP_VALUE_LIMIT; ++i)
+            if((i&mask) != mask) cmp_result[sz][i] = DIFFER;
+            else cmp_result[sz][i] = EQUAL;
+    }    
+}
+
 u_int8_t simd_memcmp16(unsigned char *x, unsigned char *y, int sz)
 {
     __m128i x_ptr, y_ptr;
 
-    //~ for(; sz>=BYTES_PER_SIMD_REG; sz-=BYTES_PER_SIMD_REG){
-        //~ x_ptr = _mm256_loadu_si256 ((__m256i *) x);
-        //~ y_ptr = _mm256_loadu_si256 ((__m256i *) y);
-        //~ u_int32_t t = _mm256_movemask_epi8 (_mm256_cmpeq_epi8 (x_ptr, y_ptr));
-        //~ if(t != MASK_ALL_1) return DIFFER;
-        //~ x+=BYTES_PER_SIMD_REG;
-        //~ y+=BYTES_PER_SIMD_REG;
-    //~ }
+    u_int16_t mask = ((1 << sz) - 1);
+    x_ptr = _mm_loadu_si128 ((__m128i *) x);
+    y_ptr = _mm_loadu_si128 ((__m128i *) y);
+    u_int16_t t = _mm_movemask_epi8 (_mm_cmpeq_epi8 (x_ptr, y_ptr));
 
-    //~ if(sz){ //compare sz bytes
-        u_int32_t mask = ((1 << sz) - 1);
-        x_ptr = _mm_loadu_si128 ((__m128i *) x);
-        y_ptr = _mm_loadu_si128 ((__m128i *) y);
-        u_int32_t t = _mm_movemask_epi8 (_mm_cmpeq_epi8 (x_ptr, y_ptr));
-        //~ printf("t %d, mask %u\n",t,mask);
-        //~ printBits(4,&t);
-        //~ printBits(4,&mask);
-        //~ u_int32_t aver = t&mask; printBits(4,&aver);
-        if((t&mask) != mask) return DIFFER;
-        else return EQUAL;
-    //~ }
-
-    //~ return EQUAL;
+#if(EQUAL==0)
+    return (t&mask) != mask;
+#else
+    return (t&mask) == mask;
+#endif
 }
-
-#define MEMCMP_FUNC memcmp // string comparison function to use
-#define SKIP_CMP 1 // set to 1 to skip string comparisons and go straight to approximate search in case of a hash match
-
-
 
 /*
 Inserts a node in searchAns[patnow], keeping it ordered.
@@ -235,42 +234,6 @@ void prep4 (unsigned char **ps, int _, int kval, int qval)
             t->subpatt = i;
             flist[signature] = t;
         }
-
-        //~ if (strlen (ps[i]) > Plen) {
-//~ #if(!MOD)
-            //~ intptr = (unsigned long long *) &ps[i][shift];
-            //~ crc = _mm_crc32_u16 (crcAdditiveConstant, (*intptr & 0x0000ffff));
-//~ #else
-//~ #if(DNA)
-            //~ unsigned char *base = &pats[i * (Plen + 1) + shift];
-
-            //~ if (Plen == 4)
-                //~ signature = EXPRS4 (Plen - 1);
-            //~ if (Plen == 5)
-                //~ signature = EXPRS5 (Plen - 1);
-            //~ if (Plen == 6)
-                //~ signature = EXPRS6 (Plen - 1);
-            //~ if (Plen == 7)
-                //~ signature = EXPRS7 (Plen - 1);
-//~ #else
-            //~ lptr = (unsigned long long *) &ps[i][shift];
-            //~ crc = _mm_crc32_u64 (crcAdditiveConstant, mask & *lptr);
-//~ #endif
-//~ #endif
-            //~ signature = (unsigned short int) crc;
-
-//~ #if(COLLISIONS)
-            //~ if (!printed && flist[signature])
-                //~ col++;
-//~ #endif
-
-            //~ t = (LIST *) malloc (sizeof (LIST));
-            //~ t->next = flist[signature];
-            //~ t->pos = -1;
-            //~ t->patt = patnow;
-            //~ t->subpatt = i;
-            //~ flist[signature] = t;
-        //~ }
     }
 }
 
@@ -311,36 +274,6 @@ void prep8 (unsigned char **ps, int _, int kval, int qval)
             t->subpatt = i;
             flist[signature] = t;
         }
-
-        //~ if (strlen (ps[i]) > Plen) {
-//~ #if(!MOD)
-            //~ intptr = (unsigned int *) &ps[i][shift + 1];
-            //~ crc = _mm_crc32_u32 (crcAdditiveConstant, *intptr);
-            //~ signature = (unsigned short int) crc;
-//~ #else
-//~ #if(DNA)
-            //~ unsigned char *base = &pats[i * (Plen + 1) + shift];
-
-            //~ signature = EXPRS8 (7);
-//~ #else
-            //~ lptr = (unsigned long long *) &ps[i][shift];
-            //~ lcrc = _mm_crc32_u64 (crcAdditiveConstant, *lptr);
-            //~ signature = (unsigned short int) lcrc;
-//~ #endif
-//~ #endif
-
-//~ #if(COLLISIONS)
-            //~ if (!printed && flist[signature])
-                //~ col++;
-//~ #endif
-
-            //~ t = (LIST *) malloc (sizeof (LIST));
-            //~ t->next = flist[signature];
-            //~ t->pos = -1;
-            //~ t->patt = patnow;
-            //~ t->subpatt = i;
-            //~ flist[signature] = t;
-        //~ }
     }
 }
 
@@ -382,35 +315,6 @@ void prep16 (unsigned char **ps, int _, int kval, int qval)
             t->subpatt = i;
             flist[signature] = t;
         }
-
-        //~ if (strlen (ps[i]) > Plen) {
-//~ #if(!MOD)
-            //~ lptr = (unsigned long long *) &ps[i][shift - j];
-            //~ lcrc = _mm_crc32_u64 (crcAdditiveConstant, *lptr);
-//~ #else
-//~ #if(DNA)
-            //~ unsigned char *base = &pats[i * (Plen + 1) + shift - 1 - j];
-
-            //~ lcrc = EXPRS8 (7);
-//~ #else
-            //~ lptr = (unsigned long long *) &ps[i][shift - 1 - j];
-            //~ lcrc = _mm_crc32_u64 (crcAdditiveConstant, *lptr);
-//~ #endif
-//~ #endif
-            //~ signature = (unsigned short int) lcrc;
-
-//~ #if(COLLISIONS)
-            //~ if (!printed && flist[signature])
-                //~ col++;
-//~ #endif
-
-            //~ t = (LIST *) malloc (sizeof (LIST));
-            //~ t->next = flist[signature];
-            //~ t->pos = -1;
-            //~ t->patt = patnow;
-            //~ t->subpatt = i;
-            //~ flist[signature] = t;
-        //~ }
     }
 }
 
@@ -443,6 +347,10 @@ void mepsm_prep (unsigned char **ps, int nsubpats, int _Plen, int _patnow)
 
     offset = shift - 1;         //TODO check!!
     //printf("shift: %d\n",shift);
+
+#if(MEMCMP_FUNC == simd_memcmp16)
+    simd_memcmp16_prep();
+#endif
 
 #if(0 && COLLISIONS) //only valid for one pattern
     if (!printed) {
