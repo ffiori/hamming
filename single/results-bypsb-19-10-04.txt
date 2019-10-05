@@ -7,10 +7,10 @@ Preprocessing runs 100. Search runs 100. q-gram for EF and EFS 4.
 
 Pattern length of 8:
 for 1 mismatches:
-alg=./byp/bypsb/bypsb-memcmp np=100   match=202240     p=0.00830s e=1.59710s total=1.60540s
-alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=202240     p=0.00810s e=1.32780s total=1.33590s
-alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=202240     p=0.00830s e=1.44480s total=1.45310s
-alg=./byp/bypsb/bypsb-nocomp np=100   match=202240     p=0.00830s e=1.17690s total=1.18520s
+alg=./byp/bypsb/bypsb-memcmp np=100   match=202240     p=0.00900s e=1.60660s total=1.61560s
+alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=202240     p=0.00840s e=1.42960s total=1.43800s
+alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=202240     p=0.00810s e=1.44130s total=1.44940s
+alg=./byp/bypsb/bypsb-nocomp np=100   match=202240     p=0.00800s e=1.15680s total=1.16480s
 
 for 2 mismatches:
 Pattern length 2 out of range!
@@ -27,62 +27,62 @@ Pattern length 2 out of range!
 
 Pattern length of 16:
 for 1 mismatches:
-alg=./byp/bypsb/bypsb-memcmp np=100   match=45         p=0.01570s e=0.35630s total=0.37200s
-alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=45         p=0.01630s e=0.30930s total=0.32560s
-alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=45         p=0.01550s e=0.30790s total=0.32340s
-alg=./byp/bypsb/bypsb-nocomp np=100   match=45         p=0.01620s e=0.38780s total=0.40400s
+alg=./byp/bypsb/bypsb-memcmp np=100   match=45         p=0.01860s e=0.35770s total=0.37630s
+alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=45         p=0.01880s e=0.30430s total=0.32310s
+alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=45         p=0.01620s e=0.30740s total=0.32360s
+alg=./byp/bypsb/bypsb-nocomp np=100   match=45         p=0.01710s e=0.37430s total=0.39140s
 
 for 2 mismatches:
-alg=./byp/bypsb/bypsb-memcmp np=100   match=210        p=0.01570s e=1.56000s total=1.57570s
-alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=210        p=0.01690s e=1.31650s total=1.33340s
-alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=210        p=0.01680s e=1.40580s total=1.42260s
-alg=./byp/bypsb/bypsb-nocomp np=100   match=210        p=0.01600s e=1.10770s total=1.12370s
+alg=./byp/bypsb/bypsb-memcmp np=100   match=210        p=0.01640s e=1.56120s total=1.57760s
+alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=210        p=0.01740s e=1.35730s total=1.37470s
+alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=210        p=0.01560s e=1.38460s total=1.40020s
+alg=./byp/bypsb/bypsb-nocomp np=100   match=210        p=0.01580s e=1.09980s total=1.11560s
 
 for 3 mismatches:
-alg=./byp/bypsb/bypsb-memcmp np=100   match=2313       p=0.01690s e=1.93180s total=1.94870s
-alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=2313       p=0.01650s e=1.61900s total=1.63550s
-alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=2313       p=0.01640s e=1.84660s total=1.86300s
-alg=./byp/bypsb/bypsb-nocomp np=100   match=2313       p=0.01660s e=1.44920s total=1.46580s
+alg=./byp/bypsb/bypsb-memcmp np=100   match=2313       p=0.01680s e=1.96170s total=1.97850s
+alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=2313       p=0.01850s e=1.84490s total=1.86340s
+alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=2313       p=0.01600s e=1.83710s total=1.85310s
+alg=./byp/bypsb/bypsb-nocomp np=100   match=2313       p=0.01520s e=1.42000s total=1.43520s
 
 
 Pattern length of 24:
 for 1 mismatches:
-alg=./byp/bypsb/bypsb-memcmp np=100   match=22         p=0.01530s e=0.34100s total=0.35630s
-alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=22         p=0.01780s e=0.20750s total=0.22530s
-alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=22         p=0.01810s e=0.21080s total=0.22890s
-alg=./byp/bypsb/bypsb-nocomp np=100   match=22         p=0.01590s e=0.41870s total=0.43460s
+alg=./byp/bypsb/bypsb-memcmp np=100   match=22         p=0.02070s e=0.25920s total=0.27990s
+alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=22         p=0.02110s e=0.19780s total=0.21890s
+alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=22         p=0.01750s e=0.21020s total=0.22770s
+alg=./byp/bypsb/bypsb-nocomp np=100   match=22         p=0.01630s e=0.42000s total=0.43630s
 
 for 2 mismatches:
-alg=./byp/bypsb/bypsb-memcmp np=100   match=34         p=0.01570s e=0.42150s total=0.43720s
-alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=34         p=0.01920s e=0.35850s total=0.37770s
-alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=34         p=0.01890s e=0.35720s total=0.37610s
-alg=./byp/bypsb/bypsb-nocomp np=100   match=34         p=0.01620s e=0.63100s total=0.64720s
+alg=./byp/bypsb/bypsb-memcmp np=100   match=34         p=0.01900s e=0.42760s total=0.44660s
+alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=34         p=0.02000s e=0.35400s total=0.37400s
+alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=34         p=0.01750s e=0.35720s total=0.37470s
+alg=./byp/bypsb/bypsb-nocomp np=100   match=34         p=0.01610s e=0.63320s total=0.64930s
 
 for 3 mismatches:
-alg=./byp/bypsb/bypsb-memcmp np=100   match=52         p=0.01670s e=1.60110s total=1.61780s
-alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=52         p=0.01620s e=1.38020s total=1.39640s
-alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=52         p=0.01700s e=1.41910s total=1.43610s
-alg=./byp/bypsb/bypsb-nocomp np=100   match=52         p=0.01700s e=1.19360s total=1.21060s
+alg=./byp/bypsb/bypsb-memcmp np=100   match=52         p=0.01700s e=1.61060s total=1.62760s
+alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=52         p=0.01660s e=1.42030s total=1.43690s
+alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=52         p=0.01640s e=1.42180s total=1.43820s
+alg=./byp/bypsb/bypsb-nocomp np=100   match=52         p=0.01650s e=1.17950s total=1.19600s
 
 
 Pattern length of 32:
 for 1 mismatches:
-alg=./byp/bypsb/bypsb-memcmp np=100   match=14         p=0.01540s e=0.19290s total=0.20830s
-alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=14         p=0.01600s e=0.17800s total=0.19400s
-alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=14         p=0.01530s e=0.17900s total=0.19430s
-alg=./byp/bypsb/bypsb-nocomp np=100   match=14         p=0.01590s e=0.15210s total=0.16800s
+alg=./byp/bypsb/bypsb-memcmp np=100   match=14         p=0.01560s e=0.19300s total=0.20860s
+alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=14         p=0.01610s e=0.17810s total=0.19420s
+alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=14         p=0.01550s e=0.17890s total=0.19440s
+alg=./byp/bypsb/bypsb-nocomp np=100   match=14         p=0.01570s e=0.15170s total=0.16740s
 
 for 2 mismatches:
-alg=./byp/bypsb/bypsb-memcmp np=100   match=18         p=0.01570s e=0.35010s total=0.36580s
-alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=18         p=0.01800s e=0.28760s total=0.30560s
-alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=18         p=0.01860s e=0.29100s total=0.30960s
-alg=./byp/bypsb/bypsb-nocomp np=100   match=18         p=0.01620s e=0.64500s total=0.66120s
+alg=./byp/bypsb/bypsb-memcmp np=100   match=18         p=0.01840s e=0.36020s total=0.37860s
+alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=18         p=0.02080s e=0.27780s total=0.29860s
+alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=18         p=0.01750s e=0.29200s total=0.30950s
+alg=./byp/bypsb/bypsb-nocomp np=100   match=18         p=0.01510s e=0.64770s total=0.66280s
 
 for 3 mismatches:
-alg=./byp/bypsb/bypsb-memcmp np=100   match=30         p=0.01660s e=0.47670s total=0.49330s
-alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=30         p=0.01880s e=0.39960s total=0.41840s
-alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=30         p=0.01850s e=0.40160s total=0.42010s
-alg=./byp/bypsb/bypsb-nocomp np=100   match=30         p=0.01570s e=0.83740s total=0.85310s
+alg=./byp/bypsb/bypsb-memcmp np=100   match=30         p=0.01900s e=0.48870s total=0.50770s
+alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=30         p=0.02070s e=0.39630s total=0.41700s
+alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=30         p=0.01720s e=0.40160s total=0.41880s
+alg=./byp/bypsb/bypsb-nocomp np=100   match=30         p=0.01590s e=0.84110s total=0.85700s
 
 
 
@@ -91,10 +91,10 @@ alg=./byp/bypsb/bypsb-nocomp np=100   match=30         p=0.01570s e=0.83740s tot
 
 Pattern length of 8:
 for 1 mismatches:
-alg=./byp/bypsb/bypsb-memcmp np=100   match=21623      p=0.00820s e=1.37350s total=1.38170s
-alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=21623      p=0.00870s e=1.19830s total=1.20700s
-alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=21623      p=0.00710s e=1.21630s total=1.22340s
-alg=./byp/bypsb/bypsb-nocomp np=100   match=21623      p=0.00760s e=1.04450s total=1.05210s
+alg=./byp/bypsb/bypsb-memcmp np=100   match=21623      p=0.00840s e=1.37270s total=1.38110s
+alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=21623      p=0.00800s e=1.19490s total=1.20290s
+alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=21623      p=0.00800s e=1.21520s total=1.22320s
+alg=./byp/bypsb/bypsb-nocomp np=100   match=21623      p=0.00920s e=1.03890s total=1.04810s
 
 for 2 mismatches:
 Pattern length 2 out of range!
@@ -111,60 +111,60 @@ Pattern length 2 out of range!
 
 Pattern length of 16:
 for 1 mismatches:
-alg=./byp/bypsb/bypsb-memcmp np=100   match=78         p=0.01590s e=0.27340s total=0.28930s
-alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=78         p=0.01620s e=0.24210s total=0.25830s
-alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=78         p=0.01580s e=0.24280s total=0.25860s
-alg=./byp/bypsb/bypsb-nocomp np=100   match=78         p=0.01600s e=0.20650s total=0.22250s
+alg=./byp/bypsb/bypsb-memcmp np=100   match=78         p=0.01730s e=0.27310s total=0.29040s
+alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=78         p=0.01730s e=0.24070s total=0.25800s
+alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=78         p=0.01640s e=0.24210s total=0.25850s
+alg=./byp/bypsb/bypsb-nocomp np=100   match=78         p=0.01640s e=0.20510s total=0.22150s
 
 for 2 mismatches:
-alg=./byp/bypsb/bypsb-memcmp np=100   match=510        p=0.01630s e=1.42540s total=1.44170s
-alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=510        p=0.01540s e=1.25850s total=1.27390s
-alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=510        p=0.01670s e=1.26770s total=1.28440s
-alg=./byp/bypsb/bypsb-nocomp np=100   match=510        p=0.01590s e=1.10380s total=1.11970s
+alg=./byp/bypsb/bypsb-memcmp np=100   match=510        p=0.01640s e=1.43240s total=1.44880s
+alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=510        p=0.01630s e=1.25540s total=1.27170s
+alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=510        p=0.01640s e=1.27310s total=1.28950s
+alg=./byp/bypsb/bypsb-nocomp np=100   match=510        p=0.01670s e=1.10020s total=1.11690s
 
 for 3 mismatches:
-alg=./byp/bypsb/bypsb-memcmp np=100   match=1161       p=0.01640s e=1.91480s total=1.93120s
-alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=1161       p=0.01660s e=1.23730s total=1.25390s
-alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=1161       p=0.01610s e=1.25680s total=1.27290s
-alg=./byp/bypsb/bypsb-nocomp np=100   match=1161       p=0.01640s e=1.07780s total=1.09420s
+alg=./byp/bypsb/bypsb-memcmp np=100   match=1161       p=0.01680s e=1.41810s total=1.43490s
+alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=1161       p=0.01640s e=1.23390s total=1.25030s
+alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=1161       p=0.01580s e=1.26060s total=1.27640s
+alg=./byp/bypsb/bypsb-nocomp np=100   match=1161       p=0.01630s e=1.06700s total=1.08330s
 
 
 Pattern length of 24:
 for 1 mismatches:
-alg=./byp/bypsb/bypsb-memcmp np=100   match=33         p=0.01510s e=0.16320s total=0.17830s
-alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=33         p=0.01670s e=0.14500s total=0.16170s
-alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=33         p=0.01750s e=0.14470s total=0.16220s
-alg=./byp/bypsb/bypsb-nocomp np=100   match=33         p=0.01520s e=0.14750s total=0.16270s
+alg=./byp/bypsb/bypsb-memcmp np=100   match=33         p=0.01870s e=0.16320s total=0.18190s
+alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=33         p=0.01960s e=0.14350s total=0.16310s
+alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=33         p=0.01740s e=0.14510s total=0.16250s
+alg=./byp/bypsb/bypsb-nocomp np=100   match=33         p=0.01520s e=0.14720s total=0.16240s
 
 for 2 mismatches:
-alg=./byp/bypsb/bypsb-memcmp np=100   match=69         p=0.01630s e=0.27960s total=0.29590s
-alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=69         p=0.01760s e=0.24810s total=0.26570s
-alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=69         p=0.01730s e=0.24750s total=0.26480s
-alg=./byp/bypsb/bypsb-nocomp np=100   match=69         p=0.01530s e=0.23350s total=0.24880s
+alg=./byp/bypsb/bypsb-memcmp np=100   match=69         p=0.01900s e=0.27940s total=0.29840s
+alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=69         p=0.01890s e=0.24740s total=0.26630s
+alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=69         p=0.01780s e=0.24790s total=0.26570s
+alg=./byp/bypsb/bypsb-nocomp np=100   match=69         p=0.01580s e=0.23380s total=0.24960s
 
 for 3 mismatches:
-alg=./byp/bypsb/bypsb-memcmp np=100   match=99         p=0.01560s e=1.44140s total=1.45700s
-alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=99         p=0.01630s e=1.27620s total=1.29250s
-alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=99         p=0.01720s e=1.28980s total=1.30700s
-alg=./byp/bypsb/bypsb-nocomp np=100   match=99         p=0.01500s e=1.12790s total=1.14290s
+alg=./byp/bypsb/bypsb-memcmp np=100   match=99         p=0.01690s e=1.44960s total=1.46650s
+alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=99         p=0.01600s e=1.27290s total=1.28890s
+alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=99         p=0.01600s e=1.28860s total=1.30460s
+alg=./byp/bypsb/bypsb-nocomp np=100   match=99         p=0.01620s e=1.12260s total=1.13880s
 
 
 Pattern length of 32:
 for 1 mismatches:
-alg=./byp/bypsb/bypsb-memcmp np=100   match=9          p=0.01580s e=0.16500s total=0.18080s
-alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=9          p=0.01580s e=0.15190s total=0.16770s
-alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=9          p=0.01580s e=0.15180s total=0.16760s
-alg=./byp/bypsb/bypsb-nocomp np=100   match=9          p=0.01510s e=0.12670s total=0.14180s
+alg=./byp/bypsb/bypsb-memcmp np=100   match=9          p=0.01740s e=0.16350s total=0.18090s
+alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=9          p=0.01640s e=0.15150s total=0.16790s
+alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=9          p=0.01610s e=0.15200s total=0.16810s
+alg=./byp/bypsb/bypsb-nocomp np=100   match=9          p=0.01570s e=0.12650s total=0.14220s
 
 for 2 mismatches:
-alg=./byp/bypsb/bypsb-memcmp np=100   match=22         p=0.01560s e=0.20380s total=0.21940s
-alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=22         p=0.01780s e=0.17960s total=0.19740s
-alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=22         p=0.01810s e=0.18040s total=0.19850s
-alg=./byp/bypsb/bypsb-nocomp np=100   match=22         p=0.01530s e=0.18210s total=0.19740s
+alg=./byp/bypsb/bypsb-memcmp np=100   match=22         p=0.01860s e=0.20320s total=0.22180s
+alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=22         p=0.01870s e=0.18020s total=0.19890s
+alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=22         p=0.01730s e=0.18170s total=0.19900s
+alg=./byp/bypsb/bypsb-nocomp np=100   match=22         p=0.01650s e=0.18150s total=0.19800s
 
 for 3 mismatches:
-alg=./byp/bypsb/bypsb-memcmp np=100   match=30         p=0.01730s e=0.27970s total=0.29700s
-alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=30         p=0.01800s e=0.24840s total=0.26640s
-alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=30         p=0.01800s e=0.24880s total=0.26680s
-alg=./byp/bypsb/bypsb-nocomp np=100   match=30         p=0.01570s e=0.24600s total=0.26170s
+alg=./byp/bypsb/bypsb-memcmp np=100   match=30         p=0.01980s e=0.28000s total=0.29980s
+alg=./byp/bypsb/bypsb-simdcmp16 np=100   match=30         p=0.02040s e=0.24800s total=0.26840s
+alg=./byp/bypsb/bypsb-simdcmp32 np=100   match=30         p=0.01780s e=0.24720s total=0.26500s
+alg=./byp/bypsb/bypsb-nocomp np=100   match=30         p=0.01720s e=0.24520s total=0.26240s
 
