@@ -12,8 +12,8 @@ ASSUMPTION: all patterns are separated by '\n' or '\0' and are the same length (
 #include "bperl-mm.h"
 #define max(a,b) (a)>(b) ? (a) : (b)
 
-#define MEMCMP_FUNC simd_memcmp16  // string comparison function to use
-#define SKIP_CMP 0  // set to 1 to skip string comparisons and go straight to approximate search in case of a hash match
+#define MEMCMP_FUNC memcmp  // string comparison function to use
+#define SKIP_CMP 1  // set to 1 to skip string comparisons and go straight to approximate search in case of a hash match
 
 #define DNA 1 //tuning for DNA, actually for English too.
 
