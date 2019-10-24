@@ -1,0 +1,442 @@
+nohup: ignoring input
+Guide:
+cmfn: Fredriksson-Navarro.
+udi/mm: Muth-Manber (only k=1).
+mepsm-nomod/mbyps: MBYPS (ours) using MEPSM with no modifications (original size of the fingerprints).
+mbyps: MBYPS (ours).
+byn-original/byn: Baeza-Yates and Navarro original code for edit distance (adapted to Hume-Sunday environment).
+byn-mod-hamming/byn: Baeza-Yates and Navarro (partition into exact matching) code adapted to Hamming distance.
+
+Preprocessing runs 100. Search runs 100. For 'cmfn' we make same number of preprocessing and searching runs.
+
+
+********** ./tests/genome/ecoli.txt **********
+
+
+Pattern length 8:
+
+ for sets of 10 patterns:
+alg=perl-mm-multi/mbyps  np=10    match=17265      p=0.00010s e=0.04310s total=0.04320s
+alg=lti-b/mbypsb-memcmp  np=10    match=17265      p=0.00010s e=0.04220s total=0.04230s
+alg=-b/mbypsb-simdcmp16  np=10    match=17265      p=0.00010s e=0.03790s total=0.03800s
+alg=lti-b/mbypsb-nocomp  np=10    match=17265      p=0.00010s e=0.02830s total=0.02840s
+
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+
+
+ for sets of 100 patterns:
+alg=perl-mm-multi/mbyps  np=100   match=202240     p=0.00070s e=0.30040s total=0.30110s
+alg=lti-b/mbypsb-memcmp  np=100   match=202240     p=0.00050s e=0.29880s total=0.29930s
+alg=-b/mbypsb-simdcmp16  np=100   match=202240     p=0.00080s e=0.26100s total=0.26180s
+alg=lti-b/mbypsb-nocomp  np=100   match=202240     p=0.00080s e=0.22130s total=0.22210s
+
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+
+
+ for sets of 1000 patterns:
+alg=perl-mm-multi/mbyps  np=1000  match=2080020    p=0.00560s e=2.81130s total=2.81690s
+alg=lti-b/mbypsb-memcmp  np=1000  match=2080020    p=0.00500s e=2.68610s total=2.69110s
+alg=-b/mbypsb-simdcmp16  np=1000  match=2080020    p=0.00550s e=2.46310s total=2.46860s
+alg=lti-b/mbypsb-nocomp  np=1000  match=2080020    p=0.00550s e=2.21570s total=2.22120s
+
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+
+
+Pattern length 16:
+
+ for sets of 10 patterns:
+alg=perl-mm-multi/mbyps  np=10    match=4          p=0.00110s e=0.01740s total=0.01850s
+alg=lti-b/mbypsb-memcmp  np=10    match=4          p=0.00120s e=0.01740s total=0.01860s
+alg=-b/mbypsb-simdcmp16  np=10    match=4          p=0.00120s e=0.01600s total=0.01720s
+alg=lti-b/mbypsb-nocomp  np=10    match=4          p=0.00120s e=0.01230s total=0.01350s
+
+alg=perl-mm-multi/mbyps  np=10    match=25         p=0.00120s e=0.02890s total=0.03010s
+alg=lti-b/mbypsb-memcmp  np=10    match=25         p=0.00120s e=0.02880s total=0.03000s
+alg=-b/mbypsb-simdcmp16  np=10    match=25         p=0.00120s e=0.02660s total=0.02780s
+alg=lti-b/mbypsb-nocomp  np=10    match=25         p=0.00120s e=0.02010s total=0.02130s
+
+alg=perl-mm-multi/mbyps  np=10    match=244        p=0.00080s e=0.08720s total=0.08800s
+alg=lti-b/mbypsb-memcmp  np=10    match=244        p=0.00120s e=0.08670s total=0.08790s
+alg=-b/mbypsb-simdcmp16  np=10    match=244        p=0.00090s e=0.07560s total=0.07650s
+alg=lti-b/mbypsb-nocomp  np=10    match=244        p=0.00130s e=0.06020s total=0.06150s
+
+
+ for sets of 100 patterns:
+alg=perl-mm-multi/mbyps  np=100   match=45         p=0.00840s e=0.02030s total=0.02870s
+alg=lti-b/mbypsb-memcmp  np=100   match=45         p=0.00880s e=0.02020s total=0.02900s
+alg=-b/mbypsb-simdcmp16  np=100   match=45         p=0.00880s e=0.01850s total=0.02730s
+alg=lti-b/mbypsb-nocomp  np=100   match=45         p=0.00880s e=0.01440s total=0.02320s
+
+alg=perl-mm-multi/mbyps  np=100   match=210        p=0.00880s e=0.16040s total=0.16920s
+alg=lti-b/mbypsb-memcmp  np=100   match=210        p=0.00890s e=0.15640s total=0.16530s
+alg=-b/mbypsb-simdcmp16  np=100   match=210        p=0.00870s e=0.13710s total=0.14580s
+alg=lti-b/mbypsb-nocomp  np=100   match=210        p=0.00870s e=0.12080s total=0.12950s
+
+alg=perl-mm-multi/mbyps  np=100   match=2313       p=0.00890s e=0.61240s total=0.62130s
+alg=lti-b/mbypsb-memcmp  np=100   match=2313       p=0.00840s e=0.60110s total=0.60950s
+alg=-b/mbypsb-simdcmp16  np=100   match=2313       p=0.00910s e=0.54100s total=0.55010s
+alg=lti-b/mbypsb-nocomp  np=100   match=2313       p=0.00910s e=0.48760s total=0.49670s
+
+
+ for sets of 1000 patterns:
+alg=perl-mm-multi/mbyps  np=1000  match=525        p=0.07640s e=0.05420s total=0.13060s
+alg=lti-b/mbypsb-memcmp  np=1000  match=525        p=0.08290s e=0.05290s total=0.13580s
+alg=-b/mbypsb-simdcmp16  np=1000  match=525        p=0.08270s e=0.04890s total=0.13160s
+alg=lti-b/mbypsb-nocomp  np=1000  match=525        p=0.08260s e=0.04070s total=0.12330s
+
+alg=perl-mm-multi/mbyps  np=1000  match=2678       p=0.08050s e=1.52560s total=1.60610s
+alg=lti-b/mbypsb-memcmp  np=1000  match=2678       p=0.08360s e=1.51230s total=1.59590s
+alg=-b/mbypsb-simdcmp16  np=1000  match=2678       p=0.08290s e=1.43820s total=1.52110s
+alg=lti-b/mbypsb-nocomp  np=1000  match=2678       p=0.08380s e=1.31280s total=1.39660s
+
+alg=perl-mm-multi/mbyps  np=1000  match=26104      p=0.08920s e=6.99400s total=7.08320s
+alg=lti-b/mbypsb-memcmp  np=1000  match=26104      p=0.08400s e=6.90640s total=6.99040s
+alg=-b/mbypsb-simdcmp16  np=1000  match=26104      p=0.08460s e=6.49600s total=6.58060s
+alg=lti-b/mbypsb-nocomp  np=1000  match=26104      p=0.08470s e=5.80800s total=5.89270s
+
+
+Pattern length 24:
+
+ for sets of 10 patterns:
+alg=perl-mm-multi/mbyps  np=10    match=1          p=0.00110s e=0.00400s total=0.00510s
+alg=lti-b/mbypsb-memcmp  np=10    match=1          p=0.00110s e=0.00390s total=0.00500s
+alg=-b/mbypsb-simdcmp16  np=10    match=1          p=0.00110s e=0.00360s total=0.00470s
+alg=lti-b/mbypsb-nocomp  np=10    match=1          p=0.00110s e=0.00320s total=0.00430s
+
+alg=perl-mm-multi/mbyps  np=10    match=2          p=0.00110s e=0.01740s total=0.01850s
+alg=lti-b/mbypsb-memcmp  np=10    match=2          p=0.00080s e=0.01710s total=0.01790s
+alg=-b/mbypsb-simdcmp16  np=10    match=2          p=0.00080s e=0.01560s total=0.01640s
+alg=lti-b/mbypsb-nocomp  np=10    match=2          p=0.00120s e=0.01240s total=0.01360s
+
+alg=perl-mm-multi/mbyps  np=10    match=4          p=0.00120s e=0.02230s total=0.02350s
+alg=lti-b/mbypsb-memcmp  np=10    match=4          p=0.00130s e=0.02240s total=0.02370s
+alg=-b/mbypsb-simdcmp16  np=10    match=4          p=0.00120s e=0.02130s total=0.02250s
+alg=lti-b/mbypsb-nocomp  np=10    match=4          p=0.00120s e=0.01610s total=0.01730s
+
+
+ for sets of 100 patterns:
+alg=perl-mm-multi/mbyps  np=100   match=22         p=0.00830s e=0.00520s total=0.01350s
+alg=lti-b/mbypsb-memcmp  np=100   match=22         p=0.00830s e=0.00520s total=0.01350s
+alg=-b/mbypsb-simdcmp16  np=100   match=22         p=0.00840s e=0.00490s total=0.01330s
+alg=lti-b/mbypsb-nocomp  np=100   match=22         p=0.00810s e=0.00540s total=0.01350s
+
+alg=perl-mm-multi/mbyps  np=100   match=34         p=0.00810s e=0.02250s total=0.03060s
+alg=lti-b/mbypsb-memcmp  np=100   match=34         p=0.00840s e=0.02240s total=0.03080s
+alg=-b/mbypsb-simdcmp16  np=100   match=34         p=0.00800s e=0.02060s total=0.02860s
+alg=lti-b/mbypsb-nocomp  np=100   match=34         p=0.00810s e=0.01670s total=0.02480s
+
+alg=perl-mm-multi/mbyps  np=100   match=52         p=0.00840s e=0.08360s total=0.09200s
+alg=lti-b/mbypsb-memcmp  np=100   match=52         p=0.00900s e=0.08410s total=0.09310s
+alg=-b/mbypsb-simdcmp16  np=100   match=52         p=0.00890s e=0.07720s total=0.08610s
+alg=lti-b/mbypsb-nocomp  np=100   match=52         p=0.00870s e=0.06590s total=0.07460s
+
+
+ for sets of 1000 patterns:
+alg=perl-mm-multi/mbyps  np=1000  match=226        p=0.07680s e=0.01840s total=0.09520s
+alg=lti-b/mbypsb-memcmp  np=1000  match=226        p=0.07690s e=0.01850s total=0.09540s
+alg=-b/mbypsb-simdcmp16  np=1000  match=226        p=0.07690s e=0.01300s total=0.08990s
+alg=lti-b/mbypsb-nocomp  np=1000  match=226        p=0.07710s e=0.03260s total=0.10970s
+
+alg=perl-mm-multi/mbyps  np=1000  match=371        p=0.07720s e=0.07740s total=0.15460s
+alg=lti-b/mbypsb-memcmp  np=1000  match=371        p=0.07750s e=0.07640s total=0.15390s
+alg=-b/mbypsb-simdcmp16  np=1000  match=371        p=0.07710s e=0.07040s total=0.14750s
+alg=lti-b/mbypsb-nocomp  np=1000  match=371        p=0.07660s e=0.06470s total=0.14130s
+
+alg=perl-mm-multi/mbyps  np=1000  match=511        p=0.08020s e=0.76590s total=0.84610s
+alg=lti-b/mbypsb-memcmp  np=1000  match=511        p=0.08400s e=0.77520s total=0.85920s
+alg=-b/mbypsb-simdcmp16  np=1000  match=511        p=0.08030s e=0.74380s total=0.82410s
+alg=lti-b/mbypsb-nocomp  np=1000  match=511        p=0.08260s e=0.68070s total=0.76330s
+
+
+Pattern length 32:
+
+ for sets of 10 patterns:
+alg=perl-mm-multi/mbyps  np=10    match=0          p=0.00110s e=0.00240s total=0.00350s
+alg=lti-b/mbypsb-memcmp  np=10    match=0          p=0.00120s e=0.00240s total=0.00360s
+alg=-b/mbypsb-simdcmp16  np=10    match=0          p=0.00120s e=0.00220s total=0.00340s
+alg=lti-b/mbypsb-nocomp  np=10    match=0          p=0.00120s e=0.00220s total=0.00340s
+
+alg=perl-mm-multi/mbyps  np=10    match=0          p=0.00110s e=0.00610s total=0.00720s
+alg=lti-b/mbypsb-memcmp  np=10    match=0          p=0.00120s e=0.00610s total=0.00730s
+alg=-b/mbypsb-simdcmp16  np=10    match=0          p=0.00120s e=0.00560s total=0.00680s
+alg=lti-b/mbypsb-nocomp  np=10    match=0          p=0.00120s e=0.00490s total=0.00610s
+
+alg=perl-mm-multi/mbyps  np=10    match=2          p=0.00120s e=0.01780s total=0.01900s
+alg=lti-b/mbypsb-memcmp  np=10    match=2          p=0.00130s e=0.01780s total=0.01910s
+alg=-b/mbypsb-simdcmp16  np=10    match=2          p=0.00120s e=0.01610s total=0.01730s
+alg=lti-b/mbypsb-nocomp  np=10    match=2          p=0.00120s e=0.01250s total=0.01370s
+
+
+ for sets of 100 patterns:
+alg=perl-mm-multi/mbyps  np=100   match=14         p=0.00820s e=0.00340s total=0.01160s
+alg=lti-b/mbypsb-memcmp  np=100   match=14         p=0.00870s e=0.00350s total=0.01220s
+alg=-b/mbypsb-simdcmp16  np=100   match=14         p=0.00810s e=0.00300s total=0.01110s
+alg=lti-b/mbypsb-nocomp  np=100   match=14         p=0.00770s e=0.00460s total=0.01230s
+
+alg=perl-mm-multi/mbyps  np=100   match=18         p=0.00820s e=0.00880s total=0.01700s
+alg=lti-b/mbypsb-memcmp  np=100   match=18         p=0.00830s e=0.00870s total=0.01700s
+alg=-b/mbypsb-simdcmp16  np=100   match=18         p=0.00840s e=0.00740s total=0.01580s
+alg=lti-b/mbypsb-nocomp  np=100   match=18         p=0.00820s e=0.00920s total=0.01740s
+
+alg=perl-mm-multi/mbyps  np=100   match=30         p=0.00840s e=0.02450s total=0.03290s
+alg=lti-b/mbypsb-memcmp  np=100   match=30         p=0.00910s e=0.02450s total=0.03360s
+alg=-b/mbypsb-simdcmp16  np=100   match=30         p=0.00870s e=0.02250s total=0.03120s
+alg=lti-b/mbypsb-nocomp  np=100   match=30         p=0.00880s e=0.01880s total=0.02760s
+
+
+ for sets of 1000 patterns:
+alg=perl-mm-multi/mbyps  np=1000  match=159        p=0.07760s e=0.01440s total=0.09200s
+alg=lti-b/mbypsb-memcmp  np=1000  match=159        p=0.07820s e=0.01470s total=0.09290s
+alg=-b/mbypsb-simdcmp16  np=1000  match=159        p=0.07810s e=0.01160s total=0.08970s
+alg=lti-b/mbypsb-nocomp  np=1000  match=159        p=0.07750s e=0.03550s total=0.11300s
+
+alg=perl-mm-multi/mbyps  np=1000  match=242        p=0.07750s e=0.03400s total=0.11150s
+alg=lti-b/mbypsb-memcmp  np=1000  match=242        p=0.07780s e=0.04230s total=0.12010s
+alg=-b/mbypsb-simdcmp16  np=1000  match=242        p=0.07750s e=0.02360s total=0.10110s
+alg=lti-b/mbypsb-nocomp  np=1000  match=242        p=0.07740s e=0.05930s total=0.13670s
+
+alg=perl-mm-multi/mbyps  np=1000  match=339        p=0.08040s e=0.10250s total=0.18290s
+alg=lti-b/mbypsb-memcmp  np=1000  match=339        p=0.08410s e=0.10010s total=0.18420s
+alg=-b/mbypsb-simdcmp16  np=1000  match=339        p=0.08110s e=0.09320s total=0.17430s
+alg=lti-b/mbypsb-nocomp  np=1000  match=339        p=0.08300s e=0.09000s total=0.17300s
+
+
+
+********** ./tests/english/bible.txt **********
+
+
+Pattern length 8:
+
+ for sets of 10 patterns:
+alg=perl-mm-multi/mbyps  np=10    match=1237       p=0.00010s e=0.02190s total=0.02200s
+alg=lti-b/mbypsb-memcmp  np=10    match=1237       p=0.00010s e=0.02210s total=0.02220s
+alg=-b/mbypsb-simdcmp16  np=10    match=1237       p=0.00010s e=0.02040s total=0.02050s
+alg=lti-b/mbypsb-nocomp  np=10    match=1237       p=0.00010s e=0.01550s total=0.01560s
+
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+
+
+ for sets of 100 patterns:
+alg=perl-mm-multi/mbyps  np=100   match=21623      p=0.00070s e=0.06330s total=0.06400s
+alg=lti-b/mbypsb-memcmp  np=100   match=21623      p=0.00070s e=0.06220s total=0.06290s
+alg=-b/mbypsb-simdcmp16  np=100   match=21623      p=0.00080s e=0.05390s total=0.05470s
+alg=lti-b/mbypsb-nocomp  np=100   match=21623      p=0.00080s e=0.04000s total=0.04080s
+
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+
+
+ for sets of 1000 patterns:
+alg=perl-mm-multi/mbyps  np=1000  match=222867     p=0.00570s e=0.37180s total=0.37750s
+alg=lti-b/mbypsb-memcmp  np=1000  match=222867     p=0.00570s e=0.36420s total=0.36990s
+alg=-b/mbypsb-simdcmp16  np=1000  match=222867     p=0.00570s e=0.32690s total=0.33260s
+alg=lti-b/mbypsb-nocomp  np=1000  match=222867     p=0.00560s e=0.25050s total=0.25610s
+
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+Pattern length 2 out of range!
+
+
+Pattern length 16:
+
+ for sets of 10 patterns:
+alg=perl-mm-multi/mbyps  np=10    match=9          p=0.00120s e=0.01460s total=0.01580s
+alg=lti-b/mbypsb-memcmp  np=10    match=9          p=0.00120s e=0.01440s total=0.01560s
+alg=-b/mbypsb-simdcmp16  np=10    match=9          p=0.00110s e=0.01340s total=0.01450s
+alg=lti-b/mbypsb-nocomp  np=10    match=9          p=0.00080s e=0.00960s total=0.01040s
+
+alg=perl-mm-multi/mbyps  np=10    match=9          p=0.00120s e=0.01570s total=0.01690s
+alg=lti-b/mbypsb-memcmp  np=10    match=9          p=0.00090s e=0.01530s total=0.01620s
+alg=-b/mbypsb-simdcmp16  np=10    match=9          p=0.00120s e=0.01530s total=0.01650s
+alg=lti-b/mbypsb-nocomp  np=10    match=9          p=0.00120s e=0.01160s total=0.01280s
+
+alg=perl-mm-multi/mbyps  np=10    match=12         p=0.00130s e=0.01610s total=0.01740s
+alg=lti-b/mbypsb-memcmp  np=10    match=12         p=0.00130s e=0.01610s total=0.01740s
+alg=-b/mbypsb-simdcmp16  np=10    match=12         p=0.00090s e=0.01530s total=0.01620s
+alg=lti-b/mbypsb-nocomp  np=10    match=12         p=0.00130s e=0.01150s total=0.01280s
+
+
+ for sets of 100 patterns:
+alg=perl-mm-multi/mbyps  np=100   match=78         p=0.00770s e=0.01760s total=0.02530s
+alg=lti-b/mbypsb-memcmp  np=100   match=78         p=0.00890s e=0.01770s total=0.02660s
+alg=-b/mbypsb-simdcmp16  np=100   match=78         p=0.00830s e=0.01570s total=0.02400s
+alg=lti-b/mbypsb-nocomp  np=100   match=78         p=0.00860s e=0.01210s total=0.02070s
+
+alg=perl-mm-multi/mbyps  np=100   match=510        p=0.00840s e=0.04920s total=0.05760s
+alg=lti-b/mbypsb-memcmp  np=100   match=510        p=0.00880s e=0.04940s total=0.05820s
+alg=-b/mbypsb-simdcmp16  np=100   match=510        p=0.00900s e=0.04310s total=0.05210s
+alg=lti-b/mbypsb-nocomp  np=100   match=510        p=0.00900s e=0.03320s total=0.04220s
+
+alg=perl-mm-multi/mbyps  np=100   match=1161       p=0.00920s e=0.09590s total=0.10510s
+alg=lti-b/mbypsb-memcmp  np=100   match=1161       p=0.00910s e=0.10230s total=0.11140s
+alg=-b/mbypsb-simdcmp16  np=100   match=1161       p=0.00900s e=0.08910s total=0.09810s
+alg=lti-b/mbypsb-nocomp  np=100   match=1161       p=0.00920s e=0.06810s total=0.07730s
+
+
+ for sets of 1000 patterns:
+alg=perl-mm-multi/mbyps  np=1000  match=1854       p=0.07710s e=0.03690s total=0.11400s
+alg=lti-b/mbypsb-memcmp  np=1000  match=1854       p=0.08200s e=0.03610s total=0.11810s
+alg=-b/mbypsb-simdcmp16  np=1000  match=1854       p=0.08300s e=0.03180s total=0.11480s
+alg=lti-b/mbypsb-nocomp  np=1000  match=1854       p=0.08280s e=0.02870s total=0.11150s
+
+alg=perl-mm-multi/mbyps  np=1000  match=4585       p=0.07980s e=0.33180s total=0.41160s
+alg=lti-b/mbypsb-memcmp  np=1000  match=4585       p=0.08330s e=0.32540s total=0.40870s
+alg=-b/mbypsb-simdcmp16  np=1000  match=4585       p=0.08320s e=0.29890s total=0.38210s
+alg=lti-b/mbypsb-nocomp  np=1000  match=4585       p=0.08390s e=0.22500s total=0.30890s
+
+alg=perl-mm-multi/mbyps  np=1000  match=10224      p=0.08930s e=0.92010s total=1.00940s
+alg=lti-b/mbypsb-memcmp  np=1000  match=10224      p=0.08460s e=0.88800s total=0.97260s
+alg=-b/mbypsb-simdcmp16  np=1000  match=10224      p=0.08450s e=0.82300s total=0.90750s
+alg=lti-b/mbypsb-nocomp  np=1000  match=10224      p=0.08530s e=0.68820s total=0.77350s
+
+
+Pattern length 24:
+
+ for sets of 10 patterns:
+alg=perl-mm-multi/mbyps  np=10    match=2          p=0.00110s e=0.00340s total=0.00450s
+alg=lti-b/mbypsb-memcmp  np=10    match=2          p=0.00110s e=0.00320s total=0.00430s
+alg=-b/mbypsb-simdcmp16  np=10    match=2          p=0.00110s e=0.00310s total=0.00420s
+alg=lti-b/mbypsb-nocomp  np=10    match=2          p=0.00080s e=0.00240s total=0.00320s
+
+alg=perl-mm-multi/mbyps  np=10    match=3          p=0.00110s e=0.01470s total=0.01580s
+alg=lti-b/mbypsb-memcmp  np=10    match=3          p=0.00120s e=0.01470s total=0.01590s
+alg=-b/mbypsb-simdcmp16  np=10    match=3          p=0.00110s e=0.01310s total=0.01420s
+alg=lti-b/mbypsb-nocomp  np=10    match=3          p=0.00120s e=0.01010s total=0.01130s
+
+alg=perl-mm-multi/mbyps  np=10    match=3          p=0.00120s e=0.01520s total=0.01640s
+alg=lti-b/mbypsb-memcmp  np=10    match=3          p=0.00120s e=0.01510s total=0.01630s
+alg=-b/mbypsb-simdcmp16  np=10    match=3          p=0.00090s e=0.01440s total=0.01530s
+alg=lti-b/mbypsb-nocomp  np=10    match=3          p=0.00130s e=0.01150s total=0.01280s
+
+
+ for sets of 100 patterns:
+alg=perl-mm-multi/mbyps  np=100   match=33         p=0.00830s e=0.00460s total=0.01290s
+alg=lti-b/mbypsb-memcmp  np=100   match=33         p=0.00800s e=0.00420s total=0.01220s
+alg=-b/mbypsb-simdcmp16  np=100   match=33         p=0.00800s e=0.00360s total=0.01160s
+alg=lti-b/mbypsb-nocomp  np=100   match=33         p=0.00830s e=0.00420s total=0.01250s
+
+alg=perl-mm-multi/mbyps  np=100   match=69         p=0.00820s e=0.01790s total=0.02610s
+alg=lti-b/mbypsb-memcmp  np=100   match=69         p=0.00830s e=0.01790s total=0.02620s
+alg=-b/mbypsb-simdcmp16  np=100   match=69         p=0.00820s e=0.01630s total=0.02450s
+alg=lti-b/mbypsb-nocomp  np=100   match=69         p=0.00830s e=0.01310s total=0.02140s
+
+alg=perl-mm-multi/mbyps  np=100   match=99         p=0.00860s e=0.03150s total=0.04010s
+alg=lti-b/mbypsb-memcmp  np=100   match=99         p=0.00890s e=0.03170s total=0.04060s
+alg=-b/mbypsb-simdcmp16  np=100   match=99         p=0.00880s e=0.02920s total=0.03800s
+alg=lti-b/mbypsb-nocomp  np=100   match=99         p=0.00870s e=0.02400s total=0.03270s
+
+
+ for sets of 1000 patterns:
+alg=perl-mm-multi/mbyps  np=1000  match=228        p=0.07690s e=0.01400s total=0.09090s
+alg=lti-b/mbypsb-memcmp  np=1000  match=228        p=0.07690s e=0.01400s total=0.09090s
+alg=-b/mbypsb-simdcmp16  np=1000  match=228        p=0.07700s e=0.01050s total=0.08750s
+alg=lti-b/mbypsb-nocomp  np=1000  match=228        p=0.07690s e=0.02370s total=0.10060s
+
+alg=perl-mm-multi/mbyps  np=1000  match=457        p=0.07650s e=0.04800s total=0.12450s
+alg=lti-b/mbypsb-memcmp  np=1000  match=457        p=0.07720s e=0.04600s total=0.12320s
+alg=-b/mbypsb-simdcmp16  np=1000  match=457        p=0.07670s e=0.04130s total=0.11800s
+alg=lti-b/mbypsb-nocomp  np=1000  match=457        p=0.07680s e=0.04460s total=0.12140s
+
+alg=perl-mm-multi/mbyps  np=1000  match=1282       p=0.07990s e=0.19230s total=0.27220s
+alg=lti-b/mbypsb-memcmp  np=1000  match=1282       p=0.08350s e=0.19580s total=0.27930s
+alg=-b/mbypsb-simdcmp16  np=1000  match=1282       p=0.08040s e=0.16200s total=0.24240s
+alg=lti-b/mbypsb-nocomp  np=1000  match=1282       p=0.08160s e=0.15250s total=0.23410s
+
+
+Pattern length 32:
+
+ for sets of 10 patterns:
+alg=perl-mm-multi/mbyps  np=10    match=0          p=0.00080s e=0.00180s total=0.00260s
+alg=lti-b/mbypsb-memcmp  np=10    match=0          p=0.00120s e=0.00200s total=0.00320s
+alg=-b/mbypsb-simdcmp16  np=10    match=0          p=0.00120s e=0.00170s total=0.00290s
+alg=lti-b/mbypsb-nocomp  np=10    match=0          p=0.00120s e=0.00170s total=0.00290s
+
+alg=perl-mm-multi/mbyps  np=10    match=2          p=0.00120s e=0.00510s total=0.00630s
+alg=lti-b/mbypsb-memcmp  np=10    match=2          p=0.00120s e=0.00510s total=0.00630s
+alg=-b/mbypsb-simdcmp16  np=10    match=2          p=0.00080s e=0.00440s total=0.00520s
+alg=lti-b/mbypsb-nocomp  np=10    match=2          p=0.00120s e=0.00390s total=0.00510s
+
+alg=perl-mm-multi/mbyps  np=10    match=2          p=0.00120s e=0.01460s total=0.01580s
+alg=lti-b/mbypsb-memcmp  np=10    match=2          p=0.00120s e=0.01440s total=0.01560s
+alg=-b/mbypsb-simdcmp16  np=10    match=2          p=0.00120s e=0.01320s total=0.01440s
+alg=lti-b/mbypsb-nocomp  np=10    match=2          p=0.00130s e=0.01040s total=0.01170s
+
+
+ for sets of 100 patterns:
+alg=perl-mm-multi/mbyps  np=100   match=9          p=0.00820s e=0.00250s total=0.01070s
+alg=lti-b/mbypsb-memcmp  np=100   match=9          p=0.00830s e=0.00260s total=0.01090s
+alg=-b/mbypsb-simdcmp16  np=100   match=9          p=0.00840s e=0.00230s total=0.01070s
+alg=lti-b/mbypsb-nocomp  np=100   match=9          p=0.00810s e=0.00310s total=0.01120s
+
+alg=perl-mm-multi/mbyps  np=100   match=22         p=0.00810s e=0.00650s total=0.01460s
+alg=lti-b/mbypsb-memcmp  np=100   match=22         p=0.00820s e=0.00640s total=0.01460s
+alg=-b/mbypsb-simdcmp16  np=100   match=22         p=0.00830s e=0.00570s total=0.01400s
+alg=lti-b/mbypsb-nocomp  np=100   match=22         p=0.00820s e=0.00580s total=0.01400s
+
+alg=perl-mm-multi/mbyps  np=100   match=30         p=0.00830s e=0.01860s total=0.02690s
+alg=lti-b/mbypsb-memcmp  np=100   match=30         p=0.00840s e=0.01870s total=0.02710s
+alg=-b/mbypsb-simdcmp16  np=100   match=30         p=0.00860s e=0.01680s total=0.02540s
+alg=lti-b/mbypsb-nocomp  np=100   match=30         p=0.00860s e=0.01420s total=0.02280s
+
+
+ for sets of 1000 patterns:
+alg=perl-mm-multi/mbyps  np=1000  match=130        p=0.07840s e=0.01010s total=0.08850s
+alg=lti-b/mbypsb-memcmp  np=1000  match=130        p=0.07760s e=0.01020s total=0.08780s
+alg=-b/mbypsb-simdcmp16  np=1000  match=130        p=0.07780s e=0.00830s total=0.08610s
+alg=lti-b/mbypsb-nocomp  np=1000  match=130        p=0.07780s e=0.02260s total=0.10040s
+
+alg=perl-mm-multi/mbyps  np=1000  match=217        p=0.07770s e=0.02490s total=0.10260s
+alg=lti-b/mbypsb-memcmp  np=1000  match=217        p=0.07780s e=0.02440s total=0.10220s
+alg=-b/mbypsb-simdcmp16  np=1000  match=217        p=0.07760s e=0.01880s total=0.09640s
+alg=lti-b/mbypsb-nocomp  np=1000  match=217        p=0.07780s e=0.03860s total=0.11640s
+
+alg=perl-mm-multi/mbyps  np=1000  match=294        p=0.08050s e=0.05990s total=0.14040s
+alg=lti-b/mbypsb-memcmp  np=1000  match=294        p=0.08420s e=0.05710s total=0.14130s
+alg=-b/mbypsb-simdcmp16  np=1000  match=294        p=0.08090s e=0.05060s total=0.13150s
+alg=lti-b/mbypsb-nocomp  np=1000  match=294        p=0.08280s e=0.06140s total=0.14420s
+
