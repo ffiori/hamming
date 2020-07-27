@@ -89,6 +89,7 @@ int exec(CHARTYPE *y, int n, int k, int q)
     //pn(t); pb(t);
 		//pn(_mm_popcnt_u32(t));
 		//if ((m-_mm_popcnt_u32(t))<=k) matches++;
+        //~ pn(t);
 		if (d3[t&mask])
        if ((m-_mm_popcnt_u32(t))<=k) matches++;
 

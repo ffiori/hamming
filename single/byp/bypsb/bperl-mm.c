@@ -553,11 +553,11 @@ int exec(CHARTYPE * text, unsigned n, unsigned k, unsigned q)
 //printf(".%s.\n",text);
 
     /* if k = 0 then exact search */
-    if (k == 0) {
-        puts("no exact search please!");
+    //~ if (k == 0) {
+        //~ puts("no exact search please!");
         //ExactSearch(text, n, pattern, m);
-        return;
-    }
+        //~ return;
+    //~ }
 
     /* else, partition into exact match */
     PartExactSearch(text, n, pattern, m, k);
