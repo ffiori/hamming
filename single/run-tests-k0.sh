@@ -28,9 +28,10 @@ for text in ../multiple/tests/genome/ecoli.txt; do
                   done
               fi
 
-              for alg in ./sa ./tusa ./twsa ./byp/byp-old/byp ./byp/byps/byps ./byp/bypsb/bypsb; do
+              for alg in ./sa ./tusa ./twsa ./byp/byp-old/byp ./byp/byps/byps ./byp/bypsb/bypsb ./naive/naive16.t ./naive/naive32.t; do
                 $alg -e$e -k$k -p$p $text < $text.$m.n100.badpat
               done
+              
               echo ""
         done
     done
@@ -53,7 +54,7 @@ for text in ../multiple/tests/english/bible.txt; do
                   done
               fi
 
-              for alg in ./sa ./tusa ./twsa ./byp/byp-old/byp ./byp/byps/byps ./byp/bypsb/bypsb; do
+              for alg in ./sa ./tusa ./twsa ./byp/byp-old/byp ./byp/byps/byps ./byp/bypsb/bypsb ./naive/naive16.t ./naive/naive32.t; do
                 $alg -e$e -k$k -p$p $text < $text.$m.n100.badpat
               done
               echo ""
