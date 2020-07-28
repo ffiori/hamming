@@ -1,4 +1,10 @@
-nohup: ignoring input
+Names of ANS family algorithms:
+
+ANS: ./ans ./ansb
+ANS2: ./ans2
+ANS2b: ./ans2b ./ans2b-noif
+
+
 Preprocessing runs 100. Search runs 100. q-gram for EF and EFS 4.
 
 
