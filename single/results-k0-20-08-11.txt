@@ -1,0 +1,74 @@
+nohup: ignoring input
+Preprocessing runs 100. Search runs 100. q-gram for EF and EFS 4.
+
+
+********** ../multiple/tests/genome/ecoli.txt **********
+
+
+Pattern length of 8:
+for 0 mismatches:
+alg=./byp/bypsc/bypsc np=100   match=8862       p=0.00830s e=0.24000s total=0.24830s
+alg=./naive/naive16.t T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=0 occ=8862 p=0.0002s(2/100) e=0.2479s(2479/100)
+alg=./naive/naive32.t T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=0 occ=8862 p=0.0000s(0/100) e=0.2229s(2229/100)
+alg=./epsm2_ours T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=8 k=0 occ=8862 p=0.0000s(0/100) e=0.2059s(2059/100)
+
+
+Pattern length of 16:
+for 0 mismatches:
+alg=./byp/bypsc/bypsc np=100   match=14         p=0.01670s e=0.14890s total=0.16560s
+alg=./naive/naive16.t T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=0 occ=14 p=0.0000s(0/100) e=0.2411s(2411/100)
+alg=./naive/naive32.t T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=0 occ=14 p=0.0001s(1/100) e=0.2182s(2182/100)
+alg=./epsm2_ours T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=16 k=0 occ=14 p=0.0001s(1/100) e=0.1381s(1381/100)
+
+
+Pattern length of 24:
+for 0 mismatches:
+alg=./byp/bypsc/bypsc np=100   match=9          p=0.01570s e=0.09030s total=0.10600s
+alg=./naive/naive16.t T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=0 occ=9 p=0.0001s(1/100) e=0.2356s(2356/100)
+alg=./naive/naive32.t T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=0 occ=9 p=0.0001s(1/100) e=0.2119s(2119/100)
+alg=./epsm2_ours T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=24 k=0 occ=9 p=0.0003s(3/100) e=0.0776s(776/100)
+
+
+Pattern length of 32:
+for 0 mismatches:
+alg=./byp/bypsc/bypsc np=100   match=8          p=0.01570s e=0.06600s total=0.08170s
+alg=./naive/naive16.t T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=0 occ=8 p=0.0000s(0/100) e=0.2358s(2358/100)
+alg=./naive/naive32.t T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=0 occ=8 p=0.0001s(1/100) e=0.2129s(2129/100)
+alg=./epsm2_ours T=../multiple/tests/genome/ecoli.txt(4638690) np=100 m=32 k=0 occ=8 p=0.0001s(1/100) e=0.0581s(581/100)
+
+
+
+********** ../multiple/tests/english/bible.txt **********
+
+
+Pattern length of 8:
+for 0 mismatches:
+alg=./byp/bypsc/bypsc np=100   match=8284       p=0.00780s e=0.18910s total=0.19690s
+alg=./naive/naive16.t T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=0 occ=8284 p=0.0000s(0/100) e=0.0613s(613/100)
+alg=./naive/naive32.t T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=0 occ=8284 p=0.0000s(0/100) e=0.0450s(450/100)
+alg=./epsm2_ours T=../multiple/tests/english/bible.txt(4047392) np=100 m=8 k=0 occ=8284 p=0.0000s(0/100) e=0.1180s(1180/100)
+
+
+Pattern length of 16:
+for 0 mismatches:
+alg=./byp/bypsc/bypsc np=100   match=28         p=0.01450s e=0.12670s total=0.14120s
+alg=./naive/naive16.t T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=0 occ=28 p=0.0000s(0/100) e=0.0613s(613/100)
+alg=./naive/naive32.t T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=0 occ=28 p=0.0001s(1/100) e=0.0443s(443/100)
+alg=./epsm2_ours T=../multiple/tests/english/bible.txt(4047392) np=100 m=16 k=0 occ=28 p=0.0002s(2/100) e=0.1210s(1210/100)
+
+
+Pattern length of 24:
+for 0 mismatches:
+alg=./byp/bypsc/bypsc np=100   match=9          p=0.01580s e=0.07560s total=0.09140s
+alg=./naive/naive16.t T=../multiple/tests/english/bible.txt(4047392) np=100 m=24 k=0 occ=9 p=0.0001s(1/100) e=0.0601s(601/100)
+alg=./naive/naive32.t T=../multiple/tests/english/bible.txt(4047392) np=100 m=24 k=0 occ=9 p=0.0001s(1/100) e=0.0433s(433/100)
+alg=./epsm2_ours T=../multiple/tests/english/bible.txt(4047392) np=100 m=24 k=0 occ=9 p=0.0001s(1/100) e=0.0688s(688/100)
+
+
+Pattern length of 32:
+for 0 mismatches:
+alg=./byp/bypsc/bypsc np=100   match=7          p=0.01440s e=0.05700s total=0.07140s
+alg=./naive/naive16.t T=../multiple/tests/english/bible.txt(4047392) np=100 m=32 k=0 occ=7 p=0.0000s(0/100) e=0.0605s(605/100)
+alg=./naive/naive32.t T=../multiple/tests/english/bible.txt(4047392) np=100 m=32 k=0 occ=7 p=0.0002s(2/100) e=0.0435s(435/100)
+alg=./epsm2_ours T=../multiple/tests/english/bible.txt(4047392) np=100 m=32 k=0 occ=7 p=0.0002s(2/100) e=0.0506s(506/100)
+
